@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.purplepath.purplepath.chatprompt.PromptChatFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/layout_yes_no_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parentViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+    </LinearLayout>
+
+
+    </ScrollView>
+    <!--<LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/fragment_bottom_bar_done_view"
+    ></include>
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_yes_no_bottom_bar"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/margin_xlarge"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/prompt_yes_no_layout"
+    ></include>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.purplepath.purplepath.AppManagement.Vendors.VendorFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vendorRecyclerView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+</RelativeLayout>

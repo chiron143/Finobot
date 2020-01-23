@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.LoginandSignUpActivity">
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/saleryTitleViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25">
+
+                    <CheckBox
+                        android:button="@drawable/customdrawablecheckbox"
+                        android:id="@+id/saleryAddViewDropId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_small"
+                          app:srcCompat="@drawable/ic_menu_drop_down"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center|left"
+                        android:text="Salary"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.75"
+                    android:weightSum="2">
+                <com.purplepath.purplepath.customview.CurrencyEditText
+                    android:id="@+id/saleryTotalViewId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edt_txt_bg_rectangle"
+                    android:inputType="numberDecimal"
+                    />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/saleryTotalinfoViewId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saleryDetaileddropdownViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saleryTitleViewId"
+                android:layout_margin="@dimen/margin_small"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:id="@+id/basicDetailTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.25">
+
+                                <CheckBox
+                                    android:button="@drawable/customdrawablecheckbox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:visibility="invisible"
+                                      app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:gravity="center|left"
+                                    android:text="BasicSalery"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/basicsaleryEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/basicsaleryinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bonusDetailTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Bonus"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/bonussaleryEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/bonussaleryinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/incentiveDetailTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Incentive"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/incentivesaleryEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/incentivesaleryinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/commissionDetailTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Commission"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/commissionsaleryEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/commissionsaleryinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/medicalreimbursementTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Medical Reimbursement"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/medicalreimbursementEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/medicalreimbursementinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/voluntaryTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Voluntary / Gratuitous Payment"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:maxLines="2"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_gravity="center"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/voluntaryEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/voluntaryinfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/allowanceViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/allowanceSalViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/allowanceTitleViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.25"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:button="@drawable/customdrawablecheckbox"
+                                    android:id="@+id/allowanceAddViewDropId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_margin="@dimen/margin_small"
+                                      app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:layout_margin="@dimen/margin_small"
+
+                                    android:gravity="center|left"
+                                    android:text="Allowance"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.75"
+                                android:weightSum="2">
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/allowanceTotalViewId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:inputType="numberDecimal" />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/allowanceinfoId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                      app:srcCompat="@drawable/ic_pop_up"
+                                    android:visibility="gone"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/allowanceAddViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/allowanceTitleViewId"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/margin_xlarge"
+                            android:visibility="gone">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <AutoCompleteTextView
+                                android:id="@+id/addallowancequestion0"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.1"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:padding="@dimen/margin_small"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/addallowanceanswerEdtId0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:layout_weight="1.1"
+                                android:background="@drawable/edt_txt_bg_rectangle" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.8"
+
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/allwancedeletebtnId0"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                      app:srcCompat="@drawable/ic_delet_icon"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/margin_small"
+
+                                    />
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/allwanceinfoId0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_margin="@dimen/margin_small"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_pop_up"
+                                    />
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/allwanceAddbtnId0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_margin="@dimen/margin_small"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_add_row_btn"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/employerBenefitsViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/employerBenefitsSalViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/employerBenefitsTitleViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.25"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:button="@drawable/customdrawablecheckbox"
+                                    android:id="@+id/employerBenefitsAddViewDropId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_margin="@dimen/margin_small"
+                                      app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:layout_margin="@dimen/margin_small"
+
+                                    android:gravity="center|left"
+                                    android:text="EmployerBenefits"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.75"
+                                android:weightSum="2">
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/employerBenefitsTotalEditId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:inputType="numberDecimal" />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/employerBenefitsTotalInfoId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                      app:srcCompat="@drawable/ic_pop_up" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/employerBenefitsAddViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/employerBenefitsTitleViewId"
+                            android:layout_margin="@dimen/margin_xlarge"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <AutoCompleteTextView
+                                    android:id="@+id/employerBenefitsquestion0"
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/margin_small"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:layout_weight="1"/>
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/employerBenefitsanswerEdtId0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:inputType="number"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:layout_weight="1"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:weightSum="2"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/employerBenefitsdeletebtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                          app:srcCompat="@drawable/ic_delet_icon"
+                                        android:layout_gravity="center"
+
+                                        />
+
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/employerBenefitsAddbtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                          app:srcCompat="@drawable/ic_add_row_btn"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/perquisitesViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/perquisitesSalViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/perquisitesTitleViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.25"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:button="@drawable/customdrawablecheckbox"
+                                    android:id="@+id/perquisitesAddViewDropId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_margin="@dimen/margin_small"
+                                      app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:layout_margin="@dimen/margin_small"
+
+                                    android:gravity="center|left"
+                                    android:text="Perquisites"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.75"
+                                android:weightSum="2">
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/perquisitesTotalEditId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:inputType="numberDecimal" />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/perquisitesTotalInfoId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                      app:srcCompat="@drawable/ic_pop_up" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/perquisitesAddViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/perquisitesTitleViewId"
+                            android:layout_margin="@dimen/margin_xlarge"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <AutoCompleteTextView
+                                    android:id="@+id/perquisitesquestion0"
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/margin_small"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:layout_weight="1"/>
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/perquisitesanswerEdtId0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:inputType="number"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:layout_weight="1"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:weightSum="2"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/perquisitesdeletebtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                          app:srcCompat="@drawable/ic_delet_icon"
+                                        android:layout_gravity="center"
+
+                                        />
+
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/perquisitesAddbtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                          app:srcCompat="@drawable/ic_add_row_btn"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/incomePropertySalViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/incomFromPropertyTitleViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25">
+
+                    <CheckBox
+                        android:button="@drawable/customdrawablecheckbox"
+                        android:id="@+id/incomefromPropertyAddViewDropId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_small"
+                          app:srcCompat="@drawable/ic_menu_dropup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center|left"
+                        android:text="Incom From Property"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/incomFromPropertyTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/incomFromPropertyTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/incomFromPropertyViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/incomFromPropertyTitleViewId"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/rentalIncomeTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Rental Income 1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/rentalIncomeEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/rentalIncome1InfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/rentalIncomeTitleView2Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Rental Income 2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/rentalIncome2EditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/rentalIncome2InfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/incomFromBusinessTitleViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25">
+
+                    <CheckBox
+                        android:button="@drawable/customdrawablecheckbox"
+                        android:id="@+id/incomefromBusinessAddViewDropId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_small"
+                          app:srcCompat="@drawable/ic_menu_dropup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center|left"
+                        android:text="Incom From Business"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/incomFromBusinessTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/incomFromBusinessTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/incomFromBusinessViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/incomFromBusinessTitleViewId"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/businessIncome1TitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="BusinessIncome 1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/businessIncome1EditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/businessIncome1InfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/businessIncome2TitleView2Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Business Income 2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/businessIncome2EditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/businessIncome2InfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/capitalGainTitleViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25">
+
+                    <CheckBox
+                        android:button="@drawable/customdrawablecheckbox"
+                        android:id="@+id/capitalGainAddViewDropId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_small"
+                          app:srcCompat="@drawable/ic_menu_dropup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center|left"
+                        android:text="Capital Gains"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/capitalGainTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/capitalGainTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/capitalGainViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capitalGainTitleViewId"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/shortTermCapitalGainsTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Short Term Capital Gains"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/shortTermCapitalGainsEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/shortTermCapitalGainsInfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/longTermCapitalGainsTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Long Term Capital Gains"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/longTermCapitalGainsEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/longTermCapitalGainsInfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/incomefromOtherTitleViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25">
+
+                    <CheckBox
+                        android:button="@drawable/customdrawablecheckbox"
+                        android:id="@+id/incomefromOtherAddViewDropId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_small"
+                          app:srcCompat="@drawable/ic_menu_dropup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center|left"
+                        android:text="Income from other source"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/incomefromOtherTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/incomefromOtherTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/incomefromOtherViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/incomefromOtherTitleViewId"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/salaryIncomeotherSourcesTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Salary Income Sources"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/salIncomeotherSourcesEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/salIncomeotherSourcesInfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/rentalIncomeViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/rentalIncomeeTitleViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.25">
+                            <CheckBox
+                                android:button="@drawable/customdrawablecheckbox"
+                                android:id="@+id/rentalIncomeeAddViewDropId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="@dimen/margin_small"
+                                  app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="top"
+                                android:layout_margin="@dimen/margin_small"
+
+                                android:gravity="center|left"
+                                android:text="RentalIncomee"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.75"
+                                android:weightSum="2">
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/retailIncomeTotalEditId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:inputType="numberDecimal" />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/retailIncomeTotalInfoId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                      app:srcCompat="@drawable/ic_pop_up"
+                                    android:visibility="gone"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rentalIncomeeAddViewId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rentalIncomeeTitleViewId"
+                            android:layout_margin="@dimen/margin_xlarge"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <AutoCompleteTextView
+                                    android:id="@+id/rentalIncomeequestion0"
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/margin_small"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:layout_weight="1"/>
+
+                                <com.purplepath.purplepath.customview.CurrencyEditText
+                                    android:id="@+id/rentalIncomeeanswerEdtId0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:inputType="number"
+                                    android:background="@drawable/edt_txt_bg_rectangle"
+                                    android:layout_weight="1"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:weightSum="2"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/rentalIncomeedeletebtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                          app:srcCompat="@drawable/ic_delet_icon"
+                                        android:layout_gravity="center"
+
+                                        />
+
+                                     <android.support.v7.widget.AppCompatImageView
+                                        android:id="@+id/rentalIncomeeAddbtnId0"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                          app:srcCompat="@drawable/ic_add_row_btn"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/agricultureIncomeViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/agricultureIncomeTitleViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.25"
+                            android:weightSum="2">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/agricultureIncomeAddViewDropId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="@dimen/margin_small"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+
+                            android:gravity="center|left"
+                            android:text="AgricultureIncome"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.75"
+
+                            android:weightSum="2">
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/agricultureIncomeTotalEditId"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1.5"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:inputType="numberDecimal" />
+
+                             <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/agricultureIncomeTotalInfoId"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                  app:srcCompat="@drawable/ic_pop_up"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/agricultureIncomeAddViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/agricultureIncomeTitleViewId"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <AutoCompleteTextView
+                                android:id="@+id/agricultureIncomequestion0"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_small"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_weight="1"/>
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/agricultureIncomeanswerEdtId0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:weightSum="2"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/agricultureIncomedeletebtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                      app:srcCompat="@drawable/ic_delet_icon"
+                                    android:layout_gravity="center"
+
+                                    />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/agricultureIncomeAddbtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_add_row_btn"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/interestsIncomeViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/interestsIncomeTitleViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.25"
+                            android:weightSum="2">
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/interestsIncomeAddViewDropId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="@dimen/margin_small"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="Interests"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.75"
+
+                            android:weightSum="2">
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/interestsIncomeTotalEditId"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1.5"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:inputType="numberDecimal" />
+
+                             <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/interestsIncomeTotalInfoId"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                  app:srcCompat="@drawable/ic_pop_up"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/interestsIncomeAddViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/interestsIncomeTitleViewId"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <AutoCompleteTextView
+                                android:id="@+id/interestsIncomequestion0"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_small"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/interestsIncomeanswerEdtId0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:weightSum="2"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/interestsIncomedeletebtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                      app:srcCompat="@drawable/ic_delet_icon"
+                                    android:layout_gravity="center"
+
+                                    />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/interestsIncomeAddbtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_add_row_btn"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/dividendsotherSourcesTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Dividends"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/dividendsotherSourcesEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/dividendsotherSourcesInfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/giftTitleViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="Gift"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CurrencyEditText
+                            android:id="@+id/giftsEditId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/edt_txt_bg_rectangle"
+                            android:inputType="numberDecimal" />
+
+                         <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/giftsInfoId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                              app:srcCompat="@drawable/ic_pop_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/annuityPensionViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/annuityPensionTitleViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/annuityPensionAddViewDropId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="@dimen/margin_small"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+
+                            android:gravity="center|left"
+                            android:text="Annuit/Pension"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.75"
+
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/annuityPensionTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/annuityPensionTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up" />
+                </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/annuityPensionAddViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/annuityPensionTitleViewId"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <AutoCompleteTextView
+                                android:id="@+id/annuityPensionquestion0"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_small"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_weight="1"/>
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/annuityPensionanswerEdtId0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:weightSum="2"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/annuityPensiondeletebtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                      app:srcCompat="@drawable/ic_delet_icon"
+                                    android:layout_gravity="center"
+
+                                    />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/annuityPensionAddbtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_add_row_btn"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/cashFlowReceiptsViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/cashFlowReceiptsTitleViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/cashFlowReceiptsAddViewDropId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="@dimen/margin_small"
+                              app:srcCompat="@drawable/ic_menu_drop_down" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+
+                            android:gravity="center|left"
+                            android:text="CashFlowReceipts"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.75"
+
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/cashFlowReceiptsTotalEditId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:inputType="numberDecimal" />
+
+                     <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/cashFlowReceiptsTotalInfoId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                          app:srcCompat="@drawable/ic_pop_up"/>
+                </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cashFlowReceiptsAddViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cashFlowReceiptsTitleViewId"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <AutoCompleteTextView
+                                android:id="@+id/cashFlowReceiptsquestion0"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_small"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_weight="1"/>
+
+                            <com.purplepath.purplepath.customview.CurrencyEditText
+                                android:id="@+id/cashFlowReceiptsanswerEdtId0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:background="@drawable/edt_txt_bg_rectangle"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:weightSum="2"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/cashFlowReceiptsdeletebtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                      app:srcCompat="@drawable/ic_delet_icon"
+                                    android:layout_gravity="center"
+
+                                    />
+
+                                 <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/cashFlowReceiptsAddbtnId0"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                      app:srcCompat="@drawable/ic_add_row_btn"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+         </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/incomefabId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+          app:srcCompat="@drawable/ic_next_btn"
+        android:visibility="visible" />
+    </android.support.design.widget.CoordinatorLayout>
+

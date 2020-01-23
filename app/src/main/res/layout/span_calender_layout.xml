@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/pickerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_xlarge">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/Calender_heading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/calender"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:gravity="center"
+                android:textSize="@dimen/month_label_size"
+                android:textColor="#333341"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewlinetext"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#d7d7d7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/yearPicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textSize="@dimen/customstyledtil_edit_text_size"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Years"/>
+                    <ImageView
+                        android:id="@+id/uparrow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_up_arrow_clander" />
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right" />
+
+                    <ImageView
+                        android:id="@+id/downarrow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_down_arrow_calender" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_xlarge"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:textSize="@dimen/customstyledtil_edit_text_size"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        android:text="Month"/>
+
+                    <ImageView
+                        android:id="@+id/uparrow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_up_arrow_clander" />
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/downarrow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_down_arrow_calender" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/da"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textSize="@dimen/customstyledtil_edit_text_size"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Days"/>
+                    <ImageView
+                        android:id="@+id/uparrow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_up_arrow_clander" />
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/downarrow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_down_arrow_calender" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:background="#d7d7d7"
+                android:paddingBottom="@dimen/margin_very_small"
+                android:paddingTop="@dimen/margin_very_small"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/pickerClearButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_very_small"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="Clear"
+                    android:textAllCaps="false"
+                    android:textColor="#7a0098"
+                    android:textSize="@dimen/text_large" />
+
+                <Button
+                    android:id="@+id/pickerSetButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pickerClearButton"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Set"
+                    android:textAllCaps="false"
+                    android:textColor="#7a0098"
+                    android:textSize="@dimen/text_large" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textview_Display_year_Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_very_small"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#4799E8"
+            android:maxLines="1"
+            android:textSize="@dimen/text_large" />
+
+
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/numberPicker_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_done_menu"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

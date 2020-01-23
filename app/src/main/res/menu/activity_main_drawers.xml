@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_my_account_new"
+            android:title="Profile"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment_new"
+            android:title="Payment"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_about_us_new"
+            android:title="About Us"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_new"
+            android:title="Feedback"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+        <item
+            android:id="@+id/nav_termsandcondition"
+            android:icon="@drawable/ic_terms_conditions_new"
+            android:title="Terms and Conditions"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:icon="@drawable/ic_privacy_policy"
+            android:title="Privacy Policy"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_contact_us_new"
+            android:title="Contact Us"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_new"
+            android:title="Logout"
+            app:showAsAction="never"
+            android:checkableBehavior="single"/>
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

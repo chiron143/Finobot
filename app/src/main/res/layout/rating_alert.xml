@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:layout_height="@dimen/linear"
+    android:background="@drawable/alert_border_curve">
+
+
+    <TextView
+        android:id="@+id/text_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RATING(SELECT A STARS)"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:numStars="5" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/later"
+       android:layout_toLeftOf="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:text="Later"/>
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/done"
+        android:layout_toRightOf="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Purple"
+        android:textColor="@color/white"
+        android:text="Done"/>
+    </RelativeLayout>
+</RelativeLayout>

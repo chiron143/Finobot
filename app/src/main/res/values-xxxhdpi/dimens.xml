@@ -1,0 +1,28 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="height_calender_textview">58dp</dimen>
+    <dimen name="signup_border_margin">14dp</dimen>
+    <dimen name="goal_height_dimen">56dp</dimen>
+    <dimen name="chart_value_size">40dp</dimen>
+    <dimen name="plus_header_height">54dp</dimen>
+    <dimen name="bottom_height_dimen">38dp</dimen>
+
+    <dimen name="text_size">22sp</dimen>
+    <dimen name="text_size_mediam">20sp</dimen>
+    <dimen name="text_size_lar">28sp</dimen>
+    <dimen name="text_size_lar_lar">34sp</dimen>
+    <dimen name="mar_left">12dp</dimen>
+    <dimen name="bullet">16dp</dimen>
+    <dimen name="linear">176dp</dimen>
+    <dimen name="splash_button">70dp</dimen>
+
+    <dimen name="signupbuttonmargin">24dp</dimen>
+    <dimen name="selected_date_year_size">30dip</dimen>
+
+    <dimen name="funnel_text">12sp</dimen>
+    <dimen name="recommend_view_height">250dp</dimen>
+
+</resources>

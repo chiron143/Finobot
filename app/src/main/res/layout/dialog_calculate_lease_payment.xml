@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/outer_dark_bg_shape">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_drawable"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/closebtnId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        app:srcCompat="@drawable/ic_cancel_prompt" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_xlarge"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:gravity="center"
+                    android:text="Calculate Lease Payment"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_header_colour"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_medium"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                            android:layout_weight="1.8">
+
+
+                            <com.purplepath.purplepath.customview.CurrencyGhostView
+                                android:id="@+id/car_pur_price_edt"
+                                android:inputType="number"
+                                android:hint="@string/text_loan_amount"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.purplepath.purplepath.customview.CustomCalenderImageView
+                            android:id="@+id/car_pur_price_calculaterImgView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/fab_margin"
+                            android:layout_weight="0.2"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                            android:layout_weight="1.8">
+
+
+                            <com.purplepath.purplepath.customview.CurrencyGhostView
+                                android:id="@+id/capitized_cost_reduction_edt"
+                                android:inputType="number"
+                                android:hint="@string/text_loan_amount"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.purplepath.purplepath.customview.CustomCalenderImageView
+                            android:id="@+id/capitized_cost_calculaterImgView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/fab_margin"
+                            android:layout_weight="0.2"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                            android:layout_weight="1.8">
+
+
+                            <com.purplepath.purplepath.customview.CurrencyGhostView
+                                android:id="@+id/residual_value_edt"
+                                android:inputType="number"
+                                android:hint="@string/text_emi"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                        <com.purplepath.purplepath.customview.CustomCalenderImageView
+                            android:id="@+id/residual_value_calculaterImgView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/fab_margin"
+                            android:layout_weight="0.2"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                            android:layout_weight="1.8">
+
+
+                            <com.purplepath.purplepath.customview.CurrencyGhostView
+                                android:id="@+id/depreciation_edt"
+                                android:inputType="number"
+                                android:hint="@string/text_emi"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                        <com.purplepath.purplepath.customview.CustomCalenderImageView
+                            android:id="@+id/depreciation_calculaterImgView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/fab_margin"
+                            android:layout_weight="0.2"
+                            />
+
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textColorHint="@color/dark_gray_text_colour"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                        <com.purplepath.purplepath.customview.NumberEditText
+                            android:id="@+id/total_tenure_edt"
+                            android:inputType="number"
+                            android:hint="@string/total_tenure_lease"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/il_interest_layout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textColorHint="@color/dark_gray_text_colour"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_toLeftOf="@+id/equity_PopView">
+
+                        <com.purplepath.purplepath.customview.PercentageEditText
+                            android:id="@+id/et_interest_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/text_interest_rate"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/sale_tax_layout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textColorHint="@color/dark_gray_text_colour"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_toLeftOf="@+id/equity_PopView">
+
+                        <com.purplepath.purplepath.customview.PercentageEditText
+                            android:id="@+id/sale_tax_interest_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/calculate_saletax"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_done_menu"
+        android:visibility="visible"/>
+</RelativeLayout>

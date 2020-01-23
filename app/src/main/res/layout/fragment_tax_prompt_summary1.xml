@@ -1,0 +1,716 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.purplepath.purplepath.taxanalysis.TaxPlanSummary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <!--<LinearLayout
+                android:id="@+id/layout_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/tax_summary_green_back"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tax_summary_green_back"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_margin="@dimen/margin_large" >
+
+                    <TextView
+                        android:id="@+id/txt_you_need"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_small"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"/>
+
+                    <TextView
+                        android:id="@+id/tax_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_small"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size"
+                        android:maxLines="1"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"/>
+                </LinearLayout>
+            </LinearLayout>-->
+
+
+
+
+          <!--  <android.support.v7.widget.CardView
+                android:id="@+id/you_need_pay_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">-->
+                <LinearLayout
+                    android:id="@+id/layout_incomes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_you_need_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/tax_paid_back"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_tax_prepaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="Tax Paid"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:maxLines="1"/>
+
+                        <TextView
+                            android:id="@+id/tax_prepaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/white"
+                            android:maxLines="1"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_refund_payable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:background="@drawable/tax_amber_back"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_tax_values"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/white"
+                        android:maxLines="1"/>
+
+                        <TextView
+                            android:id="@+id/tax_values"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/white"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">
+            <LinearLayout
+                android:id="@+id/layout_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_purple"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Income"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_gray"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_excemption_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Exemption"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/exemption_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_purple"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_gross_income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Gross Income"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/gross_income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_gray"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_deduction_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Deduction"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/deduction_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_purple"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_rebates_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Rebates"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/rebates_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_gray"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_total_taxable_income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Total Taxable Income"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/total_taxable_income_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_purple"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_liability_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Tax Liability"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/liability_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_summary_light_gray"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_income_after_tax_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.15"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:text="Income After Tax"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/income_after_tax_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/your_entitle_cardlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">
+
+                <LinearLayout
+                    android:id="@+id/your_entitle_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@color/tax_summary_light_gray">
+
+                    <TextView
+                        android:id="@+id/savingsTopText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your entitlement for tax savings, overall"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_xlarge"                        />
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/entitled_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:textColor="@color/dark_gray_text_colour"
+                        style="?android:textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray"/>
+
+
+                    <TextView
+                        android:id="@+id/availedTopText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your availed tax savings, thus for"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_xlarge"
+                        />
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/availed_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        style="?android:textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray"/>
+                    <TextView
+                        android:id="@+id/pendingTopText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your pending opportunities for tax savings, further"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_xlarge"/>
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/pending_value"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray_text_colour"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/see_more_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end">
+
+                        <TextView
+                            android:id="@+id/txt_show_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Show More Details"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/Purple"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/see_more_layouts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_gravity="end"
+                        android:background="@color/colorPrimary">
+
+
+                        <TextView
+                            android:id="@+id/txt_show_mores"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Show More Details"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/Purple"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v4.widget.Space
+                android:id="@+id/card_space"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="100dp" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/summary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary Text"
+                    android:layout_marginLeft="@dimen/margin_xlarge"
+                  android:padding="@dimen/margin_small"/>
+                <LinearLayout
+                    android:id="@+id/contact_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_medium"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/margin_large"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tax_summary_background">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_tax_summary_contact_us"/>
+
+                    <TextView
+                        android:id="@+id/txt_contactus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=" Call Now  "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v4.widget.Space
+                android:id="@+id/card_space1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/rating_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+
+        app:srcCompat="@drawable/ic_done_tick_tax"
+        android:visibility="visible"
+        android:layout_above="@+id/bottom_bar_layout"
+        />
+    <!-- app:srcCompat="@drawable/ic_tax_rating"-->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

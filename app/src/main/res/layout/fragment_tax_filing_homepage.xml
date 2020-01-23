@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_RelativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:text="Need of the hour..."
+            android:textSize="@dimen/text_size"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/overall_layout_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                android:background="@color/WhiteSmoke"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/already_taxfiling_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tax_card_color"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/tax_filing_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_tax_home_one"/>
+
+                    <TextView
+                        android:id="@+id/tax_filing"
+                        android:layout_below="@+id/tax_home_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:gravity="center"
+                        android:text="Tax Filing"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/tax_title"
+                        android:textAppearance="?android:textAppearanceLarge"/>
+
+                    <TextView
+                        android:id="@+id/tax_filing_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="FY 2019-20"
+                        android:textSize="@dimen/month_label_size"
+                        android:textColor="@color/tax_title"
+                        android:textAppearance="?android:textAppearanceLarge"/>
+
+                    <TextView
+                        android:id="@+id/get_your_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="italic"
+                        android:text="(Do your tax planing here)\n"
+                        android:textColor="@color/d_gray"
+                        android:textSize="@dimen/done_label_size"/>
+
+                    <TextView
+                        android:id="@+id/comming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Comming Soon*"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/reds"/>
+
+                    <LinearLayout
+                        android:id="@+id/tax_filing_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small"
+                        android:orientation="horizontal"
+
+                        android:background="@drawable/tax_summary_background">
+                        <TextView
+                            android:id="@+id/txt_proceeds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Proceed"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+</FrameLayout>
+
+
+</RelativeLayout>

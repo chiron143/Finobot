@@ -1,0 +1,484 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                card_view:cardCornerRadius="4dp"
+                android:elevation="3dp"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_gravity="center_vertical">
+
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_centerHorizontal="true"
+                        android:text="Status with Finobot"
+                        android:textSize="@dimen/text_large"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_center_image"
+                        android:layout_below="@+id/heading"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/finobot_abouts"/>
+
+                    <TextView
+                        android:id="@+id/status_heading"
+                        android:layout_below="@+id/iv_center_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:text="Already Done"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/status_sub_heading"
+                        android:layout_below="@+id/status_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:text="You have already submitted all the documents. We will get back to you after tax filing"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="normal"/>
+
+
+                    <TextView
+                        android:id="@+id/already_ssub_heading"
+                        android:layout_below="@+id/already_sub_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_large"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="normal"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_below="@+id/card_view"
+                card_view:cardCornerRadius="4dp"
+                android:elevation="3dp"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Income_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:text="Income Tax Website"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Income_sub_heading"
+                        android:layout_below="@+id/Income_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:text="For more information please log on to the following income tax link"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:id="@+id/incometax_link"
+                        android:layout_below="@+id/Income_sub_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:textColor="@color/facebook_blue_color"
+                        android:text="@string/incometax_link"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_below="@+id/card_view1"
+                card_view:cardCornerRadius="4dp"
+
+                android:elevation="3dp"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Conformation_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Confirmation"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Conformation_sub_heading"
+                        android:layout_below="@+id/Conformation_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:text="Please confirm your Activity / Status as per the communication you received from the income Tax Department "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="normal"/>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_radiobutton"
+                        android:layout_below="@+id/Conformation_sub_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:id="@+id/radioGroup1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium">
+
+                            <RadioButton
+                                android:id="@+id/optionA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_large"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:text="ITR Processing Completed Date" />
+                            <LinearLayout
+                                android:id="@+id/date_layout_OptionA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+                                <com.purplepath.purplepath.customview.CustomTextInputLayout
+                                    android:id="@+id/dateInputLayout_OptionA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                                    <com.purplepath.purplepath.customview.CalendarEditText
+                                        android:id="@+id/date_Edt_OptionA"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/margin_medium"
+                                        android:drawablePadding="@dimen/margin_xlarge"
+                                        android:hint="Date"
+                                        android:inputType="number"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/dark_gray_text_colour"
+                                        android:textColorHint="@color/app_text_color_gray" />
+                                </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                            </LinearLayout>
+                            <RadioButton
+                                android:id="@+id/optionB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_margin="@dimen/margin_large"
+                                android:text="Refund Received Date" />
+                            <LinearLayout
+                                android:id="@+id/date_layout_OptionB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:orientation="vertical">
+                                <com.purplepath.purplepath.customview.CustomTextInputLayout
+                                    android:id="@+id/dateInputLayout_OptionB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                                    <com.purplepath.purplepath.customview.CalendarEditText
+                                        android:id="@+id/date_Edt_OptionB"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/margin_medium"
+                                        android:drawablePadding="@dimen/margin_xlarge"
+                                        android:hint="Date"
+                                        android:inputType="number"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/dark_gray_text_colour"
+                                        android:textColorHint="@color/app_text_color_gray" />
+                                </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:id="@+id/optionC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_margin="@dimen/margin_large"
+                                android:text="Intimation Notice Received Date" />
+                            <LinearLayout
+                                android:id="@+id/date_layout_OptionC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_xlarge"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+                                <com.purplepath.purplepath.customview.CustomTextInputLayout
+                                    android:id="@+id/dateInputLayout_OptionC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                                    <com.purplepath.purplepath.customview.CalendarEditText
+                                        android:id="@+id/date_Edt_OptionC"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/margin_medium"
+                                        android:drawablePadding="@dimen/margin_xlarge"
+                                        android:hint="Date"
+                                        android:inputType="number"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="@color/dark_gray_text_colour"
+                                        android:textColorHint="@color/app_text_color_gray" />
+                                </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:id="@+id/optionD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                              android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 139(9)-Defective" />
+
+
+
+                            <!--sub radio-->
+                            <RadioButton
+                                android:id="@+id/one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 142(1)-Inquire Notice" />
+
+                            <RadioButton
+                                android:id="@+id/two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 143(1)-Intimation" />
+
+
+                            <RadioButton
+                                android:id="@+id/three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 143(1)(a)-Seeking Response During Assessment" />
+
+                            <RadioButton
+                                android:id="@+id/four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 143(2)-Scrutiny Assessment Notice" />
+
+                            <RadioButton
+                                android:id="@+id/five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 148-Commence Proceedings" />
+
+                            <RadioButton
+                                android:id="@+id/six"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 154-Rectification Notice" />
+
+                            <RadioButton
+                                android:id="@+id/seven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                              android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 154-Demand Notice" />
+
+
+                            <RadioButton
+                                android:id="@+id/eight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:textSize="@dimen/ampm_label_size"
+                                android:layout_marginLeft="@dimen/date_picker_header_height"
+                                android:text="Notice u/s 245-Intimation to set off demand and Refund" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/contact_layout"
+                        android:layout_below="@+id/layout_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/conform_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_medium"
+                        android:orientation="horizontal"
+                        android:background="@drawable/tax_summary_background">
+
+
+                        <TextView
+                            android:id="@+id/txt_contactus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=" Confirm  "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/rating_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_tax_rating"
+        android:visibility="visible"
+        android:layout_above="@+id/bottom_bar_layout"/>
+
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space"
+        android:layout_below="@+id/scrollView"
+       android:layout_above="@+id/rating_floating_button"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

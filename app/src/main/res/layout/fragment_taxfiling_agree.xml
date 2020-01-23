@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--<RelativeLayout-->
+    <!--android:id="@+id/layout_one"-->
+    <!--android:layout_above="@+id/card_one"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+            <!--<WebView-->
+                <!--android:id="@+id/webview_agree"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"/>-->
+<!--</RelativeLayout>-->
+
+    <ScrollView
+        android:layout_above="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WhiteSmoke"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/margin_large"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Instruction for eFiling your FY 2017-18 Income Tax Return (ITR)"
+                        android:textColor="@color/dark_gray_text_colour" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:text="Hi "
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Arun"/>
+                        <TextView
+                            android:id="@+id/comma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text=","/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Greetings."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Welcome to Finobot Income Tax Return (ITR) eFiling. Your experience will be very pleasant while you engage with us to do your ITR filing. You will be asked a series of questions, to understand your tax situation, vis-à-vis your earnings, deductions, claims, and investments. You can answer those questions by a simple mechanics of “Yes / No” types, “selections” from multiple options, and “actual” data / information. It will be elaborate, but they are essential to do the right thing, conforming to the rules and validations specified by the Income Tax Department."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Finobot is committed to protecting the privacy of our users and our privacy policy prohibits any kind misuse. The data you post on the Finobot is absolutely safe and secure. We do not sell or forward your information to any third party. To know more about that, please do refer to our privacy policy."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Finobot strictly adheres to the rules and validations specified by the Income tax Department. We request the users not to understate the income or inflate the claims, just for some unwarranted gains."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="You will appreciate that using Finobot is much easier than other options available to you. If you face any difficulty during the process, we are just a call away, please contact us."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Please proceed."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Happy ITR eFiling."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Steps to be followed, for Zero Plan:"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="1."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Read through this instruction"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="2."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Agree to the Terms of Service"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="3."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Select the eFiling Service Plan – Zero Plan that you prefer"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="4."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Upload Form 16, which forms the basis for filing your tax return"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="5."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Accept the tax returns and make declaration to proceed"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="6."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Download the XML File we send through email, and read through the filing instructions"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="7."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Login to the income tax efiling website and file your tax return"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="Steps to be followed, for Basic Plan &amp; Value Plan:"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="1."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Read through this instruction"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="2."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Agree to the Terms of Service"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="3."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Select the eFiling Service Plan that you think is right"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="4."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Provide your data, which forms the basis for filing your tax return"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="a)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="If you have Form 16, upload the same"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="b)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="If you don’t have Form 16, enter the details"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="c)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="If you have Form 16 and need to add some more claims, enter those details"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="5."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Make the payment, as appropriate"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="6."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Provide your supporting documents, which forms the proof of evidence to your claims"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="a)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text=" If you have Form 16, no document proofs are required"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="b)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="If you don’t have Form 16, all the document proofs are required"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="c)"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="If you have Form 16 and added some more claims, additional document proofs to those added claims are required"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="7."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="@string/taxfilingverification"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="8."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="@string/taxfilingapproval"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="9."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="@string/taxfilingacceptance"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="10."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="@string/taxfilingfiling"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="11."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="We will wait to hear from you on the proceedings by the Income Tax Department"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:text="12."
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="We will be on stand-by to support you with responding to any notices sent to you by the Income Tax Department"
+                            android:layout_weight="3.7"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_one"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WhiteSmoke"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_small"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/terms_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:checked="false"
+                    android:textColor="@color/dark_gray_text_colour"/>
+                <TextView
+                    android:id="@+id/txt_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree to the above points and the Terms of Service"
+                    android:padding="@dimen/margin_xlarge"
+                    android:gravity=""
+                    android:layout_gravity="center"
+                    android:textColorLink="@color/blue_signin"
+                    android:textColorHighlight="@color/dark_gray_text_colour" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_small"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tax_summary_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_small"
+                        android:text="Continue"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

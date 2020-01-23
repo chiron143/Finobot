@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_marginBottom="@dimen/mar_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:id="@+id/incomefromource"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/Currentallocation"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/Value"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_charitycon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/charactercontribution"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_weight="3"
+                            android:text="@string/charactercontribution"
+                            />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/charactercontribution_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_childcare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/charactercare"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/childcare" />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/charactercare_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/education"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/education"
+                            android:maxLines="1"
+                           />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/education_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                             />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_entrecre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/entertainmentrecreation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/entertainmentrecreation"
+                            android:maxLines="1"
+                           />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/entertainmentrecreation_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                          />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_finespenalty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/finespenalty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/finespenalty"
+                            android:maxLines="1"
+                             />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/finespenalty_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/food"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/food"
+                            android:maxLines="1" />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/food_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                         />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_gifts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/gifts"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/gifts"
+                            android:maxLines="1"
+                           />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/gifts_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_healthexp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/healthexpense"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/healthexpense"
+                            android:maxLines="1"
+                            />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/healthexpense_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                          />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_holivoca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/holidayvocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_margin="@dimen/margin_large"
+                        android:text="@string/holidayvocation"
+                        android:maxLines="1"
+                      />
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/holidayvocation_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_margin="@dimen/margin_large"
+                        android:maxLines="1"
+                        />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_purchase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/purchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/purchase"
+                            android:maxLines="1"
+                          />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/purchase_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                     />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_petcare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/petcare"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/petcare"
+                            android:maxLines="1"
+                            />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/petcare_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                           />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_shelter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/shelter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/shelter"
+                            android:maxLines="1"
+                          />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/shelter_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_skilldev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/Skilldevelopment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/Skilldevelopment"
+                            android:maxLines="1"
+                         />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/Skilldevelopment_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_tax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/tax"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/tax"
+                            android:maxLines="1"
+                           />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/tax_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_transport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/transport"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/transport"
+                            android:maxLines="1"
+                          />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/transport_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                          />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_utility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/utility"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="@string/utility"
+                            android:maxLines="1"
+                           />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/utility_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                          />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_below="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large">
+
+                        <TextView
+                            android:id="@+id/source_expanse"
+                            style="?android:textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/source_expanse1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_large"
+                            android:gravity="center"
+                            android:text="(Expense)"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/total_currencyTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/expense_fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_edit_feedback"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

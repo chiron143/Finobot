@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabFrame"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="@dimen/cardCornerRadius"
+            app:cardElevation="@dimen/cardElevation"
+            app:cardUseCompatPadding="true" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please upload your Form 16. All Form 16 consists of two Parts, Part A and Part B. The Form 16 may be issued as one PDF document or two separate PDF documents, by the issuer (i.e. employer). It is important to upload both the documents in order if you have two documents."
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text_large"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_form16"
+            android:layout_below="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="@dimen/cardCornerRadius"
+            app:cardElevation="@dimen/cardElevation"
+            app:cardUseCompatPadding="true" >
+            <LinearLayout
+                android:id="@+id/layout_form16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Form 16"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_large"
+                    android:layout_margin="@dimen/margin_large"/>
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:background="@color/border_cardview"/>
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/tax_filing_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_pdf_icon"/>
+
+                <LinearLayout
+                    android:id="@+id/tax_filing16_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    android:layout_margin="@dimen/margin_large"
+                    android:background="@drawable/tax_summary_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="    Form16     "
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/form16_samplepdf_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:textColor="@color/facebook_blue_color"
+                    android:text="@string/form16_samplepdf"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+       <!-- <android.support.v7.widget.CardView
+            android:id="@+id/card_view_nonform16"
+            android:layout_below="@+id/card_view_form16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="@dimen/cardCornerRadius"
+            app:cardElevation="@dimen/cardElevation"
+            app:cardUseCompatPadding="true" >
+            <LinearLayout
+                android:id="@+id/layout_non_form16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_non_form_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Non - Form 16"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_large"
+                    android:layout_margin="@dimen/margin_large" />
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:background="@color/border_cardview"/>
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/tax_non_form_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_non_from_icon" />
+
+                <LinearLayout
+                    android:id="@+id/tax_filing_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    android:layout_margin="@dimen/margin_large"
+                    android:background="@drawable/tax_summary_background">
+                    <TextView
+                        android:id="@+id/txt_proceeds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Fill Data for Non-Form16"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_large"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>-->
+
+
+</RelativeLayout>
+</ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/fragment_bottom_tool_bar"/>
+        </LinearLayout>
+    </RelativeLayout>

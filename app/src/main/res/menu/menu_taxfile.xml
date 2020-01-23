@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_taxfile"
+        android:title="details"
+        android:icon="@drawable/ic_undo_tax"
+        app:showAsAction="always">
+    </item>
+
+
+</menu>

@@ -1,0 +1,58 @@
+package com.purplepath.purplepath.customview;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import com.finobot.finobot.R;
+
+import java.util.List;
+
+/**
+ * Created by Bert on 25-Jul-16.
+ */
+public class CountryCodeSpinnerAdapter extends ArrayAdapter<String> {
+
+    LayoutInflater inflater;
+    List<String> objects;
+    public CountryCodeSpinnerAdapter(Context context, List<String> objects) {
+        super(context, 0, objects);
+        // TODO Auto-generated constructor stub
+        this.objects=objects;
+        inflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
+    @Override
+    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+        // TODO Auto-generated method stub
+
+        View v= getCustomView(position, convertView, parent);
+        return v;
+
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        // TODO Auto-generated method stub
+        return getCustomView(position, convertView, parent);
+    }
+    public View getCustomView(int position, View convertView, ViewGroup parent) {
+
+        View mySpinner = inflater.inflate(R.layout.country_code_text_view, parent,false);
+
+        TextView spinnerTxtView= mySpinner.findViewById(R.id.countrycodetxt);
+        spinnerTxtView.setText(objects.get(position));
+//        DisplayMetrics metrics = parent.getResources().getDisplayMetrics();
+//        float dp = 5f;
+//        float fpixels = metrics.density * dp;
+//        int pixels = (int) (fpixels + 0.5f);
+//
+//        spinnerTxtView.setHeight(pixels);
+
+        return mySpinner;
+    }
+
+}

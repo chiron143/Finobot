@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabFrame"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/left_layout_first"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:minWidth="@dimen/activity_horizontal_margin"
+            android:background="@drawable/prompt_text_corner">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/left_first_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:minWidth="@dimen/activity_horizontal_margin"
+                android:textColor="#343434"
+                android:text="Do you have Form16 to upload"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+        <LinearLayout
+            android:id="@+id/layout_right_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:background="@drawable/prompt_right_corner"
+            android:layout_margin="@dimen/margin_large">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/right_first_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:gravity="right|center"
+                android:layout_alignParentRight="true"
+                android:text="No"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#343434" />
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_upload16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_alignParentRight="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    android:orientation="horizontal"
+
+                    android:background="@drawable/tax_summary_background">
+                    <TextView
+                        android:id="@+id/txt_upload16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Upload Form 16 Click Here"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/left_layout_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/margin_large"
+            android:minWidth="@dimen/activity_horizontal_margin"
+            android:background="@drawable/prompt_text_corner">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/left_second_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:minWidth="@dimen/activity_horizontal_margin"
+                android:textColor="#343434"
+                android:text="Are you proceed with continue with non - Form16?"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <LinearLayout
+                android:id="@+id/layout_right_second_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:background="@drawable/prompt_right_corner"
+                android:layout_margin="@dimen/margin_large">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/right_second_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:gravity="right|center"
+                    android:layout_alignParentRight="true"
+                    android:text="No"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#343434" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_non_form16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+           android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_alignParentRight="true">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    android:orientation="horizontal"
+
+                    android:background="@drawable/tax_summary_background">
+                    <TextView
+                        android:id="@+id/txt_non_form16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Fill Form 16 Data"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_yes_no_bottom_bar"
+android:visibility="gone"
+        android:paddingBottom="@dimen/margin_xlarge"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/prompt_yes_no_layout"
+            ></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_yes_no_bottom_bar1"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/margin_xlarge"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/prompt_yes_no_layout1"
+            ></include>
+    </LinearLayout>
+</RelativeLayout>

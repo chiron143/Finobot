@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_product_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WhiteSmoke"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="@dimen/margin_large" >
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/txt_product_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.15"
+                android:layout_margin="@dimen/margin_small"
+                android:text="80d"
+                android:maxLines="2"
+                />
+
+            <TextView
+                android:id="@+id/product_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:text="0"
+                android:layout_margin="@dimen/margin_small"
+                android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

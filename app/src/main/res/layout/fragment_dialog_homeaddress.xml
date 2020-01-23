@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.LoginandSignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/homeAddressInputLayout"
+            android:layout_width="match_parent"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+            <EditText
+                android:id="@+id/homeAddress_Edt"
+                style="@style/CustomStyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_address"
+                android:padding="@dimen/margin_xlarge"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/cityInputLayout"
+            android:layout_width="match_parent"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+            <EditText
+                android:id="@+id/city_Edt"
+                style="@style/CustomStyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_address_city"
+                android:padding="@dimen/margin_xlarge"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/stateInputLayout"
+            android:layout_width="match_parent"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+            <EditText
+                android:id="@+id/state_Edt"
+                style="@style/CustomStyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_address_state"
+                android:padding="@dimen/margin_xlarge"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/countryInputLayout"
+            android:layout_width="match_parent"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+            <EditText
+                android:id="@+id/country_Edt"
+                style="@style/CustomStyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_address_country"
+                android:padding="@dimen/margin_xlarge"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/zipcodeInputLayout"
+            android:layout_width="match_parent"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+            <EditText
+                android:id="@+id/zipcode_Edt"
+                style="@style/CustomStyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_zip_code"
+                android:padding="@dimen/margin_xlarge"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/personal_address_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_next_btn"
+        android:visibility="visible" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.finobot.finobot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.STORAGE" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <permission
+        android:name="com.finobot.finobot.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission
+        android:name="com.finobot.finobot.permission.C2D_MESSAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.SET_DEBUG_APP"
+        android:required="false" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+     >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAMaKMUkZ_IjjWJ9MBh9SGYyzr6FyRwYco" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!--android:name=".activity.SplashScreenActivity"-->
+        <activity
+            android:name=".activity.SplashScreenActivity"
+
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <!--<activity android:name="activity.BarChartActivityMultiDataset"></activity>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activity.LoginandSignUpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!--   <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+               android:value=".activity.SplashScreenActivity" />-->
+        <activity
+            android:name=".activity.HomePageActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.finobot.finobot" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Firebase Notifications -->
+        <service android:name="com.purplepath.purplepath.firebaseFcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.purplepath.purplepath.firebaseFcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+        <!--<service-->
+        <!--android:name="com.purplepath.purplepath.gcm.GcmMessageHandler"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+        <!--android:name="com.purplepath.purplepath.gcm.MyInstanceIDListenerService"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.gms.iid.InstanceID" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+        <!--android:name="com.purplepath.purplepath.gcm.GCMRegistrationIntentService"-->
+        <!--android:exported="false" />-->
+
+        <!-- <activity -->
+        <!-- android:name=".activity.GraphicalActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <!-- <activity android:name=".activity.CalendarDemoActivity" />-->
+        <!-- <activity
+             android:name=".activity.SettingsActivity"
+             android:label="Settings"
+             android:theme="@style/AppTheme" />-->
+        <!--    <activity
+                android:name=".activity.NotificationActivity"
+                android:label="@string/Notifications"
+                android:theme="@style/AppTheme" />-->
+        <!--<activity-->
+        <!--android:name="com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.ui.DesiproActivity"-->
+        <!--android:label="@string/title_activity_desipro"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AppTheme" />-->
+        <!--<activity-->
+        <!--android:name="com.purplepath.purplepath.desiproAllModules.depositcomparison.DepositComparisonActivity"-->
+        <!--android:label="@string/title_activity_desipro"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AppTheme">-->
+
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!--   </activity>-->
+        <activity
+            android:name="com.calculator.CalculatorAct"
+            android:screenOrientation="portrait" />
+
+
+        <!--<activity-->
+        <!--android:name="com.purplepath.purplepath.desiproAllModules.amortizationSchedule.AmortizationScheduleActivity"-->
+        <!--android:label="@string/title_activity_desipro"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/AppTheme" />-->
+        <!--<activity-->
+        <!--android:name="com.purplepath.purplepath.desiproAllModules.loanComparison.LoanComparisonActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.purplepath.purplepath.document.ui.FileChooserActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- <activity android:name=".document.ui.DocumentFragmentActivity"/> -->
+
+        <!--<activity-->
+        <!--android:name="com.purplepath.purplepath.desiproAllModules.timeValueOfMoney.TimeValueOfMoneyActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <receiver
+            android:name="com.purplepath.purplepath.schedule.ScheduleBroadCastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.HouseBuyVsRentActivity"
+            android:label="@string/title_activity_house_buy_vs_rent"
+            android:theme="@style/AppTheme"></activity>
+        <!--     <activity android:name="com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui.CarBuyVsLeaseActivity"
+                 android:label="@string/title_activity_house_buy_vs_rent"/>-->
+    </application>
+
+</manifest>

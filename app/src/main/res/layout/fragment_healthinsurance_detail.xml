@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_marginBottom="@dimen/mar_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="7"
+                        >
+
+                        <TextView
+                            android:id="@+id/individualhealthplan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:text="Individual Health Plan"
+                            android:layout_margin="@dimen/margin_small"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/individualage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            android:layout_weight="0.8"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:text="Age"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/individualcover"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Cover Availed"
+                            style="?android:textAppearanceMedium"
+                            android:maxLines="1"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_father"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/father"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            android:layout_weight="4"
+                            android:text="Father"
+                            />
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/fatherage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="0.8"
+                                android:text="22"
+                                />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/fathecover"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:maxLines="1"
+                            />
+                            </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_mother"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/mother"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Mother" />
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/motherage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            android:layout_weight="0.8"
+                            android:text="22"
+                            />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/mother1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:maxLines="1" />
+                            </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_employee_providedfund"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/employee_provided_fund"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Employee Provided fund"
+                            android:maxLines="1"
+                            />
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/emp_prov_age"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="0.8"
+                                android:text="22"
+                                />
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/employee_provided_fund1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:maxLines="1"
+                            />
+                            </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:visibility="invisible"
+                            android:text="@string/from_current_insurance"
+                            android:maxLines="1"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_Total_individualcover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/total_individual_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.8"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Total"
+                            android:maxLines="1"
+                            />
+
+                        <com.purplepath.purplepath.customview.CurrencyTextView
+                            android:id="@+id/individual_Overall_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:maxLines="1"/>
+                            </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:visibility="invisible"
+                            android:text="@string/from_current_insurance"
+                            android:maxLines="1"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_below="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="7"
+                        >
+
+                        <TextView
+                            android:id="@+id/familyhealthplan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:text="Family Floter Plan"
+                            android:layout_margin="@dimen/margin_small"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/familyage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            android:layout_weight="0.8"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:text="Age"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/familycover"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.2"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Cover Availed"
+                            style="?android:textAppearanceMedium"
+                            android:maxLines="1"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_self"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/self"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="4"
+                                android:text="Self"
+                                />
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/selfage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="0.8"
+                                android:text="22"
+                                />
+
+                            <com.purplepath.purplepath.customview.CurrencyTextView
+                                android:id="@+id/selfcover"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.2"
+                                android:layout_margin="@dimen/margin_small"
+                                android:maxLines="1"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_spouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/spouse"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:layout_margin="@dimen/margin_small"
+                                android:text="Spouse" />
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/spouseage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="0.8"
+                                android:text="22"
+                                />
+
+                            <com.purplepath.purplepath.customview.CurrencyTextView
+                                android:id="@+id/spousecover"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.2"
+                                android:layout_margin="@dimen/margin_small"
+                                android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/child"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:layout_margin="@dimen/margin_small"
+                                android:text="Child"
+                                android:maxLines="1"
+                                />
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/childage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_small"
+                                android:layout_weight="0.8"
+                                android:text="22"
+                                />
+                            <com.purplepath.purplepath.customview.CurrencyTextView
+                                android:id="@+id/childcover"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.2"
+                                android:layout_margin="@dimen/margin_small"
+                                android:maxLines="1"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:visibility="invisible"
+                            android:text="@string/from_current_insurance"
+                            android:maxLines="1"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_Total_familcover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/WhiteSmoke"
+                            android:orientation="horizontal"
+                            android:layout_weight="2"
+                            android:weightSum="7"
+                            >
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/total_family_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.8"
+                                android:layout_margin="@dimen/margin_small"
+                                android:text="Total"
+                                android:maxLines="1"
+                                />
+
+                            <com.purplepath.purplepath.customview.CurrencyTextView
+                                android:id="@+id/family_Overall_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.2"
+                                android:layout_margin="@dimen/margin_small"
+                                android:maxLines="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:visibility="invisible"
+                            android:text="@string/from_current_insurance"
+                            android:maxLines="1"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2sp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@color/WhiteSmoke"
+            android:elevation="@dimen/margin_small"
+            app:cardElevation="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="You have to contribute"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5sp"
+                        android:gravity="center"
+                        android:text="@string/Rs"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/text_contribution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3sp"
+                        android:gravity="center"
+                        android:text="900000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="to accumulate"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5sp"
+                        android:gravity="center"
+                        android:text="@string/Rs"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/text_accumulation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3sp"
+                        android:gravity="center"
+                        android:text="1900000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/ampm_text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "300581087574",
+    "firebase_url": "https://fir-finobot.firebaseio.com",
+    "project_id": "firebase-finobot",
+    "storage_bucket": "firebase-finobot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300581087574:android:e3b4ff6ec377de33",
+        "android_client_info": {
+          "package_name": "com.finobot.finobot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300581087574-um9svuqb8d7tri5am8lod2d2eg9pnves.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finobot.finobot",
+            "certificate_hash": "544f89f77543a163fb7a743c5364fafcb376e9f1"
+          }
+        },
+        {
+          "client_id": "300581087574-7macorl4sv5n0rc3a0qsjkpcr3sqrtb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finobot.finobot",
+            "certificate_hash": "3a3f9233202952e92596deef66018e5307594586"
+          }
+        },
+        {
+          "client_id": "300581087574-bbipkc5mfu9uti2kcqmttscsncq8lfbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finobot.finobot",
+            "certificate_hash": "df5a3703e3eb449d84e549d4923e86093ddb2d10"
+          }
+        },
+        {
+          "client_id": "300581087574-l8ej7ju52s7lko7hq7sg5ndnccfsj4l1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finobot.finobot",
+            "certificate_hash": "c9857708f8b540b7b09209a8d307a0569338ce67"
+          }
+        },
+        {
+          "client_id": "300581087574-4jupgp4fhc9qs7dbtertq8me00n4va4v.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "300581087574-vhp420a3er3pr3227s1fpecjvg1t4c5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finobot.finobot",
+            "certificate_hash": "adf39ba931c7c2309938d5ca80891acc826319ab"
+          }
+        },
+        {
+          "client_id": "300581087574-12dek9shp8a3s1oq4jot1bkk8fmds96t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD905ERM9uAOiKpI09FpprdNETFRsHlnyM"
+        },
+        {
+          "current_key": "AIzaSyC_-re-Ypn34cVTcU-GsdPWLl9C9wsIUzk"
+        },
+        {
+          "current_key": "AIzaSyBXpxNfJZxL_E-jIsR4js49EDViS6l82bY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300581087574-4jupgp4fhc9qs7dbtertq8me00n4va4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

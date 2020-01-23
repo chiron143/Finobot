@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@color/WhiteSmoke"
+        android:elevation="@dimen/margin_large"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/WhiteSmoke"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Section  "
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                        <TextView
+                            android:id="@+id/section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/month_label_size"
+                            android:text=""
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                        android:id="@+id/entitled_valueS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Entitled  "
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                        <TextView
+                            android:id="@+id/entitled_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/month_label_size"
+                            android:text=""
+                            android:textColor="@color/dark_gray_text_colour" />
+</LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:layout_gravity="end"
+                android:background="@color/DarkGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/WhiteSmoke"
+                android:orientation="vertical">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/txt_income_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_xlarge"
+                    android:textSize="@dimen/month_label_size"
+                    android:text="@string/instrument" />
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/instrument_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:text="Product Fund\nLifeInsurance\nTax Savings"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/DarkGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/WhiteSmoke"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/availed_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="Availed : "
+                    android:textSize="@dimen/month_label_size"
+                    android:textColor="@color/dark_gray_text_colour" />
+
+                <TextView
+                    android:id="@+id/pending_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="Pending : "
+                    android:textSize="@dimen/month_label_size"
+                    android:textColor="@color/dark_gray_text_colour" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

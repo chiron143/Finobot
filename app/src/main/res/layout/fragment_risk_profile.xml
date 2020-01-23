@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_xlarge"
+        android:background="@color/WhiteSmoke"
+        android:elevation="@dimen/margin_small">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="@dimen/margin_vvery_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="@dimen/margin_vvery_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_large"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Capacity"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="@dimen/margin_vvery_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_large"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Appetite"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_below="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Very Conservative" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:padding="@dimen/margin_xlarge"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_very_conservative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_very_conservative_Appetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Conservative"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_conservative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_very_conservative_appetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Balanced"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_balanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_balanced_appetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Aggressive"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_aggresive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_Aggresive_appetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Very Aggressive"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_very_aggresive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_vvery_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_very_aggresive_appetite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_circle_grey_big" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

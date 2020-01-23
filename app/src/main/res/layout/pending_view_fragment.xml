@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/category_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:checkedButton="@+id/insurance_rb"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/insurance_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/layout_bg"
+            android:text="Insurance"/>
+        <RadioButton
+            android:id="@+id/liability_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liability"/>
+
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/noItemInsurance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="No items to show"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/insurance_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/noItemLiability"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No items to show"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/liablilty_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentViewId"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:padding="@dimen/margin_large"
+            android:elevation="@dimen/margin_small"
+            android:layout_margin="@dimen/margin_large"
+            android:background="@color/item_color_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/WhiteSmoke"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:weightSum="7"
+                    >
+                    <TextView
+                        android:id="@+id/category_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="2"
+                        android:textColor="@color/color_blue"
+                        android:text="Bike insurance"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/amount_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1.5"
+                        android:text="1224"
+                        />
+
+
+
+
+                    <TextView
+                        android:id="@+id/paid_date_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1.5"
+                        android:textColor="#1f33f2"
+                        android:text="@string/due_date"
+                        />
+
+                    <TextView
+                        android:id="@+id/due_date_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="2"
+                        android:text="22/Nov/2016"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="5">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        android:background="@color/gray"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/WhiteSmoke"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_weight="2"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/category_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:text="Bike"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/amount_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/notification_date_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:text="01/Feb/2016"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/paid_date_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:text="01/Feb/2016"
+                        />
+
+                    <TextView
+                        android:id="@+id/due_date_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:text="01/Feb/2016"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/WhiteSmoke"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="0.5"
+                        android:visibility="invisible"
+                        android:text="Bike"
+                        />
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:text="3000"
+                        />
+                    <TextView
+                        android:id="@+id/notification_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:text="01/Feb/2016"
+                        />
+                    <ImageView
+                        android:id="@+id/paid_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_already_paid_icon"
+                        android:text="01/Feb/2016"
+                        />
+                    <TextView
+                        android:id="@+id/calenderimage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:text="Already Paid"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

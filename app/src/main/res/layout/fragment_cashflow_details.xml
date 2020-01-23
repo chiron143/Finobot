@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/CheckBox_suplus_deficit"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Surplus and Deficit"
+            android:textStyle="normal" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_Overallcashflow"
+            android:layout_toRightOf="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Overall Cash Flow"
+            android:textStyle="normal" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true">
+
+        </View>
+
+        <CheckBox
+            android:id="@+id/CheckBox_taxflow"
+            android:layout_below="@+id/CheckBox_Overallcashflow"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Tax Cash Flow Chart"
+            android:textStyle="normal" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_IncomeExpenseCashFlow"
+            android:layout_below="@+id/CheckBox_Overallcashflow"
+            android:layout_toRightOf="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Income Expense Cash Flow"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/empty_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No data to retrieved"
+        android:visibility="gone"
+        android:textColor="@color/d_gray"
+        android:textSize="@dimen/month_label_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+
+
+        <WebView
+            android:id="@+id/webViewDefli_surplus"
+            android:layout_below="@+id/linearLayout_checkbox"
+            android:layout_above="@+id/bottom_bar_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteSmoke">
+        </WebView>
+
+
+            <WebView
+                android:id="@+id/webViewInOutCashflow"
+                android:layout_below="@+id/linearLayout_checkbox"
+                android:layout_above="@+id/bottom_bar_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/WhiteSmoke">
+            </WebView>
+
+
+
+        <WebView
+            android:id="@+id/webViewTax"
+            android:layout_below="@+id/linearLayout_checkbox"
+            android:layout_above="@+id/bottom_bar_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteSmoke">
+        </WebView>
+
+
+
+        <WebView
+            android:id="@+id/webViewIncomeExpense"
+            android:layout_below="@+id/linearLayout_checkbox"
+            android:layout_above="@+id/bottom_bar_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteSmoke">
+        </WebView>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emailloginrelativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview_forgotPwd"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/signup_toplinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hidden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/forgot_pwd"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/margin_medium"
+                    >
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/forgotAuthTitleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:visibility="invisible"
+                        android:text="@string/forgot_pwd"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/forgotAuthCodeViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:layout_below="@+id/forgotAuthTitleId"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+                        <EditText
+                            android:id="@+id/forgotAuthCodeId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="@string/forgot_pwd_auth_desc"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/forgotChooseNewPwddescId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/forgotAuthCodeViewId"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_xxlarge"
+                        android:text="@string/forgot_pwd_choose_new_desc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        />
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/forgotChooseNewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_below="@+id/forgotChooseNewPwddescId"
+                        app:passwordToggleEnabled="true"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                        <EditText
+                            android:id="@+id/forgotNewPwdID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            app:passwordToggleEnabled="true"
+                            android:hint="@string/hint_forgot_new_pwd"
+                            android:inputType="textPassword"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/dark_gray_text_colour"  />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/forgotReTypePwdViewID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_below="@+id/forgotChooseNewId"
+                        app:passwordToggleEnabled="true"
+                        android:layout_marginBottom="@dimen/margin_xxlarge"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                        <EditText
+                            android:id="@+id/forgotReTypePwdID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/margin_large"
+                            android:layout_marginRight="@dimen/margin_large"
+                            android:hint="@string/hint_forgot_re_type_pwd"
+                            app:passwordToggleEnabled="true"
+                            android:inputType="textPassword"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/loginForgetPwdID"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_toplinearlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/email_forget_pwd"
+                android:textColor="@color/DarkBlue" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/scrollview_forgotPwd"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/selected_date_year_size"
+        android:layout_marginRight="@dimen/selected_date_year_size"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/forgotAuthContinueBtnId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/text_forgot_save"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_page_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/ratioTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Savings To Income Ratio"
+                        android:textColor="@color/theme_purple"
+                        android:textStyle="bold"
+                        android:textAppearance="@android:style/TextAppearance.Large"
+                        android:layout_margin="@dimen/margin_large"
+                        />
+                    <com.github.lzyzsd.circleprogress.DonutProgress
+
+                        android:id="@+id/donut_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:donut_progress="30"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_root"
+                android:layout_below="@+id/home_page_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/today_cal_title_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/details_image_logo"
+                            android:layout_marginTop="@dimen/margin_xlarge"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:textColor="@android:color/background_dark"
+                            android:text="Savings to Income Ratio"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_separator_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/AntiqueWhite" />
+
+                    <TextView
+                        android:id="@+id/desc_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:layout_above="@+id/more_info_id"
+                        android:textStyle="normal"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:text="Savings to Income ratio will give you a good idea if you are saving enough to reach your retirement goal. "/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_root1"
+                android:layout_below="@+id/card_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/desc_id1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:layout_above="@+id/more_info_id"
+                        android:textStyle="normal"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:text="The ratio, according to standard wisdom, increases with age. For a couple aged 40, it should be around 1.5 or higher. At 45 years, the ratio should be around 3, and at 50, it should be 4.5." />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+
+        android:id="@+id/bottom_bar_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+</RelativeLayout>

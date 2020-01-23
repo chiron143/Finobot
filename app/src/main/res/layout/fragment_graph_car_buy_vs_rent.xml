@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.purplepath.purplepath.desiproAllModules.amortizationSchedule.AmortizationGraph">
+
+    <TextView
+        android:id="@+id/noChartData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Chart to display"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:text="Buy Vs Rent"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@drawable/rectangle_border_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_xlarge">
+
+                <com.github.mikephil.charting.charts2.LineChart
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/legendLayout"
+                android:layout_margin="@dimen/margin_xxlarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

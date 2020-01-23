@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.purplepath.purplepath.taxanalysis.TaxPlanSummary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/your_entitle_cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@color/WhiteSmoke"
+            android:elevation="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/your_entitle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@color/WhiteSmoke">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/savingsTopText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Your Entitlement for Tax Savings"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    style="?android:textAppearanceMedium"
+                    />
+
+                <com.purplepath.purplepath.customview.CurrencyTextView
+                    android:id="@+id/entitled_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    style="?android:textAppearanceLarge"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tax_savingavalied_cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@color/WhiteSmoke"
+            android:elevation="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/tax_savingavalied_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/WhiteSmoke">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/availedTopText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tax Savings Availed"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    style="?android:textAppearanceMedium"
+                    />
+
+                <com.purplepath.purplepath.customview.CurrencyTextView
+                    android:id="@+id/availed_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    style="?android:textAppearanceLarge"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/youhava_pendingamount_cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@color/WhiteSmoke"
+            android:elevation="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/youhava_pendingamount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/WhiteSmoke">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/pendingTopText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="You have un-availed pending amount"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    style="?android:textAppearanceMedium"
+                    />
+
+                <com.purplepath.purplepath.customview.CurrencyTextView
+                    android:id="@+id/pending_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    style="?android:textAppearanceLarge"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/see_more_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/margin_medium"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@drawable/tax_summary_background">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_summary_details_icon"/>
+
+                <TextView
+                    android:id="@+id/txt_show_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" Click to Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/summary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summary Text"
+                android:layout_margin="@dimen/margin_large"/>
+
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:padding="@dimen/margin_medium"
+                android:layout_margin="@dimen/margin_large"
+                android:orientation="horizontal"
+                android:background="@drawable/tax_summary_background">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_summary_contact_us"/>
+
+                <TextView
+                    android:id="@+id/txt_contactus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" Call Now            "
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_tax_summary_arrow"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+          </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+ <TextView
+     android:id="@+id/empty_text"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="No data available"
+     android:textColor="@color/d_gray"
+     android:textSize="@dimen/month_label_size"
+     android:visibility="gone"
+     android:layout_centerInParent="true"
+     android:gravity="center"/>
+
+   <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottomViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parentViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/margin_large">
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomViewId"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+     <LinearLayout
+         android:id="@+id/layout_character_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="5"
+         android:visibility="gone"
+         android:orientation="horizontal">
+
+     <com.purplepath.purplepath.customview.CustomTextInputLayout
+         android:id="@+id/Character_InputLayout"
+         android:layout_width="0dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/margin_medium"
+         android:layout_weight="5"
+         app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+      <com.purplepath.purplepath.customview.CharacterEditText
+          android:id="@+id/character_edittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_medium"
+          android:layout_marginTop="@dimen/margin_medium"
+          android:hint=""
+          android:maxLines="1"
+          android:inputType="text"
+          android:windowSoftInputMode="stateVisible|adjustResize"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/dark_gray_text_colour"
+          android:textColorHint="@color/app_text_color_gray" />
+     </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/character_edittext_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:scaleType="fitXY"
+          app:fab_size="mini"
+          android:layout_margin="@dimen/margin_large"
+          app:srcCompat="@drawable/ic_send_icon"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/layout_percentage_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="5"
+         android:visibility="gone"
+         android:orientation="horizontal">
+
+      <com.purplepath.purplepath.customview.CustomTextInputLayout
+          android:id="@+id/percentage_InputLayout"
+          android:layout_width="0dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin_medium"
+          android:layout_weight="5"
+          app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+       <com.purplepath.purplepath.customview.PercentageEditText
+           android:id="@+id/percentage_edittext"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/margin_medium"
+           android:layout_marginTop="@dimen/margin_medium"
+           android:hint=""
+           android:maxLines="1"
+           android:windowSoftInputMode="stateVisible|adjustResize"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:textColor="@color/dark_gray_text_colour"
+           android:textColorHint="@color/app_text_color_gray" />
+      </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/percentage_edittext_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:scaleType="fitXY"
+          app:fab_size="mini"
+          android:background="@color/Purple"
+          android:layout_margin="@dimen/margin_large"
+          app:srcCompat="@drawable/ic_send_icon"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/layout_number_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="5"
+         android:visibility="gone"
+         android:orientation="horizontal">
+
+      <com.purplepath.purplepath.customview.CustomTextInputLayout
+          android:id="@+id/number_InputLayout"
+          android:layout_width="0dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/margin_medium"
+          android:layout_weight="5"
+          app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+       <com.purplepath.purplepath.customview.NumberEditText
+           android:id="@+id/number_edittext"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/margin_medium"
+           android:layout_marginTop="@dimen/margin_medium"
+           android:hint=""
+           android:maxLines="1"
+           android:windowSoftInputMode="stateVisible|adjustResize"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:textColor="@color/dark_gray_text_colour"
+           android:textColorHint="@color/app_text_color_gray" />
+      </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/number_edittext_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:scaleType="fitXY"
+          app:fab_size="mini"
+          android:layout_gravity="center"
+          android:background="@color/Purple"
+          android:layout_margin="@dimen/margin_large"
+          app:srcCompat="@drawable/ic_send_icon"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/layout_currencydefault_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="5"
+         android:visibility="gone"
+         android:orientation="horizontal">
+
+   <com.purplepath.purplepath.customview.CurrencyGhostView
+           android:id="@+id/currencydefault_edittext"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/margin_medium"
+           android:layout_marginTop="@dimen/margin_medium"
+           android:hint=""
+           android:maxLines="1"
+           android:layout_weight="5"
+           android:windowSoftInputMode="stateVisible|adjustResize"
+           android:textColor="@color/dark_gray_text_colour"
+           android:textColorHint="@color/app_text_color_gray" />
+
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/currencydefault_edittext_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.4"
+          android:layout_gravity="center"
+          android:scaleType="fitXY"
+          app:fab_size="mini"
+          android:background="@color/Purple"
+          android:layout_margin="@dimen/margin_large"
+          app:srcCompat="@drawable/ic_send_icon"/>
+     </LinearLayout>
+
+
+
+     <LinearLayout
+         android:id="@+id/layout_yes_no_bottom_bar"
+         android:visibility="gone"
+         android:paddingBottom="@dimen/margin_xlarge"
+         android:paddingLeft="@dimen/margin_xlarge"
+         android:paddingRight="@dimen/margin_xlarge"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true">
+      <include
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          layout="@layout/prompt_yes_no_layout"
+          />
+     </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

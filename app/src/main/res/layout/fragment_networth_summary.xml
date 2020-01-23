@@ -1,0 +1,312 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.purplepath.purplepath.networthanalysis.NetworthDetailsFragment">
+
+
+<!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_view_heights"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteSmoke"
+
+                    android:orientation="vertical">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/netWorthDateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="As on today My Networth"
+                        android:layout_margin="@dimen/margin_large"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"  />
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/netWorthValueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        style="?android:textAppearanceLarge"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_view_height"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@color/WhiteSmoke"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    >
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/assetText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="As on today My Networth"
+                        android:layout_margin="@dimen/margin_large"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/asssetValueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        style="?android:textAppearanceLarge"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_view_height"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    >
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/liabilityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="As on today My Networth"
+                        android:layout_margin="@dimen/margin_large"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"/>
+
+                    <com.purplepath.purplepath.customview.CurrencyTextView
+                        android:id="@+id/liabilityValueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        style="?android:textAppearanceLarge"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selected_calendar_layout_height"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/WhiteSmoke"
+                    android:orientation="vertical">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        style="?android:textAppearanceMedium"
+                        android:text="@string/iopted"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/primaryResidence"
+                                android:layout_width="wrap_content"
+                                android:checked="true"
+                                android:visibility="invisible"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/primaryResidence"
+                                android:layout_margin="@dimen/margin_large"
+                                android:textStyle="normal"                                android:text="\u2022 Primary Residence" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/houseHoldAssets"
+                                android:layout_width="wrap_content"
+                                android:checked="true"
+                                android:visibility="invisible"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_large"
+                                android:textStyle="normal"                                android:layout_toRightOf="@+id/houseHoldAssets"
+                                android:text="\u2022 Household Assets" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/cashInHand"
+                                android:layout_width="wrap_content"
+                                android:checked="true"
+                                android:visibility="invisible"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_large"
+                                android:textStyle="normal"
+                                android:layout_toRightOf="@+id/cashInHand"
+                                android:text="\u2022 Cash In Hand" />
+                        </RelativeLayout>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentRight="true"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#7a0098"
+        fab:menu_colorPressed="#7a0098"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#80000000"
+        fab:menu_labels_colorPressed="#80000000"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_assert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_label="Assets"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+        <!--fab:menu_icon="@drawable/ic_assetsfloat_icon"-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_liability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_label="Liability"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+        <!-- fab:menu_icon="@drawable/ic_liabilityfloat_icon"-->
+    </com.github.clans.fab.FloatingActionMenu>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

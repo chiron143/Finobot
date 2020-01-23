@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_assumptions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/equity_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_equity"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/equity_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_equity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/equity"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/mfPopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_mf"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/mfPopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_mf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/mf_schemes"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/bonds_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_bonds"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/bonds_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_bonds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/bonds"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/liquidmf_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_liquid_mf"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/liquidmf_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_liquid_mf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/liquid_mf"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/goldPopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_gold"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/goldPopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/gold"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/realestate_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_real_estate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/realestate_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_real_estate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/real_estate"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/bank_postoffice_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_Bank_Post_Office"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/bank_postoffice_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_Bank_Post_Office"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/Bank_Post_Office"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ppfPopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_ppf"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/ppfPopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_ppf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/ppf"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/inflation_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_Inflation"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/inflation_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_Inflation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/Inflation"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/Riskfree_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_RiskFreeInstruments"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/Riskfree_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_RiskFreeInstruments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/RiskFreeInstruments"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/it_effective_PopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_IncomeTaxRateEffective"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/it_effective_PopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_IncomeTaxRateEffective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/IncomeTaxRateEffective"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/it_marginalPopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_IncomeTaxRateMarginal"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/it_marginalPopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_IncomeTaxRateMarginal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/IncomeTaxRateMarginal"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/servicePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_ServiceTax"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/servicePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_ServiceTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/ServiceTax"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/incomePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_IncomeRate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/incomePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_IncomeRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/IncomeRate"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/expensePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_ExpenseRate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/expensePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_ExpenseRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/ExpenseRate"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/assetratePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_AssetRate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/assetratePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_AssetRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/AssetRate"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/liabratePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_LiabRate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/liabratePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_LiabRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/LiabRate"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/goalratePopView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_pop_up"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/il_GoalRate"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/goalratePopView"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/et_GoalRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/GoalRate"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

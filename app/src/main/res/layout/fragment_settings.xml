@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_xlarge">
+        <RadioGroup
+            android:id="@+id/optionsRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButton">
+
+            <RadioButton
+                android:text="Default Option"
+                android:textSize="@dimen/styledtil_edit_text_floating_label_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/defaultOptionRadioButton"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Suggested Option"
+                android:textSize="@dimen/styledtil_edit_text_floating_label_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suggestedOptionRadioButton"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Other Option"
+                android:textSize="@dimen/styledtil_edit_text_floating_label_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherOptionRadioButton"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/signup_border_margin"
+        android:background="@android:color/darker_gray">
+        </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_xlarge">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_icon"
+            app:srcCompat="@drawable/ic_alarm"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/personal_details_gender_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:text="Play Alarm"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RadioGroup
+            android:id="@+id/alarm_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:orientation="horizontal"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:checkedButton="@+id/alarm_on_RadioBtn"
+           >
+
+            <RadioButton
+                android:id="@+id/alarm_on_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/switch_no"
+                android:textColor="@color/gray"
+                android:text="@string/on"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/alarm_off_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/swithc_yes"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+
+                android:text="@string/off"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:background="@android:color/darker_gray">
+        </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_xlarge">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_vibration_icon"
+            app:srcCompat="@drawable/ic_vibration_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/tv_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/iv_vibration_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:text="Play Vibration"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RadioGroup
+            android:id="@+id/vibration_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:background="@drawable/switch_border"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/alarm_on_RadioBtn"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            >
+
+            <RadioButton
+                android:id="@+id/vibration_on_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/switch_no"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/on"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/vibration_off_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/swithc_yes"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/off"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:background="@android:color/darker_gray">
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_xlarge">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_notification_icon"
+            app:srcCompat="@drawable/ic_mute_notifcation_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/iv_notification_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:text="Mute Notifications "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RadioGroup
+            android:id="@+id/notification_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:background="@drawable/switch_border"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/alarm_on_RadioBtn"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            >
+
+            <RadioButton
+                android:id="@+id/notification_on_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/switch_no"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/on"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/notification_off_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/swithc_yes"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/off"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:background="@android:color/darker_gray">
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_xlarge">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_date_format_icon"
+            app:srcCompat="@drawable/ic_date_format_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/tv_dateformat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/iv_date_format_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:text="Date format"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RadioGroup
+            android:id="@+id/dateformat_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:background="@drawable/switch_border"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/alarm_on_RadioBtn"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            >
+
+            <RadioButton
+                android:id="@+id/dateformat_on_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/switch_no"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/on"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/dateformat_off_RadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/swithc_yes"
+                android:textColor="@color/gray"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/off"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:background="@android:color/darker_gray">
+    </View>
+
+</LinearLayout>

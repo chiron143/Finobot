@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/yearViewTxtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/frameLayout"
+            android:layout_toLeftOf="@+id/frameLayout"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:layout_centerInParent="true"
+            android:gravity="left|center"
+            android:text="2017"/>
+
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:scaleY="100"
+            android:id="@+id/frameLayout"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/longLineId"
+                android:layout_width="4dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:src="@drawable/view_navigation_straight_line"
+               android:scaleY="100"
+                android:visibility="gone"
+
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_gravity="center"
+                android:minHeight="50dp"
+                android:layout_height="match_parent"
+                android:background="#C9C9C9"
+                android:visibility="visible"
+                android:layout_centerInParent="true"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/LineGap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_1"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                />
+            <TextView
+                android:id="@+id/userAgeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="@dimen/margin_xlarge"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+<TextView
+    android:id="@+id/ageViewTxtId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/LineGap"
+    android:layout_margin="@dimen/margin_xlarge"
+    android:layout_centerInParent="true"
+    android:text="asdsl"/>
+
+    </RelativeLayout>

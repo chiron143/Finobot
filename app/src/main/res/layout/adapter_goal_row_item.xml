@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:id="@+id/goal_row_topic_layout"
+    android:layout_toLeftOf="@+id/goal_row_edit_layout"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:layout_marginRight="@dimen/margin_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/goal_name_rowitem"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/margin_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:background="@drawable/edt_txt_bg_rectangle"
+        />
+
+    <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+        android:id="@+id/goal_type_rowitem"
+        android:layout_weight="1.3"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/margin_medium"
+        android:layout_width="0dp"
+        android:focusable="false"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/edt_txt_bg_rectangle"
+        />
+
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/goal_year_rowitem"
+        android:layout_weight="0.7"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/margin_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_text_color_gray"
+        android:textStyle="bold"
+        android:background="@drawable/edt_txt_bg_rectangle" />
+
+</LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/goal_row_edit_layout"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/goal_edit_rowitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_pop_up"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/goal_delete_rowitem"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_delet_icon"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

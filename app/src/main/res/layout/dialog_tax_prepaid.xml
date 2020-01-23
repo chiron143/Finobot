@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_back_default_icon"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/margin_xlarge"
+            android:scaleX="0.85"
+            android:scaleY="0.85"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/dialogTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_advance_tax_paid_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_advance_tax_paid"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_self_assessment_tax_paid_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:hint="total_self_assessment_tax_paid"
+                        android:inputType="numberDecimal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColorHint="@color/app_text_color_gray" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_tds_deducted_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_tds_deducted"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_tcs_deducted_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_tcs_deducted"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/mat_credit_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="mat_credit"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/amt_credit_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="amt_credit"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/note_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint="Notes"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="invisible"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_tax_prepaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_done_menu" />
+
+
+
+   <!-- <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>-->
+</RelativeLayout>

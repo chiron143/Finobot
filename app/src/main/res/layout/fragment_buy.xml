@@ -1,0 +1,864 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.BuyFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:padding="@dimen/margin_xlarge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/propertyPrice_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Initial"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/propertyPrice_calculatorImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Status"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <Spinner
+                android:id="@+id/status_spnr"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/yearsToPossesion_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:visibility="gone"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.NumberEditText
+                    android:id="@+id/yearsToPossesion_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Years to Possesion"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:visibility="gone"
+                android:id="@+id/propertyAppreciation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Expected property Appreciation"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <android.support.design.widget.TextInputLayout
+                    android:visibility="gone"
+                    android:id="@+id/propertyAppreciationRupee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/propertyAppreciation_rg"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_propertyAppreciation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/propertyAppreciation_rg"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:visibility="gone"
+                    android:id="@+id/propertyAppreciation_calculatorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_toRightOf="@+id/propertyAppreciationRupee_layout"
+                    android:padding="@dimen/margin_medium" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/propertyAppreciationPercent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/propertyAppreciation_rg"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/dark_gray_text_colour"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/propertyAppreciationPercent_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Expected property Appreciation"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/propertyAppreciation_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/propertyAppreciation_rupeee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/propertyAppreciation_rupeee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/propertyAppreciation_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/realEstateTaxes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Real Estate Taxes"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/realEstateTaxesRupee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/realEstateTaxes_rg"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_realEstateTaxes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/rentalEscalation_rg"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/realEstateTaxes_calculatorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_toRightOf="@+id/realEstateTaxesRupee_layout"
+                    android:padding="@dimen/margin_medium" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/realEstateTaxesPercent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/realEstateTaxes_rg"
+                    android:visibility="gone"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/realEstateTaxesPercent_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/realEstateTaxes_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/realEstateTaxes_rupeee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/realEstateTaxes_rupeee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/realEstateTaxes_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/realEstateTaxes_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Real Estate Taxes"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/realEstateTaxes_calculator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/maintenanceAndRepairs_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Maintenance and Repairs"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/maintenanceMonthly_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Monthly"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/maintenanceYearly_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Anually"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/utilities_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Utilities"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/utilitiesMonthly_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Initial"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/utilitiesAnnually_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Initial"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/insurance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Insurance"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/insuranceMonthly_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Monthly"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/insuranceAnnually_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Annually"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/loanRequired_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Loan Required"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/app_text_color_gray" />
+
+                <View
+                    android:id="@+id/emptyView"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true" />
+
+                <RadioGroup
+                    android:id="@+id/loanRequired_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/emptyView"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/loanRequired_yes_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6">
+
+                    <RadioButton
+                        android:id="@+id/loanRequired_yes_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Yes"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/loanRequired_no_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="No"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/down_payement_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/down_payement_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/down_payement_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loan_amount_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/loan_amount_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Loan amount"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/loan_amount_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/loan_tenure_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                app:errorEnabled="true"
+                android:textColorHint="@color/dark_gray_text_colour"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/loan_tenure_edt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loan tenure (in years)"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/interest_rate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                app:errorEnabled="true"
+                android:textColorHint="@color/dark_gray_text_colour"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/interest_rate_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loan Interest rate (Per Annum)"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/mortgage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:text="Mortgage Payment"
+                    android:layout_alignParentBottom="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/app_text_color_gray" />
+                <View
+                    android:id="@+id/separator1_id"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/dont_know_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_toEndOf="@+id/separator1_id"
+                    android:layout_toRightOf="@+id/separator1_id"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/dont_know_emi"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:textColor="@color/Peru" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mortgage_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/mortgageeMonthly_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Initial"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/mortgageAnnually_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:hint="Initial"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/tax_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/taxCredits_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Tax credits"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/app_text_color_gray" />
+
+                <View
+                    android:id="@+id/taxCredits_emptyView"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true" />
+
+                <RadioGroup
+                    android:id="@+id/taxCredits_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/taxCredits_emptyView"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/taxCredits_yes_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6">
+
+                    <RadioButton
+                        android:id="@+id/taxCredits_yes_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Yes"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/taxCredits_no_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="No"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/section80C_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/section80C_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Section 80C - On Principal Amount"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/section80C_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/section24c_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/section24c_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Section 24 - On Interest Amount"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/section24c_calculaterImgView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/propertyUsage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="Property Usage"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <Spinner
+                android:id="@+id/propertyUsage_spnr"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/intrestforegone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:visibility="invisible"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/intrestforegone_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Interest forgone on DownPayment"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

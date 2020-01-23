@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No data available"
+        android:textColor="@color/d_gray"
+        android:textSize="@dimen/month_label_size"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomViewId">
+
+        <LinearLayout
+            android:id="@+id/parentViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large"></LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large">
+
+        <LinearLayout
+            android:id="@+id/layout_character_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/Character_InputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:gravity="center"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/character_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint=""
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:windowSoftInputMode="stateVisible|adjustResize" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/character_edittext_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:scaleType="fitXY"
+                app:fab_size="mini"
+                app:srcCompat="@drawable/ic_send_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_percentage_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/percentage_InputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:gravity="center"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/percentage_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint=""
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:windowSoftInputMode="stateVisible|adjustResize" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/percentage_edittext_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/Purple"
+                android:scaleType="fitXY"
+                app:fab_size="mini"
+                app:srcCompat="@drawable/ic_send_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/number_InputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:gravity="center"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.NumberEditText
+                    android:id="@+id/number_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint=""
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:windowSoftInputMode="stateVisible|adjustResize" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/number_edittext_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:layout_weight="0.5"
+                android:background="@color/Purple"
+                android:scaleType="fitXY"
+                app:fab_size="mini"
+                app:srcCompat="@drawable/ic_send_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_currencydefault_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <com.purplepath.purplepath.customview.CurrencyGhostView
+                android:id="@+id/currencydefault_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:hint=""
+                android:maxLines="1"
+                android:textColor="@color/dark_gray_text_colour"
+                android:textColorHint="@color/app_text_color_gray"
+                android:windowSoftInputMode="stateVisible|adjustResize" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/currencydefault_edittext_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:layout_weight="0.4"
+                android:background="@color/Purple"
+                android:scaleType="fitXY"
+                app:fab_size="mini"
+                app:srcCompat="@drawable/ic_send_icon" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_yes_no_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingBottom="@dimen/margin_xlarge"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/prompt_yes_no_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

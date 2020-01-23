@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_large"
+                android:elevation="3dp"
+                android:padding="@dimen/margin_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/total_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:background="@color/lightpurple"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/totalGoals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:background="@null"
+                            android:elevation="@dimen/margin_medium"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_xlarge"
+                            android:text="@string/totalgoal"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="0.5sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_marginBottom="2sp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalGoalid"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/linear_short_term_goal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@color/lightorrenge"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/shortgoal"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0.5sp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="2sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_marginBottom="2sp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/shortTermId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_medium_term_goal"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@color/darkblue"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="@string/mediamgoal"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0.5sp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="2sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_marginBottom="2sp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/mediumTermId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:id="@+id/linear_long_term_goal"
+
+                            android:layout_weight="1"
+                            android:background="@color/darkmerune"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:elevation="@dimen/margin_medium"
+                                android:gravity="center"
+                                android:text="@string/longgoal"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0.2sp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="2sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_marginBottom="2sp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/longTermId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/redId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@color/darkred"
+                            android:elevation="@dimen/margin_medium"
+                            android:padding="@dimen/margin_xlarge"
+                            android:text="@string/redgoal"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/amberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@color/duckyorange"
+                            android:elevation="@dimen/margin_medium"
+                            android:padding="@dimen/margin_xlarge"
+                            android:text="@string/ambergoal"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/greenId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@color/darkgreen"
+                            android:elevation="3dp"
+                            android:padding="@dimen/margin_xlarge"
+                            android:text="@string/greengoal"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/title_viewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ListView
+                        android:id="@+id/goalListViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_edit_feedback" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end">
+
+        <include layout="@layout/fragment_bottom_tool_bar" />
+    </LinearLayout>
+
+</RelativeLayout>

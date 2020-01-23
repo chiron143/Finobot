@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/advanced_tax_paid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_advance_tax_paid_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_advance_tax_paid"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/assessment_tax_paid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_self_assessment_tax_paid_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:hint="total_self_assessment_tax_paid"
+                        android:inputType="numberDecimal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColorHint="@color/app_text_color_gray" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tds_deducted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_tds_deducted_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_tds_deducted"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tcs_deducted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/total_tcs_deducted_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="total_tcs_deducted"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mat_credit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/mat_credit_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="mat_credit"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/amount_deducted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                    android:layout_weight="1.7">
+
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/amt_credit_Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="numberDecimal"
+                        android:hint="amt_credit"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/note_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/note_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint="Notes"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="invisible"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_donelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/fragment_bottom_bar_done_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativelayout">
+
+            <RelativeLayout
+                android:id="@+id/donutrelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/donutprogressview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    app:donut_finished_stroke_width="3sp"
+                    app:donut_text_size="8sp"
+                    app:donut_unfinished_stroke_width="3sp" />
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/textprogressview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_xlarge"
+                    android:layout_toRightOf="@+id/donutprogressview"
+                    android:text=""
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlelinelayout"
+            android:layout_marginLeft="16dp">
+
+            <RelativeLayout
+                android:id="@+id/linelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                <View
+                    android:id="@+id/lineImageview"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:background="@color/gray"
+                    android:minHeight="20dp"
+                    android:scaleY="20" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

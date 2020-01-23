@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="9dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_large"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Zero Plan"
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5px"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:background="@color/DarkGray"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="If your income is less than ₹ 50 Lakhs and earned from only one source, i.e. either one of the below:"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+                    <LinearLayout
+                        android:id="@+id/layout_viewmore_click_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form16_viewmore"
+                            android:textColor="@color/hint_color"
+                            android:layout_marginLeft="@dimen/bullet"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_freecard_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Salary (one Form 16)"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Pension"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="One house property"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Exclusions: no filing of previous year tax returns, no carried forward losses, no clubbing of income, no foreign income, no business income"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Note:"
+                        android:layout_marginLeft="@dimen/margin_xlarge"/>
+                    <TextView
+                        android:id="@+id/incometax_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textColorLink="@color/blue_signin"
+                        android:text="For Zero Plan, you will not be getting any of our value-added services, like Maximum Tax Savings, CA Verification, and Stand-by Support to Responding to Notices. And you will be filing your ITR by yourself at https://incometaxindiaefiling.gov.in/ using the XML File we send to you; with the help of our instructions."
+                        android:layout_margin="@dimen/margin_xlarge"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_free_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small"
+                        android:orientation="horizontal"
+                        android:background="@drawable/tax_summary_background">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Continue"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/tax_planning_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_small"
+                        app:srcCompat="@drawable/ic_taxfree_icon" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/free_view_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/form16_viewless"
+                        android:textColor="@color/hint_color"
+                        android:layout_marginLeft="@dimen/bullet"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_one"
+                android:layout_below="@+id/cardview_free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke">
+
+
+                    <TextView
+                        android:id="@+id/sections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_large"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Basic Plan"
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5px"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:background="@color/DarkGray"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="If your income is less than ₹ 50 Lakhs and earned from only one source, i.e. either one of the below:"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+
+                    <LinearLayout
+                        android:id="@+id/layout_viewmore_click_basicplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form16_viewmore"
+                            android:textColor="@color/hint_color"
+                            android:layout_marginLeft="@dimen/bullet"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_basicplan_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:layout_weight="0.2"
+                        android:text="•"
+                        android:layout_marginLeft="@dimen/mar_left"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="Salary (one Form 16)"
+                        android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Pension"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="One house property"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Exclusions: no filing of previous year tax returns, no carried forward losses, no clubbing of income, no foreign income, no business income"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+                </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/itr1_click_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small"
+                        android:orientation="horizontal"
+                        android:background="@drawable/tax_summary_background">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Continue"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_small"
+                        app:srcCompat="@drawable/ic_taxfile_one" />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/basic_view_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/form16_viewless"
+                        android:textColor="@color/hint_color"
+                        android:layout_marginLeft="@dimen/bullet"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_two"
+                android:layout_below="@+id/card_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_large"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Value Plan"
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5px"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:background="@color/DarkGray"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="If your income is less than ₹ 50 Lakhs and earned from multiple sources, i.e. combination of the below:"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+
+                    <LinearLayout
+                        android:id="@+id/layout_viewmore_click_valueplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form16_viewmore"
+                            android:textColor="@color/hint_color"
+                            android:layout_marginLeft="@dimen/bullet"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_valueplan_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Salary: One Form 16 | Multiple Form 16 | Absence of Form 16 | Additions beyond Form 16"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Pension"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="One house property"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Other source(s): Interest | Dividend"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Income from Other Sources (no loss from previous years, Interest, Dividend)"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Agriculture Income &lt; ₹5,000/-"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Exclusions: no filing of previous year tax returns, no carried forward losses, no clubbing of income, no foreign income, no business income"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+
+               </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/itr2_click_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small"
+                        android:orientation="horizontal"
+                        android:background="@drawable/tax_summary_background">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Continue"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_small"
+                        app:srcCompat="@drawable/ic_taxfile_two"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/value_view_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/form16_viewless"
+                        android:textColor="@color/hint_color"
+                        android:layout_marginLeft="@dimen/bullet"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_three"
+                android:layout_below="@+id/card_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_large"
+                        android:textSize="@dimen/month_label_size"
+                        android:text="Comprehensive Plan"
+                        android:textColor="@color/dark_gray_text_colour" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5px"
+                        android:background="@color/DarkGray"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="If your income is greater than ₹ 50 Lakhs and earned from any sources, as below:"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+
+                    <LinearLayout
+                        android:id="@+id/layout_viewmore_click_comprehensiveplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form16_viewmore"
+                            android:textColor="@color/hint_color"
+                            android:layout_marginLeft="@dimen/bullet"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_comprehensiveplan_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Salary: One Form 16 | Multiple Form 16 | Absence of Form 16 | Additions beyond Form 16"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Pension"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Multiple house properties"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Capital Gains"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Other source(s): Interest | Dividend | Lottery and Games | Agriculture | Any other"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Exclusions: no filing of previous year tax returns, no carried forward losses, no clubbing of income, no foreign income, no business income"
+                        android:layout_margin="@dimen/margin_xlarge"/>
+</LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/itr2_contactus_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small"
+                        android:orientation="horizontal"
+                        android:background="@drawable/tax_summary_background">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_small"
+                            android:text="Contact us"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/comprehensive_view_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/form16_viewless"
+                        android:textColor="@color/hint_color"
+                        android:layout_marginLeft="@dimen/bullet"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

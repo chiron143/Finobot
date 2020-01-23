@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LoginandSignUpActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gratuity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_Gratuity_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:hint="Gratuity*"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_Gratuity_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/annuity_pension_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                           
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_Annuity_Pension_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:hint="Annuity / Pension*"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/app_text_color_gray" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_Annuity_pension_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/superannuantion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_superannuation_fund_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:hint="Superannuation Fund (SAF)"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_supperannuation_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/leave_enhashment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_leave_encashment_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:hint="Leave Encashment"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_leave_encashment_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/retension_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_retrenchment_compens_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:hint="Retrenchment compensation"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_retrenchment_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/valuntary_retirement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_voluntary_retirement_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:hint="Voluntary Retirement (VR) Compensation"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_voluntary_retirement_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/others_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                android:layout_weight="1.7">
+
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/reti_other_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint="Others"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/reti_other_retirement_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notes_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/reti_note_Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint="Notes"
+                    android:textColorHint="@color/app_text_color_gray"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginBottom="100dp"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                <com.purplepath.purplepath.customview.CharacterEditText
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:gravity="left|center_horizontal"
+                    android:inputType="textCapSentences"
+                    android:hint=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="invisible"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_bar_view"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_donelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/fragment_bottom_bar_done_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/reti_benifit_details_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_next_btn"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

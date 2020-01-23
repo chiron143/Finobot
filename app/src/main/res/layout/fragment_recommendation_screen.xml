@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearscrolllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/networth_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>
+
+                <com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/cashmanagement_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>
+
+                <com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/goals_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>
+
+                <!--<com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/retirement_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>-->
+
+                <com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/taxation_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>
+
+                <com.purplepath.purplepath.recommendation.RecommendationItemView
+                    android:id="@+id/saving_and_invesment_plan_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/recommendation_background"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    >
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contingency Plan"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/text_size"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/DarkGray"
+                        android:layout_margin="@dimen/fab_margin"/>
+
+                    <com.purplepath.purplepath.recommendation.RecommendationItemView
+                        android:id="@+id/emerrgency_plan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin" />
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginRight="@dimen/fab_margin"/>
+
+
+
+                    <com.purplepath.purplepath.recommendation.RecommendationItemView
+                        android:id="@+id/insurance_plan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginRight="@dimen/fab_margin"/>
+
+                    <com.purplepath.purplepath.recommendation.RecommendationItemView
+                        android:id="@+id/health_insurance_plan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginRight="@dimen/fab_margin"/>
+
+                    <com.purplepath.purplepath.recommendation.RecommendationItemView
+                        android:id="@+id/property_insurance_plan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginRight="@dimen/fab_margin"/>
+
+                    <com.purplepath.purplepath.recommendation.RecommendationItemView
+                        android:id="@+id/auto_insurance_plan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin" />
+
+                </LinearLayout>
+
+
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progressbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

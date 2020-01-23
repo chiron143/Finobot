@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectange_shape_view"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/outerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_drawable"
+        android:paddingBottom="@dimen/margin_xlarge"
+        >
+
+
+        <GridView
+            android:numColumns="5"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:minHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiple_goal_grid"
+            />
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_large"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/closebtnId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|top"
+
+                app:srcCompat="@drawable/ic_cancel_prompt" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

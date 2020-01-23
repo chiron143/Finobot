@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
+        classpath 'com.google.gms:google-services:3.0.0'
+
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/sj/maven/' }
+        maven { url 'https://maven.google.com' }
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    rxJavaVer = '1.1.6'
+    rxAndroidVer = '1.2.1'
+    butterknifeVer = '7.0.1'
+}

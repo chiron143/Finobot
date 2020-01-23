@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/incomefromource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="My emergency fund plan is"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_no_of_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/no_of_month"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_weight="3"
+                            android:text="Number of Months"
+                            />
+
+                        <TextView
+                            android:id="@+id/no_of_month_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:text="0"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_amt_required"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/amt_required"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Amount Required" />
+
+                        <TextView
+                            android:id="@+id/amt_required_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:text="0"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_amt_accumulated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/amt_accumulated"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Amount Accumulated"
+                            android:maxLines="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/amt_accumulated_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:text="0"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_difference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/difference"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Difference"
+                            android:maxLines="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/difference_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:text="0"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_below="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:background="@color/WhiteSmoke"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/my_emer_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:text="My emergency fund status is"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        style="?android:textAppearanceMedium"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_gravity="center"
+                        android:text="Abundant"
+                        android:layout_marginRight="@dimen/margin_xxlarge"
+                        android:textSize="@dimen/text_large"
+                        android:layout_margin="@dimen/margin_large"
+                        style="?android:textAppearanceMedium"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_edit_feedback"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

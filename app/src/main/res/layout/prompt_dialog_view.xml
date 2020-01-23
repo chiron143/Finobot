@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectange_shape_view"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/outerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_drawable"
+        android:paddingBottom="@dimen/margin_xlarge"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/closebtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                app:srcCompat="@drawable/ic_cancel_prompt" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:paddingLeft="@dimen/margin_large">
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/captiontitleId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:text="Personal Prompt"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/theme_purple" />
+
+
+        </RelativeLayout>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/tv_missingfields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topContainer"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:maxLines="3"
+            android:text="@string/MissingTextTop"
+            android:textColor="@color/transparent_black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listviewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/done"
+            android:layout_below="@+id/tv_missingfields"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large">
+
+        </ListView>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:srcCompat="@drawable/ic_edit_icon_prompt"
+            android:layout_marginRight="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_xlarge"/>
+    </RelativeLayout>
+
+</RelativeLayout>

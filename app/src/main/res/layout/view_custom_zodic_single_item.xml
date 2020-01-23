@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="@dimen/margin_medium"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/details_image_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="@dimen/margin_medium"
+                    />
+                <!--app:srcCompat="@drawable/income_detailes"
+                tools:src="@drawable/income_detailes"-->
+                <TextView
+                    android:id="@+id/today_cal_title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/details_image_logo"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:text="Lorem ipsum"
+                    tools:text="Lorem ipsum"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_separator_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/AntiqueWhite" />
+
+            <TextView
+                android:id="@+id/desc_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left|center"
+                android:layout_above="@+id/more_info_id"
+                android:textStyle="normal"
+                android:layout_margin="@dimen/margin_medium"
+                android:textColor="@android:color/background_dark"
+                android:text="dkjsah dkjash jkdha s kjd hk sajh dkjsah dkjas hkdjh askkjsahdkjahsk" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/more_info_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_id"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                app:srcCompat="@drawable/ic_menu_dot"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

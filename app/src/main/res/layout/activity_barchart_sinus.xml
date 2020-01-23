@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/empty_chart_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No chart data available"
+        android:textColor="@color/d_gray"
+        android:visibility="gone"
+        android:textSize="@dimen/month_label_size"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium">
+    <LinearLayout
+        android:id="@+id/scrolllinearlayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/rectangle_border_bg">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:id="@+id/parentViewId"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/networth_expandlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@null"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentRight="true"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#7a0098"
+        fab:menu_colorPressed="#7a0098"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#80000000"
+        fab:menu_labels_colorPressed="#80000000"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_assert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_label="Assets"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+        <!--fab:menu_icon="@drawable/ic_assetsfloat_icon"-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_liability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_label="Liability"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+       <!-- fab:menu_icon="@drawable/ic_liabilityfloat_icon"-->
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+    </RelativeLayout>

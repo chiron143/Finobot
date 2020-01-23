@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_medium"
+    android:background="#f9f8f8"
+    android:weightSum="3">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_finish_later"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height_dimen"
+        android:layout_marginRight="@dimen/margin_very_small"
+        android:layout_weight="1.1"
+        android:background="@drawable/tax_home_card_background"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish Later"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_finish_lat_icon"
+            android:textSize="@dimen/text_size_mediam"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_center"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height_dimen"
+        android:layout_marginRight="@dimen/margin_very_small"
+        android:layout_weight="0.9"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bottom_home_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_done_arrow"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height_dimen"
+        android:layout_weight="1"
+        android:background="@drawable/tax_summary_background"
+        android:padding="@dimen/margin_medium"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     Done"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_prompt_unselect_tick"
+            android:textSize="@dimen/text_size_mediam"
+           />
+
+    </RelativeLayout>
+
+</LinearLayout>

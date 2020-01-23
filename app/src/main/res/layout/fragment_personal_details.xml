@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.LoginandSignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_bar_layout"
+            android:layout_alignParentTop="true"
+            android:isScrollContainer="false"
+            android:windowFullscreen="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <!--<com.purplepath.purplepath.customview.CustomTextInputLayout-->
+                    <!--android:id="@+id/bornyearInputLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/margin_medium"-->
+                    <!--app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">-->
+                    <LinearLayout
+                        android:id="@+id/name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/firstnameInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/firstname_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="First Name*"
+                                android:maxLines="1"
+                                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/middlenameInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/middlename_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Middle Name"
+                                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/lastnameInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/lastname_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Last Name"
+                                android:inputType="text"
+                                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/alias_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <com.purplepath.purplepath.customview.CustomTextInputLayout
+                        android:id="@+id/aliasnameInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                        <com.purplepath.purplepath.customview.CharacterEditText
+                            android:id="@+id/aliasname_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/alias_name"
+                            android:maxLines="1"
+                            android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour"
+                            android:textColorHint="@color/app_text_color_gray" />
+                    </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/bornyear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <com.purplepath.purplepath.customview.CustomTextInputLayout
+                        android:id="@+id/bornyearInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                        <com.purplepath.purplepath.customview.CalendarEditText
+                            android:id="@+id/personal_details_bornyear_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="Date of Birth*"
+                            android:inputType="number"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour"
+                            android:textColorHint="@color/app_text_color_gray" />
+                    </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    <!--</com.purplepath.purplepath.customview.CustomTextInputLayout>-->
+               </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_gender_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/personal_details_gender"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_details_gender_RadioRg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/switch_border"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/personal_details_gender_yes_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/switch_no"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_male"
+                                android:textColor="@color/gray" />
+
+
+                            <RadioButton
+                                android:id="@+id/personal_details_gender_no_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/swithc_yes"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_female"
+                                android:textColor="@color/gray" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_matitalstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_marital_status_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:text="@string/personal_details_maritalstatus"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/personal_details_marital_status_Spinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/personal_marrieddate_relativielayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/marriageDateInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CalendarEditText
+                                android:id="@+id/personal_details_marital_date_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="@string/personal_details_marrieddate"
+                                android:inputType="number"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour" />
+
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_current_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_occupation_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/personal_details_current_occupation"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_current_occupation_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                    <Spinner
+                        android:id="@+id/personal_details_occupation_Spinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:prompt="@string/select" />
+                        <android.widget.TextView
+                            android:id="@+id/tvInvisibleError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            />
+                    </LinearLayout>
+                        </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/personal_other_occupation_relativielayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_other_occupation_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:text="@string/personal_details_other_occupation"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:visibility="gone" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/otherOccupationInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personal_details_other_occupation_Txt"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/personal_details_other_occupation_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="@string/personal_details_other_occupation"
+                                android:inputType="textCapSentences"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/personal_qualification_relativielayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium">
+
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_qualification_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom|left"
+                            android:text="@string/personal_details_qualification"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <!--  <LinearLayout
+                              android:id="@+id/personal_details_qualification_Txt_layout"
+                              android:layout_below="@+id/personal_details_qualification_Txt"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="15dp"
+                              android:weightSum="3">
+                                      <Spinner
+                                          android:id="@+id/personal_details_qualification_Spinner"
+                                          style="@style/Widget.AppCompat.Spinner.Underlined"
+                                          android:layout_width="0dp"
+                                          android:layout_height="wrap_content"
+                                          android:layout_weight="1"
+                                          android:layout_margin="@dimen/margin_very_small" />
+                                      <Spinner
+                                          android:id="@+id/personal_course_selected_spinner"
+                                          android:layout_margin="@dimen/margin_very_small"
+                                          android:layout_weight="1"
+                                          android:visibility="gone"
+                                          style="@style/Widget.AppCompat.Spinner.Underlined"
+                                          android:layout_width="0dp"
+                                          android:layout_height="wrap_content">
+                                      </Spinner>
+                                      <Spinner
+                                          android:id="@+id/personal_course_noofYear_selected_spinner"
+                                          android:layout_weight="1"
+                                          android:visibility="gone"
+                                          android:layout_margin="@dimen/margin_very_small"
+                                          style="@style/Widget.AppCompat.Spinner.Underlined"
+                                          android:layout_width="0dp"
+                                          android:layout_height="wrap_content">
+                                      </Spinner>
+                          </LinearLayout>-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personal_details_qualification_Txt"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="4">
+
+                            <Spinner
+                                android:id="@+id/personal_details_qualification_Spinner"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <Spinner
+                                android:id="@+id/personal_course_selected_spinner"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:visibility="gone" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <Spinner
+                                android:id="@+id/personal_course_noofYear_selected_spinner"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/personal_other_qualifica_relativielayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/personal_details_other_qualifica_Txt_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:orientation="horizontal">
+
+                            <com.purplepath.purplepath.customview.CustomTextView
+                                android:id="@+id/personal_details_other_qualifica_Txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_medium"
+                                android:text="@string/personal_details_other_qualification"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/otherQualificattionInputLayout"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personal_details_other_qualifica_Txt_layout"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/personal_details_other_qualifica_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Other Qualification?"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour" />
+                            <!--android:focusable="true"-->
+                            <!--android:focusableInTouchMode="true"-->
+
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_currentOrganization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/currentOrganizationInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                        <com.purplepath.purplepath.customview.CharacterEditText
+                            android:id="@+id/personal_details_current_organization_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="Organization"
+                            android:inputType="textCapSentences"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/designationInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                        <com.purplepath.purplepath.customview.CharacterEditText
+                            android:id="@+id/personal_details_designation_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="Designation"
+                            android:inputType="textCapSentences"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_homeAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/homeAddressInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                        <com.purplepath.purplepath.customview.CharacterEditText
+                            android:id="@+id/personal_details_home_address_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="false"
+                            android:gravity="start"
+                            android:hint="Home Address"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:maxLines="5"
+                            android:minLines="2"
+                            android:scrollbars="vertical"
+                            android:focusable="false"
+                            android:longClickable="false"
+                            android:singleLine="false"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_workAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/copy_homeaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Same as Home Address "
+                        android:textColor="@color/DarkGrayline" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/workAddressInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                        <com.purplepath.purplepath.customview.CharacterEditText
+                            android:id="@+id/personal_details_work_address_Edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:ems="24"
+                            android:gravity="start"
+                            android:hint="Work Address"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:maxLines="5"
+                            android:minLines="2"
+                            android:focusable="false"
+                            android:longClickable="false"
+                            android:singleLine="false"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+                    </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/currentResidenceRelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/currentResidenceInputLayout"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CalendarEditText
+                                android:id="@+id/personal_year_stayed_in_currentResidence_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Staying at Current Residence Since:"
+                                android:inputType="number"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yearstayedRelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/yearstayedInputLayout"
+                            style="@style/StyledTilPaddedEditTextLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CalendarEditText
+                                android:id="@+id/personal_year_stayed_in_currentOrganization_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Working at Current Organization Since:"
+                                android:inputType="number"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_retirementAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    <com.purplepath.purplepath.customview.CustomTextInputLayout
+                        android:id="@+id/retirementAgeInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                        <com.purplepath.purplepath.customview.NumberEditText
+                            android:id="@+id/personal_planned_retirement_age_Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="Planned Retirement Age*"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_expectedAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <com.purplepath.purplepath.customview.CustomTextInputLayout
+                        android:id="@+id/expectedAgeInputLayout"
+                        style="@style/StyledTilPaddedEditTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                        <com.purplepath.purplepath.customview.NumberEditText
+                            android:id="@+id/personal_life_expect_age_Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="Life Expectancy Age*"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour" />
+
+                    </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                </LinearLayout>
+
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_residential_status_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:text="@string/personal_details_residential_status"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/layout_residential_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_residential_status_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/personal_details_residential_status"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_residential_status_RadioRg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/switch_border"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/personal_details_residential_status_yes_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/switch_no"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_yes"
+                                android:textColor="@color/gray" />
+
+
+                            <RadioButton
+                                android:id="@+id/personal_details_residential_status_no_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/swithc_yes"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_no"
+                                android:textColor="@color/gray" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_citizenship_status_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:text="@string/personal_details_citizenship_status"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/layout_citizenship_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_citizenship_status_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/personal_details_citizenship_status"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_citizenship_status_RadioRg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/switch_border"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/personal_details_citizenship_status_yes_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/switch_no"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_yes"
+                                android:textColor="@color/gray" />
+
+
+                            <RadioButton
+                                android:id="@+id/personal_details_citizenship_status_no_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/swithc_yes"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_no"
+                                android:textColor="@color/gray" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/margin_medium"
+                       android:orientation="horizontal">
+
+                       <com.purplepath.purplepath.customview.CustomTextView
+                           android:id="@+id/personal_details_government_sector_Txts"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/margin_medium"
+                           android:text="@string/personal_details_government_sector"
+                           android:textAppearance="?android:attr/textAppearanceSmall" />
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_government_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/personal_details_government_sector_Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            android:layout_weight="1"
+                            android:text="@string/personal_details_citizenship_status"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_government_sector_RadioRg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/switch_border"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/personal_details_government_sector_yes_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/switch_no"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_yes"
+                                android:textColor="@color/gray" />
+
+
+                            <RadioButton
+                                android:id="@+id/personal_details_government_sector_no_RadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/swithc_yes"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_medium"
+                                android:text="@string/radio_no"
+                                android:textColor="@color/gray" />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/personal_details_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <include
+                layout="@layout/fragment_bottom_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_donelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/fragment_bottom_bar_done_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/personal_details_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_next_btn"
+        android:visibility="gone" />
+
+</RelativeLayout>

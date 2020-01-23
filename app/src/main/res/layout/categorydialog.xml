@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_very_small"
+    android:background="@drawable/rectangle_border_bg"
+
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_very_small"
+    android:background="@color/white">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:columnWidth="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/errorTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Error in retriving data"
+        android:textColor="@color/d_gray"
+        android:textSize="@dimen/month_label_size"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

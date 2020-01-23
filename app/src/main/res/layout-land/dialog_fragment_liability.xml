@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_back_default_icon"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/margin_xlarge"
+            android:scaleX="0.85"
+            android:scaleY="0.85"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:layout_alignParentLeft="true"/>
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/dialogTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        >
+        <ScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/liabi_name_edt_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.CharacterEditText
+                        android:id="@+id/liabi_name_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/name"
+                        android:inputType="textCapSentences"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.CharacterEditText
+                        android:id="@+id/liabi_objective_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:hint="@string/asset_objective"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/liabi_categories_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:text="@string/asset_categories"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <Spinner
+                    android:id="@+id/liabi_categoriesone_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium" />
+
+                <LinearLayout
+                    android:id="@+id/liabi_categoriestwo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/liabi_categoriestwo_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_margin="@dimen/margin_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liabi_categoriesthree_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/liabi_categoriesthree_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_margin="@dimen/margin_medium" />
+                </LinearLayout>
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/liabi_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone"
+                    android:text="@string/type" />
+
+
+                <EditText
+                    android:id="@+id/liabi_type_edt"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="@drawable/edt_txt_bg_rectangle"
+                    android:padding="@dimen/margin_medium"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/liabi_others_layout"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/liabi_other_edt"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/liabi_goalcatLink_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:text="@string/asset_link_to"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <Spinner
+                    android:id="@+id/liabi_goal_cateLink_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.CharacterEditText
+                        android:id="@+id/liabi_liab_LenderNameEditId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/liab_LenderName"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_weight="1.7">
+
+                        <com.purplepath.purplepath.customview.CurrencyGhostView
+                            android:id="@+id/liabi_loan_amount_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/liablity_loan_amount"
+                            android:textColorHint="@color/app_text_color_gray"
+                            android:gravity="left|center_horizontal"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/liabi_loan_amt_calculaterImgView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_weight="1.7">
+
+
+                        <com.purplepath.purplepath.customview.CurrencyGhostView
+                            android:id="@+id/liabi_outstanding_loan_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/outstanding_loan_amount"
+                            android:textColorHint="@color/app_text_color_gray"
+                            android:gravity="left|center_horizontal"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </android.support.design.widget.TextInputLayout>
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/liabi_outstanding_loan_amt_calculaterImgView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                        android:layout_weight="1.7">
+
+
+                        <com.purplepath.purplepath.customview.CurrencyGhostView
+                            android:id="@+id/liabi_current_emi_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:hint="@string/current_emi"
+                            android:textColorHint="@color/app_text_color_gray"
+                            android:gravity="left|center_horizontal"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </android.support.design.widget.TextInputLayout>
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/liabi_current_emi_calculaterImgView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/liabi_interest_rate_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:maxLength="5"
+                        android:hint="@string/interest_rate"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.NumberEditText
+                        android:id="@+id/liabi_total_tenure_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:inputType="number|none"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/total_tenure"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.NumberEditText
+                        android:id="@+id/liabi_balance_tenure_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:inputType="number|none"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="Balance Tenure"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.purplepath.purplepath.customview.CustomTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+
+                    <com.purplepath.purplepath.customview.CalendarEditText
+                        android:id="@+id/liabi_start_year_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/start_year"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="date"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                <com.purplepath.purplepath.customview.CustomTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+
+                    <com.purplepath.purplepath.customview.CalendarEditText
+                        android:id="@+id/liabi_end_year_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/end_year"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="date"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+                    <com.purplepath.purplepath.customview.CharacterEditText
+                        android:id="@+id/liabi_whose_name_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:drawablePadding="@dimen/margin_xlarge"
+                        android:hint="@string/whose_name"
+                        android:textColorHint="@color/app_text_color_gray"
+                        android:gravity="left|center_horizontal"
+                        android:inputType="text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/liabi_Insured_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        android:text="@string/insured"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/liabi_Insured_RadioRg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        android:background="@drawable/switch_border"
+                        android:orientation="horizontal"
+
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/liabi_Insured_yes_RadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:background="@drawable/switch_no"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_medium"
+                            android:text="@string/radio_yes" />
+
+
+                        <RadioButton
+                            android:id="@+id/liabi_Insured_no_RadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:background="@drawable/swithc_yes"
+                            android:padding="@dimen/margin_medium"
+                            android:text="@string/radio_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!-- <android.support.v4.widget.Space
+
+                     android:layout_gravity="end"
+                     android:layout_width="wrap_content"
+                     android:layout_height="100dp"
+                     android:layout_margin="@dimen/margin_xxlarge"
+                     android:visibility="invisible"
+                     />-->
+                <ImageView
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xxlarge"
+                    app:srcCompat="@drawable/ic_done_calender"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+        <!--     <LinearLayout
+                 android:layout_gravity="bottom"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <include layout="@layout/fragment_bottom_bar_view"/>
+
+             </LinearLayout>-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/liabiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="fitXY"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_done_menu"
+            android:visibility="visible" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="@dimen/margin_xxlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Choose your Income Details"/>
+
+        <ExpandableListView
+            android:id="@+id/expenses_redesign_discretionary_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:divider="@color/Gray"
+            android:dividerHeight="0.5dp"
+            android:groupIndicator="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/redesign_discretionary_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_next_btn"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/fragment_bottom_bar_view"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

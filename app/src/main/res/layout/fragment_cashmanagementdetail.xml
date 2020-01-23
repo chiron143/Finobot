@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WhiteSmoke"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:weightSum="5"
+                >
+
+                <TextView
+                    android:id="@+id/incomefromource"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/IncomefromSources"
+                    android:maxLines="1"
+                    style="?android:textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Value"
+                    android:maxLines="1"
+                    style="?android:textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/salary_income"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Salaryincome"
+                    />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/salary_income_value"
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_weight="2"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/income_from_property"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Incomefromproperty"
+                    android:maxLines="1" />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/income_from_property_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_ib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/income_from_business_profession"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Incomefrombusinessprofession"
+                    android:maxLines="1"
+                    />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/income_from_business_property_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_ios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/income_from_other_sources"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/IncomeFromOtherSources"
+                    android:maxLines="1"
+                   />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/income_from_other_sources_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_inves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/capital_gains"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/CapitalGains"
+                    android:maxLines="1"
+                   />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/capital_gain_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/level"
+                    android:text="0"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_below="@+id/card_view"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke"
+            android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WhiteSmoke"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="5"
+            >
+
+            <TextView
+                android:id="@+id/capital_expanse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="@dimen/margin_large"
+                android:text="@string/CapitalExpanse"
+                android:maxLines="1"
+                style="?android:textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/level"
+                style="?android:textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_margin="@dimen/margin_large"
+                android:maxLines="1"
+                android:text="@string/Value"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/expanse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/level"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Expanse"
+                    />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/expanse_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/Oblication"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Oblication"
+            />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/oblication_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/Contibution"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                   android:text="@string/Contibution"
+                    />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/contribution_value"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+               />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/Commitment"
+                    android:layout_below="@+id/level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text="@string/Commitment"
+                     />
+
+                <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                    android:id="@+id/commitment_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/level"
+                    android:text="0"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+              />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_below="@+id/card_view1"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WhiteSmoke"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_large">
+
+                <TextView
+                    android:id="@+id/source_expanse"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_large"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:id="@+id/source_expanse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:gravity="center"
+                    android:text="(Sources-Expenses)"
+                    android:maxLines="1"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total_currencyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:gravity="center"
+                    android:text="₹ 0.00"
+                    style="?android:textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                   />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/cashmanagement_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_alignParentRight="true"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#7a0098"
+        fab:menu_colorPressed="#7a0098"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#80000000"
+        fab:menu_labels_colorPressed="#80000000"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_label="Income"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+        <!--app:srcCompat="@drawable/ic_incomefloat_icon"-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_label="Expense"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#ffffff"/>
+        <!--app:srcCompat="@drawable/ic_expensefloat_icon"-->
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

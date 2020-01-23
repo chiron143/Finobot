@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/assets_row_topic_layout"
+        android:layout_toLeftOf="@+id/asset_row_edit_layout"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.purplepath.purplepath.customview.CustomTextView
+            android:id="@+id/assets_row_name_rowitem"
+            android:layout_weight="1.5"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxLength="15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:background="@drawable/edt_txt_bg_rectangle"
+            />
+
+
+            <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+            android:id="@+id/assets_row_type_rowitem"
+            android:layout_weight="1.5"
+            android:layout_margin="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
+            android:layout_width="0dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_currency_symbol"
+            android:background="@drawable/edt_txt_bg_rectangle"
+            />
+
+
+        <!--<com.purplepath.purplepath.customview.CurrencyDefaultEdt-->
+            <!--android:id="@+id/assets_row_currentvalue_rowitem"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/margin_medium"-->
+            <!--android:padding="@dimen/margin_medium"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:enabled="false"-->
+            <!--android:focusable="false"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/edt_txt_bg_rectangle" />-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/asset_row_edit_layout"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/asset_edit_rowitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_pop_up"
+                android:layout_gravity="center"/>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/asset_delete_rowitem"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/ic_delet_icon"
+
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

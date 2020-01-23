@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/signuppasswordtilEditText"
+        style="@style/StyledTilPaddedEditTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_xlarge"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+
+        <com.purplepath.purplepath.customview.PercentageEditText
+            android:id="@+id/guidlineValuePopup"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_medium"
+            android:hint="Guideline value"
+            android:inputType="numberDecimal"
+            android:drawableRight="@drawable/ic_percentage"
+            android:maxLength="11"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+
+        style="@style/StyledTilPaddedEditTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/margin_xlarge"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+
+        <com.purplepath.purplepath.customview.PercentageEditText
+            android:id="@+id/publishedValuePopup"
+            android:layout_margin="@dimen/margin_large"
+            android:inputType="number"
+            android:drawableRight="@drawable/ic_percentage"
+            android:hint="Published value"
+            android:padding="@dimen/margin_medium"
+            android:gravity="left"
+            android:maxLength="11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:visibility="gone"
+        android:text="Notes"/>
+
+    <EditText
+        android:id="@+id/expected_inc_notes"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@drawable/edt_txt_bg_rectangle"
+        android:padding="@dimen/margin_medium"
+        android:lines="3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/expected_inc_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:background="@color/Purple"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            android:textColor="@color/white"
+            android:text="@string/dialog_ok"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

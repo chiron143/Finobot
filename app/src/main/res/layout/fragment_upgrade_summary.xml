@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Your Plan is"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Validity"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5">
+
+
+                        <TextView
+                            android:id="@+id/best_pricing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Basic Pricing"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/one_year"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="One Year"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:weightSum="5">
+                        <com.purplepath.purplepath.customview.CustomTextView
+                            android:id="@+id/amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_large"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_lar_lar"
+                            android:textColor="@color/black"
+                            android:text="7788"/>
+                        <TextView
+                            android:id="@+id/only"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="only"
+                            android:textStyle="italic"/>
+                    </LinearLayout>
+
+<LinearLayout
+ android:id="@+id/layout_lite_type"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+android:visibility="gone"
+ android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Value Plan"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Financial Health Check"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/layout_pro_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Value Plan"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Financial Health Check"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Risk Assessment"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Asset Allocation"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Product Recommendation"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_large"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight="0.2"
+            android:text="•"
+            android:layout_marginLeft="@dimen/mar_left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Expertize Connect"
+            android:layout_weight="3.8"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+ <LinearLayout
+     android:id="@+id/layout_prime_type"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="gone"
+     android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Comprehensive Plan"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Financial Health Check"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Risk Assessment"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Asset Allocation"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Customized Product Recommendation"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="@dimen/margin_large"
+         android:weightSum="4">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:layout_weight="0.2"
+             android:text="•"
+             android:layout_marginLeft="@dimen/mar_left"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:text="Unlimited Expertize Connect"
+             android:layout_weight="3.8"/>
+     </LinearLayout>
+ </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/validity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:text="Validity"
+                            android:layout_weight="2.8"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/ampm_label_size"
+                            android:layout_margin="@dimen/margin_small"
+                            android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_upgrade"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                     android:visibility="gone"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/margin_large"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_xlarge"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_small"
+                        android:background="@drawable/tax_summary_background">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Upgrade"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="@dimen/ampm_label_size"
+                            android:layout_margin="@dimen/margin_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+</RelativeLayout>

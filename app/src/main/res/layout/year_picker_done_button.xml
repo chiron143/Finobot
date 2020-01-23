@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false">
+
+    <LinearLayout
+            android:id="@+id/year_linearlayout"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_medium"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/year_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Years"/>
+
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/year_EdtTxt"
+                android:visibility="gone"
+                android:ems="4"
+                android:background="@drawable/edt_txt_bg_rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    <Button
+        android:textSize="@dimen/done_label_size"
+        android:textColor="@color/done_text_color"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dip"
+        android:text="@string/done_label"
+        style="?android:attr/buttonBarButtonStyle" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tick_icon"
+            android:visibility="visible" />
+    </android.support.design.widget.CoordinatorLayout>

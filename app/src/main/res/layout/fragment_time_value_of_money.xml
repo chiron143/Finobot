@@ -1,0 +1,462 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.purplepath.purplepath.desiproAllModules.timeValueOfMoney.TimeValueOfMoneyFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_large"
+        android:elevation="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tenure_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_toLeftOf="@+id/tenure_space"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/dark_gray_text_colour"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/tenure_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tenure"
+                        android:inputType="number"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/tenure_space"
+                    android:layout_centerInParent="true"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/tenure_spinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_toLeftOf="@+id/tenure_btn"
+                    android:layout_toRightOf="@+id/tenure_space"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tenure_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_very_small"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:background="@drawable/rounded_corner_time_val_money"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_xlarge"
+                    android:paddingRight="@dimen/margin_xlarge"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="   TN   "
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rate_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:errorEnabled="true"
+                android:textColorHint="@color/dark_gray_text_colour"
+                android:layout_toLeftOf="@+id/rate_space"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/rate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rate(Per Annum)"
+                    android:maxLength="3"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/rate_space"
+                    android:layout_centerInParent="true"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/rate_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_very_small"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:background="@drawable/rounded_corner_time_val_money"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_xlarge"
+                    android:paddingRight="@dimen/margin_xlarge"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text=" RATE"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <com.purplepath.purplepath.customview.CurrencyBlackGhostview
+                    android:id="@+id/present_value_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:layout_toLeftOf="@+id/presentValue_space"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+
+
+                <View
+                    android:id="@+id/presentValue_space"
+                    android:layout_centerInParent="true"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <RadioGroup
+                    android:id="@+id/presenValue_rg"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/presentValue_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/presenValue_plus_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.75"
+                    android:scaleY="0.5"
+                   >
+
+                    <RadioButton
+                        android:id="@+id/presenValue_plus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/plus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"/>
+                    <RadioButton
+                        android:id="@+id/presenValue_minus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/minus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/presentValue_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_very_small"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:background="@drawable/rounded_corner_time_val_money"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_xlarge"
+                    android:paddingRight="@dimen/margin_xlarge"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="  PV   "
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/future_value_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_toLeftOf="@+id/futureValue_space"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+               <com.purplepath.purplepath.customview.CurrencyBlackGhostview
+                    android:id="@+id/future_value_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Future Value"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/futureValue_space"
+                    android:layout_centerInParent="true"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <RadioGroup
+                    android:id="@+id/futureValue_rg"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/futureValue_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/futureValue_plus_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.75"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/futureValue_plus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/plus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"/>
+                    <RadioButton
+                        android:id="@+id/futureValue_minus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/minus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/futureValue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_very_small"
+                android:layout_marginRight="@dimen/margin_large"
+                android:background="@drawable/rounded_corner_time_val_money"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_xlarge"
+                android:paddingRight="@dimen/margin_xlarge"
+                android:paddingTop="@dimen/margin_small"
+                android:text="   FV   "
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceSmall"
+                />
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/payement_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:errorEnabled="true"
+                android:layout_toLeftOf="@+id/payment_space"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.CurrencyBlackGhostview
+                    android:id="@+id/payement_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Payment"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/payment_space"
+                    android:layout_centerInParent="true"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <RadioGroup
+                    android:id="@+id/payment_rg"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/payment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/payment_plus_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.75"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/payment_plus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/plus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"/>
+                    <RadioButton
+                        android:id="@+id/payment_minus_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/minus_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/payment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_very_small"
+                android:layout_marginRight="@dimen/margin_large"
+                android:background="@drawable/rounded_corner_time_val_money"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_xlarge"
+                android:paddingRight="@dimen/margin_xlarge"
+                android:paddingTop="@dimen/margin_small"
+                android:text=" PMT "
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceSmall"
+                />
+
+        </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:text="Payment Type" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/paymentType_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:text="Compounding Period Per Year" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/compoundingPeriod_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:text="Payment Period Per Year" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/payementPeriod_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+</RelativeLayout>

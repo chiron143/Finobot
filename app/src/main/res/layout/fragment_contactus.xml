@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.purplepath.purplepath.AppManagement.ContactUs.ContactusFragment">
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_above="@+id/bottom_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        card_view:cardCornerRadius="4dp"
+        android:elevation="3dp"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/bullet"
+        android:background="@color/WhiteSmoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/WhiteSmoke">
+
+                <TextView
+                    android:id="@+id/contactus_companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_large"
+                    android:text="@string/purplename"
+                    android:textSize="15sp"
+                    style="?android:textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txt_underline"
+                    android:layout_below="@+id/contactus_companyname"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_below="@+id/txt_underline"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_large"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/location_icon"
+                    android:layout_below="@+id/txt_underline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:srcCompat="@drawable/ic_address_icon"
+                    android:layout_marginLeft="@dimen/margin_large"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_toRightOf="@+id/location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    android:textStyle="bold"
+                    android:text="Bangalore"/>
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_below="@+id/title"
+                    android:layout_toRightOf="@+id/location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_large"
+                    android:textSize="12sp"
+                    android:text="#863,5th Main,5th Cross,\n1st Stage ,Indiranagar,\nBangalore - 560038\nKarnataka."
+                    style="?android:textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="normal"/>
+                <View
+                    android:id="@+id/center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+                </View>
+
+
+                <TextView
+                    android:id="@+id/txt_whatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_large"
+                    android:text="Whatsapp"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_callnow"
+                    android:layout_below="@+id/txt_whatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:padding="@dimen/margin_large"
+                    android:text="  Call Now"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_sendmail"
+                    android:layout_below="@+id/txt_callnow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_large"
+                    android:text="Send Mail"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/txt_viewmap"
+                    android:layout_below="@+id/txt_sendmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:padding="@dimen/margin_large"
+                    android:text="View Map"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_below="@+id/card_view"
+            android:padding="@dimen/margin_large"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/margin_large"
+            card_view:cardCornerRadius="4dp"
+            android:elevation="3dp"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/bullet"
+            android:background="@color/WhiteSmoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_companyname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/bullet"
+                android:background="@color/WhiteSmoke">
+
+                <TextView
+                    android:id="@+id/contactus_companyname1"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_large"
+                    android:text="@string/purplename"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true" />
+
+
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/whatsapp_icon1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_whatsapp_icon"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_underline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/contactus_companyname1"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:background="@color/gray" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/location_icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_underline1"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:padding="@dimen/margin_large"
+                    app:srcCompat="@drawable/ic_address_icon" />
+
+                <TextView
+                    android:id="@+id/txt_address1"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_underline1"
+                    android:layout_toRightOf="@+id/location_icon1"
+                    android:padding="@dimen/margin_large"
+                    android:text="Elconso complex"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/txt_callnow1"
+                    android:layout_below="@+id/txt_address1"
+                    android:layout_toLeftOf="@+id/txt_sendmail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/bullet"
+                    android:layout_marginTop="@dimen/bullet"
+                    android:padding="@dimen/margin_large"
+                    android:maxLines="1"
+                    android:text="Call Now"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+                <TextView
+                    android:id="@+id/txt_sendmail1"
+                    android:layout_below="@+id/txt_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_large"
+                    android:text="Send Mail"
+                    android:layout_marginTop="@dimen/bullet"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+                <TextView
+                    android:id="@+id/txt_viewmap1"
+                    android:layout_below="@+id/txt_address1"
+                    android:layout_toRightOf="@+id/txt_sendmail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bullet"
+                    android:layout_marginTop="@dimen/bullet"
+                    android:padding="@dimen/margin_large"
+                    android:maxLines="1"
+                    android:text="View Map"
+                    android:textColor="@color/Purple"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_background_roundshape"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="maritalstatus">
+        <item >Single</item>
+        <item >Married</item>
+        <item >Widowed</item>
+        <item >Divorced</item>
+    </string-array>
+    <string-array name="relationship">
+        <item >Spouse</item>
+        <item >Son</item>
+        <item >Daughter</item>
+        <item >Father</item>
+        <item >Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Grand Son</item>
+        <item>Grand Daughter</item>
+        <item>Wife</item>
+        <item>Sibling</item>
+        <item>Husband</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item >Business</item>
+        <item >Doctor</item>
+        <item >Student</item>
+        <item >Homemaker</item>
+        <item >Retired</item>
+        <item >Salaried</item>
+        <item >Lawyer</item>
+        <item >Professional</item>
+        <item >Any Others</item>
+    </string-array>
+
+
+    <string-array name="education">
+        <item>Jr. KG</item>
+        <item>Sr. KG</item>
+        <item>Std. 1</item>
+        <item>Std. 2</item>
+        <item>Std. 3</item>
+        <item>Std. 4</item>
+        <item>Std. 5</item>
+        <item>Std. 6</item>
+        <item>Std. 7</item>
+        <item>Std. 8</item>
+        <item>Std. 9</item>
+        <item>Std. 10</item>
+        <item>Std. 11/PU 1</item>
+        <item>Std. 12/PU 2</item>
+        <item>UG</item>
+        <item>PG</item>
+        <item>Any Other</item>
+    </string-array>
+
+    <string-array name="retriedarray">
+        <item>UG</item>
+        <item>PG</item>
+        <item>Any Other</item>
+    </string-array>
+
+    <string-array name="age">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+        <item >11</item>
+        <item >12</item>
+        <item >13</item>
+        <item >14</item>
+        <item >15</item>
+        <item >16</item>
+        <item >17</item>
+        <item >18</item>
+        <item >19</item>
+        <item >20</item>
+        <item >21</item>
+        <item >22</item>
+        <item >23</item>
+        <item >24</item>
+        <item >25</item>
+        <item >26</item>
+        <item >27</item>
+        <item >28</item>
+        <item >29</item>
+        <item >30</item>
+        <item >31</item>
+        <item >32</item>
+        <item >33</item>
+        <item >34</item>
+        <item >35</item>
+        <item >36</item>
+        <item >37</item>
+        <item >38</item>
+        <item >39</item>
+        <item >40</item>
+        <item >41</item>
+        <item >42</item>
+        <item >43</item>
+        <item >44</item>
+        <item >45</item>
+        <item >46</item>
+        <item >47</item>
+        <item >48</item>
+        <item >49</item>
+        <item >50</item>
+        <item >51</item>
+        <item >52</item>
+        <item >53</item>
+        <item >54</item>
+        <item >55</item>
+        <item >56</item>
+        <item >57</item>
+        <item >58</item>
+        <item >59</item>
+        <item >60</item>
+        <item >61</item>
+        <item >62</item>
+        <item >63</item>
+        <item >64</item>
+        <item >65</item>
+        <item >66</item>
+        <item >67</item>
+        <item >68</item>
+        <item >69</item>
+        <item >70</item>
+        <item >71</item>
+        <item >72</item>
+        <item >73</item>
+        <item >74</item>
+        <item >75</item>
+        <item >76</item>
+        <item >77</item>
+        <item >78</item>
+        <item >79</item>
+        <item >80</item>
+        <item >81</item>
+        <item >82</item>
+        <item >83</item>
+        <item >84</item>
+        <item >85</item>
+        <item >86</item>
+        <item >87</item>
+        <item >88</item>
+        <item >89</item>
+        <item >90</item>
+        <item >91</item>
+        <item >92</item>
+        <item >93</item>
+        <item >94</item>
+        <item >95</item>
+        <item >96</item>
+        <item >97</item>
+        <item >98</item>
+        <item >99</item>
+        <item >100</item>
+        <item >101</item>
+        <item >102</item>
+        <item >103</item>
+        <item >104</item>
+        <item >105</item>
+        <item >106</item>
+        <item >107</item>
+        <item >108</item>
+        <item >109</item>
+        <item >110</item>
+        <item >111</item>
+        <item >112</item>
+        <item >113</item>
+        <item >114</item>
+        <item >115</item>
+        <item >116</item>
+        <item >117</item>
+        <item >118</item>
+        <item >119</item>
+        <item >120</item>
+    </string-array>
+
+
+    <string-array name="retirementage">
+        <item >40</item>
+        <item >41</item>
+        <item >42</item>
+        <item >43</item>
+        <item >44</item>
+        <item >45</item>
+        <item >46</item>
+        <item >47</item>
+        <item >48</item>
+        <item >49</item>
+        <item >50</item>
+        <item >51</item>
+        <item >52</item>
+        <item >53</item>
+        <item >54</item>
+        <item >55</item>
+        <item >56</item>
+        <item >57</item>
+        <item >58</item>
+        <item >59</item>
+        <item >60</item>
+        <item >61</item>
+        <item >62</item>
+        <item >63</item>
+        <item >64</item>
+        <item >65</item>
+        <item >66</item>
+        <item >67</item>
+        <item >68</item>
+        <item >69</item>
+        <item >70</item>
+        <item >71</item>
+        <item >72</item>
+        <item >73</item>
+        <item >74</item>
+        <item >75</item>
+        <item >76</item>
+        <item >77</item>
+        <item >78</item>
+        <item >79</item>
+        <item >80</item>
+        <item >81</item>
+        <item >82</item>
+        <item >83</item>
+        <item >84</item>
+        <item >85</item>
+        <item >86</item>
+        <item >87</item>
+        <item >88</item>
+        <item >89</item>
+        <item >90</item>
+        <item >91</item>
+        <item >92</item>
+        <item >93</item>
+        <item >94</item>
+        <item >95</item>
+        <item >96</item>
+        <item >97</item>
+        <item >98</item>
+        <item >99</item>
+        <item >100</item>
+        <item >101</item>
+        <item >102</item>
+        <item >103</item>
+        <item >104</item>
+        <item >105</item>
+        <item >106</item>
+        <item >107</item>
+        <item >108</item>
+        <item >109</item>
+        <item >110</item>
+        <item >111</item>
+        <item >112</item>
+        <item >113</item>
+        <item >114</item>
+        <item >115</item>
+        <item >116</item>
+        <item >117</item>
+        <item >118</item>
+        <item >119</item>
+        <item >120</item>
+    </string-array>
+
+
+    <string-array name="calander_days">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+        <item >11</item>
+        <item >12</item>
+        <item >13</item>
+        <item >14</item>
+        <item >15</item>
+        <item >16</item>
+        <item >17</item>
+        <item >18</item>
+        <item >19</item>
+        <item >20</item>
+        <item >21</item>
+        <item >22</item>
+        <item >23</item>
+        <item >24</item>
+        <item >25</item>
+        <item >26</item>
+        <item >27</item>
+        <item >28</item>
+        <item >29</item>
+        <item >30</item>
+        <item >31</item>
+    </string-array>
+
+
+    <string-array name="course_stage">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+        <item>5th Year</item>
+    </string-array>
+
+    <string-array name="noofyear_course_stage">
+        <item>3 Year Course</item>
+        <item>4 Year Course</item>
+        <item>5 Year Course</item>
+        <item>6 Year Course</item>
+    </string-array>
+
+    <string-array name="four_year_course_stage">
+        <item>4 Year Course</item>
+        <item>5 Year Course</item>
+        <item>6 Year Course</item>
+    </string-array>
+
+    <string-array name="five_year_course_stage">
+        <item>5 Year Course</item>
+        <item>6 Year Course</item>
+    </string-array>
+
+    <string-array name="goal_type">
+        <item>Graduation</item>
+        <item>Post Graduation</item>
+        <item>Marriage / Wedding</item>
+        <item>Travel / Vacation / Holiday</item>
+        <item>New Home</item>
+        <item>New Car</item>
+        <item>New Two-Wheeler</item>
+        <item>Major Purchase</item>
+        <item>School Education</item>
+        <item>Retirement</item>
+        <item>Skill Development</item>
+        <item>Protection - Insurance</item>
+        <item>Emergency Fund</item>
+        <item>Debt Recovery</item>
+    </string-array>
+
+    <string-array name="goal_importants">
+        <item>Critical / Needs</item>
+        <item>Important / Wants</item>
+        <item>Discretionary / Wishes</item>
+    </string-array>
+
+
+    <string-array name="goal_priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="goal_recurrence_months">
+    <item >0</item>
+    <item >3</item>
+    <item >6</item>
+    <item >9</item>
+    </string-array>
+
+
+    <string-array name="goal_recurrence_years">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+        <item >11</item>
+        <item >12</item>
+        <item >13</item>
+        <item >14</item>
+        <item >15</item>
+        <item >16</item>
+        <item >17</item>
+        <item >18</item>
+        <item >19</item>
+        <item >20</item>
+    </string-array>
+
+    <string-array name="duration_array">
+        <item>Yearly</item>
+        <item>Half Yearly</item>
+        <item>Quarterly</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Daily</item>
+    </string-array>
+
+
+    <string-array name="goal_type_affordability">
+        <item>New Home</item>
+        <item>New Car</item>
+        <item> New Two-Wheeler</item>
+        <item>Retirement</item>
+        <item>Debt Repayment</item>
+        <item>Graduation</item>
+        <item>Post Graduation</item>
+        <item> Marriage / Wedding</item>
+        <item>Travel / Vacation / Holiday</item>
+        <item>Major Purchase</item>
+        <item>School Education</item>
+        <item>Skill Development</item>
+        <item> Protection - Insurance</item>
+        <item>Debt Recovery</item>
+        <item> Emergency Fund</item>
+        <item>Education</item>
+
+    </string-array>
+
+    <string-array name="loan_type_eligibility">
+        <item>Business Loan</item>
+        <item>Education Loan</item>
+        <item> Gold Loan</item>
+        <item>Hand Loan / Soft Loan</item>
+        <item>Home Loan / Property Loan</item>
+        <item>Loan Against Insurance</item>
+        <item>Loan Against Security</item>
+        <item> Personal Loan</item>
+        <item>Reverse Mortgage Loan (RML)</item>
+        <item>Vehicle Loan / Auto Loan</item>
+
+    </string-array>
+
+
+    <string-array name="general_insuran_plan_type">
+        <item>Personally Subscribed</item>
+        <item>Employer Provided</item>
+      </string-array>
+
+    <string-array name="general_insuran_motor_sub_plan_type">
+        <item>Bike</item>
+        <item>Car</item>
+    </string-array>
+
+
+    <string-array name="environment_array">
+        <item>@string/test</item>
+        <item>@string/production</item>
+    </string-array>
+    <string name="test">Test</string>
+    <string name="production">Production</string>
+
+
+
+</resources>

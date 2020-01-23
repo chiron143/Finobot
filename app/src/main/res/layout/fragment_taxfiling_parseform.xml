@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabFrame"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_yes_no_bottom_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/left_layout_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/margin_large"
+                android:minWidth="@dimen/activity_horizontal_margin"
+                android:background="@drawable/prompt_text_corner">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/left_first_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:minWidth="@dimen/activity_horizontal_margin"
+                    android:textColor="#343434"
+                    android:text="Whether your pdf file is password protected"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+                <LinearLayout
+                    android:id="@+id/layout_right_first_yes_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:background="@drawable/prompt_right_corner"
+                    android:layout_margin="@dimen/margin_large">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/right_first_yes_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:gravity="right|center"
+                        android:layout_alignParentRight="true"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#343434" />
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_edit_profile"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/left_layout_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/margin_large"
+                android:minWidth="@dimen/activity_horizontal_margin"
+                android:background="@drawable/prompt_text_corner">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:id="@+id/left_second_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:minWidth="@dimen/activity_horizontal_margin"
+                    android:textColor="#343434"
+                    android:text="Tell us your pdf password"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+                <LinearLayout
+                    android:id="@+id/layout_right_second_yes_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:background="@drawable/prompt_right_corner"
+                    android:layout_margin="@dimen/margin_large">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/right_second_yes_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:gravity="right|center"
+                        android:layout_alignParentRight="true"
+                        android:text="No"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#343434" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_edit_profile"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_submit_layout"
+        android:elevation="@dimen/margin_small"
+        android:background="@color/WhiteSmoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:id="@+id/proceed_submit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="240dp"
+            android:textColor="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thanks for the Updation. Please click the submit button to continue the process"
+                    android:textStyle="bold"
+                    android:layout_weight="3.5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#343434"
+                    android:padding="@dimen/margin_large"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_large">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:background="@drawable/prompt_text_right_corner_purple"
+                    android:gravity="bottom|right"
+                    android:padding="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:padding="@dimen/margin_small"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_large"
+                        android:textStyle="italic" />
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_large"
+                        android:layout_marginBottom="1dp"
+                        app:srcCompat="@drawable/ic_prompt_edit_icon"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_yes_no_bottom_bar_tax_creden"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/margin_xlarge"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/prompt_yes_no_layout"
+            ></include>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_character_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.purplepath.purplepath.customview.CustomTextInputLayout
+            android:id="@+id/Character_InputLayout"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="5"
+            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/character_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint=""
+                android:maxLines="1"
+                android:inputType="text"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour"
+                android:textColorHint="@color/app_text_color_gray" />
+        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/character_edittext_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:fab_size="mini"
+            android:layout_margin="@dimen/margin_large"
+            app:srcCompat="@drawable/ic_send_icon"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

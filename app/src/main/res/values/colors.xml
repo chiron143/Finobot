@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7a0098</color>
+    <color name="colorPrimaryDark">#56006b</color>
+    <color name="colorAccent">#7a0098</color>
+    <color name="gray_glossaries">#FF444444</color>
+    <color name="blue_text_glossaries">#005aef</color>
+    <color name="blue_signin">#1180c8</color>
+    <color name="facebook_blue_color"> #3b5998 </color>
+    <color name="gplus_redcolor"> #dd4b39 </color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="light_gray1">#EEEEEE</color>
+    <color name="app_title_bg_color">#f99738</color>
+    <color name="app_email_editext_bg">#d9dadc</color>
+    <color name="app_color_orange">#fc9a30</color>
+    <color name="profile_orange">#ff5500</color>
+    <color name="app_color_light_orange">#fef4ea</color>
+    <color name="app_color_dark_blue">#136a9d</color>
+    <color name="app_color_light_blue">#daeefa</color>
+    <color name="app_color_filter_blue">#063e5e</color>
+    <color name="app_color_filter_blue_transparent">#FF136a9d</color>
+    <color name="app_seekapro_text">#146A9D</color>
+    <color name="semitransparent">#88000000</color>
+    <color name="course_grade_down">#e7e7e7</color>
+    <color name="menuPink">#88FFB6C1</color>
+    <color name="toast_bg">#DAAA</color>
+    <color name="Blue">#440000FF</color>
+    <color name="Green">#44008000</color>
+    <color name="Yellow">#44FFFF00</color>
+    <color name="Red">#44FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="l_blue">#909BAA</color>
+    <color name="d_blue">#6D7B92</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="d_gray">#666</color>
+    <color name="black">#000000</color>
+    <color name="stamp_btn_bg">#FF3300</color>
+    <color name="frame_btn_bg">#6699FF</color>
+    <color name="use_btn_bg">#3B5998</color>
+    <color name="cancel_btn_bg">#cd6959</color>
+    <color name="layout_bg">#cc0063</color>
+    <color name="imageprocess_layout_bg">#d1bff0</color>
+    <color name="Ivory">#FFFFF0</color>
+    <color name="LightYellow">#FFFFE0</color>
+    <color name="Snow">#FFFAFA</color>
+    <color name="FloralWhite">#FFFAF0</color>
+    <color name="LemonChiffon">#FFFACD</color>
+    <color name="Cornsilk">#FFF8DC</color>
+    <color name="Seashell">#FFF5EE</color>
+    <color name="LavenderBlush">#FFF0F5</color>
+    <color name="PapayaWhip">#FFEFD5</color>
+    <color name="BlanchedAlmond">#FFEBCD</color>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="Bisque">#FFE4C4</color>
+    <color name="Moccasin">#FFE4B5</color>
+    <color name="NavajoWhite">#FFDEAD</color>
+    <color name="PeachPuff">#FFDAB9</color>
+    <color name="Gold">#FFD700</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="LightPink">#FFB6C1</color>
+    <color name="Orange">#FFA500</color>
+    <color name="DarkOrangeSekahoo">#fc9a30</color>
+    <color name="BlueSeekahoo">#daeefa</color>
+    <color name="LightSalmon">#FFA07A</color>
+    <color name="DarkOrange">#FF8C00</color>
+    <color name="Coral">#FF7F50</color>
+    <color name="HotPink">#FF69B4</color>
+    <color name="Tomato">#FF6347</color>
+    <color name="OrangeRed">#FF4500</color>
+    <color name="DeepPink">#FF1493</color>
+    <color name="Fuchsia">#FF00FF</color>
+    <color name="OldLace">#FDF5E6</color>
+    <color name="LightGoldenrodYellow">#FAFAD2</color>
+    <color name="Linen">#FAF0E6</color>
+    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="theme_purple">#4e347f</color>
+    <color name="Salmon">#FA8072</color>
+    <color name="GhostWhite">#F8F8FF</color>
+    <color name="MintCream">#F5FFFA</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Beige">#F5F5DC</color>
+    <color name="Wheat">#F5DEB3</color>
+    <color name="SandyBrown">#F4A460</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="Honeydew">#F0FFF0</color>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="Khaki">#F0E68C</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="PaleGoldenrod">#EEE8AA</color>
+    <color name="Violet">#EE82EE</color>
+    <color name="DarkSalmon">#E9967A</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="LightCyan">#E0FFFF</color>
+    <color name="BurlyWood">#DEB887</color>
+    <color name="Plum">#DDA0DD</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="Crimson">#DC143C</color>
+    <color name="PaleVioletRed">#DB7093</color>
+    <color name="Goldenrod">#DAA520</color>
+    <color name="Orchid">#DA70D6</color>
+    <color name="Thistle">#D8BFD8</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="LightGreySeekahoo">#ECECEC</color>
+    <color name="Tan">#D2B48C</color>
+    <color name="Chocolate">#D2691E</color>
+    <color name="Peru">#CD853F</color>
+    <color name="IndianRed">#CD5C5C</color>
+    <color name="MediumVioletRed">#C71585</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="DarkKhaki">#BDB76B</color>
+    <color name="RosyBrown">#BC8F8F</color>
+    <color name="MediumOrchid">#BA55D3</color>
+    <color name="DarkGoldenrod">#B8860B</color>
+    <color name="FireBrick">#B22222</color>
+    <color name="PowderBlue">#B0E0E6</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="PaleTurquoise">#AFEEEE</color>
+    <color name="GreenYellow">#ADFF2F</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="DarkGray">#A9A9A9</color>
+
+    <color name="DarkGrayline">#757575</color>
+
+
+    <color name="OverlayColor">#99828282</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="Sienna">#A0522D</color>
+    <color name="YellowGreen">#9ACD32</color>
+    <color name="DarkOrchid">#9932CC</color>
+    <color name="PaleGreen">#98FB98</color>
+    <color name="DarkViolet">#9400D3</color>
+    <color name="MediumPurple">#9370DB</color>
+    <color name="LightGreen">#90EE90</color>
+    <color name="DarkSeaGreen">#8FBC8F</color>
+    <color name="SaddleBrown">#8B4513</color>
+    <color name="DarkMagenta">#8B008B</color>
+    <color name="DarkRed">#8B0000</color>
+    <color name="BlueViolet">#8A2BE2</color>
+    <color name="slide_selector">#24529B</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="NavyBlue">#5050FF</color>
+    <color name="Gray">#808080</color>
+    <color name="Olive">#808000</color>
+    <color name="Purple">#800080</color>
+    <color name="Maroon">#800000</color>
+    <color name="Aquamarine">#7FFFD4</color>
+    <color name="Chartreuse">#7FFF00</color>
+    <color name="LawnGreen">#7CFC00</color>
+    <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="LightSlateGray">#778899</color>
+    <color name="SlateGray">#708090</color>
+    <color name="OliveDrab">#6B8E23</color>
+    <color name="SlateBlue">#6A5ACD</color>
+    <color name="DimGray">#696969</color>
+    <color name="MediumAquamarine">#66CDAA</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="CadetBlue">#5F9EA0</color>
+    <color name="DarkOliveGreen">#556B2F</color>
+    <color name="Indigo">#4B0082</color>
+    <color name="MediumTurquoise">#48D1CC</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="ForestGreen">#228B22</color>
+    <color name="LightSeaGreen">#20B2AA</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="Aqua">#00FFFF</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="Lime">#00FF00</color>
+    <color name="MediumSpringGreen">#00FA9A</color>
+    <color name="DarkTurquoise">#00CED1</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="DarkCyan">#008B8B</color>
+    <color name="Teal">#008080</color>
+    <color name="DarkGreen">#006400</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="Navy">#000080</color>
+    <color name="app_text_color_gray">#353535</color>
+    <color name="date_color">#6586B8</color>
+    <color name="rounded_container_bg">#222222</color>
+    <color name="rounded_container_border">#3b3f44</color>
+
+    <color name="reds">#FF0000</color>
+
+
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="line_background">#e6e6e6</color>
+    <color name="text_color_recom">#353535</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="darker_blue">#ff0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+
+    <color name="goal_gray">#EEEEEE</color>
+
+    <color name="border_cardview">#d7d7d7</color>
+
+
+    <color name="item_color_gray">#f3f3f3</color>
+
+    <color name="color_blue">#1f33f2</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="transparent_black">#7F000000</color>
+    <color name="purple_path_app_orange">#ff4800</color>
+
+    <color name="lightblack">#FF000000</color>
+    <color name="recycleview_bg">#f1f1f1</color>
+    <color name="dark_gray_text_colour">#ff263238</color>
+    <color name="text_header_colour">#344ec0</color>
+    <color name="prompt_blue">#0a65cb</color>
+
+    <!-- Default background color for the status bar. -->
+    <color name="calculator_accent_color">#00BCD4</color>
+
+    <!-- Color to indicate an error has occured. -->
+    <color name="calculator_error_color">#F40056</color>
+
+    <!-- Background color of the calculator display. -->
+    <color name="display_background_color">#FFF</color>
+
+    <!-- Text color for the formula in the calculator display. -->
+    <color name="display_formula_text_color">#8A000000</color>
+
+    <!-- Text color for the result in the calculator display. -->
+    <color name="display_result_text_color">#6C000000</color>
+
+    <!-- Background color for the numeric pad. -->
+    <color name="pad_numeric_background_color">#434343</color>
+
+    <!-- Background color for the operator pad. -->
+    <color name="pad_operator_background_color">#636363</color>
+
+    <!-- Background color for the advanced pad. -->
+    <color name="pad_advanced_background_color">#1DE9B6</color>
+
+    <!-- Text color for a button in a pad. -->
+    <color name="pad_button_text_color">#FFF</color>
+
+    <!-- Text color for a button in the advanced pad. -->
+    <color name="pad_button_advanced_text_color">#91000000</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_ripple_color">#33FFFFFF</color>
+
+    <!-- Ripple color when a button is pressed in a pad. -->
+    <color name="pad_button_advanced_ripple_color">#1A000000</color>
+
+    <color name="bg_app">#FAFAFA</color>
+
+    <color name="lightpurple">#a086ff</color>
+    <color name="lightorrenge">#ff8a00</color>
+    <color name="darkblue">#1200ff</color>
+    <color name="darkmerune">#e400ff</color>
+    <color name="darkgreen">#05bc05</color>
+    <color name="duckyorange">#dead03</color>
+    <color name="darkred">#e60005</color>
+
+    <color name="hint_color">#fd651a</color>
+
+    <color name="tax_summary_light_purple">#e3d2e7</color>
+    <color name="tax_summary_light_gray">#f4f4f4</color>
+    <color name="tax_home_background">#f7ffe0</color>
+    <color name="tax_table_background">#13b677</color>
+
+
+
+    <color name="tax_table_title">#e6e6e6</color>
+    <color name="tax_card_color">#f2f2f2</color>
+
+    <color name="tax_title">#3a3a3a</color>
+
+
+
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="cell_text_color">#1f1f1f</color>
+    <color name="header_line_color">@android:color/holo_red_light</color>
+
+
+    <!-- Material Design TableView Colors -->
+    <color name="md_cell_text_color">#1f1f1f</color>
+    <color name="md_column_header_text_color">#696969</color>
+    <color name="md_highlight_row_background_color">#EEEEEE</color>
+    <color name="md_selected_background_color">#F5F5F5</color>
+    <color name="md_cell_line_color">#dbdbdb</color>
+    <color name="bg_line">#E7E7E7</color>
+    <color name="bg_color">#FF99DCD7</color>
+    <color name="default_background_color">@color/cell_background_color</color>
+
+    <color name="amber_color">#FFBF00</color>
+
+    <color name="tax_paid">#fb5f5f</color>
+
+    <color name="lightpurples">#dac7fb</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

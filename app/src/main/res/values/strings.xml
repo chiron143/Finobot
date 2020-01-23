@@ -1,0 +1,1232 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Finobot - ITR eFiling</string>
+    <string name="action_settings">Settings</string>
+    <!--Login-->
+    <string name="email_login_desc">Log in to PurplePath</string>
+    <string name="email_bus_login_desc">Create Your Business Account</string>
+    <string name="email_hint">Email Id</string>
+    <string name="email_pwd_hint">Password</string>
+    <string name="email_login">Login</string>
+    <string name="plan_your_finaces">Plan Your Finances</string>
+    <string name="track_your_finaces">Track Your Finances</string>
+    <string name="email_login_tittle">Log In</string>
+    <string name="email_forget_pwd">Forgot password?</string>
+    <string name="new_finobot">New to Finobot?</string>
+    <string name="sign_with_facebook">Connect with Facebook</string>
+    <string name="sign_with_google">Connect  with Google</string>
+    <string name="playbutton">Play</string>
+    <string name="Rs">\u20B9</string>
+    <string name="next_button">Next</string>
+    <string name="bullet_tic">\u2713</string>
+
+    <string name="facebook_app_id">1212824275490329</string>
+    <string name="fb_login_protocol_scheme">fb1212824275490329</string>
+
+    <string name="create_an_account"> Create an account</string>
+    <string name="email_signup_below">---- or sign up below ----</string>
+    <string name="email_busines_signup_below">- or login below --</string>
+    <string name="email_phone_number">Phone number</string>
+    <string name="email_signup">Signup</string>
+    <string name="calender">Calender</string>
+    <string name="calender_text">Select date of birth </string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_continue">Continue</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_done">Done</string>
+    <string name="loading"> Loading\.\.\.</string>
+    <string name="login_verification_code_desc">Please enter your 6 digit verification code</string>
+    <string name="text_next_step">Next step</string>
+    <string name="http_communication_failed_try_again">COMMUNICATION FAILED. TRY AGAIN&#8230;</string>
+    <string name="http_login_invalid_username_or_pwd">Login Failure Invalid username or password</string>
+    <string name="http_login_invalid_email">Invalid email address!</string>
+    <string name="http_login_invalid_pwd">Please enter your password</string>
+    <string name="enteroldpass">Please enter your old password</string>
+    <string name="enternewpass">Please enter your new password</string>
+    <string name="enterthree">Please enter more than three characters on password</string>
+    <string name="enterconfornpass">Please enter your confirm password</string>
+    <string name="newdoes">New password does not match confirm password</string>
+    <string name="successful">Successfully Changed Password</string>
+    <string name="error">Password does not updated</string>
+    <string name="successfully">Feedback Successfully submitted</string>
+    <string name="enteremail">Please enter your e-mail address</string>
+    <string name="entercomments">Please enter your comments</string>
+    <string name="goalconsr">Goal timeline details page under construction</string>
+    <string name="filesuccessfully">File Successfully Uploaded</string>
+    <string name="filesuccessfullydeleted">File Item Deleted</string>
+    <string name="file_valid">Please Upload valid file</string>
+    <string name="pls_upload">Please Upload Upto 10Mb</string>
+
+    <string name="overinsured">Your are over insured</string>
+
+
+    <string name="pleaseentervaliedold">Please enter valid old password</string>
+
+
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+
+    <string name="http_login_invalid_newpwd">Please enter your new password</string>
+    <string name="http_login_invalid_phonenumber">Please enter valid phone number</string>
+    <string name="get_mobile_number">Please enter your valid mobile number</string>
+    <string name="forget_pwd_enter_email">Please enter Email Id</string>
+    <string name="forget_pwd_email_val_msg">Please enter a valid email address</string>
+    <string name="forget_pwd_auth_code">Please enter the authorization code</string>
+    <string name="forget_pwd_not_match">The password you entered does not match. Please correct your password</string>
+    <string name="login_verification_code">Please enter your verification code</string>
+    <string name="login_verification_auth_code_wrong">Please enter valid authorization code</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="check_internet_settings">Please check Internet settings</string>
+    <!-- Forgot password -->
+    <string name="forgot_pwd">Forgot Password</string>
+    <string name="forgot_pwd_screen">Forgot password</string>
+    <string name="forgot_pwd_desc">Enter your e-mail address to reset your password</string>
+    <string name="forgot_pwd_send">Send</string>
+    <string name="forgot_pwd_auth_desc">Enter your authorization code</string>
+    <string name="forgot_pwd_choose_new_desc">Choose a New password</string>
+    <string name="hint_forgot_pwd_auth_pwd">authorized password</string>
+    <string name="hint_forgot_new_pwd">New password</string>
+    <string name="hint_forgot_re_type_pwd">Confirm new password</string>
+    <string name="text_forgot_save">Save</string>
+
+
+    <!-- Investment Detail -->
+    <string name="investment_detail">Investment Detail</string>
+    <string name="investment_assert_type">Investment/Asset Type</string>
+    <string name="investment_Yearly_Amt">Yearly Amt</string>
+    <string name="investment_current_balanceAmt">Current Balance Amt</string>
+    <string name="investment_lorem_lpus">Lorem Ipsum</string>
+    <string name="investment_LoremIpsum">Lorem Ipsum</string>
+    <string name="investment_prompt_spiner">Bank-fixed detail</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">"Cancel"</string>
+
+    <!--Guideview -->
+    <string name="guide_view_googel_accout">Google+</string>
+
+    <!--Marque Static String -->
+    <string name="marquee_daily_scores">Gold Price in today 2670 in 22 carat....  Silver 1gm price today 167.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Page Under Construction</string>
+
+    <!-- SignUp -->
+    <string name="signup_emailid">Email Id</string>
+    <string name="signup_setpassword">Set Password</string>
+    <string name="signup_setconfirmpassword">Confirm Password</string>
+    <string name="signup_fullname">Full Name</string>
+    <string name="signup_mobileno">Mobile Number</string>
+    <string name="signup_txt">Signup</string>
+
+
+    <string name="signup_confirm_password_val_msg">Please check re-enter password</string>
+    <string name="signup_enter_password_val_msg">Please enter password </string>
+    <string name="signup_full_name_val_msg">Please enter your name</string>
+    <string name="signup_old_pass">Please enter your old password</string>
+
+
+    <string name="editprofile_confirm_password">Please enter your confirm password</string>
+
+    <string name="signup_min_password_lenth_msg">Please enter more than three characters on password</string>
+    <string name="terms_checkbox1">Please accept Terms and Conditions &amp; Privacy Policy</string>
+    <string name="terms_checkbox">I accept Terms and Conditions &amp; Privacy Policy</string>
+    <string name="i_agrey"><u>I agree to the terms and conditions</u></string>
+    <string name="view_more"><u>View More</u></string>
+    <!-- Personal Details -->
+    <string name="personal_details_bornyear">Which year were you born?</string>
+    <string name="personal_details_gender">What\'s your gender?</string>
+    <string name="personal_details_mobileno">Mobile Number</string>
+    <string name="personal_details_qualification">What\'s your Qualification?</string>
+    <string name="personal_details_other_qualification">Any other qualification?</string>
+    <string name="personal_details_current_occupation">What\'s your Current Occupation?</string>
+    <string name="personal_details_other_occupation">Other Occupation?</string>
+    <string name="personal_details_current_organization">What\'s your Current Organization?</string>
+    <string name="personal_details_current_designation">What\'s your Current Designation?</string>
+    <string name="personal_details_maritalstatus">Marital Status?</string>
+    <string name="personal_details_marriedsince">Married Since(in years)?</string>
+    <string name="personal_details_marrieddate">Wedding Date</string>
+    <string name="personal_details_address">Address (City, Pin Code, State)</string>
+    <string name="personal_details_ownhouse">This your own house?</string>
+    <string name="personal_details_life_expect_age">Life Expectancy Age?</string>
+    <string name="personal_details_planned_retirement_age">Planned Retirement Age?</string>
+    <string name="personal_details_home_address">Home Address</string>
+    <string name="personal_details_work_address">Work Address</string>
+    <string name="personal_details_residential_status">Residential Status</string>
+    <string name="personal_details_citizenship_status">Citizenship Status</string>
+    <string name="personal_details_government_sector">Are you working in Government Sector?</string>
+
+    <string name="personal_details_year">Please enter your Born Year</string>
+    <string name="personal_detail_gender">Please enter your gender</string>
+    <string name="personal_detail_qualification">Please enter your Qualification</string>
+    <string name="personal_detail_current_occupation">Please enter your Current Occupation</string>
+    <string name="personal_detail_life_expect_age">Please enter your Life Expectancy Age</string>
+    <string name="personal_detail_planned_retirement_age">Please enter your Planned Retirement Age</string>
+
+
+    <string name="personal_details_stay_curr_residence">No of years of stay at current residence(in Years)?</string>
+    <string name="personal_details_years_service_curr_organization">No of years of service with current organization(in Years)?</string>
+
+    <string name="radio_no">No </string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="name">Name*</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age(Years)*</string>
+    <string name="Relationship">Relationship*</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="occupation">Occupation</string>
+    <string name="education">Education</string>
+    <string name="currentdesigination">Current Designation</string>
+    <string name="currentorganization">Current Organization</string>
+    <string name="noofyearsofservice">No.of Years of Service with Current Organization</string>
+
+    <string name="family_prompt_name">Enter your full name</string>
+    <string name="family_prompt_age">Enter your date of birth from Calendar</string>
+
+
+    <string name="done_label">Done</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="year_picker_description">Year list</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_year">Select year</string>
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+
+    <string name="time_placeholder" translatable="false">--</string>
+    <string name="time_separator" translatable="false">:</string>
+
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="deleted_key"><xliff:g example="4" id="key">%1$s</xliff:g> deleted</string>
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="hour_picker_description">Hours circular slider</string>
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="radial_numbers_typeface" translatable="false">sans-serif</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+
+    <!-- Goals-->
+    <string name="goal_name_txt">Goal Name*</string>
+    <string name="goal_type_txt">Goal Type</string>
+    <string name="goal_belongsto_txt">Goal Belongs To</string>
+    <string name="goal_yeartogoal_txt">Years to Goal*</string>
+    <string name="goal_duration_txt">Goal Duration</string>
+    <string name="goal_frequency_txt">Goal Frequency (in Years)</string>
+    <string name="goal_recurrence_txt">Goal Recurrence</string>
+    <string name="goal_recurrence_selection_txt">Please select month and year</string>
+    <string name="goal_costtogoal_txt">Cost to Goal*</string>
+    <string name="goal_category_txt">Goal Category</string>
+    <string name="goal_other_category_txt">Others Please Specify</string>
+    <string name="goal_importance_txt">Goal Importance</string>
+    <string name="rupees">Rs.</string>
+    <string name="goal_priority_txt">Goal Priority*</string>
+    <string name="goal_flexibility_txt">Goal Flexibility</string>
+    <string name="goal_expected_inc_txt">Expected Increment*</string>
+    <string name="goal_notes_txt">Notes</string>
+    <string name="goal_frequency">Goal Frequency</string>
+
+
+    <string name="exp_charitable_contribution">Charitable Contributions</string>
+    <string name="exp_childcare_support">Child Care / Support</string>
+    <string name="exp_education">Education</string>
+    <string name="exp_entertainment">Entertainment / Recreation</string>
+    <string name="exp_finesandpenalties">Fines and Penalties</string>
+    <string name="exp_food">Food</string>
+    <string name="exp_gifts">Gifts</string>
+    <string name="exp_healthcareexpenses">Healthcare Expenses</string>
+    <string name="exp_holidayvacation">Holiday / Vacation</string>
+    <string name="exp_others">Other(s)</string>
+    <string name="exp_parentssuport">Parents Support</string>
+    <string name="exp_personalcare">Personal Care</string>
+    <string name="exp_petcare">Pet Care</string>
+    <string name="exp_purchases">Purchases</string>
+    <string name="exp_shelter">Shelter</string>
+    <string name="exp_skill_development">Skill Development</string>
+    <string name="exp_tax">Tax</string>
+    <string name="exp_transportation">Transportation</string>
+    <string name="exp_utility">Utility</string>
+    <string name="exp_charityanddonation">Charity / Donation</string>
+    <string name="exp_books">Books</string>
+    <string name="exp_computercharges">Computer Charges</string>
+    <string name="exp_externaltuition">External Tuition</string>
+    <string name="exp_stationaries">Stationaries</string>
+    <string name="exp_externaltuitionfees">Tuition Fees</string>
+    <string name="exp_moviesshows">Movies / Shows</string>
+    <string name="exp_party">Party</string>
+    <string name="exp_eatingout">Eating Out</string>
+    <string name="exp_groceries">Groceries</string>
+    <string name="exp_dental">Dental</string>
+    <string name="exp_medical">Medical</string>
+    <string name="exp_vision">Vision</string>
+    <string name="apparels_clothing">Apparels / Clothing</string>
+    <string name="exp_householditems">Household Items</string>
+    <string name="exp_rent">Rent</string>
+    <string name="exp_class">Class</string>
+    <string name="exp_course">Course</string>
+    <string name="exp_equipmentsmaterials">Equipments / Materials</string>
+    <string name="exp_incomeTax">Income Tax</string>
+    <string name="propertytax">Property Tax</string>
+    <string name="exp_commute">Commute</string>
+    <string name="exp_parking">Parking / Miscellaneous</string>
+    <string name="exp_petrol">Petrol / Diesel / Gas</string>
+    <string name="exp_travel">Travel</string>
+    <string name="exp_vehicle_maintenance">Vehicle Maintenance</string>
+    <string name="exp_cable">Cable / Satellite TV</string>
+    <string name="exp_electricity">Electricity</string>
+    <string name="exp_gas">Gas</string>
+    <string name="exp_internet">Internet / Broadband</string>
+    <string name="exp_mobilephone">Mobile Phone</string>
+    <string name="exp_telephone">Telephone</string>
+    <string name="exp_water">Water</string>
+
+    <string name="exp_bus">Bus</string>
+    <string name="exp_metro">Metro</string>
+    <string name="exp_auto">Auto</string>
+    <string name="exp_taxi">Taxi/Cab</string>
+    <string name="exp_train">Train</string>
+    <string name="exp_flight">Flight</string>
+    <string name="select">Select</string>
+
+    <string name="asset_objective">Objective*</string>
+    <string name="asset_link_to">Asset Link to</string>
+    <string name="asset_categories">Categories</string>
+    <string name="notes">Notes</string>
+    <string name="purchasevalue">Purchase Value*</string>
+    <string name="purchasedate">Purchase Date</string>
+    <string name="allocatetogoal">Allocate to Goal</string>
+    <string name="yearstomaturity">Years to Maturity</string>
+    <string name="yearscontribution">Number of Years of Contribution</string>
+    <string name="frequencycontribution">Frequency Contribution</string>
+    <string name="annualcontribution">Annual Contribution*</string>
+    <string name="currentvalue">Current Value*</string>
+    <string name="type">Type</string>
+    <string name="asset_belongs_to">Asset Belongs To</string>
+    <!--  Liability -->
+
+    <string name="liablity_loan_amount">Loan Amount*</string>
+    <string name="outstanding_loan_amount">OutStanding balance*</string>
+    <string name="current_emi">Current EMI*</string>
+    <string name="text_total_tenure">Total Tenure</string>
+    <string name="interest_rate">Interest Rate*</string>
+    <string name="total_tenure">Total Tenure(in Months)*</string>
+    <string name="total_tenure_lease">Number of month in lease term</string>
+    <string name="tenure_completed">Tenure Completed(in Months)</string>
+    <string name="balance_tenure">Balance Tenure (In Months)</string>
+    <string name="start_year">Start Year*</string>
+    <string name="end_year">End Year*</string>
+    <string name="whose_name">Whose Name</string>
+    <string name="insured">Insured (Y/N)</string>
+    <string name="liab_LenderName">Lender Name*</string>
+
+    <string name="sumassured">Sum Assured / Cover*</string>
+    <string name="sumassurednostar">Sum Assured / Cover</string>
+    <string name="annualpremium">Annual Premium*</string>
+    <string name="annualpremiumnostar">Annual Premium</string>
+    <string name="expectedincrement">Expected Increment*</string>
+    <string name="policyissuedate">Policy Issue Date / Start Date / Year*</string>
+    <string name="lastpremiumpaid">Last Premium Paid Date*</string>
+    <string name="nextpremiumpaid">Next Premium Due Date</string>
+    <string name="premiumduetilldate">(Final / Last) Premium Due Till Date /  Year</string>
+    <string name="policyenddate">Policy End Date / Year*</string>
+
+    <string name="policyduedate">Policy Paid Due Date</string>
+    <string name="maturitydate">Vesting Date / Year / Maturity Date / Year</string>
+    <string name="terminyear">Term(in years)</string>
+    <string name="insur_belongs_to">Insurance Belongs To</string>
+    <string name="insur_sub_product_type">Insurance Product Type</string>
+    <string name="insur_sub_product_cat">Insurance Product Catogory</string>
+    <string name="insur_plan_type">Insurance Plan Type</string>
+    <string name="successfullysur">Survey Successfully submitted</string>
+    <string name="insur_sub_type">Insurance Sub Type</string>
+    <string name="short_goal">Short</string>
+    <string name="medium_goal">Medium</string>
+    <string name="long_goal">Long</string>
+
+
+    <string name="cash_management">Cash Management</string>
+    <string name="timeline">TimeLine</string>
+    <string name="goaltracker">Goal Tracker</string>
+    <string name="insuranceplan">Insurance Plan</string>
+    <string name="incomeanalysis">Income Analysis</string>
+    <string name="expensesanalysis">Expenses Analysis</string>
+    <string name="assetallocation">Asset Analysis</string>
+    <string name="taxplan">Tax Plan</string>
+    <string name="networth">NetWorth</string>
+    <string name="retirementplan">Retirement Plan</string>
+    <string name="rs">\u20B9</string>
+    <string name="expensesbreakup">Expenses Breakup</string>
+
+
+    <string name="home_address">Address</string>
+    <string name="home_address_city">City</string>
+    <string name="home_address_state">State</string>
+    <string name="home_address_country">Country</string>
+    <string name="home_zip_code">Zip Code</string>
+
+    <!-- Name of the application. [CHAR_LIMIT=NONE] -->
+
+    <!-- Error displayed when expression evaluates to NaN. [CHAR_LIMIT=14] -->
+    <string name="error_nan">Not a number</string>
+    <!-- Error displayed when expression contains a syntax error. [CHAR_LIMIT=14] -->
+    <string name="error_syntax">Error</string>
+
+    <!-- Abbrev. name of cosine function (e.g. "cos(π)". [CHAR_LIMIT=3] -->
+    <string name="fun_cos">cos</string>
+    <!-- Natural logarithm function (e.g. "ln(2)"). [CHAR_LIMIT=3] -->
+    <string name="fun_ln">ln</string>
+    <!-- Logarithm function (e.g. "log(10)"). [CHAR_LIMIT=3] -->
+    <string name="fun_log">log</string>
+    <!-- Abbrev. name of sine function (e.g. "sin(π)". [CHAR_LIMIT=3] -->
+    <string name="fun_sin">sin</string>
+    <!-- Abbrev. name of tangent function (e.g. "tan(π)". [CHAR_LIMIT=3] -->
+    <string name="fun_tan">tan</string>
+
+    <!-- Clear operation to clear the currently entered expression. [CHAR_LIMIT=3] -->
+    <string name="clr">clr</string>
+    <!-- Delete operation to remove last entered token. [CHAR_LIMIT=3] -->
+    <string name="del">del</string>
+
+    <string name="done">done</string>
+    <!-- Content Descriptions -->
+    <eat-comment />
+
+    <!-- Content description for 'e' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_const_e">Euler\'s number</string>
+    <!-- Content description for 'π' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_const_pi">pi</string>
+
+    <!-- Content description for '.' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_dec_point">point</string>
+
+    <!-- Content description for '(' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_lparen">left parenthesis</string>
+    <!-- Content description for ')' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_rparen">right parenthesis</string>
+
+    <!-- Content description for 'cos' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_fun_cos">cosine</string>
+    <!-- Content description for 'ln' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_fun_ln">natural logarithm</string>
+    <!-- Content description for 'log' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_fun_log">logarithm</string>
+    <!-- Content description for 'sin' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_fun_sin">sine</string>
+    <!-- Content description for 'tan' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_fun_tan">tangent</string>
+
+    <!-- Content description for '+' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_add">plus</string>
+    <!-- Content description for '÷' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_div">divide</string>
+    <!-- Content description for '!' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_perc">percentage</string>
+    <!-- Content description for '×' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_mul">times</string>
+    <!-- Content description for '^' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_pow">power</string>
+    <!-- Content description for '√' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_sqrt">square root</string>
+    <!-- Content description for '-' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_op_sub">minus</string>
+
+    <!-- Content description for "clr" button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_clr">clear</string>
+    <!-- Content description for "del" button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_del">delete</string>
+    <!-- Content description for '=' button. [CHAR_LIMIT=NONE] -->
+    <string name="desc_eq">equals</string>
+
+    <string name="desc_done">done</string>
+    <string name="institutions">Banks</string>
+    <string name="Individuals">Friends</string>
+
+    <!-- No information messages -->
+    <string name="noInfoMsg">No Information to show</string>
+    <string name="noInfoTempMsg">No Information to show at the moment</string>
+    <!--Assumptions Fragmenet-->
+    <string name="equity">Equity &amp; Equity MF Schemens / Index ETFs</string>
+    <string name="mf_schemes">Balanced MF schemes</string>
+    <string name="bonds">Bonds / Government Securities / Debt MF Schemes</string>
+    <string name="liquid_mf">Liquid MF Schemes</string>
+    <string name="gold">Gold &amp; Gold ETF</string>
+    <string name="real_estate">Real Estate Appreciation</string>
+    <string name="Bank_Post_Office">Bank/Post Office Term Desposits (&lt; 1 Year)</string>
+    <string name="ppf">Public Provident Fund / EPFO</string>
+    <string name="Inflation">Inflation</string>
+    <string name="RiskFreeInstruments">Risk Free Instruments</string>
+    <string name="IncomeTaxRateEffective"> Income Tax Rate - Effective Rate</string>
+    <string name="IncomeTaxRateMarginal">Income Tax Rate - Marginal Rate</string>
+    <string name="ServiceTax">Service Tax</string>
+    <string name="IncomeRate">Income Rate</string>
+    <string name="ExpenseRate">Expense Rate</string>
+    <string name="AssetRate">Asset Rate</string>
+    <string name="LiabRate">Liability Rate</string>
+    <string name="GoalRate">Goal Rate</string>
+
+    <!--Settings Fragmenet-->
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <!--Selections Fragmenet-->
+    <string name="RetirementAge">Retirement Age</string>
+    <string name="LifeExpectancyAge">Life Expectancy Age</string>
+    <string name="SpouseRetirementAge">Spouse\'s Retirement Age</string>
+    <string name="SpousesLifeExpectancyAge">Spouse\'s Life Expectancy Age</string>
+    <string name="PercentageOfExpenses">% of Expenses where Service Tax has been paid</string>
+    <string name="TaxConsideration">Tax Consideration</string>
+    <string name="Durationconsideration">How would you like the duration to be considered for…</string>
+    <string name="Inputdetails">Input details</string>
+    <string name="Processing">Processing</string>
+    <string name="Outputreport">Output report</string>
+    <string name="DebtRatio">Debt Ratio</string>
+    <string name="firstHome">Would you like to consider your first home in NetWorth</string>
+
+    <!--Notifiacations Activity/Fragment-->
+    <string name="Notifications">Notifications</string>
+    <string name="MissingTextTop">Seems you have missed the following fields, fill the following fields to serve better</string>
+    <string name="MissingTextBottom"></string>
+    <string name="noAlerts">No Alerts to show at the moment</string>
+    <string name="noPrompts">Please fill the values under MyData</string>
+    <string name="noNotifications">No Notifications to show at the moment</string>
+    <string name="noAnnouncement">No Announcements to show</string>
+
+    <!--Recommendation screen-->
+    <string name="insurance_plan">Life Insurance Plan</string>
+    <string name="emergency_plan">Emergency Fund Plan</string>
+
+    <string name="Networth_plan">Networth</string>
+    <string name="Cashmanagement_plan">Cash Management</string>
+    <string name="Goals_plan">Goals</string>
+    <string name="Retirement_plan">Retirement</string>
+    <string name="Taxation_plan">Taxation</string>
+    <string name="savingandinvesment_plan">Savings &amp; Investments</string>
+    <string name="Healthinsurance_plan">Health Insurance Plan</string>
+    <string name="Autoinsurance_plan">Motor Insurance Plan</string>
+    <string name="Propertyinsurance_plan">Property Insurance Plan</string>
+
+    <!--Datepicker Dialog headings   -->
+    <string name="policyIssueDateDialog">Select Policy Issue Date</string>
+    <string name="TermsInYear">Term In Years</string>
+
+
+    <!--hint-->
+    <string name="title_add_exp">Amount saved in EMI</string>
+    <string name="hint_additional_expenses">Additional Expenses</string>
+    <string name="hint_overall_savings">Overall Savings</string>
+    <string name="hint_present_value">Present Value Savings</string>
+    <string name="hint_real_savings">Real Savings</string>
+    <string name="hint_recommendations">Recommendation</string>
+    <string name="content_home_loan_switch">Home Loan Switch:</string>
+    <string name="content_not_recommendation">Not Recommendation</string>
+    <string name="title_activity_desipro">DesiproActivity</string>
+    <string name="title_goal_type">Goal Type</string>
+    <string name="title_loan_type">Loan Type</string>
+
+    <!--Current Loan and New Loan-->
+    <string name="text_outstanding_bal"><u>Don\'t know the outstanding balance?</u></string>
+    <string name="text_calculate_lease_bal"><u>To calculate lease payment Click here?</u></string>
+    <string name="text_curr_loan">Current Loan</string>
+    <string name="text_outstanding_balance">Outstanding Balance</string>
+    <string name="text_interest_rate">Interest Rate (Per Annum)</string>
+    <string name="text_balance_tenure">Balance Tenure (in months)</string>
+    <string name="text_emi">EMI</string>
+    <string name="text_exit_charges">Exit Charges</string>
+    <string name="text_entry_charges">Entry Charges</string>
+    <string name="text_prepayment_charges">Prepayment Charges</string>
+    <string name="text_foreclosure_charges">Foreclosure Charges</string>
+    <string name="text_insuranceFee">Insurance Fee</string>
+    <string name="text_administrationFee">Administration Fee</string>
+    <string name="text_Down_Payment">Down Payment</string>
+
+
+    <string name="text_recommendation">Recommendation</string>
+    <string name="text_emi_reduction"><u>Option 1 : EMI Reduction</u></string>
+    <string name="text_tenure_reduction"><u>Option 2 : Tenure Reduction</u></string>
+    <string name="text_processing_fee">Processing fee</string>
+    <string name="text_legal_fee">Legal fee</string>
+    <string name="text_administration_fee">Administration fee</string>
+
+    <!-- EMI dialog fragment Deci Pro-->
+    <string name="text_entry_date">Entry Date</string>
+    <string name="text_loanStart_date">Loan Start date</string>
+    <string name="text_firstEmiPaid_date">First EMI Paid date</string>
+    <string name="text_lastEmiPaid_date">Last EMI paid date</string>
+    <string name="text_nextEmiDue_date">Next EMI due date</string>
+    <string name="text_finalEmiPayement_date">Final EMI payment Date</string>
+
+    <!-- Outstanding loan dialog fragment Deci Pro-->
+    <string name="text_loan_amount">Loan Amount</string>
+    <string name="text_outstanding_amount">Your outstanding balance:</string>
+    <string name="Rupee_symbol">₹</string>
+    <string name="Percent_symbol">%</string>
+
+
+    <!-- amortization shedule Deci Pro-->
+    <string name="text_tenure">Tenure (in months)</string>
+    <string name="text_service_tax_rate">Service Tax %</string>
+
+
+    <string name="plus_symbol">+</string>
+    <string name="minus_symbol">-</string>
+
+    <!-- Popup/prompts keys for fragment in home page-->
+
+    <string name="Family">FamilyDetails</string>
+    <string name="Personal">PersonalDetails</string>
+
+    <!-- Shared pref keya-->
+    <string name="MartialStatus">MartialStatus</string>
+    <string name="IsSpouseWorking">IsSpouseWorking</string>
+
+
+    <string name="Myaccounts">My Account Page Under Construction</string>
+    <string name="Myreport">My Report Page Under Construction</string>
+    <string name="Upgrade">Upgrade Page Under Construction</string>
+    <string name="Payment">Payment Page Under Construction</string>
+    <string name="Knowledge">Knowledge Page Under Construction</string>
+    <string name="RateTheapp">RatetheApp Page Under Construction</string>
+    <string name="Schedule">Schedule Page Under Construction</string>
+    <string name="Document">Document Page Under Construction</string>
+    <string name="Quiz">Quiz Page Under Construction</string>
+    <string name="Survey">Survey Page Under Construction</string>
+    <string name="Glossaries">Glossaries Page Under Construction</string>
+    <string name="Goal">Goal timeline details page under construction</string>
+
+
+    <string name="Mycashmanagement">My Cash Management is at</string>
+
+    <string name="Salaryincome">Salary Income</string>
+    <string name="Incomefromproperty">Income From Property</string>
+    <string name="Incomefrombusinessprofession">Income From Business/Profession</string>
+    <string name="IncomeFromOtherSources">Income From Other Sources</string>
+    <string name="CapitalGains">Income From Investments</string>
+    <string name="Expanse">Expense</string>
+    <string name="Expanseanaysis">Expense Analysis</string>
+    <string name="Oblication">Obligation</string>
+    <string name="Contibution">Contribution</string>
+    <string name="Commitment">Commitment</string>
+    <string name="CapitalExpanse">Capital Expense</string>
+    <string name="Value">Value</string>
+    <string name="IncomefromSources">Income from Sources</string>
+    <string name="OverallIncome">Overall Income</string>
+    <string name="OverallExpense">Overall Expense</string>
+    <string name="title_activity_calculator">CalculatorActivity</string>
+
+    <string name="succesfullRetrival">Details retrieved Succesfully</string>
+
+    <string name="Currentallocation">Current Allocation</string>
+    <string name="Overallloanamount">Overall Loan Amount</string>
+    <string name="Asontodaymyassertvalued">As on today My Asset is valued at</string>
+
+    <string name="Asontodaymyliability">As on today My Liability is</string>
+
+    <string name="Asset">Asset</string>
+    <string name="Categories">Categories</string>
+    <string name="Income">Income</string>
+    <string name="Equityshares">Equity Shares</string>
+    <string name="Fixincome">Fixed Income</string>
+    <string name="Liquidity">Liquidity</string>
+    <string name="Myyearlyexpanse">My yearly Expense is estimated at</string>
+    <string name="Expense">Expense</string>
+
+    <string name="Commoditiesgold">Commodities Gold</string>
+    <string name="EmploymentBenefit">Employment Benefits</string>
+    <string name="Equity">Equity</string>
+    <string name="FixedIncomeDebt">Fixed Income/Debit</string>
+    <string name="HouseholdAsset">Household Assets</string>
+    <string name="Liquid">Liquid Cash</string>
+    <string name="RealEstateProperty">Real Estate/Property</string>
+    <string name="Otherasset">Other Assets</string>
+
+    <string name="insurances">Insurance</string>
+    <string name="from_current_insurance">From current insurance</string>
+    <string name="from_savings_investment">From savings and investment</string>
+    <string name="estimate_expenses">Estimated expenses</string>
+    <string name="current_obligation">Current obligation</string>
+    <string name="future_requirement">Future requirement</string>
+
+    <string name="future_requirements">to meet your expense and pay off your obligation
+    and also to realign your life objective</string>
+
+
+    <string name="notification_date">Notification date</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="pay_date">Paid date</string>
+    <string name="due_date">Due date</string>
+
+
+    <string name="emergencyFund">Emergency fund plan</string>
+    <string name="emergencyFundActual">Emergency fund actual</string>
+    <string name="cash">Cash</string>
+    <string name="saving">Savings</string>
+    <string name="currentaccount">Current Account</string>
+    <string name="fixedrecuringdeposit">Fixed Recurring Deposit</string>
+    <string name="termdeposit">Term Deposit</string>
+
+
+    <string name="Myincomeanaysis">As on today My Income Analysis is</string>
+
+    <string name="bullet">\u2022</string>
+
+    <string name="charactercontribution">Charity Contribution</string>
+    <string name="childcare">Child Care Support</string>
+    <string name="Education">Education</string>
+    <string name="entertainmentrecreation">Entertainment Recreation</string>
+    <string name="finespenalty">Fines Penalty</string>
+    <string name="food">Food</string>
+    <string name="healthexpense">Health Expenses</string>
+    <string name="holidayvocation">Holiday Vacation</string>
+    <string name="gifts">Gifts</string>
+    <string name="purchase">Purchase</string>
+    <string name="petcare">Pet Care</string>
+    <string name="shelter">Shelter</string>
+    <string name="Skilldevelopment">Skill Development</string>
+    <string name="tax">Tax</string>
+    <string name="transport">Transport</string>
+    <string name="utility">Utility</string>
+
+    <string name="creditcard">Credit Card</string>
+    <string name="loanoffer">Loan Offers</string>
+    <string name="refundabledeposit">Refundable Deposit</string>
+    <string name="unpalatablebill">Unpaid Bills</string>
+    <string name="Loan">Loan</string>
+    <string name="otherliabilities">Other Liabilities</string>
+
+
+    <string name="edt_pro_email">Email</string>
+    <string name="edt_pro_oldpass">Old Password</string>
+    <string name="edt_pro_newpass">New Password</string>
+    <string name="edt_pro_confirmpass">Confirm New Password</string>
+    <string name="purplename">Finobot \nPurplePath Wealth Management Solutions Private Limited</string>
+
+    <string name="call_now_txt">Call Now</string>
+    <string name="send_mail_txt">Send mail</string>
+    <string name="website">Website</string>
+    <string name="names">Name</string>
+    <string name="yourcomments">Your Comments</string>
+    <string name="sendfeedback">Send Feedback</string>
+    <string name="privacypolicy"><u>Privacy Policy</u></string>
+
+
+    <string name="first_names">First Name</string>
+    <string name="last_names">Last Name</string>
+    <string name="alias_name">Alias Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="homeaddress">Home Address</string>
+
+
+    <string name="camera">Camera</string>
+    <string name="single_image_gallery">Single Image - Gallery</string>
+    <string name="multi_image_gallery">Multi Image - Gallery</string>
+    <string name="take_phot">Take Photo</string>
+    <string name="permission_camera_denied">Camera permission denied.</string>
+    <string name="all_files_jpg_zip_ppt_doc_pdf_etc">All Files( jpg,zip,ppt,doc,pdf…etc )</string>
+    <string name="permission_write_denied">Read/Write permission denied!</string>
+    <string name="currentDir">Current Dir</string>
+    <string name="fileSize">File Size</string>
+    <string name="iopted">I opted to include</string>
+    <string name="accept">Accept</string>
+    <string name="totalgoal">Total Goal</string>
+    <string name="shortgoal">Short \n Term Goals</string>
+    <string name="mediamgoal">Medium \n Term Goals</string>
+    <string name="longgoal">Long \n Term Goals</string>
+    <string name="greengoal">Green</string>
+    <string name="ambergoal">Amber</string>
+    <string name="redgoal">Red</string>
+
+    <string name="goalrequrance">No of Goal Recurrence</string>
+    <string name="goalintervel">Goal Interval</string>
+    <string name="title_activity_house_buy_vs_rent">HouseBuyVsRentActivity</string>
+
+    <!--Home Buy Vs Rent -->
+    <string name="dont_know_emi"><u>Don\'t know the EMI?</u></string>
+
+    <!--CAR Vs Lease -->
+    <string name="carvsleasetitle">Car Vs Lease</string>
+    <string name="city_type">City Type</string>
+    <string name="tax_slab">Tax Slab</string>
+    <string name="Opertunitycost">Opportunity Cost(Per Annum)</string>
+    <string name="loanRequired">Loan Required</string>
+    <string name="downpayment">Down Payment</string>
+    <string name="loantenure">Loan Tenure(Per Annum)</string>
+    <string name="loantenureMonth">Loan Tenure(Per Month)</string>
+    <string name="loaninterestrate">Loan Interest Rate</string>
+    <string name="carpurchaseprice">Car Purchase Price</string>
+    <string name="estiamtedcarprice">Estimated Car Value at the end of period</string>
+    <string name="discount">Discounts</string>
+    <string name="rebates">Rebates</string>
+    <string name="tradeinvalue">Trade - in(s) value</string>
+    <string name="resedualvalue">Residual value</string>
+    <string name="basicplan">Basic Plan</string>
+    <string name="Rider">Rider</string>
+    <string name="topUp">Top Up</string>
+    <string name="supertopUp">Super Top Up</string>
+    <string name="pleaseselectcheckbox">Please select Check box to add topup</string>
+    <string name="errorcarprice">Please enter car price</string>
+    <string name="errordownpayment">Please enter downpayment</string>
+    <string name="errormon_lease_pay">Please enter Monthly Lease pay</string>
+    <string name="errorplanned_occupation">Please enter planned Occupation</string>
+    <string name="erroroppur_cost">Please enter Opportunity Cost</string>
+    <string name="errormon_total_upfront_secqpay">Please enter total upfront secure pay</string>
+
+    <string name="cibillink"><u>https://www.cibil.com</u></string>
+
+    <string name="incometaxlink"><u>https://www.incometaxindiaefiling.gov.in</u></string>
+
+    <string name="individualhealthplan">Individual Health Plan</string>
+    <string name="familyfloaterplan">Family Floater Plan</string>
+
+    <string name="taxplandetail">Tax Plan Detail</string>
+    <string name="taxplanproduct">Tax Product</string>
+
+    <string name="taxplansavings">Tax Savings</string>
+    <string name="taxplanproducts">Tax-Savings Products</string>
+
+    <string name="taxanalysischart">Tax Analysis</string>
+    <string name="taxplanfunnel">Tax Reduction</string>
+
+    <string name="individual_auto">Individual</string>
+    <string name="total_auto">Total</string>
+
+    <!-- car vs lease-->
+    <string name="plannedoccuation">Planned Occupation</string>
+    <string name="mainrepair">Main Repair</string>
+    <string name="fualrunngexp">Fuel Running Expense</string>
+    <string name="insurance">Insurance</string>
+    <string name="Totalupforntsecuritypay">Total upfornt Security pay</string>
+    <string name="monthlyleasepay">Monthly Lease Pay</string>
+    <string name="leaseforexpense">Lease for termination expense </string>
+
+    <string name="expected_inc">To view the detail goal plan fill expected increment in goal input</string>
+    <string name="successpayment">Successfully submitted</string>
+
+    <string name="basic">Basic</string>
+    <string name="lite">Lite</string>
+    <string name="pro">Pro</string>
+
+    <!--Hint Personal details-->
+    <string name="hint_personal_first_name">Enter your full name</string>
+    <string name="hint_personal_alias_name">Enter your alias name</string>
+    <string name="hint_personal_born_year">Enter your date of birth from calendar</string>
+    <string name="hint_personal_gender">Select your Gender</string>
+    <string name="hint_personal_marital_status">Select your Marital status</string>
+    <string name="hint_personal_current_occupation">Enter your current occupation If do not find any occupation means click others and add your occupation</string>
+    <string name="hint_personal_qualification">Select your Qualification</string>
+    <string name="hint_personal_organization">Enter your Organization</string>
+    <string name="hint_personal_home_address">Enter your complete home address</string>
+    <string name="hint_personal_work_address">Enter your complete work address</string>
+    <string name="hint_personal_designation">Enter your Designation</string>
+    <string name="hint_personal_plan_retire">Enter the age in which you have planned to retire</string>
+    <string name="hint_personal_life_expec">Enter your Life expectacy age as per your guess</string>
+
+    <!--Hint family details-->
+    <string name="hint_family_first_name">Enter your Family members full name</string>
+    <string name="hint_family_gender">Select Gender for the above mentioned Family member</string>
+    <string name="hint_family_age">Enter the Family members age</string>
+    <string name="hint_family_relationship">Select your relationship with the Family member</string>
+    <string name="hint_family_occupation">Enter the Family members Occupation. If you cannot find the occupation listed, click on others and enter your Family members occupation</string>
+    <string name="hint_family_qualification">Enter the Family member qualification. If not find any qualification click on others and add your Family members qualification</string>
+    <string name="hint_family_current_decignation">Enter Family member Current designation</string>
+    <string name="hint_family_current_organization">Enter the Family member Current organization</string>
+    <string name="hint_family_no_of_years">Enter the years of service with Current organization for the Family member</string>
+    <string name="hint_family_retirement">Enter the reiterment age for the Family member</string>
+    <string name="hint_family_life_expec">Enter the Life expectacy age as you assumed for the Family member</string>
+
+    <!--Hint goal details-->
+    <string name="hint_goal_name">Enter your Goal name in detail</string>
+    <string name="hint_goal_category">Select the Goal category from the list. If you do not find the Goal category in the list, click on others and enter your Goal category</string>
+    <string name="hint_goal_belongsto">Select Self &#92; Family member to whom the Goal belogs to</string>
+    <string name="hint_goal_costtogoal">Enter actual or approximate money you need to complete your goal</string>
+    <string name="hint_goal_yearstogoal">Enter the number of years you have to reach the goal </string>
+    <string name="hint_goal_duration">Enter the number of years which the goal is active</string>
+    <string name="hint_goal_recurrence">Select the Goal Recurrence option. If yes, mention the interval/frequency</string>
+    <string name="hint_goal_interval">Enter the number of years for repeatation of Goal duration</string>
+    <string name="hint_goal_frequency">Enter the number of years for the goal has to repeat</string>
+    <string name="hint_goal_importance">Select the Importance of the goal on the list</string>
+    <string name="hint_goal_priority">Select the Priorityof the goal on the list</string>
+    <string name="hint_goal_flexibility">Select the Flexibility of the goal on the list</string>
+    <string name="hint_goal_expectedincrement">Enter the Expected increment in percentage for this goal</string>
+    <string name="hint_goal_notes">Brief notes about this goal</string>
+
+
+    <!--Hint asset details-->
+    <!--physical asset-->
+    <string name="hint_phsical_asset_name">Enter your Physical asset name in detail</string>
+    <string name="hint_phsical_asset_objective">Select the Objective on the list which has been preferred</string>
+    <string name="hint_phsical_asset_Categories">Select the List of categories for the physical asset. If not on the list click on others and enter your physical category</string>
+    <string name="hint_phsical_asset_belongs_to">Allocate the asset to you &#92;your family members</string>
+    <string name="hint_phsical_asset_currentvalue">Current value for the Physical asset should be entered</string>
+    <string name="hint_phsical_asset_annual_contribution">Annual Contribution for the asset has to be entered</string>
+    <string name="hint_phsical_asset_frequency_contribution">Continous contribution for the asset has to be entered</string>
+    <string name="hint_phsical_asset_no_of_year_contri">Contributing years has to be entered</string>
+    <string name="hint_phsical_asset_years_to_maturity">Maturity years has to be selected </string>
+    <string name="hint_phsical_asset_allocate_to_goal">These assets have any connection with your goals means select the goal</string>
+    <string name="hint_phsical_asset_goal_list">Select the goal which has to linked with this asset</string>
+    <string name="hint_phsical_asset_purchase_date">Asset purchased date has to be select from the Calendar</string>
+    <string name="hint_phsical_asset_purchase_value">Asset purachased value has to be entered</string>
+    <string name="hint_phsical_asset_notes">Brief notes for this asset</string>
+
+    <!--financial asset-->
+    <string name="hint_financial_asset_name">Enter your Financial asset name in detail</string>
+    <string name="hint_financial_asset_objective">Select the Objective on the list which has been preferred</string>
+    <string name="hint_financial_asset_Categories">Select the List of categories for the Financial asset. If not on the list click on others and enter your financial category</string>
+    <string name="hint_financial_asset_belongs_to">Allocate the asset to you &#92; your family members</string>
+    <string name="hint_financial_asset_currentvalue">Current value for the Financial asset should be entered</string>
+    <string name="hint_financial_asset_annual_contribution">Annual Contribution for the asset has to be entered</string>
+    <string name="hint_financial_asset_frequency_contribution">Continous contribution for the asset has to be entered</string>
+    <string name="hint_financial_asset_no_of_year_contri">Contributing years has to be entered</string>
+    <string name="hint_financial_asset_years_to_maturity">Maturity years has to be selected </string>
+    <string name="hint_financial_asset_allocate_to_goal">These assets have any connection with your goals means select the goal</string>
+    <string name="hint_financial_asset_goal_list">Select the goal which has to linked with this asset</string>
+    <string name="hint_financial_asset_purchase_date">Asset purchased date has to be select from the Calendar</string>
+    <string name="hint_financial_asset_purchase_value">Asset purachased value has to be entered</string>
+    <string name="hint_financial_asset_notes">Brief notes for this asset</string>
+
+    <!--liability details-->
+    <!--bank-->
+    <string name="hint_bank_laibility_name">Enter your Liabilities banks name in detail</string>
+    <string name="hint_bank_laibility_objective">Select the Objective on the list which has been preferred</string>
+    <string name="hint_bank_laibility_categories">Select the List of categories for the Banks liability. If not on the list click on others and enter your new category</string>
+    <string name="hint_bank_laibility_asset_links_to">Liabilities has been linked to corresponding asset category</string>
+    <string name="hint_bank_laibility_lender_name">Enter the full name of Lender</string>
+    <string name="hint_bank_laibility_loan_amount">Amount applied for loan in ruppes</string>
+    <string name="hint_bank_laibility_outstand_balan">Outstanding balance for the loan amount in rupees</string>
+    <string name="hint_bank_laibility_current_emi">Enter your monthly emi amount</string>
+    <string name="hint_bank_laibility_interest_rate">Enter the Rate of interest for the loan amount</string>
+    <string name="hint_bank_laibility_total_tenure">Enter the total loan period for the loan amount</string>
+    <string name="hint_bank_laibility_balance_tenure">Enter the balance loan period for the loan amount</string>
+    <string name="hint_bank_laibility_last_premium_due_date">Select the last premium date from the Calendar</string>
+    <string name="hint_bank_laibility_next_premium_due_date">Select the next premium date for the loan from the calendar</string>
+    <string name="hint_bank_laibility_loan_frequency">Select the Loan frequency years for the loan</string>
+    <string name="hint_bank_laibility_start_year">Select the Start year for the loan amount</string>
+    <string name="hint_bank_laibility_end_year">Select the End year for the loan amount</string>
+    <string name="hint_bank_laibility_whose_name">Loan amount has been applied user name</string>
+    <string name="hint_bank_laibility_insured">Loan amount has been insured for safety purpose</string>
+
+    <!--friends-->
+    <string name="hint_friend_laibility_name">Enter your Liabilities friends name in detail</string>
+    <string name="hint_friend_laibility_objective">Select the Objective on the list which has been preferred</string>
+    <string name="hint_friend_laibility_categories">Select the List of categories for the Friends liability. If not on the list click on others and enter your new category</string>
+    <string name="hint_friend_laibility_asset_links_to">Liabilities has been linked to corresponding asset category</string>
+    <string name="hint_friend_laibility_lender_name">Enter the full name of Lender</string>
+    <string name="hint_friend_laibility_loan_amount">Amount applied for loan in ruppes</string>
+    <string name="hint_friend_laibility_outstand_balan">Outstanding balance for the loan amount in rupees</string>
+    <string name="hint_friend_laibility_current_emi">Enter your monthly emi amount</string>
+    <string name="hint_friend_laibility_interest_rate">Enter the Rate of interest for the loan amount</string>
+    <string name="hint_friend_laibility_total_tenure">Enter the total loan period for the loan amount</string>
+    <string name="hint_friend_laibility_balance_tenure">Enter the balance loan period for the loan amount</string>
+    <string name="hint_friend_laibility_last_premium_due_date">Select the last premium date from the Calendar</string>
+    <string name="hint_friend_laibility_next_premium_due_date">Select the next premium date for the loan from the calendar</string>
+    <string name="hint_friend_laibility_loan_frequency">Select the Loan frequency years for the loan</string>
+    <string name="hint_friend_laibility_start_year">Select the Start year for the loan amount</string>
+    <string name="hint_friend_laibility_end_year">Select the End year for the loan amount</string>
+    <string name="hint_friend_laibility_whose_name">Loan amount has been applied user name</string>
+    <string name="hint_friend_laibility_insured">Loan amount has been insured for safety purpose</string>
+
+
+    <!--insurance details-->
+    <!--life insurance-->
+    <string name="hint_life_insurance_name">Enter your Life insurance name in detail</string>
+    <string name="hint_life_insurance_belongs_to">Allocate the Life insurance to you or your family members</string>
+    <string name="hint_life_insurance_product_type">List of products type will be available to select the life insurance</string>
+    <string name="hint_life_insurance_sum_assured">Sum assured amount for the life insurance has to entered in rupees</string>
+    <string name="hint_life_insurance_annual_premiam">Annual premium for the life insurance has to entered in rupees</string>
+    <string name="hint_life_insurance_expected_increment">Expected increment as percentage has to entered </string>
+    <string name="hint_life_insurance_Policyissues_date_Start_year">Policy start year has to select from the calendar</string>
+    <string name="hint_life_insurance_last_premium_paid_date">Select the last premium paid date from the Calendar</string>
+    <string name="hint_life_insurance_next_premium_due_date">Select the next premium due date for the life insurance from the calendar</string>
+    <string name="hint_life_insurance_Final_last_premium_due_till_date_year">Select the Final or last premium duee date for the life insurance from the calendar</string>
+    <string name="hint_life_insurance_policy_paid_due_date">Select the Policy paid due date for the life insurance from the calendar</string>
+    <string name="hint_life_insurance_Policy_end_date_year">Select the next policy end date for the life insurance from the calendar</string>
+    <string name="hint_life_insurance_Vesting_date_Maturity_year">Select the Maturity date for the life insurance from the calendar</string>
+    <string name="hint_life_insurance_insuran_frequency">Enter the number of years for the frequency for this insurance</string>
+    <string name="hint_life_insurance_term">Enter the term in years for the life insurance</string>
+    <string name="hint_life_insurance_note">Brief notes for this life insurance</string>
+    <!--general insurance-->
+    <string name="hint_general_insurance_name">Enter your General insurance name in detail</string>
+    <string name="hint_general_insurance_belongs_to">Allocate the General insurance to you&#92;your family members</string>
+    <string name="hint_general_insurance_product_type">List of products Categorywill be available to select the General insurance</string>
+    <string name="hint_lgeneral_insurance_sum_assured">Sum assured amount for the General insurance has to entered in rupees</string>
+    <string name="hint_general_insurance_annual_premiam">Annual premium for the General insurance has to entered in rupees</string>
+    <string name="hint_general_insurance_expected_increment">Expected increment as percentage has to entered </string>
+    <string name="hint_general_insurance_Policyissues_date_Start_year">Policy start year has to select from the calendar</string>
+    <string name="hint_general_insurance_last_premium_paid_date">Select the last premium paid date from the Calendar</string>
+    <string name="hint_general_insurance_next_premium_due_date">Select the next premium due date for the General insurance from the calendar</string>
+    <string name="hint_general_insurance_Final_last_premium_due_till_date_year">Select the Final&#92;last premium duee date for the General insurance from the calendar</string>
+    <string name="hint_general_insurance_policy_paid_due_date">Select the Policy paid due date for the General insurance from the calendar</string>
+    <string name="hint_general_insurance_Policy_end_date_year">Select the next policy end date for the General insurance from the calendar</string>
+    <string name="hint_general_insurance_Vesting_date_Maturity_year">Select the Maturity date for the General insurance from the calendar</string>
+    <string name="hint_general_insurance_insuran_frequency">Enter the number of years for the frequency for this insurance</string>
+    <string name="hint_general_insurance_term">Enter the term in years for the General insurance</string>
+    <string name="hint_general_insurance_note">Brief notes for this General insurance</string>
+
+
+    <!--retirement benefits-->
+    <string name="hint_retirement_gratuity">Enter your amount of money given to a person who has performed a service</string>
+    <string name="hint_retirement_annuity_pension">Enter your Annuities to provide you with a guaranteed income payable for either the rest of your life or a fixed number of years. </string>
+    <string name="hint_retirement_superannuationfund">Enter your Superannuation fund for regular payment made into a fund by an employee towards a future pension</string>
+    <string name="hint_retirement_leaveencashment">Enter your leave encashed during the period of employment &#92; service is fully taxable. LC is either fully or partially exempted at the time of retirement or resignation.</string>
+    <string name="hint_retirement_retrenchmentcompensation">Enter your amount for Retrenchment Compensation is the termination of service of a workman by the employer, for any reason other than a punishment inflicted by way of disciplinary action.</string>
+    <string name="hint_retirement_voluntaryretirementcompensation">Enter your amount for VRS applies to an employee who has completed 10 years of service or is above 40 years of age.</string>
+    <string name="hint_retirement_others">Enter your other benefits amount in detail</string>
+    <string name="hint_retirement_notes">Brief notes for retirement benefits in detail</string>
+
+    <!--home loan switch-->
+    <!--current loan-->
+    <string name="hint_home_loan_current_outsandingbalance">Enter your outstanding balance for the Current loan</string>
+    <string name="hint_home_loan_current_outsandingbalancelink">To calculate the outstanding balance using the terms click here</string>
+    <string name="hint_home_loan_current_loanamount">Enter the total amount for the current loan</string>
+    <string name="hint_home_loan_current_intersetrateperannum">Enter the interest rate for the current loan in percentage</string>
+    <string name="hint_home_loan_current_totaltenure">Enter the Total period for the current loan in months</string>
+    <string name="hint_home_loan_current_balancetenure">Enter the remaining months for the current loan has to be paid</string>
+    <string name="hint_home_loan_current_EMI">Enter the emi amount for the current loan</string>
+    <string name="hint_home_loan_current_prepaymentcharges">A prepayment charges is a fee charged by your lender when you pay off a loan early</string>
+    <string name="hint_home_loan_current_foreclosurecharges">Additional fee imposed by loan agreements where a borrower retires a loan before its scheduled pay-off date</string>
+    <string name="hint_home_loan_current_administrationfee">The Administrative charges are a one-time nonrefundable charges collected by the Lender for the purpose of appraising the valuation and legal verification of property to ascertain suitability of accepting</string>
+    <!-- new loan-->
+    <string name="hint_home_loan_new_outsandingbalance">Enter your outstanding balance for the New loan</string>
+    <string name="hint_home_loan_new_intersetrateperannum">Enter the interest rate for the new loan in percentage</string>
+    <string name="hint_home_loan_new_totaltenure">Enter the Total period for the new loan in months</string>
+    <string name="hint_home_loan_new_EMI">Enter the emi amount for the new loan</string>
+    <string name="hint_home_loan_new_processingfee">The processing fee was a necessary part of issuing the loan so that amount was taken out of the balance of the loan </string>
+    <string name="hint_home_loan_new_legalfee">The name given to the money that is charged by the attorney for his services to a client.</string>
+    <string name="hint_home_loan_new_administrationfee">The Administrative charges are a one-time nonrefundable charges collected by the Lender for the purpose of appraising the valuation and legal verification of property to ascertain suitability of accepting</string>
+    <string name="hint_home_loan_new_insurancefee">Loan insurance means during tough times, you will have an insurance cover to take care of the EMIs or of the outstanding loan amount.</string>
+    <!--outstandin dailog-->
+    <string name="hint_home_loan_dailog_outsandingbalance">Enter your outstanding balance for the Current loan</string>
+    <string name="hint_home_loan_dailog_interset">Enter the interest rate for the current loan in percentage</string>
+    <string name="hint_home_loan_dailog_total_tern">Enter the Total period for the current loan in months</string>
+    <string name="hint_home_loan_dailog_tenure_comp">Enter the Total period for the current loan in months</string>
+    <string name="hint_home_loan_dailog_emi">Enter the emi amount for the current loan</string>
+
+
+    <!--Calculate lease dailog-->
+    <string name="car_pur_price">Car Purchase Price</string>
+    <string name="calculate_lease_capitise_reduction">Capitalized cost reduction</string>
+    <string name="calculate_lease_residual">Residual Value</string>
+    <string name="calculate_lease_depreciation">Depreciation</string>
+    <string name="calculate_lease_no_of_month">Number of months in lease term</string>
+    <string name="calculate_saletax">Sales Tax</string>
+
+    <!--amartization schedule-->
+    <string name="hint_amartization_outsandingbalance">Enter your outstanding balance for existing loan</string>
+    <string name="hint_amartization_interestrate">Enter your interest rate for existing loan amount</string>
+    <string name="hint_amartization_totaltenure">Enter the total period of time for existing loan in months</string>
+    <string name="hint_amartization_servicetax">Enter the service tax for the existing loan</string>
+
+    <!--deposit comparision-->
+    <string name="hint_deposit_investmenttype">Select your Investment type for the Deposit amount</string>
+    <string name="hint_deposit_initial">Enter the amount of money required to open a savings or investment account</string>
+    <string name="hint_deposit_periodical">Enter the amount for investment made in form of equal deposits over a time period</string>
+    <string name="hint_deposit_paymentperiod">Select your Payable period that measures how long it takes a company to pay </string>
+    <string name="hint_deposit_paymenttype">Select your Payment type that measures its time period for the deposit</string>
+    <string name="hint_deposit_tenure">Enter the total period of time for required deposit in months</string>
+    <string name="hint_deposit_rateofinterest">Enter your interest rate for required deposit amount</string>
+
+    <!--loan comparision-->
+    <string name="hint_loan_purchasevalue">Enter the amount required to take the loan</string>
+    <string name="hint_loan_downpayment">Enter an initial amount paid at the time of purchase</string>
+    <string name="hint_loan_financevalue">Enter the current Financial value for the loan</string>
+    <string name="hint_loan_tenure">Enter the total period of time for required loan in months</string>
+    <string name="hint_loan_rateofinterest">Enter your interest rate for required loan amount</string>
+    <string name="hint_loan_paymentperiod">Select your Payable period that measures how long it takes a company to pay </string>
+    <string name="hint_loan_paymenttype">Select your Payment type that measures its time period for the loan</string>
+    <string name="hint_loan_EMI">Enter the emi amount for the required loan</string>
+    <string name="hint_loan_residualvalue">Enter your residual value of an asset is usually estimated as its fair market value, as determined by agreement</string>
+    <string name="hint_loan_processingfee">The processing fee was a necessary part of issuing the loan so that amount was taken out of the balance of the loan</string>
+    <string name="hint_loan_legalfee">The name given to the money that is charged by the attorney for his services to a client</string>
+    <string name="hint_loan_administrationfee">The Administrative charges are a one-time nonrefundable charges collected by the Lender for the purpose of appraising the valuation and legal verification of property to ascertain suitability of accepting</string>
+    <string name="hint_loan_insurancecover">Loan insurance means during tough times, youll have an insurance cover to take care of the EMIs or of the outstanding loan amount</string>
+
+    <!-- time value of money-->
+    <string name="hint_time_tenure">Enter the total period of time for time value of money in months or you can calculate by entering all other details and click tenure button on the right</string>
+    <string name="hint_time_rateperannum">Enter your interest rate for time value of money or you can calculate by entering all other details and click on Rate button on the right</string>
+    <string name="hint_time_presentvalue">Enter the Present value for the time value of money or you can calculate by entering all other details and click on PV button on the right </string>
+    <string name="hint_time_futurevalue">Enter the Future value for the time value of money or you can calculate by entering all other details and click on FV button on the right </string>
+    <string name="hint_time_payment">Enter the payment for the time value of money or you can calculate by entering all other details and click on payment button on the right </string>
+    <string name="hint_time_paymenttype">Select your Payment type that measures its time period for the time value of money </string>
+    <string name="hint_time_compoundingperiodperyear">Select your Compounding period that measures its time period for the time value of money </string>
+    <string name="hint_time_paymentperiodperyear">Select your Payable period that measures how long it takes to pay for time value of money in year </string>
+
+    <!--loan eligibility-->
+    <string name="hint_loaneligibility_loantype">Select your Loan type for Loan eligibility</string>
+    <string name="hint_loaneligibility_fundrequirement">Enter the amount for fund requirement for the loan</string>
+    <string name="hint_loaneligibility_downpayment">Enter an initial amount paid at the time of purchase for the loan</string>
+    <string name="hint_loaneligibility_loanrequirement">Enter the total loan amount needed</string>
+    <string name="hint_loaneligibility_tenure">Enter the total period of time for the loan in months</string>
+    <string name="hint_loaneligibility_interestrate">Enter your interest rate for the loan amount</string>
+    <string name="hint_loaneligibility_paymentcapacity">Enter the amount for the payment capacity for the loan amount</string>
+    <string name="hint_loaneligibility_totalincome">Enter the total income amount for loan eligibility</string>
+    <string name="hint_loaneligibility_totalpayments">Enter the fixed payment amount for the loan</string>
+    <string name="hint_loaneligibility_loantovalue">Enter the loan compared to the value of the property securing the loan</string>
+    <string name="hint_loaneligibility_creditscore">A credit score is a statistical number that evaluates a consumers creditworthiness and is based on credit history.</string>
+
+    <!-- goal affortability-->
+    <string name="hint_goalaffordability_goaltype">Select your Goal type for to afford</string>
+    <string name="hint_goalaffordability_timeframe">Enter the achievement for the Goal in years</string>
+    <string name="hint_goalaffordability_currentcost">Enter the current cost for the Goal</string>
+    <string name="hint_goalaffordability_expectedincrement">Enter the escalation amount for the goal</string>
+    <string name="hint_goalaffordability_currentsavings">Enter the current savings for the goal to establish</string>
+    <string name="hint_goalaffordability_annualsavings">Enter the Annual savings for the goal to establish</string>
+    <string name="hint_goalaffordability_expectedreturn">Enter the rate of return on your investment for the goal</string>
+
+    <!-- house by vs rent-->
+    <string name="hint_buyvsrent_citytype">Select your city type for the house</string>
+    <string name="hint_buyvsrent_grosssalarye">Enter your gross salary from your income </string>
+    <string name="hint_buyvsrent_taxslab">Select your tax slab from your salary income</string>
+    <string name="hint_buyvsrent_opportunitycost">Enter your opportunity cost in percentage</string>
+    <string name="hint_buyvsrent_plannedoccupation">Enter the years for your planned occupation</string>
+    <!--Buy-->
+    <string name="hint_buyvsrent_propertyprice">Enter the total property price for the house to buy</string>
+    <string name="hint_buyvsrent_status">Select your status for the home </string>
+    <string name="hint_buyvsrent_expectedpropertyappreciation">Enter your escalation for the property in percentage for the house to buy</string>
+    <string name="hint_buyvsrent_Realestatetaxes">Enter your real estate taxes for house to buy</string>
+    <string name="hint_buyvsrent_maintenanceandrepairsmonth">Enter your amount spend for maintance and repairs in monthly</string>
+    <string name="hint_buyvsrent_maintenanceandrepairsyear">Enter your amount spend for maintance and repairs yearly</string>
+    <string name="hint_buyvsrent_utilitiesmonth">Enter your amount spend for Utilities in monthly</string>
+    <string name="hint_buyvsrent_utilitiesyear">Enter your amount spend for Utilities in yearly</string>
+    <string name="hint_buyvsrent_insurancemonth">Enter your amount spend for Insurance in monthly</string>
+    <string name="hint_buyvsrent_insuranceyear">Enter your amount spend for Insurance in yearly</string>
+    <string name="hint_buyvsrent_loanrequired">Select the radio button if loan has been required for to buy</string>
+    <string name="hint_buyvsrent_downpayment">Enter an initial amount paid at the time of purchase for the loan</string>
+    <string name="hint_buyvsrent_loanamount">Enter the total loan amount needed</string>
+    <string name="hint_buyvsrent_loantenure">Enter the total period of time for the loan in months</string>
+    <string name="hint_buyvsrent_loaninterestrate">Enter your interest rate for required loan amount</string>
+    <string name="hint_buyvsrent_mortgagepaymentmonth">Click this link to calculate the emi for mortgage payment in monthly</string>
+    <string name="hint_buyvsrent_mortgagepaymentyear">Click this link to calculate the emi for mortgage payment in yearly</string>
+    <string name="hint_buyvsrent_taxcredits">Select the radio button if loan has been applied for tax credits</string>
+    <string name="hint_buyvsrent_section80c">Enter your tax credits for Section 80c on principal amount</string>
+    <string name="hint_buyvsrent_section24">Enter your tax credits for Section 24 on interest amount</string>
+    <string name="hint_buyvsrent_propertyusage">Select the property usage type for the house</string>
+    <!--Rent-->
+    <string name="hint_buyvsrent_currentrentmonth">Enter your amount spend for Current rent in monthly</string>
+    <string name="hint_buyvsrent_currentrentyear">Enter your amount spend for Current rent in yearly</string>
+    <string name="hint_buyvsrent_securitydeposit">Enter your amount on security deposit for the house</string>
+    <string name="hint_buyvsrent_rentalescalation">Enter your rental escalation for the property in percentage for the house</string>
+    <string name="hint_buyvsrent_utilitiessmonth">Enter your amount spend for Utilities in monthly</string>
+    <string name="hint_buyvsrent_utilitiessyear">Enter your amount spend for Utilities in yearly</string>
+    <string name="hint_buyvsrent_tenantsinsurance">Enter your amount spend for Tenant Insurance</string>
+
+    <!-- car buy vs lease-->
+
+    <string name="hint_carbuyvslease_citytype">Select your city type for the car</string>
+    <string name="hint_carbuyvslease_taxslab">Select your tax slab from your salary income</string>
+    <string name="hint_carbuyvslease_opportunitycost">Enter your opportunity cost in percentage</string>
+    <string name="hint_carbuyvslease_plannedoccupation">Enter the years for your planned occupation</string>
+    <string name="hint_carbuyvslease_mainrepair">Enter your main repair for the car</string>
+    <string name="hint_carbuyvslease_fuelrunningexpense">Enter your Fuel expense for car running</string>
+    <string name="hint_carbuyvslease_insurance">Enter your amount send for Insurance</string>
+    <!--BUY-->
+    <string name="hint_carbuyvslease_loanrequired">Select the radio button if loan has been required for to buy the car</string>
+    <string name="hint_carbuyvslease_downpayment">Enter an initial amount paid at the time of purchase for the car loan</string>
+    <string name="hint_carbuyvslease_loantenure">Enter the total period of time for the car loan in months</string>
+    <string name="hint_carbuyvslease_loaninterestrate">Enter your interest rate for required car loan amount</string>
+    <string name="hint_carbuyvslease_carpurchaseprice">Enter your purchase rate for the car</string>
+    <string name="hint_carbuyvslease_loanamount">Enter your loan amount for the car</string>
+    <!--LEASE-->
+    <string name="hint_carbuyvslease_totalupfrontsecuritypay">Enter your deposit amount for the car</string>
+    <string name="hint_carbuyvslease_monthlyleasepay">Enter your monthly lease pay for the car</string>
+    <string name="hint_carbuyvslease_rateofinterest">Enter your rate of interest per annum for the car</string>
+    <string name="hint_carbuyvslease_leaseforexpense">Enter your amount for the lease for termination expense for the car</string>
+
+
+    <!-- car buy vs leaseError-->
+    <string name="error_capitalizedcostreduction">pleasae enter capitalized cost reduction</string>
+    <string name="error_residual">pleasae enter Residual value</string>
+    <string name="error_deprisation">please enter deprisation</string>
+    <string name="error_monthinterm">please enter months in lease term</string>
+    <string name="error_interstrate">please enter intrest rate (Per Annum)</string>
+    <string name="error_salestax">please enter sales tax</string>
+
+    <string name="analtics_login">Login Screen</string>
+    <string name="merchentorderid">Merchant Order ID</string>
+    <string name="mspreferenceId">MSPReference Id</string>
+    <string name="amounttxt">Amount</string>
+
+    <string name="instrument"><u></u></string>
+
+    <!--Taxfiling-->
+    <string name="taxfile_heading">Instructions for filling ITR-1 SAHAJ</string>
+    <string name="taxfile_subheading">General Instructions</string>
+    <string name="taxfile_subheadingcontent">These instructions are guidelines for filling the particulars
+        in this Return Form. In case of any doubt, please refer to relevant provisions of the Income-tax Act,
+        1961 and the Income-tax Rules, 1962.</string>
+
+    <string name="taxfilingfirst">Please enter your first name</string>
+    <string name="taxfilingsurname">Please enter your surname </string>
+    <string name="taxfilingplace">Please enter your place</string>
+    <string name="taxfilingdate">Please enter current Date</string>
+    <string name="taxfilingpan">Please enter your PAN number</string>
+    <string name="taxfilingcapacity">Please enter you Capacity</string>
+
+
+    <string name="your_latandlong"> latitude and longitude</string>
+
+    <string name="valid_pan">Please enter valid PAN number</string>
+
+    <string name="incometax_link"><u>https://portal.incometaxindiaefiling.gov.in/e-Filing/UserLogin/LoginHome.html?lang=eng </u></string>
+
+    <string name="taxfilingverification"><b>Verification Process:</b> We will calculate the tax returns and verify the evidence against the claims</string>
+
+    <string name="taxfilingapproval"><b>Approval Process:</b>  We will have our CA verify the tax returns</string>
+
+    <string name="taxfilingacceptance"><b>Acceptance Process:</b> We will present you with the tax returns and seek your acceptance</string>
+
+    <string name="taxfilingfiling"><b>Filing Process:</b> We will eFile the Income Tax Return (ITR) on your behalf</string>
+
+    <string name="terms_checkboxtaxfile">Please accept Terms of Service</string>
+
+
+    <!--Firebase Analytics-->
+    <string name="analtics_planamount_screen">Plan Amount Screen</string>
+    <string name="analtics_agreement_screen">Agreement Screen</string>
+    <string name="analtics_termosservice_screen">Term of Service Screen</string>
+    <string name="analtics_initialconversation_screen">Initial Conversation Screen</string>
+    <string name="analtics_form16_screen">Form16 Screen</string>
+    <string name="analtics_nonform16_screen">Non Form16 Screen</string>
+    <string name="analtics_wouldyoulike_screen">Would you like Screen</string>
+    <string name="analtics_additionalconversation_screen">Additional Conversation Screen</string>
+    <string name="analtics_taxplanningconversation_screen">Tax Planning Conversation Screen</string>
+    <string name="analtics_taxfilingconversation_screen">Tax Filing Conversation Screen</string>
+    <string name="analtics_taxpayment_screen">Tax Payment Screen</string>
+    <string name="analtics_taxsummary_screen">Tax Summary Screen</string>
+    <string name="analtics_form26_screen">Tax Form26AS Screen</string>
+    <string name="analtics_taxchecklist_screen">Tax CheckList Screen</string>
+    <string name="analtics_taxdocumentchecklist_screen">Tax Document CheckList Screen</string>
+    <string name="analtics_taxdpdf_screen">Tax PDF Screen</string>
+    <string name="analtics_taxdeclaration_screen">Tax Declaration Screen</string>
+    <string name="analtics_taxcredential_screen">Tax Credential Screen</string>
+    <string name="analtics_taxthankyou_screen">Tax Thank You Screen</string>
+    <string name="analtics_taxconfirmationdone_screen">Tax Confirmation Screen</string>
+    <string name="analtics_taxform16uploadcompleted_screen">Form16 Upload Completed Screen</string>
+    <string name="analtics_taxnonform26uploadcompleted_screen">Form26AS Upload Completed Screen</string>
+    <string name="analtics_taxhouseproperty_screen">House Property Screen</string>
+
+    <string name="analtics_form16multiple_screen">Multiple Form16 Screen</string>
+    <string name="analtics_taxform16multipleuploadcompleted_screen">Multiple Form16 Upload Completed Screen</string>
+
+    <string name="form16_samplepdf"><u>Click here to view sample Form16</u></string>
+    <string name="form16_viewmore"><u>View more...</u></string>
+    <string name="form16_viewless"><u>View less...</u></string>
+    <string name="resend"><u>Resend</u></string>
+    👍
+    👍
+
+
+</resources>

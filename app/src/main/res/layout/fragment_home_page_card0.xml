@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_margin="@dimen/margin_medium"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <!-- app:cardCornerRadius="5dp"
+         app:cardElevation="5dp"
+         app:cardUseCompatPadding="true"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/tax_outerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_ones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_gravity="center">
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/details_image_logos"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/ic_amortization_schedule"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tax_title1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.7"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Tax Available 2018"/>
+
+                <com.medialablk.easygifview.EasyGifView
+                    android:id="@+id/easyGifViews"
+                    android:layout_width="0dp"
+                    android:visibility="invisible"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.8" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_separator_ids"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/AntiqueWhite" />
+            <LinearLayout
+                android:id="@+id/layout_twos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tax_message1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:textStyle="italic"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textColor="@android:color/background_dark"
+                    android:text="I have tried the webview but no success. How to show the animated gif in the application" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textColor="@android:color/background_dark"
+                    android:text="Have a Nice day" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:visibility="invisible"
+                android:id="@+id/more_info_ids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_id"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                app:srcCompat="@drawable/ic_menu_dot"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </LinearLayout>
+
+
+
+
+          <FrameLayout
+             android:id="@+id/blink_frame"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/edittext_background_roundshape">
+             <LinearLayout
+                 android:id="@+id/outerContainerss"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+                 <LinearLayout
+                     android:id="@+id/layout_oness"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                    android:weightSum="5"
+                     android:layout_gravity="center">
+                     <android.support.v7.widget.AppCompatImageView
+                         android:id="@+id/details_image_logoss"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.5"
+                         android:visibility="invisible"
+                         android:layout_gravity="center"
+                         android:layout_height="wrap_content"
+
+                         app:srcCompat="@drawable/ic_amortization_schedule"/>
+                     <android.support.v7.widget.AppCompatTextView
+                         android:id="@+id/tax_title2"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="3.7"
+                         android:textStyle="bold"
+                         android:visibility="invisible"
+                         android:layout_gravity="center"
+                         android:text="Tax Available 2018"/>
+
+                     <com.medialablk.easygifview.EasyGifView
+                         android:id="@+id/easyGifView"
+                         android:layout_width="0dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="end"
+                         android:layout_weight="0.8" />
+
+                 </LinearLayout>
+                 <View
+                     android:id="@+id/view_separator_idss"
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:visibility="invisible"
+                     android:background="@color/AntiqueWhite" />
+                 <LinearLayout
+                     android:id="@+id/layout_twoss"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:visibility="invisible">
+                     <android.support.v7.widget.AppCompatTextView
+                         android:id="@+id/tax_message2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="left|center"
+                         android:textStyle="italic"
+                         android:layout_margin="@dimen/margin_medium"
+                         android:textColor="@android:color/background_dark"
+                         android:text=" I have tried the webview but no success. How to show the animated gif in the application" />
+                     <android.support.v7.widget.AppCompatTextView
+                         android:id="@+id/textMessagess"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textStyle="normal"
+                         android:visibility="invisible"
+                         android:layout_margin="@dimen/margin_medium"
+                         android:textColor="@android:color/background_dark"
+                         android:text="Have a Nice day" />
+                 </LinearLayout>
+                 <android.support.v7.widget.AppCompatImageView
+                     android:visibility="invisible"
+                     android:id="@+id/more_info_idss"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/desc_id"
+                     android:layout_alignParentRight="true"
+                     android:layout_gravity="right"
+                     android:layout_marginTop="@dimen/margin_xlarge"
+                     android:layout_marginBottom="@dimen/margin_medium"
+                     android:layout_marginRight="@dimen/margin_xlarge"
+                     app:srcCompat="@drawable/ic_menu_dot"
+                     tools:ignore="ContentDescription,RtlHardcoded" />
+             </LinearLayout>
+         </FrameLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '26.0.3'
+    defaultConfig {
+        applicationId "com.finobot.finobot"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 35
+        versionName "1.3.15"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary true
+        dataBinding {
+            enabled = true
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    productFlavors {
+    }
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0-alpha1'
+            }
+        }
+    }
+}
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    compile files('libs/arity-2.1.2.jar')
+    compile project(':MPChartLib')
+    compile 'com.jakewharton:butterknife:' + rootProject.ext.butterknifeVer
+    compile files('libs/arity-2.1.2.jar')
+    compile 'io.reactivex:rxjava:' + rootProject.ext.rxJavaVer
+    compile 'io.reactivex:rxandroid:' + rootProject.ext.rxAndroidVer
+    compile 'com.jakewharton:butterknife:' + rootProject.ext.butterknifeVer
+
+
+
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.0.0-RC1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.0-RC1'
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.numetriclabz.numandroidcharts:numandroidcharts:1.0.10'
+    compile 'com.google.android.gms:play-services:10.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.artemzin.rxjava:proguard-rules:1.2.9.0'
+    compile 'com.github.gperez88:calculatorInputView:0.0.3'
+    compile 'com.github.lzyzsd:circleprogress:1.2.1'
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.kbeanie:image-chooser-library:1.5.8@aar'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:support-vector-drawable:26.0.0-alpha1'
+    compile 'com.facebook.android:facebook-android-sdk:4.25.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'net.objecthunter:exp4j:0.4.4'
+    compile 'com.github.IsPra94:EasyGifView:1.0.1'
+    compile 'com.evrencoskun.library:tableview:0.8.6'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

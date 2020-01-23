@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginLeft="@dimen/margin_xlarge"
+        android:layout_marginRight="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:orientation="vertical">
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/investmenttype_lyt"
+                android:text="Investment Type"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_color_gray"
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/investmenttype_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/investmentvalue_lyt"
+                android:text="Investment Value"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/app_text_color_gray"
+                />
+            <Spinner
+                android:id="@+id/Investment_Id"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="@dimen/margin_medium"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/initial_value_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Initial"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1.7"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+            <com.purplepath.purplepath.customview.CustomCalenderImageView
+                android:id="@+id/initial_value_edt_calculaterImgView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:drawablePadding="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/periodical_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:hint="Periodical"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+            <com.purplepath.purplepath.customview.CustomCalenderImageView
+                android:id="@+id/periodical_edt_calculaterImgView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:drawablePadding="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/paymentperiod_lyt"
+                android:text="Payment Period"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_color_gray"
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/paymentperiod_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/paymenttype_lyt"
+                android:text="Payment Type"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_color_gray"
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/paymenttype_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tenure_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                app:errorEnabled="true"
+                android:textColorHint="@color/dark_gray_text_colour">
+
+                <com.purplepath.purplepath.customview.NumberEditText
+                    android:id="@+id/tenure_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tenure(in Period)"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rateOfInterest_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel"
+                app:errorEnabled="true"
+                android:textColorHint="@color/dark_gray_text_colour">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/rateOfInterest_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rate of Interest (in % p.a.)"
+                    android:maxLength="3"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/compoundingView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:visibility="gone"
+                android:text="Compounding Period" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/compounding_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="@dimen/margin_medium"
+                />
+
+
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="Associated charges"
+                android:textColor="@color/text_header_colour"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/entrychargeFeeRupee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/entrycharge_rg"
+                    android:visibility="visible"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_entrychargeRupee_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Entry Charge"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/entrycharge_calculatorimage"
+                    android:layout_toRightOf="@+id/entrychargeFeeRupee_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:padding="@dimen/margin_medium"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/entrychargePercent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    app:errorEnabled="true"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/entrycharge_rg"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/edt_entrychargePercent_view_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Entry Charge"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <RadioGroup
+                    android:id="@+id/entrycharge_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/processingFee_rupeee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/entrycharge_rupeee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"/>
+                    <RadioButton
+                        android:id="@+id/entrycharge_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/exitcharge_rupeee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/exitcharge_rg"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_exitchatege_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Exit Charge"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/exitcharge_calculatorimage"
+                    android:layout_toRightOf="@+id/exitcharge_rupeee_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:padding="@dimen/margin_medium"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/exitcharge_percent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    app:errorEnabled="true"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/exitcharge_rg"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/edt_exitcharge_percent_view_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/text_legal_fee"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/exitcharge_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/exitcharge_rupeee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/exitcharge_rupeee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"
+
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/exitcharge_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xxlarge"
+                android:visibility="gone"
+               >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/peneltychargeFeeRupee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    app:errorEnabled="true"
+                    android:layout_toLeftOf="@+id/peneltychargeFee_rg"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_peneltychargeFeeRupee_view_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Penelty Charge"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                </android.support.design.widget.TextInputLayout>
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/peneltycharge_fee_calculatorimage"
+                    android:layout_toRightOf="@+id/peneltychargeFeeRupee_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:padding="@dimen/margin_medium"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/peneltychargeFee_percent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/peneltychargeFee_rg"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/edt_peneltychargeFee_percent_view_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Penelty Charge"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/peneltychargeFee_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/peneltychargeFee_rupee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/peneltychargeFee_rupee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray"
+
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/peneltychargeFee_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

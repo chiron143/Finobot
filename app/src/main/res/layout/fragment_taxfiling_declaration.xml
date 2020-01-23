@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WhiteSmoke"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/nameInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/name_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Full Name(as in PAN Card)"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/son_daughter_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/son_daughterInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/surname_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Father's Name"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--<com.purplepath.purplepath.customview.CustomTextInputLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="@dimen/margin_medium"-->
+                            <!--android:layout_weight="1"-->
+                            <!--app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:text="Solemnly declare that to the best of my knowledge and belief, the information given in the return is correct and complete and in accordance with the provisions of the Income-tax Act, 1961"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        <!--</com.purplepath.purplepath.customview.CustomTextInputLayout>-->
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/capacity_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour"
+                            android:textColorHint="@color/app_text_color_gray" />
+
+
+
+                        <TextView
+                            android:id="@+id/capacity_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:drawablePadding="@dimen/margin_xlarge"
+                            android:text="Individual"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/dark_gray_text_colour"
+                            android:textColorHint="@color/app_text_color_gray" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/place_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/placeInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/place_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Place"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/dateInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CalendarEditText
+                                android:id="@+id/date_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="Date"
+                                android:inputType="number"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pan_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.purplepath.purplepath.customview.CustomTextInputLayout
+                            android:id="@+id/panInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                            <com.purplepath.purplepath.customview.CharacterEditText
+                                android:id="@+id/pan_Edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:drawablePadding="@dimen/margin_xlarge"
+                                android:hint="PAN"
+                                android:maxLines="1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dark_gray_text_colour"
+                                android:textColorHint="@color/app_text_color_gray" />
+                        </com.purplepath.purplepath.customview.CustomTextInputLayout>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_declaration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_done_tick_tax" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

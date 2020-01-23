@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/category_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:checkedButton="@+id/insurance_rb"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/insurance_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/layout_bg"
+                    android:text="Insurance"/>
+                <RadioButton
+                    android:id="@+id/liability_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liability"/>
+
+            </RadioGroup>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/noItemInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="No items to show"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/insurance_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/noItemLiability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="No items to show"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/liablilty_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

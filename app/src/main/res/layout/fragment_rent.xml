@@ -1,0 +1,376 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.RentFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:padding="@dimen/margin_xlarge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/currentRenttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:text="Current Rent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/rentMonthly_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_weight="1.7"
+                        android:hint="Initial"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/rentMonthlyCalendar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:drawablePadding="@dimen/margin_xlarge" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/rentAnnually_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_weight="1.7"
+                        android:hint="Initial"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/rentAnnuallyCalendar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:drawablePadding="@dimen/margin_xlarge" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/securityDeposit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="SecurityDeposit"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/securityDeposit_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <android.support.design.widget.TextInputLayout
+                    android:visibility="gone"
+                    android:id="@+id/rentalEscalationRupee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/rentalEscalation_rg"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/edt_rentalEscalation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Processing Fees"
+                        android:layout_toLeftOf="@+id/rentalEscalation_rg"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:visibility="gone"
+                    android:id="@+id/rentalEscalation_calculatorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_toRightOf="@+id/rentalEscalationRupee_layout"
+                    android:padding="@dimen/margin_medium" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rentalEscalationPercent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toLeftOf="@+id/rentalEscalation_rg"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/dark_gray_text_colour"
+                    app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                    <com.purplepath.purplepath.customview.PercentageEditText
+                        android:id="@+id/rentalEscalationPercent_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Rental Escalation"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/rentalEscalation_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:background="@drawable/switch_border"
+                    android:checkedButton="@+id/rentalEscalation_rupeee_RadioBtn"
+                    android:orientation="horizontal"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                    <RadioButton
+                        android:id="@+id/rentalEscalation_rupeee_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/switch_no"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Rupee_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/rentalEscalation_percent_RadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/swithc_yes"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="@string/Percent_symbol"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/utilities_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:text="Utilities"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_text_color_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/utilitiesMonthly_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_weight="1.7"
+                        android:hint="Utilities Monthly"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/utilitiesCalendar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:drawablePadding="@dimen/margin_xlarge" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.purplepath.purplepath.customview.CurrencyGhostView
+                        android:id="@+id/utilitiesAnnually_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_weight="1.7"
+                        android:hint="Utilities Annually"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                    <com.purplepath.purplepath.customview.CustomCalenderImageView
+                        android:id="@+id/utilitiesAnnuallyCalendar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:drawablePadding="@dimen/margin_xlarge" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="Insurance "
+                android:textColor="@color/text_header_colour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.purplepath.purplepath.customview.CurrencyGhostView
+                    android:id="@+id/tenantsInsurance_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_weight="1.7"
+                    android:hint="Tenants Insurance"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <com.purplepath.purplepath.customview.CustomCalenderImageView
+                    android:id="@+id/tenantsInsurance_calculaterImgView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:drawablePadding="@dimen/margin_xlarge" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/intrestforegone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:visibility="invisible"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+                <com.purplepath.purplepath.customview.PercentageEditText
+                    android:id="@+id/intrestforegone_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Iinterest forgone on Security Deposit"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+
+

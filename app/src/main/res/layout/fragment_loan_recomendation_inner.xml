@@ -1,0 +1,231 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/total_payement_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+            android:id="@+id/total_payement_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="Total Payment"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/total_payement_assoc_charge_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+            android:id="@+id/total_payement_assoc_charge_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="Total Payment with Associated charge"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/total_principal_payement_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+            android:id="@+id/total_principal_payement_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Principal Payment"
+            android:focusable="false"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/total_interest_payement_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.CurrencyDefaultEdt
+            android:id="@+id/total_interest_payement_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Interest Payment"
+            android:focusable="false"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/statedInterestRate_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.PercentageEditText
+            android:id="@+id/statedInterestRate_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="     Stated Interest Rate"
+            android:focusable="false"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/effectiveInterestRate_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.PercentageEditText
+            android:id="@+id/effectiveInterestRate_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="     Effective Interest Rate"
+            android:focusable="false"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/internalRateOfReturn_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:textColorHint="@color/dark_gray_text_colour"
+        app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+        <com.purplepath.purplepath.customview.PercentageEditText
+            android:id="@+id/internalRateOfReturn_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="     Internal Rate of Return(IRR)"
+            android:focusable="false"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/titleBottom_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="Loan Comparison Rank"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/classification_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleBottom_txt"
+            android:layout_alignStart="@+id/titleBottom_txt"
+            android:layout_alignLeft="@+id/titleBottom_txt"
+            android:textColor="@color/text_header_colour"
+            android:text=""
+            android:focusable="false"
+            android:layout_marginRight="@dimen/margin_xlarge"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <View
+            android:id="@+id/emptyView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titleBottom_txt"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/star_lyt"
+            android:layout_toRightOf="@+id/classification_txt"
+            android:layout_below="@+id/titleBottom_txt"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_star_icon" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_star_icon" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_star_icon" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>

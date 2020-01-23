@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/margin_medium">
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/verifyStepId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/verifycodedescId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifyStepId"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:text="@string/login_verification_code_desc"
+        android:textColor="@color/dark_gray_text_colour" />
+
+    <EditText
+        android:id="@+id/verifycodeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifycodedescId"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:drawableLeft="@drawable/ic_new_password_icon"
+        android:ems="7"
+        android:gravity="center"
+        android:imeOptions="actionSend"
+        android:inputType="numberPassword"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:textColor="@color/dark_gray_text_colour" />
+
+    <TextView
+        android:id="@+id/text_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/verifycodeId"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:gravity="center"
+        android:text="@string/resend"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent" />
+
+
+
+    <TextView
+        android:id="@+id/loginverifytermsCondTxtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:gravity="center"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/DarkGray" />
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginForgetPwdID"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_xxlarge"
+        android:layout_marginRight="@dimen/margin_xxlarge"
+        android:background="@color/colorAccent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/verifyCodeNextBtnId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:text="@string/text_next_step"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/month_label_size"
+                android:text="Multiple Types of Forms here available for example Form-16 A&amp;B,Form-16 A and Form16 B"
+                android:layout_margin="@dimen/margin_small"
+                android:textStyle="normal" />
+
+
+
+                    <!--  form16ab_single_item-->
+                    <ListView
+                        android:id="@+id/listview_form16ab"
+                        android:layout_below="@+id/heading"
+                        android:scrollbars="vertical"
+                        android:background="@color/white"
+                        android:divider="@color/border_cardview"
+                        android:dividerHeight="0.5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <!--  form16ab_single_item-->
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_declaration"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_done_tick_tax"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

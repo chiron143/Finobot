@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_large"
+        android:elevation="@dimen/margin_small"
+        android:layout_margin="@dimen/margin_large"
+        app:cardBackgroundColor="@color/WhiteSmoke"
+        android:background="@color/item_color_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/color_blue"
+                    android:text="Bike insurance"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_toRightOf="@+id/category_text"
+                    android:text=""
+                    />
+                <View
+                    android:id="@+id/centerView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/due_date_text"
+                    android:layout_toLeftOf="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:textColor="#1f33f2"
+                    android:text="@string/due_date"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/date_text"
+                    android:layout_toRightOf="@+id/paid_date_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:text=""
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="1dp">
+            </View>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginBottom="@dimen/margin_large">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_alignParentLeft="true"
+                    android:text="Type:"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/category_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:layout_toRightOf="@+id/type_text"
+                    android:layout_toLeftOf="@+id/alreadyPaidImg"
+                    android:textColor="@color/color_blue"
+                    android:text="Bike insurance"
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/alreadyPaidImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toLeftOf="@+id/alreadyPaidTxt"
+                    app:srcCompat="@drawable/ic_already_paid_icon"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/alreadyPaidTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone"
+                    android:text="Already Paid"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

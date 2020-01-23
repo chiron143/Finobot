@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_Notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notification_icon_outline"
+        app:showAsAction="always">
+
+    </item>
+    <item android:id="@+id/menu_Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_setting"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_editProfile"
+        android:title="Change Password"
+        android:icon="@drawable/ic_chnage_password_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_FAQ"
+        android:title="FAQs"
+        android:icon="@drawable/ic_faq_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_Links"
+        android:title="Links"
+        android:icon="@drawable/ic_links_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_FinoBotWebsite"
+        android:title="Finobot website"
+        android:icon="@drawable/ic_finobot_website_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_RateTheApp"
+        android:title="Rate the app"
+        android:icon="@drawable/ic_rate_the_apps"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_Survey"
+        android:title="Survey"
+        android:icon="@drawable/ic_survey_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_Quiz"
+        android:title="Quiz"
+        android:icon="@drawable/ic_quiz_icon"
+        app:showAsAction="never">
+    </item>
+
+    <item android:id="@+id/menu_Glossaries"
+        android:title="Glossary"
+        android:icon="@drawable/ic_glossaries_icon"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/menu_Knowledge"
+        android:title="Knowledge"
+        android:icon="@drawable/ic_knowledge_icon"
+        app:showAsAction="never">
+    </item>
+
+    <!--<item android:id="@+id/menu_Vendor"-->
+        <!--android:title="Vendors"-->
+        <!--android:icon="@drawable/ic_vender_icon"-->
+        <!--app:showAsAction="never">-->
+    <!--</item>-->
+
+
+
+    <!--
+        <item android:id="@+id/menu_AboutUs"
+            android:title="About us"
+            android:icon="@drawable/ic_abouts_icon"
+            app:showAsAction="never">
+        </item>
+    -->
+
+
+
+
+
+</menu>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/outer_dark_bg_shape"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_drawable"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/closebtnId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    app:srcCompat="@drawable/ic_cancel_prompt" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_large">
+
+                <com.purplepath.purplepath.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:gravity="center"
+                    android:text="Loan Eligibility"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    >
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/textview_recomended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:focusable="false"
+                        android:imeOptions="actionDone"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingLeft="@dimen/margin_xlarge"
+                        android:paddingRight="@dimen/margin_xlarge"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Eligibility"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/text_large" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_thumb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/textview_recomended"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        android:layout_marginTop="@dimen/margin_large"
+                        >
+
+                    </android.support.v7.widget.AppCompatImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/margin_xlarge">
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/tv_timeframe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerView1"
+                        android:maxLines="2"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:text="Based on your input(s), achieving your goal is possible within the timeframe desired."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                </RelativeLayout>
+
+
+          <!--      <RelativeLayout
+                    android:id="@+id/layout_tv_firstview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingRight="@dimen/margin_xlarge">-->
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/tv_firstview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerView1"
+                        android:maxLines="2"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout
+                    android:id="@+id/layout_tv_secondview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingRight="@dimen/margin_xlarge">-->
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/tv_secondview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerView1"
+                        android:maxLines="2"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_tv_thirdview"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:paddingRight="@dimen/margin_xlarge">-->
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/tv_thirdview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerView1"
+                        android:maxLines="2"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_tv_fourthview"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:paddingRight="@dimen/margin_xlarge">-->
+
+                    <com.purplepath.purplepath.customview.CustomTextView
+                        android:id="@+id/tv_fourthview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/centerView1"
+                        android:maxLines="2"
+                        android:layout_margin="@dimen/margin_xlarge"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <!--</RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/buttonlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/layout_edittext_comments"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="@dimen/signup_border_margin"
+                    android:layout_marginRight="@dimen/signup_border_margin"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/txt_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:text="Done"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

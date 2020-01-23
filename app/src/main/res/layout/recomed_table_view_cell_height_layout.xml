@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/cell_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/card_view_height"
+    android:background="@drawable/tableview_border"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/cell_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:maxLines="5"
+        android:textColor="@color/table_view_default_text_color"
+        android:visibility="visible"
+        android:textSize="@dimen/done_label_size"
+        tools:text="Cell Data"/>
+
+</LinearLayout>

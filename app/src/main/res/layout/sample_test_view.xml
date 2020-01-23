@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/incomefromOtherTitleViewId"
+    android:layout_margin="@dimen/margin_xlarge"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+        <CheckBox
+            android:button="@drawable/customdrawablecheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_menu_drop_down" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@android:dimen/thumbnail_height"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+
+            <com.purplepath.purplepath.customview.CurrencyEditText
+                android:id="@+id/family_details_name_Edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@android:dimen/thumbnail_width"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="Salary Income Sources"
+                android:textColorHint="@color/app_text_color_gray"
+                android:gravity="left|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/salIncomeotherSourcesInfoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_pop_up" />
+
+
+
+
+</LinearLayout>

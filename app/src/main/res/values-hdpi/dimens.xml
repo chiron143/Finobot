@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="margin_small">3dp</dimen>
+    <dimen name="margin_medium">5dp</dimen>
+    <dimen name="margin_large">6dp</dimen>
+    <dimen name="margin_xlarge">8dp</dimen>
+    <dimen name="tab_text_size">8dp</dimen>
+    <dimen name="margin_very_small">1dp</dimen>
+    <dimen name="signup_border_margin">12dp</dimen>
+    <dimen name="goal_height_dimen">40dp</dimen>
+    <dimen name="bottom_sheet_icon">52dp</dimen>
+    <dimen name="plus_header_height">52dp</dimen>
+    <dimen name="bottom_height_dimen">34dp</dimen>
+    <dimen name="margin_vvery_small">0.3dp</dimen>
+
+    <dimen name="taxplansize">5dp</dimen>
+
+
+
+    <dimen name="text_size">17sp</dimen>
+    <dimen name="text_size_mediam">15sp</dimen>
+    <dimen name="text_size_lar">22sp</dimen>
+    <dimen name="text_size_lar_lar">30sp</dimen>
+    <dimen name="mar_left">7dp</dimen>
+    <dimen name="bullet">12dp</dimen>
+    <dimen name="linear">172dp</dimen>
+    <dimen name="splash_button">60dp</dimen>
+    <dimen name="signupbuttonmargin">20dp</dimen>
+    <dimen name="selected_date_year_size">26dip</dimen>
+
+    <dimen name="funnel_text">11sp</dimen>
+
+    <dimen name="recommend_view_height">230dp</dimen>
+
+</resources>

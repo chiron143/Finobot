@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:elevation="@dimen/margin_large"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/best_pricing1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Basic Pricing"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/one_year1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="One Year"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_creditcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_marginLeft="10dp"
+                            android:text="Home Loan Switch"
+                            android:visibility="invisible"
+                            />
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/creditcard_value1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_lar_lar"
+                            android:textColor="@color/black"
+                            android:text="1188"/>
+
+                        <TextView
+                            android:id="@+id/only1"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="only"
+                            android:textStyle="italic"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Value Plan"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Financial Health Check"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Risk Assessment"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Asset Allocation"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Product Recommendation"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_large"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_weight="0.2"
+                            android:text="•"
+                            android:layout_marginLeft="@dimen/mar_left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Expertize Connect"
+                            android:layout_weight="3.8"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_buynow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_xlarge"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/margin_small"
+                        android:background="@drawable/tax_summary_background">
+
+                        <TextView
+                            android:id="@+id/buy_now1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="     Start     "
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/ampm_label_size"
+                            android:layout_margin="@dimen/margin_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_below="@+id/card_view1"
+                android:visibility="gone"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/best_pricing2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Basic Pricing"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/one_year2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Two Year"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_creditcard1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/one1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_marginLeft="10dp"
+                            android:text="Home Loan Switch"
+                            />
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/creditcard_value2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_lar_lar"
+                            android:textColor="@color/black"
+                            android:text="200"/>
+
+                        <TextView
+                            android:id="@+id/only2"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="only"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_loanoffer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/two1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_marginLeft="10dp"
+                            android:text="Loan Comparison"
+                            android:layout_gravity="center"/>
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/loanoffer_value1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:visibility="invisible"
+                            android:text="0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_Loan1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/three1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Deposit Comparison"
+                            android:maxLines="1"
+                            android:layout_gravity="center"/>
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/Loan_value1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:visibility="invisible"
+                            android:text="0"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_buynow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        android:layout_margin="@dimen/margin_large">
+                        <TextView
+                            android:id="@+id/dummy1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Deposit Comparison"
+                            android:visibility="invisible"
+                            android:maxLines="1"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/buy_now2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Buy Now"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_xlarge"
+                            android:textColor="@color/white"
+                            android:background="@drawable/tax_summary_background"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_below="@+id/card_view2"
+                android:visibility="gone"
+                android:padding="@dimen/margin_large"
+                android:elevation="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@color/WhiteSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WhiteSmoke"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/best_pricing3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Basic Pricing"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/one_year3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Three Year"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            style="?android:textAppearanceMedium"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_creditcard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/one2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_marginLeft="10dp"
+                            android:text="Home Loan Switch"
+                            />
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/creditcard_value3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_lar_lar"
+                            android:textColor="@color/black"
+                            android:text="300"/>
+
+                        <TextView
+                            android:id="@+id/only3"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="only"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_loanoffer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/two2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_marginLeft="10dp"
+                            android:text="Loan Comparison"
+                            android:layout_gravity="center"/>
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/loanoffer_value2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:visibility="invisible"
+                            android:text="0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_Loan2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/three2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Deposit Comparison"
+                            android:maxLines="1"
+                            android:layout_gravity="center"/>
+
+                        <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                            android:id="@+id/Loan_value2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="@dimen/margin_large"
+                            android:maxLines="1"
+                            android:visibility="invisible"
+                            android:text="0"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_buynow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        android:layout_margin="@dimen/margin_large">
+                        <TextView
+                            android:id="@+id/dummy2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_margin="@dimen/margin_large"
+                            android:text="Deposit Comparison"
+                            android:visibility="invisible"
+                            android:maxLines="1"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/buy_now3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Buy Now"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_xlarge"
+                            android:textColor="@color/white"
+                            android:background="@drawable/tax_summary_background"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

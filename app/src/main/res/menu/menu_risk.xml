@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LoginandSignUpActivity">
+    <item
+        android:id="@+id/ic_done_btn"
+        android:icon="@drawable/ic_done_menu"
+        app:showAsAction="ifRoom|withText"
+        android:visible="false"
+        android:title="Done">
+    </item>
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="done">false</item>
+    <item type="id" name="date_picker_header">false</item>
+    <item type="id" name="day_picker_selected_date_layout">false</item>
+    <item type="id" name="date_picker_month_and_day">false</item>
+    <item type="id" name="date_picker_month">false</item>
+    <item type="id" name="date_picker_day">false</item>
+    <item type="id" name="date_picker_year">false</item>
+    <item type="id" name="animator">false</item>
+    <item type="id" name="month_text_view">false</item>
+    <item type="id" name="propertyPrice_Id"></item>
+    <item type="id" name="loan_amount_edt_Id"></item>
+    <item type="id" name="edt_propertyAppreciationId"></item>
+    <item type="id" name="edt_realEstateTaxesbtn_Id"></item>
+    <item type="id" name="section80C_edtId"></item>
+    <item type="id" name="section24c_edtId"></item>
+    <item type="id" name="maintenanceMonthly_lytId"></item>
+    <item type="id" name="maintenanceYearly_lytId"></item>
+    <item type="id" name="utilitiesMonthly_lytId"></item>
+    <item type="id" name="utilitiesAnnually_lytId"></item>
+    <item type="id" name="insuranceAnnually_lytId"></item>
+    <item type="id" name="insuranceMonthly_lytId"></item>
+    <item type="id" name="mortgageeMonthly_lytId"></item>
+    <item type="id" name="mortgageAnnually_lytId"></item>
+    <item type="id" name="down_payement_edt"></item>
+    <item type="id" name="rentMonthly_lytId"></item>
+    <item type="id" name="rentAnnually_lytId"></item>
+    <item type="id" name="securityDepositId"></item>
+    <item type="id" name="utilitiesMonthly_rent_id"></item>
+    <item type="id" name="utilitiesAnnually_rent_id"></item>
+    <item type="id" name="tenantsInsurance_edt_id"></item>
+    <item type="id" name="edt_rentalEscalation_id"></item>
+
+    <item type="id" name="outstandingEdtView_id"></item>
+    <item type="id" name="emiEdtView_id"></item>
+    <item type="id" name="edt_emi_id"></item>
+
+
+    <item type="id" name="purchase_value_edt_id"></item>
+    <item type="id" name="downPayement_edt_id"></item>
+    <item type="id" name="finaceValue_edt_id"></item>
+
+    <item type="id" name="edt_processingFeeRupee_view_id_id"></item>
+    <item type="id" name="edt_legalRupee_view_id_id"></item>
+    <item type="id" name="edt_administrationFeeRupee_view_id_id"></item>
+    <item type="id" name="edt_insuranceCoverRupee_view_id_id"></item>
+
+    <item type="id" name="initial_value_edt_id"></item>
+    <item type="id" name="periodical_edt_id"></item>
+
+<!-- CArVsLease-->
+    <item type="id" name="plannedoccupation_id"></item>
+    <item type="id" name="mainRepair_id"></item>
+    <item type="id" name="fualReapirExp_id"></item>
+    <item type="id" name="insurance_id"></item>
+    <item type="id" name="downpayment_id"></item>
+    <item type="id" name="loanamount_id"></item>
+    <item type="id" name="car_purchase_pricid"></item>
+    <item type="id" name="eset_car_value_at_end_Id"></item>
+
+    <item type="id" name="total_upfront_secqpay_id"></item>
+    <item type="id" name="monthlyLeasepayment_id"></item>
+    <item type="id" name="leaseforexpense_id"></item>
+    <item type="id" name="oppurtCost_id"></item>
+
+
+</resources>

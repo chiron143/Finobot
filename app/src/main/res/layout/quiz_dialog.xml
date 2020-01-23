@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/startplayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bullet"
+            android:text="Test your knowledge"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textSize="@dimen/month_label_size"
+            android:textColor="@color/colorAccent"
+            android:gravity="center" />
+
+
+    <View
+        android:id="@+id/viewlogoRasi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C2C2C2" />
+
+
+    <TextView
+        android:id="@+id/firsttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bullet"
+        android:text="These questions are just to test"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/secondtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your knowledge on financial topics."
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/thirdtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer to these question and learn."
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fourthtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep learning."
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headingtextScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bullet"
+            android:gravity="center"
+            android:text="Name That Thing"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/month_label_size"
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/viewlogo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C2C2C2" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bullet"
+            android:text="You will have 10 seconds to answer each question"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/loginForgetPwdID"
+        android:background="@drawable/quizbackgroundpurple"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quizbackgroundpurple"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:text="@string/playbutton"/>
+    </RelativeLayout>
+</LinearLayout>

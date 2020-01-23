@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false">
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_food_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_large"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_food_disc_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_food"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_food_disc_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_food_disc_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_eatingout_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_food_layout"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="invisible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_eatingout"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_eatingout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_eatingout_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_gifts_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_gifts_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_gifts"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_gifts_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_gifts_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_healthcare_expenses_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_healthcare_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_healthcareexpenses"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_healthcare_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_healthcare_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_healthcare_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_healthcare_expenses_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/healthcare_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_holidayvacation_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_holidayvacation_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_holidayvacation"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_holidayvacation_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_holidayvacation_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_parentssupport_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_parentssupport_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_parentssuport"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_parentssupport_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_parentssupport_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_petcare_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_petcare_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_petcare"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_petcare_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_petcare_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_purchases_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_purchases_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_purchases"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_purchases_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_purchases_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_purchases_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_purchases_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/purchases_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_shelter_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_shelter_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_shelter"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_shelter_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_shelter_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_shelter_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_shelter_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/shelter_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_skilldevelopment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_skilldevelopment_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_skill_development"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_skilldevelopment_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_skilldevelopment_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_skilldevelopment_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_skilldevelopment_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/skilldevelopment_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_tax_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_tax_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_tax"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_tax_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_tax_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_tax_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_tax_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/tax_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_transportation_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_transportation_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_transportation"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_transportation_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exp_transportation_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        app:srcCompat="@drawable/ic_pop_up"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_commute_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_transportation_layout"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_commute_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_commute"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_commute_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_commute_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_commute_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_commute_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/commute_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_parking_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_commute_list_layout"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/margin_large"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_parking"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_parking_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_parking_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_petrol_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_parking_layout"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_petrol"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_petrol_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_petrol_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_travel_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_petrol_layout"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_travel_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_travel"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_travel_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_travel_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_travel_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_travel_layout"
+                    android:layout_margin="@dimen/margin_large"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/travel_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_vehicle_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_travel_list_layout"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/margin_large"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="visible"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            android:checked="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center|left"
+                            android:text="@string/exp_vehicle_maintenance"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_vechile_edt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_vechile_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_utility_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_utility_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_utility"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <com.purplepath.purplepath.customview.CurrencyEditText
+                        android:id="@+id/exp_utility_edt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:padding="@dimen/margin_medium"
+                        android:layout_weight="0.75" />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_utility_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_utility_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exp_utility_layout"
+                    android:layout_margin="@dimen/margin_xlarge"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/utility_header_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/add_row_view" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/exp_other_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:button="@drawable/customdrawablecheckbox"
+                            android:id="@+id/exp_other_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/margin_small"
+                             app:srcCompat= "@drawable/ic_menu_drop_down"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/margin_small"
+                            android:gravity="center|left"
+                            android:text="@string/exp_others"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/exp_other_edt"
+                        android:lines="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:background="@drawable/edt_txt_bg_rectangle"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.75"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView 
+                        android:id="@+id/exp_other_edt_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                         app:srcCompat= "@drawable/ic_pop_up"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/discretionary_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+         app:srcCompat= "@drawable/ic_next_btn"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialogbg"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/dropdownLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:visibility="visible">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/clickmeId"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/horizontalScroll"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_menu_drop_dwon" />
+                    <!--   app:srcCompat="@drawable/ic_menu_drop_icon"-->
+
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/clickmeIdFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_below="@+id/dropdownLayoutId"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/frameimageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_up_hand_guide"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="?attr/actionBarSize"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frameimageview"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:textColor="@color/white"
+                        android:text="       tap here for \n quick access menu"/>
+                </RelativeLayout>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/marque_scrolling_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="@dimen/margin_small"
+                android:scrollHorizontally="true"
+                android:lines="1"
+                android:textColor="@color/colorAccent"
+                android:text="Sensex 31262.06 , Nifty 9668.25 , Currency (USD) 20b964.44"
+                android:layout_below="@+id/dropdownLayoutId"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:fadingEdge="horizontal"
+                android:visibility="invisible"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="#efefef"/>
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:visibility="invisible"
+                android:text="Financial Situation"
+                android:layout_below="@+id/marque_scrolling_text"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_center_image"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/iv_center_image"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_assets_home_page" />
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/tv_liabilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_liabilities"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_toRightOf="@+id/iv_center_image"
+                android:gravity="right"
+                android:text="Liabilities"
+                android:visibility="invisible"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_income_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_center_image"
+                android:layout_toLeftOf="@+id/iv_center_image"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_income_home_page" />
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/tv_income_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_expenseDetails"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_toLeftOf="@+id/iv_center_image"
+                android:gravity="right"
+                android:maxLines="2"
+                android:text="Income details"
+                android:visibility="invisible"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_expenseDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_center_image"
+                android:layout_toRightOf="@+id/iv_center_image"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_expense_details" />
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/tv_expense_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_expenseDetails"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_toRightOf="@+id/iv_center_image"
+                android:gravity="left"
+                android:maxLines="2"
+                android:visibility="invisible"
+                android:text="Expense details"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <LinearLayout
+                android:id="@+id/iv_center_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_netWorth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_net_worth_big" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_cashManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    app:srcCompat="@drawable/ic_cash_management_big" />
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/cardFramecenteroverall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/iv_center_image"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/cardimageviewcenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_swipe_center"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardimageviewcenter"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="swipe here to go next page"/>
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/cardFramecenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/framecardimageviewcenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_hand"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="?attr/actionBarSize"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/framecardimageviewcenter"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/margin_xxlarge"
+                        android:text="tap here to file your \n tax return"/>
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_liabilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_center_image"
+                android:layout_toEndOf="@+id/iv_center_image"
+                android:layout_toRightOf="@+id/iv_center_image"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_liabilities_home_page" />
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:id="@+id/tv_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Assets"
+                android:visibility="invisible"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_toLeftOf="@+id/iv_center_image"
+                android:layout_below="@+id/iv_assets"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_alignBaseline="@+id/tv_liabilities"
+
+                />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/tv_expense_details"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/details_image_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="@dimen/margin_medium"
+                            />
+                        <!--app:srcCompat="@drawable/income_detailes"
+                        tools:src="@drawable/income_detailes"-->
+                        <TextView
+                            android:id="@+id/today_cal_title_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/details_image_logo"
+                            android:layout_marginTop="@dimen/margin_xlarge"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginLeft="@dimen/margin_medium"
+                            android:layout_marginRight="@dimen/margin_medium"
+                            android:text="Lorem ipsum"
+                            tools:text="Lorem ipsum"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_separator_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/AntiqueWhite" />
+
+                    <TextView
+                        android:id="@+id/desc_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left|center"
+                        android:layout_above="@+id/more_info_id"
+                        android:textStyle="normal"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:textColor="@android:color/background_dark"
+                        android:text="dkjsah dkjash jkdha s kjd hk sajh dkjsah dkjas hkdjh askkjsahdkjahsk" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/more_info_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/desc_id"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        app:srcCompat="@drawable/ic_menu_dot"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <FrameLayout
+                android:id="@+id/cardFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:layout_below="@+id/tv_expense_details"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                   >
+                    <ImageView
+                        android:id="@+id/framecardimageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_up_hand_guide"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/framecardimageview"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="scroll up for \n more details"/>
+                </RelativeLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

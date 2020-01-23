@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/empty_chart_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No chart data available"
+        android:textColor="@color/d_gray"
+        android:textSize="@dimen/month_label_size"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/scrolllinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@drawable/rectangle_border_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_large"
+                    >
+                <com.github.mikephil.charting.charts.HorizontalBarChart
+                    android:id="@+id/chartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                    </LinearLayout>
+                <TextView
+                    android:layout_marginTop="@dimen/bottom_height_dimen"
+                    android:id="@+id/textViewUnitApperances"
+                    android:layout_below="@+id/chartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:id="@+id/parentViewId"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

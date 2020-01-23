@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <AutoCompleteTextView
+        android:id="@+id/exp_education_list_autocomplete"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_txt_bg_rectangle"
+        android:padding="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_weight="1"/>
+
+    <com.purplepath.purplepath.customview.CurrencyEditText
+        android:id="@+id/exp_education_list_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_txt_bg_rectangle"
+        android:padding="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/exp_education_list_delete_imgView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_delet_icon"
+            android:layout_gravity="center" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/exp_education_list_edt_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:srcCompat="@drawable/ic_pop_up"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/exp_education_list_add_imgView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_add_row_btn"
+            />
+    </LinearLayout>
+</LinearLayout>

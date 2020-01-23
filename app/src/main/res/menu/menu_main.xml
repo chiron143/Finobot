@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LoginandSignUpActivity">
+ <!--   <item
+        android:id="@+id/ic_clear_btn"
+        android:icon="@drawable/ic_clear_icon"
+        app:showAsAction="ifRoom"
+        android:title="Clear">
+    </item>-->
+    <item android:id="@+id/menu_chart"
+        android:title="graph"
+        android:icon="@drawable/ic_networth_chart_icon"
+        app:showAsAction="always">
+    </item>
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_very_small">2dp</dimen>
+    <dimen name="margin_medium">6dp</dimen>
+    <dimen name="margin_large">8dp</dimen>
+    <dimen name="margin_xlarge">10dp</dimen>
+
+    <dimen name="margin_xxlarge">28dp</dimen>
+    <dimen name="signup_border_margin">14dp</dimen>
+    <dimen name="fab_margin">22dp</dimen>
+</resources>

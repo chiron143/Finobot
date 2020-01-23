@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_drawable"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/closebtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                app:srcCompat="@drawable/ic_cancel_prompt" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+
+            android:text="@string/text_entry_date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/text_header_colour" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/loanStartDateInputLayout"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CalendarEditText
+                    android:id="@+id/loanStartDate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/text_loanStart_date"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/firstEmiPaidDateInputLayout"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CalendarEditText
+                    android:id="@+id/firstEmiPaidDate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/text_firstEmiPaid_date"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/lastEmiPaidDateInputLayout"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CalendarEditText
+                    android:id="@+id/lastEmiPaidDate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/text_lastEmiPaid_date"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/nextEmiDueDateInputLayout"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_margin="@dimen/margin_small"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CalendarEditText
+                    android:id="@+id/nextEmiDueDate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/text_nextEmiDue_date"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+            <com.purplepath.purplepath.customview.CustomTextInputLayout
+                android:id="@+id/finalEmiInputLayout"
+                style="@style/StyledTilPaddedEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/StyledTilEditTextFloatingLabel">
+
+                <com.purplepath.purplepath.customview.CalendarEditText
+                    android:id="@+id/finalEmiDate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_xlarge"
+                    android:hint="@string/text_finalEmiPayement_date"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_gray_text_colour" />
+            </com.purplepath.purplepath.customview.CustomTextInputLayout>
+
+           <!-- <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:srcCompat="@drawable/ic_done_calender" />-->
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_done_menu" />
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/empty_chart_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No chart data available"
+        android:textColor="@color/d_gray"
+        android:textSize="@dimen/month_label_size"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/layout_Scroll"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_large">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/check_group1Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox_car"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Car"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_bike"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Bike"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Total"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_Layout"
+                android:layout_below="@+id/check_group1Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small">
+
+                <com.github.mikephil.charting.charts.HorizontalBarChart
+                    android:id="@+id/auto_individual_chart"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_height="250dp"
+                    android:background="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parentViewId"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_below="@+id/main_Layout"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Space
+                android:layout_below="@+id/parentViewId"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+
+</RelativeLayout>

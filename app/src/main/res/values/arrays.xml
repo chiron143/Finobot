@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="arrays_colors">
+
+
+        <item>#FF7F50</item>
+        <item>#FF69B4</item>
+        <item>#FF6347</item>
+        <item>#FF1493</item>
+        <item>#ff0000</item>
+        <item>#00ff00</item>
+        <item>#0000ff</item>
+        <item>#fc9a30</item>
+        <item>#ff5500</item>
+        <item>#136a9d</item>
+        <item>#063e5e</item>
+        <item>#FF136a9d</item>
+        <item>#146A9D</item>
+        <item>#88000000</item>
+        <item>#e7e7e7</item>
+        <item>#88FFB6C1</item>
+        <item>#FFDAB9</item>
+        <item>#FFD700</item>
+        <item>#FFC0CB</item>
+        <item>#FFB6C1</item>
+        <item>#FFA500</item>
+        <item>#fc9a30</item>
+        <item>#FFA07A</item>
+        <item>#FF8C00</item>
+        <item>#FF4500</item>
+
+        <item>#808080</item>
+        <item>#800080</item>
+        <item>#800000</item>
+        <item>#7FFFD4</item>
+        <item>#7FFF00</item>
+        <item>#7B68EE</item>
+        <item>#778899</item>
+        <item>#708090</item>
+        <item>#6B8E23</item>
+        <item>#6A5ACD</item>
+        <item>#696969</item>
+        <item>#66CDAA</item>
+        <item>#6495ED</item>
+        <item>#5F9EA0</item>
+        <item>#556B2F</item>
+        <item>#4B0082</item>
+        <item>#48D1CC</item>
+        <item>#483D8B</item>
+        <item>#4682B4</item>
+        <item>#4169E1</item>
+        <item>#40E0D0</item>
+        <item>#3CB371</item>
+        <item>#00CED1</item>
+        <item>#00BFFF</item>
+        <item>#7CFC00</item>
+    </string-array>
+
+    <string-array name="cashmanagment_colors">
+        <item>#c18911</item>
+        <item>#da53fc</item>
+        <item>#5386fc</item>
+        <item>#FFC107</item>
+        <item>#adff00</item>
+        <item>#FF7F50</item>
+        <item>#FFC0CB</item>
+        <item>#00CED1</item>
+        <item>#6B8E23</item>
+        <item>#FFD700</item>
+
+    </string-array>
+
+    <string-array name="menuitem">
+        <item>My Action Plan</item>
+        <item>Networth</item>
+        <item>Cash Management</item>
+        <item>Goals</item>
+        <item>Savings and Investments</item>
+        <item>Emergency Fund Plan</item>
+        <item>Life Insurance Plan</item>
+        <item>Health Insurance Plan</item>
+        <item>Property Insurance Plan</item>
+        <item>Motor Insurance Plan</item>
+        <item>My Cash Flow</item>
+        <item>Surplus and Deficit</item>
+        <item>Overall Cash Flow</item>
+        <item>Tax Cash Flow Chart</item>
+        <item>Income Expense Cash Flow</item>
+        <item>DeciPro</item>
+        <item>Home Loan Switch</item>
+        <item>Amortization Schedule</item>
+        <item>Loan Comparsion</item>
+        <item>Deposit Comparison</item>
+        <item>Time Value of Money</item>
+        <item>Loan Eligibility</item>
+        <item>Goal Affordability</item>
+        <item>Home - Buy vs Rent</item>
+        <item>DigiVault</item>
+        <item>Investment</item>
+    </string-array>
+
+</resources>

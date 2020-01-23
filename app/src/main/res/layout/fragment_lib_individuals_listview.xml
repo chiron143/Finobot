@@ -1,0 +1,225 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false">
+
+    <RelativeLayout
+        android:id="@+id/add_btn_parent_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/goal_header_bg_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/goal_bottom_bg_imageView"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty_logo"/>
+
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/goal_plus_btn_framelayout"
+            android:layout_below="@+id/goal_header_bg_relativelayout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+            <!--android:id="@+id/goal_plus_bg_imageView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/goal_plus_bg"/>-->
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/addBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_add_icon_big"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/goal_headear_bg_TxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:gravity="center|top"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/goal_plus_btn_framelayout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dark_gray_text_colour"
+            android:textSize="@dimen/day_number_size"
+            android:text="Please add individuals by clicking the + button"/>
+
+
+        <!--<Button-->
+            <!--android:id="@+id/addBtnId"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="Add"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@drawable/btn_bg"/> />-->
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/liability__fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/filter_image"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_pls_icon"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/libi_parent_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/liability__layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/liability__edit_layout"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/liability__name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/liability__type_header"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Type"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/liability__currentvalue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_medium"
+                        android:text="Loan amount"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/liability__edit_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/liability__edit_rowitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_pop_up"
+                            android:visibility="invisible" />
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/liability__delete_rowitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_medium"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/ic_delet_icon" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.purplepath.purplepath.customview.ExpandableListView
+                android:id="@+id/individuals_liability_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liability__layout"
+                android:divider="@null"
+                android:visibility="visible"></com.purplepath.purplepath.customview.ExpandableListView>
+
+
+            <!--
+            <LinearLayout
+                android:id="@+id/liability_add_layout"
+                android:layout_below="@+id/Institution_liability_list"
+                android:orientation="horizontal"
+                android:layout_marginBottom="?android:attr/actionBarSize"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple_path_app_orange"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Add Liabilities"/>
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/liability_add_imageView"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_add_icon_select"/>
+            </LinearLayout>
+-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

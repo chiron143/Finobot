@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_retirement_age"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.NumberEditText
+                android:id="@+id/et_retirement_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/RetirementAge"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_life_expectency"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.NumberEditText
+                android:id="@+id/et_life_expectency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/LifeExpectancyAge"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_spouse_life_expectancy_age"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.NumberEditText
+                android:id="@+id/et_spouse_life_expectancy_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/SpousesLifeExpectancyAge"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_spouse_retirement_age"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.NumberEditText
+                android:id="@+id/et_spouse_retirement_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/SpouseRetirementAge"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_percentage_of_expense"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toLeftOf="@+id/equity_PopView"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel">
+
+            <com.purplepath.purplepath.customview.PercentageEditText
+                android:id="@+id/et_percentage_of_expense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/PercentageOfExpenses"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_medium">
+
+
+
+            <com.purplepath.purplepath.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_large"
+                android:text="@string/TaxConsideration"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioGroup
+                android:id="@+id/taxConsideration_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@drawable/switch_border"
+                android:checkedButton="@+id/alarm_on_RadioBtn"
+                android:scaleY="0.8"
+                android:scaleX="0.8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/taxConsideration_yes_RadioBtn"
+                    android:layout_width="@dimen/radio_weight"
+                    android:layout_height="@dimen/radio_height"
+                    android:background="@drawable/switch_no"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/radio_yes"
+                    android:textColor="@color/gray"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/taxConsideration_no_RadioBtn"
+                    android:layout_width="@dimen/radio_weight"
+                    android:layout_height="@dimen/radio_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/swithc_yes"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_medium"
+                    android:text="@string/radio_no"
+                    android:textColor="@color/gray"
+                    />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_tax_consideration"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/et_tax_consideration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/TaxConsideration"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/Durationconsideration"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/duration_consideration_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_medium"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/il_duration_consideration"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/et_duration_consideration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/Durationconsideration"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/Inputdetails"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/inputdetails_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_medium"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/il_input_details"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            android:layout_toLeftOf="@+id/equity_PopView">
+
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/et_input_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/Inputdetails"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/il_processing"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            >
+
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/et_processing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/Processing"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/Processing"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/processing_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_medium"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/il_Output_report"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            >
+
+            <com.purplepath.purplepath.customview.CharacterEditText
+                android:id="@+id/et_Output_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:hint="@string/Outputreport"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/Outputreport"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/outputReport_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginLeft="@dimen/margin_medium"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_debt_ratio"
+            style="@style/StyledTilPaddedEditTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:hintTextAppearance="@style/StyledTilEditTextLabel"
+            >
+
+            <com.purplepath.purplepath.customview.PercentageEditText
+                android:id="@+id/et_debt_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_xlarge"
+                android:maxLength="3"
+                android:hint="@string/DebtRatio"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_text_colour" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xxlarge">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firstHome"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerView"
+                android:layout_margin="@dimen/margin_large"
+                android:textColor="@color/app_text_color_gray"
+                android:textSize="@dimen/styledtil_edit_text_floating_label_size"
+                />
+            <View
+                android:id="@+id/centerView"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                ></View>
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/firstHome_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@drawable/switch_border"
+                android:checkedButton="@+id/alarm_on_RadioBtn"
+                android:scaleY="0.8"
+                android:scaleX="0.8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firstHome_yes_RadioBtn"
+                    android:layout_width="@dimen/radio_weight"
+                    android:layout_height="@dimen/radio_height"
+                    android:background="@drawable/switch_no"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/radio_yes"
+                    android:textColor="@color/gray"
+
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/firstHome_no_RadioBtn"
+                    android:layout_width="@dimen/radio_weight"
+                    android:layout_height="@dimen/radio_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/swithc_yes"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_medium"
+                    android:text="@string/radio_no"
+                    android:textColor="@color/gray"
+
+                    />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

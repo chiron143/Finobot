@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:minWidth="@dimen/activity_horizontal_margin"
+        android:background="@drawable/prompt_text_corner">
+
+    <com.purplepath.purplepath.customview.CustomTextView
+        android:id="@+id/txt_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:minWidth="@dimen/activity_horizontal_margin"
+        android:textColor="#343434"
+        android:text="left"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </LinearLayout>
+</LinearLayout>

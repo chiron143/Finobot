@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/empty_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No data to retrieve"
+                    android:visibility="gone"
+                    android:textColor="@color/d_gray"
+                    android:textSize="@dimen/month_label_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"/>
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_below="@+id/layout_spinner"
+                    android:scrollbars="vertical"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/Purple"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add_icon_taxs"
+            app:fabSize="mini" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/Purple"
+            app:srcCompat="@drawable/ic_done_tick_tax"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            app:fabSize="mini" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+    </LinearLayout>
+</RelativeLayout>

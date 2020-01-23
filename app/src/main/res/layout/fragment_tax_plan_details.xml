@@ -1,0 +1,818 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_above="@+id/bottom_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_large"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+
+     android:layout_marginLeft="@dimen/margin_large"
+     android:layout_marginRight="@dimen/margin_large"
+     android:orientation="vertical">
+     <android.support.v7.widget.CardView
+         android:id="@+id/layout_entitlement"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardBackgroundColor="@color/WhiteSmoke"
+         android:layout_margin="@dimen/margin_small"
+         android:layout_marginLeft="@dimen/margin_large"
+         android:layout_marginRight="@dimen/margin_large"
+         android:elevation="@dimen/margin_small"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+           >
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="@dimen/margin_large"
+                 android:layout_marginTop="@dimen/margin_large">
+                 <TextView
+                     android:id="@+id/AssetTitle"
+                     android:text="Entitlement"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:id="@+id/center"
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_centerHorizontal="true"/>
+                 <TextView
+                     android:id="@+id/AssetValueTitle"
+                     android:layout_toRightOf="@+id/center"
+                     android:text="Value"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+             </RelativeLayout>
+             <View
+                 android:layout_width="match_parent"
+                 android:background="@color/border_cardview"
+                 android:layout_marginTop="@dimen/margin_medium"
+                 android:layout_marginBottom="@dimen/margin_medium"
+                 android:layout_height="0.5dp">
+             </View>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:id="@+id/layout_80C"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_80C" 
+                         android:text="80C"
+                         android:layout_marginLeft="@dimen/margin_large"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center1"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_80C"
+                         android:layout_toRightOf="@+id/center1"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/layout_80CCD"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_80CCD"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCD"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center2"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_80CCD"
+                         android:text=""
+                         android:layout_toRightOf="@+id/center2"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/layout_80CCG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_80CCG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center3"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_80CCG"
+                         android:layout_toRightOf="@+id/center3"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/layout_80D"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_80D"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80D"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center4"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_80D"
+                         android:layout_toRightOf="@+id/center4"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/layout_80GG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_80GG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80GG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center5"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_80GG"
+                         android:layout_toRightOf="@+id/center5"
+                                 android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/layout_TRA"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/text_TRA"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="TRA"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center6"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/value_TRA"
+                         android:layout_toRightOf="@+id/center6"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+             </LinearLayout>
+         </LinearLayout>
+     </android.support.v7.widget.CardView>
+
+     <android.support.v7.widget.CardView
+         android:id="@+id/layout_availed"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardBackgroundColor="@color/WhiteSmoke"
+         android:layout_margin="@dimen/margin_small"
+         android:layout_marginLeft="@dimen/margin_large"
+         android:layout_marginRight="@dimen/margin_large"
+         android:layout_marginTop="@dimen/margin_large"
+         android:elevation="@dimen/margin_small"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+           >
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="@dimen/margin_large"
+
+                 android:layout_marginTop="@dimen/margin_large">
+                 <TextView
+                     android:id="@+id/availedTitle"
+                  
+                     android:text="Availed"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:id="@+id/center7"
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_centerHorizontal="true"/>
+                 <TextView
+                     android:id="@+id/availedValueTitle"
+                     android:layout_toRightOf="@+id/center7"
+                     android:text="Value"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+             </RelativeLayout>
+             <View
+                 android:layout_width="match_parent"
+                 android:background="@color/border_cardview"
+                 android:layout_marginTop="@dimen/margin_medium"
+                 android:layout_marginBottom="@dimen/margin_medium"
+                 android:layout_height="0.5dp">
+             </View>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_80C"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_80C"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80C"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center8"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_80C"
+                         android:layout_toRightOf="@+id/center8"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_80CCD"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_80CCD"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCD"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center9"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_80CCD"
+                         android:layout_toRightOf="@+id/center9"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_80CCG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_80CCG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center10"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_80CCG"
+                         android:layout_toRightOf="@+id/center10"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_80D"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_80D"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80D"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center11"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_80D"
+                         android:layout_toRightOf="@+id/center11"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_80GG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_80GG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80GG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center12"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_80GG"
+                        android:layout_toRightOf="@+id/center12"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/availed_layout_TRA"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/availed_text_TRA"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="TRA"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center13"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/availed_value_TRA"
+                         android:layout_toRightOf="@+id/center13"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+             </LinearLayout>
+         </LinearLayout>
+     </android.support.v7.widget.CardView>
+
+     <android.support.v7.widget.CardView
+         android:id="@+id/layout_pending"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardBackgroundColor="@color/WhiteSmoke"
+         android:layout_margin="@dimen/margin_small"
+         android:layout_marginLeft="@dimen/margin_large"
+         android:layout_marginRight="@dimen/margin_large"
+         android:elevation="@dimen/margin_small"
+         android:layout_marginTop="@dimen/margin_large"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+            >
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="@dimen/margin_large"
+
+                 android:layout_marginTop="@dimen/margin_large">
+                 <TextView
+                     android:id="@+id/pendingTitle"
+                     android:text="Pending"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:id="@+id/center14"
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_centerHorizontal="true"/>
+                 <TextView
+                     android:id="@+id/pendingValueTitle"
+                     android:text="Value"
+                     android:layout_toRightOf="@+id/center14"
+                     android:maxLines="1"
+                     style="?android:textAppearanceMedium"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+             </RelativeLayout>
+             <View
+                 android:layout_width="match_parent"
+                 android:background="@color/border_cardview"
+                 android:layout_marginTop="@dimen/margin_medium"
+                 android:layout_marginBottom="@dimen/margin_medium"
+                 android:layout_height="1dp">
+             </View>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_80C"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_80C"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80C"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center15"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_80C"
+                         android:layout_toRightOf="@+id/center15"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_80CCD"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_80CCD"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCD"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center16"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_80CCD"
+                        android:layout_toRightOf="@+id/center16"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_80CCG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_80CCG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80CCG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center17"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_80CCG"
+                         android:layout_toRightOf="@+id/center17"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_80D"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_80D"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80D"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center18"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_80D"
+                         android:layout_toRightOf="@+id/center18"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_80GG"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_80GG"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="80GG"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center19"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_80GG"
+                         android:layout_toRightOf="@+id/center19"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:id="@+id/pending_layout_TRA"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+                     android:layout_marginTop="@dimen/margin_large">
+                     <TextView
+                         android:id="@+id/pending_text_TRA"
+                         android:layout_marginLeft="@dimen/margin_large"
+
+                         android:text="TRA"
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:id="@+id/center20"
+                         android:layout_width="0dp"
+                         android:layout_height="0dp"
+                         android:layout_centerHorizontal="true"/>
+                     <com.purplepath.purplepath.customview.DefaultCurrencyTextView
+                         android:id="@+id/pending_value_TRA"
+                        android:layout_toRightOf="@+id/center20"
+                         android:text=""
+                         android:layout_margin="@dimen/margin_large"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </RelativeLayout>
+
+
+
+
+
+             </LinearLayout>
+
+         </LinearLayout>
+     </android.support.v7.widget.CardView>
+
+     <android.support.v7.widget.CardView
+         android:id="@+id/layout_saveing_total"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardBackgroundColor="@color/WhiteSmoke"
+         android:layout_margin="@dimen/margin_small"
+         android:elevation="@dimen/margin_small"
+        >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/margin_large"
+             android:orientation="vertical">
+             <TextView
+                 android:id="@+id/line1_Text"
+                 android:layout_gravity="center"
+                 android:text=""
+                android:gravity="center"
+                 android:textStyle="bold"
+                 android:layout_margin="@dimen/margin_large"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:id="@+id/line2_Text"
+                 android:layout_gravity="center"
+                 android:layout_alignParentRight="true"
+                 android:text=""
+                 android:gravity="center"
+                 android:layout_margin="@dimen/margin_large"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+         </LinearLayout>
+
+     </android.support.v7.widget.CardView>
+
+
+ </LinearLayout>
+</ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_below="@+id/linear_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/bottom_bar_layout"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_edit_feedback"
+        android:visibility="gone"/>
+   <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+       android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_bottom_tool_bar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
