@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:background="@color/colorPrimary"
         >
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/backButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="false">
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/goalInputLayout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour"
                             android:textColorHint="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -176,7 +176,7 @@
                     android:layout_margin="@dimen/margin_medium"
                     android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
                             android:textColor="@color/dark_gray_text_colour"
                             android:textColorHint="@color/dark_gray_text_colour" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -670,7 +670,7 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -686,7 +686,7 @@
                             android:hint="@string/goalrequrance"
                             android:maxLength="2"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>-->
 
 
@@ -696,7 +696,7 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/goal_intervel_textinput"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -713,7 +713,7 @@
                             android:hint="@string/goalintervel"
                             android:maxLength="2"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -722,7 +722,7 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/goal_frequency_textinput"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -739,7 +739,7 @@
                             android:hint="@string/goal_frequency"
                             android:maxLength="2"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -888,7 +888,7 @@
                 android:layout_margin="@dimen/margin_medium"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     style="@style/StyledTilPaddedEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -908,7 +908,7 @@
                         android:maxLength="5"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -918,7 +918,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     style="@style/StyledTilPaddedEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -934,7 +934,7 @@
                         android:hint="@string/goal_notes_txt"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -984,7 +984,7 @@
 
         </LinearLayout>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/goal_tick_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -995,7 +995,7 @@
             android:background="@color/colorPrimary"
             android:visibility="visible"
             app:srcCompat="@drawable/ic_done_menu" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </LinearLayout>

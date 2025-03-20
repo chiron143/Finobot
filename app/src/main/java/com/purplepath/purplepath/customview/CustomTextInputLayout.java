@@ -2,7 +2,7 @@ package com.purplepath.purplepath.customview;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.design.widget.TextInputLayout;
+import com.google.android.material.textfield.TextInputLayout;
 import android.util.AttributeSet;
 
 import java.lang.reflect.Field;

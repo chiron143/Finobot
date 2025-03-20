@@ -68,7 +68,7 @@
 
             </LinearLayout>
 
-            <android.support.v4.widget.Space
+            <android.widget.Space
                 android:layout_below="@+id/titleLayout"
                 android:layout_width="match_parent"
                 android:layout_height="150dp" />
@@ -77,7 +77,7 @@
 
     </ScrollView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/expense_fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

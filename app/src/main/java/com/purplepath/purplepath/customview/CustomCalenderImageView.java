@@ -12,7 +12,7 @@ import com.finobot.finobot.R;
  * Created by pravinr on 5/30/17.
  */
 
-public class CustomCalenderImageView  extends android.support.v7.widget.AppCompatImageView
+public class CustomCalenderImageView  extends androidx.appcompat.widget.AppCompatImageView
 {
     public CustomCalenderImageView(Context context)
     {

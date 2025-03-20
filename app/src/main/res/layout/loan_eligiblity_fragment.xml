@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_bar_layout"
@@ -87,7 +87,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/edt_downpayment_lay"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                                     android:inputType="number"
                                     android:maxLines="1"
                                     android:textAppearance="?android:attr/textAppearanceSmall" />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
 
                             <com.purplepath.purplepath.customview.CustomCalenderImageView
                                 android:id="@+id/downpayment_calculatorimage_calc"
@@ -120,7 +120,7 @@
                                 />
 
 
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/edt_prepayment_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                                     android:inputType="number"
                                     android:maxLines="1"
                                     android:textAppearance="?android:attr/textAppearanceSmall" />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -208,7 +208,7 @@
 
                         </RelativeLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/loanFund_tenure_lyt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -230,9 +230,9 @@
                                 android:layout_marginRight="@dimen/margin_medium"
                                 android:textAppearance="?android:textAppearanceSmall" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/loanFund_rate_lyt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -252,7 +252,7 @@
                                 android:layout_marginRight="@dimen/margin_medium"
                                 android:textAppearance="?android:textAppearanceSmall" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
 
                         <LinearLayout
@@ -339,7 +339,7 @@
 
                         </LinearLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/loanFund_ltv_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -357,9 +357,9 @@
                                 android:maxLength="3"
                                 android:textAppearance="?android:textAppearanceSmall" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/loanFund_dept_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -377,9 +377,9 @@
                                 android:hint="Debt Ratio"
                                 android:textAppearance="?android:textAppearanceSmall" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/loanFund_credit_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -397,7 +397,7 @@
                                 android:hint="Credit Score"
                                 android:textAppearance="?android:textAppearanceSmall" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                         <Space
                             android:layout_width="match_parent"
                             android:layout_height="150dp" />
@@ -407,9 +407,9 @@
         </RelativeLayout>
 
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/goalaff_fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

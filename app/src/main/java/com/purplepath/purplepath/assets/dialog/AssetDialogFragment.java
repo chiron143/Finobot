@@ -6,14 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -1526,7 +1526,7 @@ public class AssetDialogFragment extends DialogFragment implements View.OnClickL
 
         inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.yes_no_dialogs, null);
-        alertDialog = new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog = new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         final TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
 

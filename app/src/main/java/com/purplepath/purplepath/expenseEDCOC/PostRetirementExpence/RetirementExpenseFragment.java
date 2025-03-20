@@ -5,10 +5,10 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.FragmentActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -666,8 +666,8 @@ public class RetirementExpenseFragment extends BaseFragment implements View.OnCl
             selectedLev1List.addAll(selLev1List);
             selectedLev2List.clear();
             selectedLev2List.addAll(selLev2List);
-            android.support.v4.app.FragmentManager fm = ((FragmentActivity) mContext).getSupportFragmentManager();
-            android.support.v4.app.DialogFragment newFragment = LevelSecondSelectionExpDialog.newInstance(selectedList, expenseCatFilterHashMap, incLev2SelLisInterface, selectedLev1List, selectedLev2List);
+            androidx.fragment.app.FragmentManager fm = ((FragmentActivity) mContext).getSupportFragmentManager();
+            androidx.fragment.app.DialogFragment newFragment = LevelSecondSelectionExpDialog.newInstance(selectedList, expenseCatFilterHashMap, incLev2SelLisInterface, selectedLev1List, selectedLev2List);
             newFragment.show(fm, "dialog");
         }else{
             selectedLev1List.clear();

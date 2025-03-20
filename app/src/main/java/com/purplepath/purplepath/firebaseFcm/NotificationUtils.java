@@ -14,7 +14,7 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -63,7 +63,7 @@ public class NotificationUtils {
                         mContext,
                         0,
                         intent,
-                        PendingIntent.FLAG_CANCEL_CURRENT
+                        PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE
                 );
 
         final NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(

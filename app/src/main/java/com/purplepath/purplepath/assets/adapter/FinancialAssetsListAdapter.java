@@ -6,7 +6,7 @@ package com.purplepath.purplepath.assets.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +44,7 @@ public class FinancialAssetsListAdapter extends ArrayAdapter<GetAssetUserData> {
     OndeleteUpdateList ondeleteUpdateList;
 LayoutInflater inflater;
 View dialogView;
-android.support.v7.app.AlertDialog alertDialog;
+    androidx.appcompat.app.AlertDialog alertDialog;
     String assetCat;
     Gson gson = new Gson();
     AssetCategoriesModel assetCategoriesModel;
@@ -194,7 +194,7 @@ android.support.v7.app.AlertDialog alertDialog;
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialog,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(HomePageActivity.stringMessageError);

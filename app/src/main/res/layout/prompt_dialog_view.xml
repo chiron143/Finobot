@@ -22,7 +22,7 @@
             android:layout_alignParentRight="true"
             >
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/closebtnId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
 
         </ListView>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

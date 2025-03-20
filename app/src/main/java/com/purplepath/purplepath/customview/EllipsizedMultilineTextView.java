@@ -2,7 +2,7 @@ package com.purplepath.purplepath.customview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.widget.AppCompatTextView;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.text.Layout;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;

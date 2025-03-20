@@ -3,8 +3,8 @@ package com.purplepath.purplepath.insuranceSummary;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -31,7 +31,7 @@ import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
 import java.math.BigInteger;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,34 +46,34 @@ public class InsuranceTableView extends BaseFragment implements  View.OnClickLis
 
     OnActivityBackPressedListener backPressedListener;
 
-    @Bind(R.id.estimate_expenses_value)
+    @BindView(R.id.estimate_expenses_value)
     DefaultCurrencyTextView estimate_expenses_value;
 
-    @Bind(R.id.current_obligation_value)
+    @BindView(R.id.current_obligation_value)
     DefaultCurrencyTextView current_obligation_value;
 
-    @Bind(R.id.future_requirement_value)
+    @BindView(R.id.future_requirement_value)
     DefaultCurrencyTextView future_requirement_value;
 
-    @Bind(R.id.savingInversment_value)
+    @BindView(R.id.savingInversment_value)
     CurrencyTextView savingInversment_value;
 
-    @Bind(R.id.currentInsurances_value)
+    @BindView(R.id.currentInsurances_value)
     CurrencyTextView currentInsurances_value;
 
-    @Bind(R.id.total_Overall_value)
+    @BindView(R.id.total_Overall_value)
     CurrencyTextView total_Overall_value;
 
-    @Bind(R.id.total_Expanse_Savings_value)
+    @BindView(R.id.total_Expanse_Savings_value)
     DefaultCurrencyTextView total_Expanse_Savings_value;
 
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
     RelativeLayout mleftRelativeLayout;
 
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
     RelativeLayout mcenterRelativeLayout;
 
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
     RelativeLayout mRightRelativeLayout;
 
     private TextView errorTextview;

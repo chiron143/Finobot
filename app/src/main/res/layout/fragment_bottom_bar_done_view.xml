@@ -19,7 +19,7 @@
         android:background="@drawable/tax_home_card_background"
         android:gravity="center">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Finish Later"
@@ -39,7 +39,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/bottom_home_icon" />
@@ -55,7 +55,7 @@
         android:padding="@dimen/margin_medium"
         android:gravity="center">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="     Done"

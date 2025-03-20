@@ -11,7 +11,7 @@
         android:layout_height="?android:attr/actionBarSize"
         android:orientation="horizontal"
         android:background="@color/colorPrimary">
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/backButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -72,7 +72,7 @@
                         android:hint="total_advance_tax_paid"
                         android:textColorHint="@color/app_text_color_gray"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
             <LinearLayout
@@ -81,7 +81,7 @@
                 android:orientation="horizontal"
                 >
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -100,7 +100,7 @@
                         android:inputType="numberDecimal"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
             <LinearLayout
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -128,7 +128,7 @@
                         android:hint="total_tds_deducted"
                         android:textColorHint="@color/app_text_color_gray"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -157,7 +157,7 @@
                         android:hint="total_tcs_deducted"
                         android:textColorHint="@color/app_text_color_gray"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
@@ -166,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -186,7 +186,7 @@
                         android:hint="mat_credit"
                         android:textColorHint="@color/app_text_color_gray"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
             <LinearLayout
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -214,11 +214,11 @@
                         android:hint="amt_credit"
                         android:textColorHint="@color/app_text_color_gray"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium"
@@ -238,8 +238,8 @@
                     android:hint="Notes"
                     android:textColorHint="@color/app_text_color_gray"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-            </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium"
@@ -259,12 +259,12 @@
                     android:hint=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:visibility="invisible"/>
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </ScrollView>
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_tax_prepaid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

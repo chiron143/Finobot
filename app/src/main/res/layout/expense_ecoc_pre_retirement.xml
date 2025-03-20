@@ -63,7 +63,7 @@
 
 
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ti"
                 android:visibility="invisible"
                 android:layout_width="0dp"
@@ -137,7 +137,7 @@
 
 
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/essential_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
             android:layout_marginBottom="@dimen/margin_medium"
             />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/discretionary_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -235,7 +235,7 @@
             android:layout_marginBottom="@dimen/margin_medium"
             />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/commitment_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -284,7 +284,7 @@
             android:layout_marginBottom="@dimen/margin_medium"
             />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/Obligation_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -333,7 +333,7 @@
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_medium"
             />
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/contri_total_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -352,7 +352,7 @@
         <include layout="@layout/fragment_bottom_bar_view"/>
 
     </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_floating_button_Id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -4,11 +4,11 @@ package com.purplepath.purplepath.taxanalysis;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.CardView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.cardview.widget.CardView;
 import android.text.SpannableString;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,7 +33,7 @@ import com.purplepath.purplepath.taxanalysis.modes.GetTaxPlanModels;
 
 import java.text.DecimalFormat;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -45,22 +45,22 @@ import retrofit2.Response;
  */
 public class TaxPlanSummary extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.savingsTopText)
+    @BindView(R.id.savingsTopText)
     TextView savingsTopText;
 
-    @Bind(R.id.savingsBottomText)
+    @BindView(R.id.savingsBottomText)
     TextView savingsBottomText;
 
-    @Bind(R.id.availedTopText)
+    @BindView(R.id.availedTopText)
     TextView availedTopText;
 
-    @Bind(R.id.availedBottomText)
+    @BindView(R.id.availedBottomText)
     TextView availedBottomText;
 
-    @Bind(R.id.pendingTopText)
+    @BindView(R.id.pendingTopText)
     TextView pendingTopText;
 
-    @Bind(R.id.pendingBottomText)
+    @BindView(R.id.pendingBottomText)
     TextView pendingBottomText;
     private FloatingActionButton fab_id;
     private String TAG="spcheck";

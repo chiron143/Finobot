@@ -6,7 +6,7 @@ package com.purplepath.purplepath.insurance.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +45,7 @@ public class LifeInsuranceListAdapter extends ArrayAdapter<GetInsuranceInputData
     LayoutInflater inflater;
     View dialogView;
     TextView stringMessageText;
-    android.support.v7.app.AlertDialog alertDialog;
+    androidx.appcompat.app.AlertDialog alertDialog;
     FirstTimeDoneInterface firstTimeDoneInterface;
     public LifeInsuranceListAdapter(Context context, ArrayList<GetInsuranceInputData> getLifeInsUserData,
                                     OnCheckListIsEmpty onCheckListIsempty, OndeleteUpdateList ondeleteUpdate,
@@ -177,7 +177,7 @@ public class LifeInsuranceListAdapter extends ArrayAdapter<GetInsuranceInputData
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialog,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(HomePageActivity.stringMessageError);

@@ -2,7 +2,7 @@ package com.purplepath.purplepath.fragments;
 
 
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +14,7 @@ import com.finobot.finobot.R;
 import com.finobot.finobot.activity.NotificationActivity;
 import com.purplepath.purplepath.model.homeCardModel.HomeCardsModel;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -26,13 +26,13 @@ public class HomePageCard2Fragment extends BaseFragment {
     private HomeCardsModel homeCardsModel;
     private int fragmentID = 0;
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView title;
 
-    @Bind(R.id.text)
+    @BindView(R.id.text)
     TextView text;
 
-    @Bind(R.id.announcement_parent)
+    @BindView(R.id.announcement_parent)
     LinearLayout announcement_parent;
 
     private CardView card_root;

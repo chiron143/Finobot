@@ -8,7 +8,7 @@
         <attr name="android:requiresFadingEdge" />
         <attr name="android:fadingEdgeLength" />
     </declare-styleable>
-    
+
       <declare-styleable name="ColorOptionsView">
         <attr name="titleText" format="string" localization="suggested" />
         <attr name="valueColor" format="color" />
@@ -48,6 +48,15 @@
             <!-- Location of the SVG document. -->
             <attr name="svg" format="reference|string"/>
         </declare-styleable>
+
+    <declare-styleable name="CustomCirclePageIndicator">
+        <attr name="fillColor" format="color"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="pageColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="centered" format="boolean"/>
+    </declare-styleable>
 
     <declare-styleable name="DonutProgress">
         <attr name="donut_progress" format="integer"/>

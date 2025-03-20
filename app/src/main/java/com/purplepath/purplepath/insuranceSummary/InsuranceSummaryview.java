@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -40,7 +40,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -57,51 +57,51 @@ public class InsuranceSummaryview extends BaseFragment implements  View.OnClickL
 
     OnActivityBackPressedListener backPressedListener;
 
-    @Bind(R.id.comprehensive_life_insurance_cover)
+    @BindView(R.id.comprehensive_life_insurance_cover)
     TextView comprehensive_life_insurance_cover;
 
-    @Bind(R.id.finacial_requirement)
+    @BindView(R.id.finacial_requirement)
     TextView finacial_requirement;
 
-    @Bind(R.id.liquidating_your_asset)
+    @BindView(R.id.liquidating_your_asset)
     TextView liquidating_your_asset;
 
-    @Bind(R.id.currentInsurances_cover)
+    @BindView(R.id.currentInsurances_cover)
     TextView currentInsurances_cover;
 
-    @Bind(R.id.purchase_add)
+    @BindView(R.id.purchase_add)
     TextView purchase_add;
 
-    @Bind(R.id.meet_your_expenses)
+    @BindView(R.id.meet_your_expenses)
     TextView meet_your_expenses;
 
-    @Bind(R.id.meet_your_expenses1)
+    @BindView(R.id.meet_your_expenses1)
     TextView meet_your_expenses1;
 
-    @Bind(R.id.relign_your_life_objectives)
+    @BindView(R.id.relign_your_life_objectives)
     TextView relign_your_life_objectives;
 
-    @Bind(R.id.relign_your_life_objectives1)
+    @BindView(R.id.relign_your_life_objectives1)
     TextView relign_your_life_objectives1;
 
-    @Bind(R.id.pay_your_obligation)
+    @BindView(R.id.pay_your_obligation)
     TextView pay_your_obligation;
 
-    @Bind(R.id.pay_your_obligation1)
+    @BindView(R.id.pay_your_obligation1)
     TextView pay_your_obligation1;
 
 
 
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
     RelativeLayout mleftRelativeLayout;
 
-    @Bind(R.id.rela_layout)
+    @BindView(R.id.rela_layout)
     RelativeLayout rela_layout;
 
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
     RelativeLayout mcenterRelativeLayout;
 
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
     RelativeLayout mRightRelativeLayout;
 
     private Float current_Insurance, current_saving,min_Surrival_cover,min_requried_cover,max_recommended_cover;

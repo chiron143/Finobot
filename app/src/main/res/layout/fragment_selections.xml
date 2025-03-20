@@ -9,7 +9,7 @@
         android:layout_height="match_parent">
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_retirement_age"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -28,8 +28,8 @@
                 android:maxLength="2"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_life_expectency"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -48,8 +48,8 @@
                 android:maxLength="2"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_spouse_life_expectancy_age"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -68,8 +68,8 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_spouse_retirement_age"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -88,9 +88,9 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_percentage_of_expense"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -109,7 +109,7 @@
                 android:maxLength="3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -183,7 +183,7 @@
 
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_tax_consideration"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -202,8 +202,8 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.v7.widget.AppCompatTextView
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_xlarge"
@@ -222,7 +222,7 @@
             android:layout_marginLeft="@dimen/margin_medium"
             />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:visibility="gone"
             android:id="@+id/il_duration_consideration"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -241,9 +241,9 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_xlarge"
@@ -261,7 +261,7 @@
             android:layout_marginBottom="@dimen/margin_xlarge"
             android:layout_marginLeft="@dimen/margin_medium"
             />
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:visibility="gone"
             android:id="@+id/il_input_details"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -280,9 +280,9 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:visibility="gone"
             android:id="@+id/il_processing"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -301,9 +301,9 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_xlarge"
@@ -322,7 +322,7 @@
             android:layout_marginLeft="@dimen/margin_medium"
             />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:visibility="gone"
             android:id="@+id/il_Output_report"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -341,9 +341,9 @@
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_xlarge"
@@ -362,7 +362,7 @@
             android:layout_marginLeft="@dimen/margin_medium"
             />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_debt_ratio"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -381,14 +381,14 @@
                 android:inputType="numberDecimal"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <RelativeLayout
             android:layout_marginTop="@dimen/margin_large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_xxlarge">
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/firstHome"

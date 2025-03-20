@@ -36,7 +36,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -46,26 +46,26 @@ import butterknife.ButterKnife;
  */
 public class AmortizationGraph extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.lineChart)
+    @BindView(R.id.lineChart)
     LineChart mChart;
 
-    @Bind(R.id.noChartData)
+    @BindView(R.id.noChartData)
     TextView noChartData_txt;
 
-    @Bind(R.id.legendLayout1)
+    @BindView(R.id.legendLayout1)
     LinearLayout legendLayout1;
 
-    @Bind(R.id.legendLayout2)
+    @BindView(R.id.legendLayout2)
     LinearLayout legendLayout2;
 
 
-    @Bind(R.id.lineChart2)
+    @BindView(R.id.lineChart2)
     LineChart mChart2;
 
-    @Bind(R.id.lineChart4)
+    @BindView(R.id.lineChart4)
     LineChart mChart4;
 
-    @Bind(R.id.legendLayout4)
+    @BindView(R.id.legendLayout4)
     LinearLayout legendLayout4;
 
     Context mContext;

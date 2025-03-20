@@ -3,8 +3,8 @@ package com.purplepath.purplepath.expenseEDCOC.PostRetirementExpence;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -31,7 +31,7 @@ import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -49,73 +49,73 @@ import static com.purplepath.purplepath.apputiles.UtileKit.getPersistedPurplePat
 public class PostRetirementExpenseList extends BaseFragment implements View.OnClickListener {
 
 
-    @Bind(R.id.essentialCurTxtId)
+    @BindView(R.id.essentialCurTxtId)
     DefaultCurrencyTextView essentialCurTxt;
 
-    @Bind(R.id.discretionaryCurTxtId)
+    @BindView(R.id.discretionaryCurTxtId)
     DefaultCurrencyTextView discretionaryCurTxt;
 
-    @Bind(R.id.commitmentCurTxtId)
+    @BindView(R.id.commitmentCurTxtId)
     DefaultCurrencyTextView commitmentCurTxt;
 
-    @Bind(R.id.obligationCurTxtId)
+    @BindView(R.id.obligationCurTxtId)
     DefaultCurrencyTextView obligationCurTxt;
 
-    @Bind(R.id.contributionCurTxtId)
+    @BindView(R.id.contributionCurTxtId)
     DefaultCurrencyTextView contributionCurTxt;
 
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
     RelativeLayout mleftRelativeLayout;
 
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
     RelativeLayout mcenterRelativeLayout;
 
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
     RelativeLayout mRightRelativeLayout;
 
-    @Bind(R.id.add_floating_button_Id)
+    @BindView(R.id.add_floating_button_Id)
     FloatingActionButton addFloatingBtn;
 
-    @Bind(R.id.main_layout)
+    @BindView(R.id.main_layout)
     LinearLayout mainView;
 
-    @Bind(R.id.add_cartoon_layout)
+    @BindView(R.id.add_cartoon_layout)
     RelativeLayout cartoonView;
 
-    @Bind(R.id.essetLiabView)
+    @BindView(R.id.essetLiabView)
     LinearLayout essetLiabView;
 
-    @Bind(R.id.discreTotalLinView)
+    @BindView(R.id.discreTotalLinView)
     LinearLayout discreTotalLinView;
 
-    @Bind(R.id.committotLinView)
+    @BindView(R.id.committotLinView)
     LinearLayout committotLinView;
 
-    @Bind(R.id.oblitotLinView)
+    @BindView(R.id.oblitotLinView)
     LinearLayout oblitotLinView;
 
-    @Bind(R.id.contri_totalLinView)
+    @BindView(R.id.contri_totalLinView)
     LinearLayout contri_totalLinView;
 
-    @Bind(R.id.essential_btn)
+    @BindView(R.id.essential_btn)
     ImageView essentialBtn;
 
-    @Bind(R.id.discretionary_btn)
+    @BindView(R.id.discretionary_btn)
     ImageView discretionaryBtn;
 
-    @Bind(R.id.commitment_btn)
+    @BindView(R.id.commitment_btn)
     ImageView commitmentBtn;
 
-    @Bind(R.id.Obligation_btn)
+    @BindView(R.id.Obligation_btn)
     ImageView ObligationBtn;
 
-    @Bind(R.id.contri_total_btn)
+    @BindView(R.id.contri_total_btn)
     ImageView contri_total_btn;
 
-    @Bind(R.id.goal_headear_bg_TxtView)
+    @BindView(R.id.goal_headear_bg_TxtView)
     TextView postRetirementbtn;
 
-    @Bind(R.id.goal_click_image)
+    @BindView(R.id.goal_click_image)
     ImageView mAddImgButten;
 
 

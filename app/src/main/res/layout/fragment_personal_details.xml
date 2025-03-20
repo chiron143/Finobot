@@ -356,7 +356,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:visibility="gone" />
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/otherOccupationInputLayout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -374,7 +374,7 @@
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="@color/dark_gray_text_colour" />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -505,7 +505,7 @@
                                 android:visibility="gone" />
                         </LinearLayout>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/otherQualificattionInputLayout"
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_width="match_parent"
@@ -525,7 +525,7 @@
                             <!--android:focusable="true"-->
                             <!--android:focusableInTouchMode="true"-->
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                     </RelativeLayout>
 
                     <LinearLayout
@@ -534,7 +534,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/currentOrganizationInputLayout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -552,7 +552,7 @@
                             android:inputType="textCapSentences"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
                     <LinearLayout
@@ -560,7 +560,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/designationInputLayout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -579,7 +579,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
@@ -591,7 +591,7 @@
 
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/homeAddressInputLayout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -616,7 +616,7 @@
                             android:textColor="@color/dark_gray_text_colour" />
 
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -635,7 +635,7 @@
                         android:text="Same as Home Address "
                         android:textColor="@color/DarkGrayline" />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/workAddressInputLayout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -659,7 +659,7 @@
                             android:singleLine="false"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
 
                     <RelativeLayout
@@ -1036,7 +1036,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/personal_details_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

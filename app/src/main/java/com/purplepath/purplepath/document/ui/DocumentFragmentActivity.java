@@ -17,16 +17,16 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.SearchView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.loader.content.CursorLoader;
+import androidx.core.view.MenuItemCompat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.appcompat.widget.SearchView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.DisplayMetrics;
@@ -118,7 +118,7 @@ public class DocumentFragmentActivity extends BaseFragment implements View.OnCli
     EditText edittext_search;
     LayoutInflater inflater;
     View dialogView;
-    android.support.v7.app.AlertDialog alertDialog;
+    androidx.appcompat.app.AlertDialog alertDialog;
     private int STORAGE_PERMISSION_CODE = 23;
     //String download_file_url = "https://s3-ap-southeast-1.amazonaws.com/fino-bucket/";
 
@@ -625,7 +625,7 @@ public class DocumentFragmentActivity extends BaseFragment implements View.OnCli
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialog,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(HomePageActivity.stringMessageError);

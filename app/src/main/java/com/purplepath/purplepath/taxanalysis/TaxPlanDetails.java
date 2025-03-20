@@ -5,12 +5,12 @@ package com.purplepath.purplepath.taxanalysis;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.cardview.widget.CardView;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
@@ -36,7 +36,7 @@ import com.purplepath.purplepath.taxanalysis.modes.GetTaxPlanModels;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -51,120 +51,120 @@ import retrofit2.Response;
 
 public class TaxPlanDetails extends BaseFragment implements View.OnClickListener {
 
-     @Bind(R.id.layout_80C)
+     @BindView(R.id.layout_80C)
     RelativeLayout layout_80C;
 
-     @Bind(R.id.value_80C)
+     @BindView(R.id.value_80C)
     TextView value_80C;
 
-     @Bind(R.id.layout_80CCD)
+     @BindView(R.id.layout_80CCD)
     RelativeLayout layout_80CCD;
 
-     @Bind(R.id.value_80CCD)
+     @BindView(R.id.value_80CCD)
     TextView value_80CCD;
 
 
-     @Bind(R.id.layout_80CCG)
+     @BindView(R.id.layout_80CCG)
     RelativeLayout layout_80CCG;
 
-     @Bind(R.id.value_80CCG)
+     @BindView(R.id.value_80CCG)
     TextView value_80CCG;
 
-     @Bind(R.id.layout_80D)
+     @BindView(R.id.layout_80D)
     RelativeLayout layout_80D;
 
-     @Bind(R.id.value_80D)
+     @BindView(R.id.value_80D)
     TextView value_80D;
 
-     @Bind(R.id.layout_80GG)
+     @BindView(R.id.layout_80GG)
     RelativeLayout layout_80GG;
 
-     @Bind(R.id.value_80GG)
+     @BindView(R.id.value_80GG)
     TextView value_80GG;
 
-     @Bind(R.id.layout_TRA)
+     @BindView(R.id.layout_TRA)
     RelativeLayout layout_TRA;
 
-     @Bind(R.id.value_TRA)
+     @BindView(R.id.value_TRA)
     TextView value_TRA;
 
-     @Bind(R.id.availed_layout_80C)
+     @BindView(R.id.availed_layout_80C)
     RelativeLayout availed_layout_80C;
 
-     @Bind(R.id.availed_value_80C)
+     @BindView(R.id.availed_value_80C)
     TextView availed_value_80C;
 
-     @Bind(R.id.availed_layout_80CCD)
+     @BindView(R.id.availed_layout_80CCD)
     RelativeLayout availed_layout_80CCD;
 
-     @Bind(R.id.availed_value_80CCD)
+     @BindView(R.id.availed_value_80CCD)
     DefaultCurrencyTextView availed_value_80CCD;
 
-     @Bind(R.id.availed_layout_80CCG)
+     @BindView(R.id.availed_layout_80CCG)
     RelativeLayout availed_layout_80CCG;
 
-     @Bind(R.id.availed_value_80CCG)
+     @BindView(R.id.availed_value_80CCG)
     DefaultCurrencyTextView availed_value_80CCG;
 
-     @Bind(R.id.availed_layout_80D)
+     @BindView(R.id.availed_layout_80D)
     RelativeLayout availed_layout_80D;
 
-     @Bind(R.id.availed_value_80D)
+     @BindView(R.id.availed_value_80D)
     DefaultCurrencyTextView availed_value_80D;
 
-     @Bind(R.id.availed_layout_80GG)
+     @BindView(R.id.availed_layout_80GG)
     RelativeLayout availed_layout_80GG;
 
-     @Bind(R.id.availed_value_80GG)
+     @BindView(R.id.availed_value_80GG)
     DefaultCurrencyTextView availed_value_80GG;
 
-     @Bind(R.id.availed_layout_TRA)
+     @BindView(R.id.availed_layout_TRA)
     RelativeLayout availed_layout_TRA;
 
-     @Bind(R.id.availed_value_TRA)
+     @BindView(R.id.availed_value_TRA)
     DefaultCurrencyTextView availed_value_TRA;
 
 
-     @Bind(R.id.pending_layout_80C)
+     @BindView(R.id.pending_layout_80C)
     RelativeLayout pending_layout_80C;
 
-     @Bind(R.id.pending_value_80C)
+     @BindView(R.id.pending_value_80C)
      DefaultCurrencyTextView pending_value_80C;
 
-     @Bind(R.id.pending_layout_80CCD)
+     @BindView(R.id.pending_layout_80CCD)
     RelativeLayout pending_layout_80CCD;
 
-     @Bind(R.id.pending_value_80CCD)
+     @BindView(R.id.pending_value_80CCD)
     DefaultCurrencyTextView pending_value_80CCD;
 
-     @Bind(R.id.pending_layout_80CCG)
+     @BindView(R.id.pending_layout_80CCG)
     RelativeLayout pending_layout_80CCG;
 
-     @Bind(R.id.pending_value_80CCG)
+     @BindView(R.id.pending_value_80CCG)
     DefaultCurrencyTextView pending_value_80CCG;
 
-     @Bind(R.id.pending_layout_80D)
+     @BindView(R.id.pending_layout_80D)
     RelativeLayout pending_layout_80D;
 
-     @Bind(R.id.pending_value_80D)
+     @BindView(R.id.pending_value_80D)
     DefaultCurrencyTextView pending_value_80D;
 
-     @Bind(R.id.pending_layout_80GG)
+     @BindView(R.id.pending_layout_80GG)
     RelativeLayout pending_layout_80GG;
 
-     @Bind(R.id.pending_value_80GG)
+     @BindView(R.id.pending_value_80GG)
     DefaultCurrencyTextView pending_value_80GG;
 
-     @Bind(R.id.pending_layout_TRA)
+     @BindView(R.id.pending_layout_TRA)
     RelativeLayout pending_layout_TRA;
 
-     @Bind(R.id.pending_value_TRA)
+     @BindView(R.id.pending_value_TRA)
     DefaultCurrencyTextView pending_value_TRA;
 
-     @Bind(R.id.line1_Text)
+     @BindView(R.id.line1_Text)
     TextView line1_Text;
 
-     @Bind(R.id.line2_Text)
+     @BindView(R.id.line2_Text)
     TextView line2_Text;
 
     private FloatingActionButton fab_id;

@@ -8,10 +8,10 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -351,7 +351,7 @@ public class TaxFilingUploadFileNewMultiple extends BaseFragment implements View
 
         inflater= LayoutInflater.from(mContext);
         dialogView=inflater.inflate(R.layout.yes_no_reset,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(mContext).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(mContext).create();
         alertDialog.setView(dialogView);
         final TextView txt_heading=dialogView.findViewById(R.id.txt_heading);
         final TextView textView=dialogView.findViewById(R.id.additional_yes);

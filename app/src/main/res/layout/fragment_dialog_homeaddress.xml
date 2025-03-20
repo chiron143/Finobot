@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/homeAddressInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -32,10 +32,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/cityInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -55,10 +55,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/stateInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -77,9 +77,9 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/countryInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -98,11 +98,11 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/zipcodeInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -121,11 +121,11 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="number" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/personal_address_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,4 +135,4 @@
         android:src="@drawable/ic_next_btn"
         android:visibility="visible" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

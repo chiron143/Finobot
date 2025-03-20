@@ -3,9 +3,9 @@ package com.purplepath.purplepath.emergencyfundAnalysis.summary;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -50,41 +50,41 @@ import retrofit2.Response;
 
 public class EmergencyFundDetailSumary extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.cash_value_id)
+    @BindView(R.id.cash_value_id)
     DefaultCurrencyTextView cashTextView;
 
-    @Bind(R.id.saving_value_id)
+    @BindView(R.id.saving_value_id)
     DefaultCurrencyTextView savingTxtView;
 
 
-    @Bind(R.id.current_accout_value_id)
+    @BindView(R.id.current_accout_value_id)
     DefaultCurrencyTextView currentAccountView;
 
-    @Bind(R.id.fixedReqcurringDepValue_id)
+    @BindView(R.id.fixedReqcurringDepValue_id)
     DefaultCurrencyTextView fixedReqDepositView;
 
-    @Bind(R.id.termDepValue_id)
+    @BindView(R.id.termDepValue_id)
     DefaultCurrencyTextView termDepView;
 
 
 
 
-    @Bind(R.id.cash_actual_value_id)
+    @BindView(R.id.cash_actual_value_id)
     DefaultCurrencyTextView cashactualTextView;
 
-    @Bind(R.id.saving_actual_value_id)
+    @BindView(R.id.saving_actual_value_id)
     DefaultCurrencyTextView savingActualTxtView;
 
-    @Bind(R.id.current_actual_accout_value_id)
+    @BindView(R.id.current_actual_accout_value_id)
     DefaultCurrencyTextView currentActualAccountView;
 
-    @Bind(R.id.fixedReqcurringDep_actual_Value_id)
+    @BindView(R.id.fixedReqcurringDep_actual_Value_id)
     DefaultCurrencyTextView fixedReqActualDepositView;
 
-    @Bind(R.id.termDepValue_actual_id)
+    @BindView(R.id.termDepValue_actual_id)
     DefaultCurrencyTextView termActualDepView;
 
-    @Bind(R.id.overall_percentage)
+    @BindView(R.id.overall_percentage)
     TextView overall_percentage;
 
     private FloatingActionButton fab_id;
@@ -282,7 +282,7 @@ public class EmergencyFundDetailSumary extends BaseFragment implements View.OnCl
 
     private void addToActivity(Fragment fragment) {
         FragmentManager fm = getFragmentManager();
-        android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+        androidx.fragment.app.FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragment_container, fragment);
         ft.addToBackStack(null);
         ft.commitAllowingStateLoss();

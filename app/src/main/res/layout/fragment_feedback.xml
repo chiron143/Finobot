@@ -34,7 +34,7 @@
                     android:text="We want know that you thought your experience at so we do love to hear your feedback"/>
 
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/oldpasswordView"
                     android:layout_below="@+id/heading"
                     style="@style/StyledTilPaddedEditTextLayout"
@@ -61,9 +61,9 @@
                         android:maxLines="1"
 
                       />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/newpasswordView"
                     android:layout_below="@+id/oldpasswordView"
                     style="@style/StyledTilPaddedEditTextLayout"
@@ -85,7 +85,7 @@
                         android:layout_marginLeft="@dimen/margin_xlarge"
                         android:layout_marginRight="@dimen/margin_xlarge"
                         android:drawablePadding="@dimen/margin_medium"/>
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout
                 android:id="@+id/layout_edittext_comments"
@@ -145,7 +145,7 @@
     </ScrollView>
 
 
-    <android.support.v4.widget.Space
+    <android.widget.Space
         android:id="@+id/space"
         android:layout_above="@+id/bottom_bar_layout"
         android:layout_width="match_parent"

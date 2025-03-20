@@ -12,7 +12,7 @@
         android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/backButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="false">
@@ -62,7 +62,7 @@
                     android:orientation="vertical">
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/insur_name_edtparent"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                             android:inputType="textCapSentences"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <LinearLayout
                         android:id="@+id/insurance_family_layout"
@@ -361,7 +361,7 @@
                         android:orientation="horizontal"
                         android:weightSum="2">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -380,7 +380,7 @@
                                 android:lines="1"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="@color/dark_gray_text_colour" />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/insur_sumassured_calculaterImgView"
@@ -399,7 +399,7 @@
                         android:orientation="horizontal"
                         android:weightSum="2">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -417,7 +417,7 @@
                                 android:inputType="textCapSentences"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="@color/dark_gray_text_colour" />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/insur_annualpermium_calculaterImgView"
@@ -720,7 +720,7 @@
                         android:layout_margin="@dimen/margin_medium" />
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -739,7 +739,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <Space
                         android:layout_width="match_parent"
@@ -786,7 +786,7 @@
 
         </RelativeLayout>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/insurance_tick_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -799,5 +799,5 @@
             android:scaleType="fitXY"
             android:visibility="visible"
             app:srcCompat="@drawable/ic_done_menu" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

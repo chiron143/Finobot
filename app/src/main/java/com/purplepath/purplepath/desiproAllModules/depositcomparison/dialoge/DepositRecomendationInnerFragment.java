@@ -1,7 +1,7 @@
 package com.purplepath.purplepath.desiproAllModules.depositcomparison.dialoge;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +20,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -29,34 +29,34 @@ import butterknife.ButterKnife;
 
 public class DepositRecomendationInnerFragment  extends BaseFragment {
 
-    @Bind(R.id.total_investment_return_edt)
+    @BindView(R.id.total_investment_return_edt)
     EditText total_investment_return_edt;
 
-    @Bind(R.id.total_investment_edt)
+    @BindView(R.id.total_investment_edt)
     EditText total_investment_edt;
 
-    @Bind(R.id.total_return_edt)
+    @BindView(R.id.total_return_edt)
     EditText total_return_edt;
 
-    @Bind(R.id.statedInterestRate_edt)
+    @BindView(R.id.statedInterestRate_edt)
     EditText statedInterestRate_edt;
 
-    @Bind(R.id.effectiveInterestRate_edt)
+    @BindView(R.id.effectiveInterestRate_edt)
     EditText effectiveInterestRate_edt;
 
-    @Bind(R.id.internalRateOfReturn_edt)
+    @BindView(R.id.internalRateOfReturn_edt)
     EditText internalRateOfReturn_edt;
 
-    @Bind(R.id.classification_txt)
+    @BindView(R.id.classification_txt)
     TextView classification_txt;
 
-    @Bind(R.id.star1)
+    @BindView(R.id.star1)
     ImageView star1;
 
-    @Bind(R.id.star2)
+    @BindView(R.id.star2)
     ImageView star2;
 
-    @Bind(R.id.star3)
+    @BindView(R.id.star3)
     ImageView star3;
 
     private DepositCompModel depositComparisonModel;

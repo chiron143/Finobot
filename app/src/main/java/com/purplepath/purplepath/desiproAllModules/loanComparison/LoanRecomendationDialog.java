@@ -1,11 +1,11 @@
 package com.purplepath.purplepath.desiproAllModules.loanComparison;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +19,7 @@ import com.purplepath.purplepath.desiproAllModules.loanComparison.models.LoanCom
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,13 +31,13 @@ import butterknife.ButterKnife;
 
 public class LoanRecomendationDialog extends DialogFragment implements View.OnClickListener {
 
-    @Bind(R.id.recomendationTab)
+    @BindView(R.id.recomendationTab)
     TabLayout recomendationTab;
 
-    /*@Bind(R.id.recomendationViewPager1)
+    /*@BindView(R.id.recomendationViewPager1)
     ViewPager recomendationViewPager;*/
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closebtnId;
 
     ViewPager recomendationViewPager;

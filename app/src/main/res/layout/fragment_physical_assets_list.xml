@@ -1,4 +1,4 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/physical_assets_edit_rowitem"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                         android:visibility="invisible" />
 
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/physical_assets_delete_rowitem"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                     android:textColor="@color/purple_path_app_orange" />
 
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/assets_add_imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
 
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/physical_assets_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -173,4 +173,4 @@
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_pls_icon"
         android:visibility="visible"/>
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

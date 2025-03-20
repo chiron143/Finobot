@@ -2,9 +2,9 @@ package com.purplepath.purplepath.AppManagement.Payment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -142,7 +142,7 @@ public class PrimeFragment extends BaseFragment implements View.OnClickListener 
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialogs,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText("Already Paid");

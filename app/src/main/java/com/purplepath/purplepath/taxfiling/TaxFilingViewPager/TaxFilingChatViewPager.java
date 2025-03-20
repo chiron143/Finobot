@@ -2,12 +2,12 @@ package com.purplepath.purplepath.taxfiling.TaxFilingViewPager;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -281,7 +281,7 @@ public class TaxFilingChatViewPager extends BaseFragment implements View.OnClick
 
         inflater = LayoutInflater.from(mContext);
         dialogView = inflater.inflate(R.layout.yes_no_reset, null);
-        alertDialog = new android.support.v7.app.AlertDialog.Builder(mContext).create();
+        alertDialog = new androidx.appcompat.app.AlertDialog.Builder(mContext).create();
         alertDialog.setView(dialogView);
         final TextView txt_heading = dialogView.findViewById(R.id.txt_heading);
         txt_heading.setText("Redo All");

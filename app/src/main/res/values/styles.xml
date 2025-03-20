@@ -103,7 +103,7 @@
         <item name="pageColor">@android:color/darker_gray</item> 
         <item name="radius">@dimen/margin_large</item> 
         <item name="android:background">@android:color/white</item> 
-        <item name="centered">true</item> 
+       <item name="centered">true</item> 
     </style>
 
     <style name="GreenEdit" parent="Widget.AppCompat.EditText">

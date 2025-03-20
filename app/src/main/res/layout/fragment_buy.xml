@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.BuyFragment">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/margin_xlarge"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/yearsToPossesion_lyt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                     android:inputType="number"
                     android:textAppearance="?android:textAppearanceSmall" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.purplepath.purplepath.customview.CustomTextView
                 android:visibility="gone"
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_large">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:visibility="gone"
                     android:id="@+id/propertyAppreciationRupee_layout"
                     android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <com.purplepath.purplepath.customview.CustomCalenderImageView
@@ -134,7 +134,7 @@
                     android:layout_toRightOf="@+id/propertyAppreciationRupee_layout"
                     android:padding="@dimen/margin_medium" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/propertyAppreciationPercent_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                         android:inputType="number"
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <RadioGroup
@@ -213,7 +213,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_large">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/realEstateTaxesRupee_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <com.purplepath.purplepath.customview.CustomCalenderImageView
@@ -247,7 +247,7 @@
                     android:layout_toRightOf="@+id/realEstateTaxesRupee_layout"
                     android:padding="@dimen/margin_medium" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/realEstateTaxesPercent_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -269,7 +269,7 @@
                         android:inputType="number"
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <RadioGroup
@@ -579,7 +579,7 @@
 
             </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/loan_tenure_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -601,9 +601,9 @@
                     android:maxLines="1"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/interest_rate_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -625,7 +625,7 @@
                     android:maxLines="1"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -647,7 +647,7 @@
                     android:layout_height="1dp"
                     android:layout_centerInParent="true" />
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/dont_know_label"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -831,7 +831,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/intrestforegone_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -853,12 +853,12 @@
                     android:maxLines="1"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 </ScrollView>

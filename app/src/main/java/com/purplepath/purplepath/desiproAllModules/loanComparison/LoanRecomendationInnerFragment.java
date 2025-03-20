@@ -2,7 +2,7 @@ package com.purplepath.purplepath.desiproAllModules.loanComparison;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +22,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,30 +31,30 @@ import butterknife.ButterKnife;
 public class LoanRecomendationInnerFragment extends BaseFragment {
 
     private static String TAG = "spcheck";
-    @Bind(R.id.total_payement_edt)
+    @BindView(R.id.total_payement_edt)
     EditText total_payement_edt;
 
-    @Bind(R.id.total_payement_assoc_charge_edt)
+    @BindView(R.id.total_payement_assoc_charge_edt)
     EditText total_payement_assoc_charge_edt;
 
-    @Bind(R.id.total_principal_payement_edt)
+    @BindView(R.id.total_principal_payement_edt)
     EditText total_principal_payement_edt;
 
-    @Bind(R.id.total_interest_payement_edt)
+    @BindView(R.id.total_interest_payement_edt)
     EditText total_interest_payement_edt;
-    @Bind(R.id.statedInterestRate_edt)
+    @BindView(R.id.statedInterestRate_edt)
     EditText statedInterestRate_edt;
-    @Bind(R.id.effectiveInterestRate_edt)
+    @BindView(R.id.effectiveInterestRate_edt)
     EditText effectiveInterestRate_edt;
-    @Bind(R.id.internalRateOfReturn_edt)
+    @BindView(R.id.internalRateOfReturn_edt)
     EditText internalRateOfReturn_edt;
-    @Bind(R.id.classification_txt)
+    @BindView(R.id.classification_txt)
     TextView classification_txt;
-    @Bind(R.id.star1)
+    @BindView(R.id.star1)
     ImageView star1;
-    @Bind(R.id.star2)
+    @BindView(R.id.star2)
     ImageView star2;
-    @Bind(R.id.star3)
+    @BindView(R.id.star3)
     ImageView star3;
     private LoanComparisonModel loanComparisonModel;
     private int fragmentID;

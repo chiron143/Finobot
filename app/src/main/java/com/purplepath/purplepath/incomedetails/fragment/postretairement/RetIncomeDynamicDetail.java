@@ -5,13 +5,13 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -1140,8 +1140,8 @@ public class RetIncomeDynamicDetail extends BaseFragment implements View.OnClick
                 selectedLev0List.add(selectedList.get(i).getId().replaceAll("\\s+", ""));
             }
 
-            android.support.v4.app.FragmentManager fm = ((FragmentActivity) mContext).getSupportFragmentManager();
-            android.support.v4.app.DialogFragment newFragment = LevelSecondSelectionDialog.newInstance(familyId, selectedList, incomeFilterHashMap, incLev2SelLisInterface, selectedLev1List, selectedLev2List);
+            androidx.fragment.app.FragmentManager fm = ((FragmentActivity) mContext).getSupportFragmentManager();
+            androidx.fragment.app.DialogFragment newFragment = LevelSecondSelectionDialog.newInstance(familyId, selectedList, incomeFilterHashMap, incLev2SelLisInterface, selectedLev1List, selectedLev2List);
             newFragment.show(fm, "dialog");
         }else{
             selectedLev1List.clear();

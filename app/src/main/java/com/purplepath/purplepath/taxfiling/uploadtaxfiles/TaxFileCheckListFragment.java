@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -296,7 +296,7 @@ public class TaxFileCheckListFragment extends BaseFragment implements View.OnCli
 
         inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.alert_message_layout, null);
-        alertDialog = new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog = new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText("Please upload the files to proceed");

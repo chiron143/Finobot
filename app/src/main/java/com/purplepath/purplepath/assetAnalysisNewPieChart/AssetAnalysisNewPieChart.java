@@ -8,8 +8,10 @@ import android.graphics.Paint;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+import androidx.annotation.Nullable;
+
+import com.github.mikephil.charting.components2.Description;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -246,6 +248,11 @@ public class AssetAnalysisNewPieChart extends BaseFragment implements View.OnCli
                 layoutParams.gravity= Gravity.CENTER;
 
                 mChart.setDrawHoleEnabled(false);
+
+                Description description = new Description();
+                description.setText(""); // Set your desired description text
+                mChart.setDescription(String.valueOf(description));
+
                 mChart.setDescription("");
 
                 mChart.invalidate();

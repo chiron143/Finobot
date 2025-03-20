@@ -1,5 +1,6 @@
 package com.github.mikephil.charting.formatter;
 
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.utils.ViewPortHandler;
@@ -70,5 +71,10 @@ public class StackedValueFormatter implements ValueFormatter {
 
         // return the "proposed" value
         return mFormat.format(value) + mAppendix;
+    }
+
+    @Override
+    public String getFormattedValue(float value, YAxis yAxis) {
+        return null;
     }
 }

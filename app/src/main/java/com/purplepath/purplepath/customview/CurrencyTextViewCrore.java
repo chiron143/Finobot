@@ -14,7 +14,7 @@ import java.text.DecimalFormatSymbols;
  * Created by pravinr on 6/5/17.
  */
 
-public class CurrencyTextViewCrore extends android.support.v7.widget.AppCompatTextView {
+public class CurrencyTextViewCrore extends androidx.appcompat.widget.AppCompatTextView {
     String rawText;
 
     public CurrencyTextViewCrore(Context context) {

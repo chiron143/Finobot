@@ -2,11 +2,11 @@ package com.purplepath.purplepath.desiproAllModules.depositcomparison.dialoge;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +20,7 @@ import com.purplepath.purplepath.desiproAllModules.loanComparison.adapter.Decipr
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,13 +31,13 @@ import butterknife.ButterKnife;
 
 public class DepositRecomendationDialog extends DialogFragment implements View.OnClickListener {
 
-    @Bind(R.id.recomendationTab)
+    @BindView(R.id.recomendationTab)
     TabLayout recomendationTab;
 
-   /* @Bind(R.id.recomendationViewPager)
+   /* @BindView(R.id.recomendationViewPager)
     ViewPager recomendationViewPager;*/
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closebtnId;
 
     ViewPager recomendationViewPager;

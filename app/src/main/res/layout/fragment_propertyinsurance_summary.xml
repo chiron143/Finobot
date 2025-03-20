@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
                 android:padding="@dimen/margin_large"
                 android:elevation="@dimen/margin_small"
@@ -64,9 +64,9 @@
 
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_own_house"
                 android:layout_below="@+id/card_view"
                 android:padding="@dimen/margin_large"
@@ -200,10 +200,10 @@
 
                     </LinearLayout>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_rent_house"
                 android:layout_below="@+id/card_own_house"
                 android:padding="@dimen/margin_large"
@@ -309,7 +309,7 @@
 
                     </LinearLayout>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 

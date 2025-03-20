@@ -4,11 +4,11 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,7 +28,7 @@ import com.purplepath.purplepath.taxprompt.TaxPromptShowDetailView;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -37,10 +37,10 @@ import butterknife.ButterKnife;
 
 public class DetailsBuyVsRentFragment extends BaseFragment implements View.OnClickListener{
 
-    @Bind(R.id.detailsTabLayout)
+    @BindView(R.id.detailsTabLayout)
     TabLayout detailsTabLayout;
 
-    @Bind(R.id.detailsViewPager)
+    @BindView(R.id.detailsViewPager)
     ViewPager detailsViewPager;
 
     BuyVsRentModel buyVsRentModel;

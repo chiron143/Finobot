@@ -8,7 +8,7 @@ import android.widget.TextView;
  * Created by pravinr on 9/19/17.
  */
 
-public class CharacterWrapTextView extends android.support.v7.widget.AppCompatTextView {
+public class CharacterWrapTextView extends androidx.appcompat.widget.AppCompatTextView {
     private Context mContext;
     public CharacterWrapTextView(Context context) {
         super(context);

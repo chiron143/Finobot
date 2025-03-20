@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.loanComparison;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -30,7 +30,7 @@ import com.purplepath.purplepath.customview.PercentageEditText;
 import com.purplepath.purplepath.desiproAllModules.loanComparison.interfaces.LoanComparisonInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.finobot.finobot.R.id.loan;
@@ -44,157 +44,157 @@ public class Loan1Fragment extends BaseFragment implements RadioGroup.OnCheckedC
 
     static final int LOAN_1_ID = 1, LOAN_2_ID = 2, LOAN_3_ID = 3;
 
-    @Bind(R.id.purchase_value_lyt)
+    @BindView(R.id.purchase_value_lyt)
     TextInputLayout purchase_value_lyt;
 
-    @Bind(R.id.purchase_value_edt)
+    @BindView(R.id.purchase_value_edt)
     CurrencyGhostView purchase_value_edt;
 
-    @Bind(R.id.downPayement_lyt)
+    @BindView(R.id.downPayement_lyt)
     TextInputLayout downPayement_lyt;
 
-    @Bind(R.id.downPayement_edt)
+    @BindView(R.id.downPayement_edt)
     CurrencyGhostView downPayement_edt;
 
-   /* @Bind(R.id.finaceValue_lyt)
+   /* @BindView(R.id.finaceValue_lyt)
     TextInputLayout finaceValue_lyt;*/
 
-    @Bind(R.id.finaceValue_edt)
+    @BindView(R.id.finaceValue_edt)
     CurrencyGhostView finaceValue_edt;
 
-    @Bind(R.id.tenure_lyt)
+    @BindView(R.id.tenure_lyt)
     TextInputLayout tenure_lyt;
 
-    @Bind(R.id.tenure_edt)
+    @BindView(R.id.tenure_edt)
     NumberEditText tenure_edt;
 
-    @Bind(R.id.rateOfInterest_lyt)
+    @BindView(R.id.rateOfInterest_lyt)
     TextInputLayout rateOfInterest_lyt;
 
-    @Bind(R.id.rateOfInterest_edt)
+    @BindView(R.id.rateOfInterest_edt)
     PercentageEditText rateOfInterest_edt;
 
-    @Bind(R.id.emi_lyt)
+    @BindView(R.id.emi_lyt)
     TextInputLayout emi_lyt;
 
-    @Bind(R.id.emi_edt)
+    @BindView(R.id.emi_edt)
     CurrencyDefaultEdittext emi_edt;
 
-    @Bind(R.id.residualValue_lyt)
+    @BindView(R.id.residualValue_lyt)
     TextInputLayout residualValue_lyt;
 
-    @Bind(R.id.residualValue_edt)
+    @BindView(R.id.residualValue_edt)
     CurrencyDefaultEdittext residualValue_edt;
 
-    @Bind(R.id.processingFeeRupee_layout)
+    @BindView(R.id.processingFeeRupee_layout)
     TextInputLayout processingFeeRupee_layout;
 
-    @Bind(R.id.edt_processingFeeRupee_view_id)
+    @BindView(R.id.edt_processingFeeRupee_view_id)
     CurrencyGhostView edt_processingFeeRupee_view_id;
 
-    @Bind(R.id.processingFeePercent_layout)
+    @BindView(R.id.processingFeePercent_layout)
     TextInputLayout processingFeePercent_layout;
 
-    @Bind(R.id.edt_processingFeePercent_view_id)
+    @BindView(R.id.edt_processingFeePercent_view_id)
     PercentageEditText edt_processingFeePercent_view_id;
 
-    @Bind(R.id.processingFee_calculatorimage)
+    @BindView(R.id.processingFee_calculatorimage)
     CustomCalenderImageView processingFee_calculatorimage;
 
-    @Bind(R.id.processingFee_rg)
+    @BindView(R.id.processingFee_rg)
     RadioGroup processingFee_rg;
 
-    @Bind(R.id.processingFee_rupeee_RadioBtn)
+    @BindView(R.id.processingFee_rupeee_RadioBtn)
     RadioButton processingFee_rupeee_RadioBtn;
 
-    @Bind(R.id.processingFee_percent_RadioBtn)
+    @BindView(R.id.processingFee_percent_RadioBtn)
     RadioButton processingFee_percent_RadioBtn;
 
-    @Bind(R.id.legal_rg)
+    @BindView(R.id.legal_rg)
     RadioGroup legal_rg;
 
-    @Bind(R.id.legal_rupee_RadioBtn)
+    @BindView(R.id.legal_rupee_RadioBtn)
     RadioButton legal_rupee_RadioBtn;
 
-    @Bind(R.id.legal_percent_RadioBtn)
+    @BindView(R.id.legal_percent_RadioBtn)
     RadioButton legal_percent_RadioBtn;
 
-    @Bind(R.id.administrationFee_rg)
+    @BindView(R.id.administrationFee_rg)
     RadioGroup administrationFee_rg;
 
-    @Bind(R.id.administrationFee_rupee_RadioBtn)
+    @BindView(R.id.administrationFee_rupee_RadioBtn)
     RadioButton administrationFee_rupee_RadioBtn;
 
-    @Bind(R.id.administrationFee_percent_RadioBtn)
+    @BindView(R.id.administrationFee_percent_RadioBtn)
     RadioButton administrationFee_percent_RadioBtn;
 
-    @Bind(R.id.insuranceCover_rg)
+    @BindView(R.id.insuranceCover_rg)
     RadioGroup insuranceCover_rg;
 
-    @Bind(R.id.insuranceCover_rupee_RadioBtn)
+    @BindView(R.id.insuranceCover_rupee_RadioBtn)
     RadioButton insuranceCover_rupee_RadioBtn;
 
-    @Bind(R.id.insuranceCover_percent_RadioBtn)
+    @BindView(R.id.insuranceCover_percent_RadioBtn)
     RadioButton insuranceCover_percent_RadioBtn;
 
-    @Bind(R.id.legalRupee_layout)
+    @BindView(R.id.legalRupee_layout)
     TextInputLayout legalRupee_layout;
 
-    @Bind(R.id.edt_legalRupee_view_id)
+    @BindView(R.id.edt_legalRupee_view_id)
     CurrencyGhostView edt_legalRupee_view_id;
 
-    @Bind(R.id.legal_percent_layout)
+    @BindView(R.id.legal_percent_layout)
     TextInputLayout legal_percent_layout;
 
-    @Bind(R.id.edt_legal_percent_view_id)
+    @BindView(R.id.edt_legal_percent_view_id)
     PercentageEditText edt_legal_percent_view_id;
 
-    @Bind(R.id.administrationFeeRupee_layout)
+    @BindView(R.id.administrationFeeRupee_layout)
     TextInputLayout administrationFeeRupee_layout;
 
-    @Bind(R.id.edt_administrationFeeRupee_view_id)
+    @BindView(R.id.edt_administrationFeeRupee_view_id)
     CurrencyGhostView edt_administrationFeeRupee_view_id;
 
-    @Bind(R.id.administrationFee_percent_layout)
+    @BindView(R.id.administrationFee_percent_layout)
     TextInputLayout administrationFee_percent_layout;
 
-    @Bind(R.id.edt_administrationFee_percent_view_id)
+    @BindView(R.id.edt_administrationFee_percent_view_id)
     PercentageEditText edt_administrationFee_percent_view_id;
 
-    @Bind(R.id.insuranceCoverRupee_layout)
+    @BindView(R.id.insuranceCoverRupee_layout)
     TextInputLayout insuranceCoverRupee_layout;
 
-    @Bind(R.id.edt_insuranceCoverRupee_view_id)
+    @BindView(R.id.edt_insuranceCoverRupee_view_id)
     CurrencyGhostView edt_insuranceCoverRupee_view_id;
 
-    @Bind(R.id.insuranceCover_percent_layout)
+    @BindView(R.id.insuranceCover_percent_layout)
     TextInputLayout insuranceCover_percent_layout;
 
-    @Bind(R.id.edt_insuranceCover_percent_view_id)
+    @BindView(R.id.edt_insuranceCover_percent_view_id)
     PercentageEditText edt_insuranceCover_percent_view_id;
 
 
-    @Bind(R.id.legal_calculatorimage)
+    @BindView(R.id.legal_calculatorimage)
     CustomCalenderImageView legal_calculatorimage;
 
-    @Bind(R.id.administration_fee_calculatorimage)
+    @BindView(R.id.administration_fee_calculatorimage)
     CustomCalenderImageView administration_fee_calculatorimage;
 
-    @Bind(R.id.insuranceCover_calculatorimage)
+    @BindView(R.id.insuranceCover_calculatorimage)
     CustomCalenderImageView insuranceCover_calculatorimage;
 
-    @Bind(R.id.payementPeriod_spinner)
+    @BindView(R.id.payementPeriod_spinner)
     Spinner payementPeriod_spinner;
 
-    @Bind(R.id.payementType_spinner)
+    @BindView(R.id.payementType_spinner)
     Spinner payementType_spinner;
 
 
-    @Bind(R.id.purchase_value_edt_calculaterImgView)
+    @BindView(R.id.purchase_value_edt_calculaterImgView)
     CustomCalenderImageView purchase_value_edt_calculaterImgView;
-    @Bind(R.id.downPayement_edt_calculaterImgView)
+    @BindView(R.id.downPayement_edt_calculaterImgView)
     CustomCalenderImageView downPayement_edt_calculaterImgView;
-    @Bind(R.id.finaceValue_edt_calculaterImgView)
+    @BindView(R.id.finaceValue_edt_calculaterImgView)
     CustomCalenderImageView finaceValue_edt_calculaterImgView;
     View nameEditview;
     public static final String TITLE = "";

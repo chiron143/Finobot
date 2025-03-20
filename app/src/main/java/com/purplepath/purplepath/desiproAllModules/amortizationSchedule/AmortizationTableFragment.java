@@ -5,8 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,7 +23,7 @@ import com.purplepath.purplepath.desiproAllModules.amortizationSchedule.models.A
 import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,7 +31,7 @@ import butterknife.ButterKnife;
  */
 public class AmortizationTableFragment extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.webViewDeciPro)
+    @BindView(R.id.webViewDeciPro)
     WebView webViewDeciPro;
 
     private Bundle args;

@@ -79,7 +79,7 @@
                     android:windowSoftInputMode="stateVisible|adjustResize" />
             </com.purplepath.purplepath.customview.CustomTextInputLayout>
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/character_edittext_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                     android:windowSoftInputMode="stateVisible|adjustResize" />
             </com.purplepath.purplepath.customview.CustomTextInputLayout>
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/percentage_edittext_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                     android:windowSoftInputMode="stateVisible|adjustResize" />
             </com.purplepath.purplepath.customview.CustomTextInputLayout>
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/number_edittext_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
                 android:windowSoftInputMode="stateVisible|adjustResize" />
 
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/currencydefault_edittext_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -3,9 +3,9 @@ package com.purplepath.purplepath.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.DisplayMetrics;
 import android.view.inputmethod.InputMethodManager;
 
@@ -65,7 +65,7 @@ public class BaseFragment extends Fragment {
      */
     public void addFragmenttoStack(Fragment mfagment) {
         try {
-            android.support.v4.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+            androidx.fragment.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
             Fragment currentFragment = fragmentManager.findFragmentById(R.id.fragment_container);
             if (!(currentFragment.getClass().equals(mfagment.getClass())))
             if (!mfagment.isVisible()) {
@@ -97,7 +97,7 @@ public class BaseFragment extends Fragment {
     public void removeFragmenttoStack(Fragment mfagment) {
         try {
             if (!mfagment.isVisible()) {
-                android.support.v4.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                androidx.fragment.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, mfagment);
                 fragmentTransaction.commitAllowingStateLoss();

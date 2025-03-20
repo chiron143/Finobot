@@ -2,7 +2,7 @@ package com.purplepath.purplepath.customview;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -15,7 +15,7 @@ import com.purplepath.purplepath.apputiles.UtileKit;
 
 import java.util.Locale;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -24,16 +24,16 @@ import butterknife.ButterKnife;
 
 public class CurrencyBlackGhostview extends RelativeLayout {
 
-    @Bind(R.id.curencyGhostEditTxt)
+    @BindView(R.id.curencyGhostEditTxt)
     com.blackcat.currencyedittext.CurrencyEditText editText;
 
-    @Bind(R.id.amountInWords)
+    @BindView(R.id.amountInWords)
     TextView amountInWords;
 
-    @Bind(R.id.currencyhintId)
+    @BindView(R.id.currencyhintId)
     CustomTextInputLayout currencyHintTxt;
 
-    @Bind(R.id.hintViewTxtId)
+    @BindView(R.id.hintViewTxtId)
     TextView hintViewTxt;
 
     Locale indianlocal =  new Locale("en", "IN");

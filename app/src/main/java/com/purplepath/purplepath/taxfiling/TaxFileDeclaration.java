@@ -11,10 +11,10 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -624,7 +624,7 @@ public class TaxFileDeclaration extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.alert_message_layout,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.setCancelable(false);

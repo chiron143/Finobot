@@ -4,10 +4,10 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -291,7 +291,7 @@ public class TaxFilingFormParse extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialogs,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText("Unable to edit Yes/No question. Do you want to redo from this question?");
@@ -331,7 +331,7 @@ public class TaxFilingFormParse extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_characteredit,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         final CharacterEditText characterEditText=dialogView.findViewById(R.id.dialog_character_edittext);
         characterEditText.setText(password_temp);
@@ -410,7 +410,7 @@ public class TaxFilingFormParse extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.error_alert_message,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.setCancelable(false);
@@ -512,7 +512,7 @@ public class TaxFilingFormParse extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(mContext);
         dialogView=inflater.inflate(R.layout.alert_message_formparse,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(mContext).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(mContext).create();
         alertDialog.setView(dialogView);
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.setCancelable(false);
@@ -725,7 +725,7 @@ public class TaxFilingFormParse extends BaseFragment implements View.OnClickList
 
         inflater= LayoutInflater.from(mContext);
         dialogView=inflater.inflate(R.layout.yes_no_reset,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(mContext).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(mContext).create();
         alertDialog.setView(dialogView);
         final TextView txt_heading=dialogView.findViewById(R.id.txt_heading);
         final TextView textView=dialogView.findViewById(R.id.additional_yes);

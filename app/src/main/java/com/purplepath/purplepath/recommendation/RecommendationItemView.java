@@ -4,8 +4,8 @@
 //import android.graphics.Bitmap;
 //import android.graphics.Color;
 //import android.graphics.drawable.ColorDrawable;
-//import android.support.annotation.LayoutRes;
-//import android.support.annotation.NonNull;
+//import androidx.annotation.LayoutRes;
+//import androidx.annotation.NonNull;
 //import android.text.TextUtils;
 //import android.util.AttributeSet;
 //import android.util.Log;

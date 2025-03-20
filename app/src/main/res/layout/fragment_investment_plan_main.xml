@@ -21,7 +21,7 @@
 
         </android.support.v7.widget.RecyclerView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -59,9 +59,9 @@
                     android:textAppearance="?android:attr/textAppearanceLarge" />
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -100,9 +100,9 @@
             </LinearLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -140,7 +140,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge" />
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>

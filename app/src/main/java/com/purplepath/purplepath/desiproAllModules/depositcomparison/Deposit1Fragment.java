@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.depositcomparison;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -34,7 +34,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static android.os.Build.VERSION_CODES.O;
@@ -51,105 +51,105 @@ public class Deposit1Fragment extends BaseFragment implements RadioGroup.OnCheck
             paymentType_spinner_array = {"Period Ending", "Period Beginning"},
             investment_type_arry={"Lumpsum","Periodical","Both"};
 
-    @Bind(R.id.initial_value_edt)
+    @BindView(R.id.initial_value_edt)
     CurrencyGhostView initial_value_edt;
 
 
-    @Bind(R.id.periodical_edt)
+    @BindView(R.id.periodical_edt)
     CurrencyGhostView periodical_edt;
 
 
-    @Bind(R.id.tenure_lyt)
+    @BindView(R.id.tenure_lyt)
     TextInputLayout tenure_lyt;
 
-    @Bind(R.id.tenure_edt)
+    @BindView(R.id.tenure_edt)
     NumberEditText tenure_edt;
 
-    @Bind(R.id.rateOfInterest_lyt)
+    @BindView(R.id.rateOfInterest_lyt)
     TextInputLayout rateOfInterest_lyt;
 
-    @Bind(R.id.rateOfInterest_edt)
+    @BindView(R.id.rateOfInterest_edt)
     PercentageEditText rateOfInterest_edt;
 
-    @Bind(R.id.entrychargeFeeRupee_layout)
+    @BindView(R.id.entrychargeFeeRupee_layout)
     TextInputLayout entrychargeFeeRupee_layout;
 
-    @Bind(R.id.entrychargePercent_layout)
+    @BindView(R.id.entrychargePercent_layout)
     TextInputLayout entrychargePercent_layout;
 
 
-    @Bind(R.id.edt_entrychargeRupee_edit)
+    @BindView(R.id.edt_entrychargeRupee_edit)
     CurrencyGhostView edt_entrychargeRupee_edit;
 
 
-    @Bind(R.id.exitcharge_percent_layout)
+    @BindView(R.id.exitcharge_percent_layout)
     TextInputLayout exitcharge_percent_layout;
-    @Bind(R.id.exitcharge_rupeee_layout)
+    @BindView(R.id.exitcharge_rupeee_layout)
     TextInputLayout exitcharge_rupeee_layout;
 
-    @Bind(R.id.edt_exitchatege_edit)
+    @BindView(R.id.edt_exitchatege_edit)
     CurrencyGhostView edt_exitchatege_edit;
 
 
 
-    @Bind(R.id.entrycharge_rg)
+    @BindView(R.id.entrycharge_rg)
     RadioGroup entrycharge_rg;
 
-    @Bind(R.id.entrycharge_rupeee_RadioBtn)
+    @BindView(R.id.entrycharge_rupeee_RadioBtn)
     RadioButton entrycharge_rupeee_RadioBtn;
 
-    @Bind(R.id.entrycharge_percent_RadioBtn)
+    @BindView(R.id.entrycharge_percent_RadioBtn)
     RadioButton entrycharge_percent_RadioBtn;
 
 
-    @Bind(R.id.exitcharge_rg)
+    @BindView(R.id.exitcharge_rg)
     RadioGroup exitcharge_rg;
 
-    @Bind(R.id.exitcharge_rupeee_RadioBtn)
+    @BindView(R.id.exitcharge_rupeee_RadioBtn)
     RadioButton exitcharge_rupeee_RadioBtn;
 
-    @Bind(R.id.exitcharge_percent_RadioBtn)
+    @BindView(R.id.exitcharge_percent_RadioBtn)
     RadioButton exitcharge_percent_RadioBtn;
 
-    @Bind(R.id.edt_peneltychargeFeeRupee_view_id)
+    @BindView(R.id.edt_peneltychargeFeeRupee_view_id)
     CurrencyGhostView edt_peneltychargeFeeRupee_view_id;
 
-    @Bind(R.id.peneltychargeFeeRupee_layout)
+    @BindView(R.id.peneltychargeFeeRupee_layout)
     TextInputLayout peneltychargeFeeRupee_layout;
 
-    @Bind(R.id.peneltychargeFee_percent_layout)
+    @BindView(R.id.peneltychargeFee_percent_layout)
     TextInputLayout peneltychargeFee_percent_layout;
 
-    @Bind(R.id.peneltychargeFee_rg)
+    @BindView(R.id.peneltychargeFee_rg)
     RadioGroup peneltychargeFee_rg;
 
 
-    @Bind(R.id.peneltychargeFee_rupee_RadioBtn)
+    @BindView(R.id.peneltychargeFee_rupee_RadioBtn)
     RadioButton peneltychargeFee_rupee_RadioBtn;
 
-    @Bind(R.id.peneltychargeFee_percent_RadioBtn)
+    @BindView(R.id.peneltychargeFee_percent_RadioBtn)
     RadioButton peneltychargeFee_percent_RadioBtn;
 
-    @Bind(R.id.paymenttype_spinner)
+    @BindView(R.id.paymenttype_spinner)
     Spinner paymenttype_spinner;
 
-    @Bind(R.id.paymentperiod_spinner)
+    @BindView(R.id.paymentperiod_spinner)
     Spinner paymentperiod_spinner;
 
-    @Bind(R.id.investmenttype_spinner)
+    @BindView(R.id.investmenttype_spinner)
     Spinner investmenttype_spinner;
 
 
-    @Bind(R.id.initial_value_edt_calculaterImgView)
+    @BindView(R.id.initial_value_edt_calculaterImgView)
     CustomCalenderImageView initial_value_edt_calculaterImgView;
-    @Bind(R.id.periodical_edt_calculaterImgView)
+    @BindView(R.id.periodical_edt_calculaterImgView)
     CustomCalenderImageView periodical_edt_calculaterImgView;
 
-    @Bind(R.id.entrycharge_calculatorimage)
+    @BindView(R.id.entrycharge_calculatorimage)
     CustomCalenderImageView entrycharge_calculatorimage;
-    @Bind(R.id.exitcharge_calculatorimage)
+    @BindView(R.id.exitcharge_calculatorimage)
     CustomCalenderImageView exitcharge_calculatorimage;
-    @Bind(R.id.peneltycharge_fee_calculatorimage)
+    @BindView(R.id.peneltycharge_fee_calculatorimage)
     CustomCalenderImageView peneltycharge_fee_calculatorimage;
 
 

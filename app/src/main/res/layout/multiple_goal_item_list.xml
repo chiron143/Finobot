@@ -35,7 +35,7 @@
             android:padding="@dimen/margin_large"
             >
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/closebtnId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

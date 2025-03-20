@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-class NumericEditText extends android.support.v7.widget.AppCompatEditText {
+class NumericEditText extends androidx.appcompat.widget.AppCompatEditText {
     private final char GROUPING_SEPARATOR = ',';
     private final char DECIMAL_SEPARATOR = '.';
     private final String LEADING_ZERO_FILTER_REGEX = "^0+(?!$)";

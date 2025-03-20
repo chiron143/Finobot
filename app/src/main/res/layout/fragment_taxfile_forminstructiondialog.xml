@@ -44,7 +44,7 @@
 
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_declaration"
         android:layout_above="@+id/bottom_bar"
         android:layout_width="wrap_content"

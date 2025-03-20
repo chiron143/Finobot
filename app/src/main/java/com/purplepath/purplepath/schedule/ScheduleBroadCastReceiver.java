@@ -10,7 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.icu.util.Calendar;
-import android.support.v7.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
 import com.finobot.finobot.R;
@@ -115,7 +115,7 @@ public class ScheduleBroadCastReceiver extends BroadcastReceiver {
         notificationIntent.putExtra("showSchedule", "showSchedulePage");
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
-        android.support.v4.app.TaskStackBuilder builder = android.support.v4.app.TaskStackBuilder.create(context);
+        androidx.core.app.TaskStackBuilder builder = androidx.core.app.TaskStackBuilder.create(context);
         builder.addNextIntentWithParentStack(notificationIntent);
         PendingIntent pendingIntent = builder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder notification_builder = new NotificationCompat.Builder(context);

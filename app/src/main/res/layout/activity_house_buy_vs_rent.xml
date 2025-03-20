@@ -7,13 +7,13 @@
     android:orientation="vertical"
     tools:context="com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.HouseBuyVsRentActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -28,10 +28,10 @@
                 android:text="DeciPro - House - Buy vs Rent"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
                 android:textColor="@android:color/white" />
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -41,7 +41,7 @@
         android:layout_height="match_parent" />
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_xxlarge"
         android:orientation="horizontal">
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
@@ -16,7 +16,7 @@
             android:text="@string/bullet_tic"/>
 
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textViewId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

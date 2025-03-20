@@ -8,7 +8,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.SpannableString;
 import android.util.DisplayMetrics;
 import android.util.Log;

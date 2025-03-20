@@ -4,7 +4,7 @@ package com.purplepath.purplepath.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +20,7 @@ import com.purplepath.purplepath.insuranceSummary.InsuranceSummaryview;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 import com.purplepath.purplepath.propertyinsurance.ProperyInsuranceSummary;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -30,19 +30,19 @@ public class ContigencyFragment extends BaseFragment implements View.OnClickList
 
 
 
-    @Bind(R.id.lifeInsurance)
+    @BindView(R.id.lifeInsurance)
     ImageView lifeInsurance;
 
-     @Bind(R.id.iv_health_insurance)
+     @BindView(R.id.iv_health_insurance)
     ImageView iv_health_insurance;
 
-     @Bind(R.id.iv_property_insurance)
+     @BindView(R.id.iv_property_insurance)
     ImageView iv_property_insurance;
 
-     @Bind(R.id.iv_expenseFund)
+     @BindView(R.id.iv_expenseFund)
     ImageView iv_expenseFund;
 
-     @Bind(R.id.iv_automobile)
+     @BindView(R.id.iv_automobile)
     ImageView iv_automobile;
 
     Fragment fragment;

@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +15,7 @@ import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.adapter.Desipr
 import com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.interfaces.ActivityMethodsInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -23,10 +23,10 @@ import butterknife.ButterKnife;
  */
 public class BuyVsRentViewPagerFragment extends BaseFragment {
 
-    @Bind(R.id.desipro_viewpager)
+    @BindView(R.id.desipro_viewpager)
     ViewPager viewPager;
 
-    @Bind(R.id.desipro_tabs)
+    @BindView(R.id.desipro_tabs)
     TabLayout tabLayout;
 
     public ActivityMethodsInterface methodsInterface;

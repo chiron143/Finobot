@@ -3,12 +3,12 @@ package com.purplepath.purplepath.desiproAllModules.amortizationSchedule;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -39,8 +39,8 @@ import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
 import java.util.Locale;
-
-import butterknife.Bind;
+import butterknife.OnClick;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -54,34 +54,34 @@ import static com.purplepath.purplepath.incomedetails.IncomeDynamicDetail.PARENT
 
 public class AmortizationMainFragment extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.outStanding_bal_lyt)
+    @BindView(R.id.outStanding_bal_lyt)
     TextInputLayout outStanding_bal_lyt;
 
-    @Bind(R.id.rate_lyt)
+    @BindView(R.id.rate_lyt)
     TextInputLayout rate_lyt;
 
-    @Bind(R.id.tenure_lyt)
+    @BindView(R.id.tenure_lyt)
     TextInputLayout tenure_lyt;
 
-    @Bind(R.id.service_tax_rate_lyt)
+    @BindView(R.id.service_tax_rate_lyt)
     TextInputLayout service_tax_rate_lyt;
 
-    @Bind(R.id.outStanding_bal_edt)
+    @BindView(R.id.outStanding_bal_edt)
     CurrencyGhostView outStanding_bal_edt;
 
-    @Bind(R.id.rate_edt)
+    @BindView(R.id.rate_edt)
     PercentageEditText rate_edt;
 
-    @Bind(R.id.tenure_edt)
+    @BindView(R.id.tenure_edt)
     NumberEditText tenure_edt;
 
-    @Bind(R.id.service_tax_rate_edt)
+    @BindView(R.id.service_tax_rate_edt)
     PercentageEditText service_tax_rate_edt;
 
-    @Bind(R.id.amortization_fab)
+    @BindView(R.id.amortization_fab)
     FloatingActionButton amortization_fab;
 
-    @Bind(R.id.outStanding_bal_edt_calculaterImgView)
+    @BindView(R.id.outStanding_bal_edt_calculaterImgView)
     CustomCalenderImageView outStanding_bal_edt_calculaterImgView;
 
     AmortizationStatementView amort_table_fragment;

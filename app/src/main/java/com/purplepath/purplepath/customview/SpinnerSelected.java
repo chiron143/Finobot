@@ -1,7 +1,7 @@
 package com.purplepath.purplepath.customview;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -13,7 +13,7 @@ import com.finobot.finobot.R;
  * @author Bert on 04-May-17.
  */
 
-public class SpinnerSelected extends android.support.v7.widget.AppCompatSpinner {
+public class SpinnerSelected extends androidx.appcompat.widget.AppCompatSpinner {
     public SpinnerSelected(Context context) {
         super(context);
     }

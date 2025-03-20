@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-        <android.support.v4.widget.Space
+        <android.widget.Space
             android:layout_below="@+id/WebView"
             android:layout_width="match_parent"
             android:layout_height="150dp" />

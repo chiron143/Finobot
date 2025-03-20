@@ -9,17 +9,17 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-   <android.support.design.widget.AppBarLayout
+   <com.google.android.material.appbar.AppBarLayout
        android:id="@id/appBarLayout"
        android:visibility="gone"
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
 
-       <android.support.v7.widget.Toolbar
+       <androidx.appcompat.widget.Toolbar
            android:id="@+id/toolbar"
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
-           <android.support.v7.widget.AppCompatTextView
+           <androidx.appcompat.widget.AppCompatTextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textColor="@color/white"
@@ -28,9 +28,9 @@
                android:textAppearance="?android:textAppearanceMedium"
                android:text="DeciPro - Time Value of Money"/>
 
-       </android.support.v7.widget.Toolbar>
+       </androidx.appcompat.widget.Toolbar>
 
-   </android.support.design.widget.AppBarLayout>
+   </com.google.android.material.appbar.AppBarLayout>
 
 
 

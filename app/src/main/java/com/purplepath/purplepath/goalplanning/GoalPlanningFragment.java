@@ -3,10 +3,10 @@ package com.purplepath.purplepath.goalplanning;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.AppCompatTextView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,7 +37,7 @@ import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -49,58 +49,58 @@ import retrofit2.Response;
 
 public class GoalPlanningFragment extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.totalGoalid)
+    @BindView(R.id.totalGoalid)
     TextView totalGoalBtn;
 
-    @Bind(R.id.total_goal)
+    @BindView(R.id.total_goal)
     LinearLayout totalGoal;
 
-    @Bind(R.id.shortTermId)
+    @BindView(R.id.shortTermId)
     TextView shortTermBtn;
 
-    @Bind(R.id.mediumTermId)
+    @BindView(R.id.mediumTermId)
     TextView mediumTermBtn;
 
-    @Bind(R.id.longTermId)
+    @BindView(R.id.longTermId)
     TextView longTermBtn;
 
-    @Bind(R.id.greenId)
+    @BindView(R.id.greenId)
     Button greenBtn;
 
-    @Bind(R.id.amberId)
+    @BindView(R.id.amberId)
     Button amberBtn;
 
-    @Bind(R.id.redId)
+    @BindView(R.id.redId)
     Button redBtn;
 
-    @Bind(R.id.goalListViewId)
+    @BindView(R.id.goalListViewId)
     ListView goalListView;
 
-    @Bind(R.id.title_viewId)
+    @BindView(R.id.title_viewId)
     AppCompatTextView titleViewTxt;
 
 
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
     RelativeLayout mRightRelativeLayout;
 
 
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
     RelativeLayout mcenterRelativeLayout;
 
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
     RelativeLayout mleftRelativeLayout;
 
-    @Bind(R.id.linear_short_term_goal)
+    @BindView(R.id.linear_short_term_goal)
     LinearLayout linear_short_term_goal;
 
 
-    @Bind(R.id.linear_medium_term_goal)
+    @BindView(R.id.linear_medium_term_goal)
     LinearLayout linear_medium_term_goal;
 
-    @Bind(R.id.linear_long_term_goal)
+    @BindView(R.id.linear_long_term_goal)
     LinearLayout linear_long_term_goal;
 
-    @Bind(R.id.totalGoals)
+    @BindView(R.id.totalGoals)
     AppCompatButton totalGoals;
 
 

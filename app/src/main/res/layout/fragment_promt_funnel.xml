@@ -113,7 +113,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_line_arrow"
@@ -126,7 +126,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_margin="@dimen/margin_small">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_line_arrow"
@@ -139,7 +139,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_margin="@dimen/margin_small">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_line_arrow"
@@ -152,7 +152,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_margin="@dimen/margin_small">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_line_arrow"
@@ -172,7 +172,7 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/margin_large"
                     android:layout_marginRight="@dimen/margin_large">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_income"
@@ -198,7 +198,7 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/margin_large"
                     android:layout_marginRight="@dimen/margin_large">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_excemption"
@@ -224,7 +224,7 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/margin_large"
                     android:layout_marginRight="@dimen/margin_large">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_gross_incom"
@@ -250,7 +250,7 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/margin_large"
                     android:layout_marginRight="@dimen/margin_large">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_deductions"
@@ -276,7 +276,7 @@
                 android:orientation="horizontal"
                 android:layout_marginLeft="@dimen/margin_large"
                 android:layout_marginRight="@dimen/margin_large">
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/funnel_captal1"
@@ -304,7 +304,7 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/margin_large"
                     android:layout_marginRight="@dimen/margin_large">
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/funnel_residual"

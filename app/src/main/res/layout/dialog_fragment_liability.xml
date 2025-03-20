@@ -12,7 +12,7 @@
        android:orientation="horizontal"
        android:background="@color/colorPrimary"
        >
-       <android.support.v7.widget.AppCompatImageView
+       <androidx.appcompat.widget.AppCompatImageView
            android:id="@+id/backButtonId"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
 
 </LinearLayout>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="false">
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/liabi_name_edt_inputlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                         android:inputType="textCapSentences"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -91,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -109,7 +109,7 @@
                         android:inputType="none"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -242,7 +242,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -260,7 +260,7 @@
                         android:hint="@string/liab_LenderName"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -270,7 +270,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_medium"
@@ -288,7 +288,7 @@
                             android:hint="@string/liablity_loan_amount"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColorHint="@color/app_text_color_gray" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/liabi_loan_amt_calculaterImgView"
@@ -307,7 +307,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_medium"
@@ -326,7 +326,7 @@
                             android:hint="@string/outstanding_loan_amount"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColorHint="@color/app_text_color_gray" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/liabi_outstanding_loan_amt_calculaterImgView"
@@ -345,7 +345,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_medium"
@@ -364,7 +364,7 @@
                             android:hint="@string/current_emi"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColorHint="@color/app_text_color_gray" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/liabi_current_emi_calculaterImgView"
@@ -381,7 +381,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -400,7 +400,7 @@
                         android:maxLength="5"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -410,7 +410,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -430,7 +430,7 @@
                         android:maxLength="4"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -442,7 +442,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -462,7 +462,7 @@
                         android:maxLength="4"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
@@ -636,7 +636,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
@@ -655,7 +655,7 @@
                         android:inputType="text"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColorHint="@color/app_text_color_gray" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
 
@@ -717,7 +717,7 @@
                     </RadioGroup>
                 </LinearLayout>
 
-                <android.support.v4.widget.Space
+                <android.widget.Space
 
                     android:layout_width="wrap_content"
                     android:layout_height="33dp"
@@ -755,7 +755,7 @@
 
         </LinearLayout>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/liabiButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -767,5 +767,5 @@
             android:visibility="visible"
             app:fabSize="normal"
             app:srcCompat="@drawable/ic_done_menu" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

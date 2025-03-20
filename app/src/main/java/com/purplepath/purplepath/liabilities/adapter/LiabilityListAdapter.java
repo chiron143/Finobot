@@ -1,7 +1,7 @@
 package com.purplepath.purplepath.liabilities.adapter;
 
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +40,7 @@ public class LiabilityListAdapter  extends ArrayAdapter<UserLiabilityList> {
     String mType;
     LayoutInflater inflater;
     View dialogView;
-    android.support.v7.app.AlertDialog alertDialog;
+    androidx.appcompat.app.AlertDialog alertDialog;
     private OnCheckListIsEmpty onCheckListIsEmptyOrNot;
     private OndeleteUpdateList ondeleteUpdateList;
 
@@ -176,7 +176,7 @@ public class LiabilityListAdapter  extends ArrayAdapter<UserLiabilityList> {
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialog,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(HomePageActivity.stringMessageError);

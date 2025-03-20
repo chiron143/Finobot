@@ -30,7 +30,7 @@
                     android:layout_alignParentRight="true"
                     >
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/closebtnId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="2">
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/car_pur_price_calculaterImgView"
@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="2">
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/capitized_cost_calculaterImgView"
@@ -127,7 +127,7 @@
                         android:weightSum="2"
                         android:orientation="horizontal">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                                 android:drawablePadding="@dimen/margin_xlarge"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/residual_value_calculaterImgView"
                             android:layout_width="0dp"
@@ -161,7 +161,7 @@
                         android:weightSum="2"
                         android:orientation="horizontal">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             style="@style/StyledTilPaddedEditTextLayout"
                             android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                                 android:drawablePadding="@dimen/margin_xlarge"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                         <com.purplepath.purplepath.customview.CustomCalenderImageView
                             android:id="@+id/depreciation_calculaterImgView"
                             android:layout_width="0dp"
@@ -188,7 +188,7 @@
                             />
 
                     </LinearLayout>
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_height="wrap_content"
@@ -205,9 +205,9 @@
                             android:drawablePadding="@dimen/margin_xlarge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/il_interest_layout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -227,11 +227,11 @@
                             android:maxLength="5"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/sale_tax_layout"
                         style="@style/StyledTilPaddedEditTextLayout"
                         android:layout_width="match_parent"
@@ -251,13 +251,13 @@
                             android:maxLength="5"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:textColor="@color/dark_gray_text_colour" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

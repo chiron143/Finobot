@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_gravity="right">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/closebtnId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
                     android:textColor="@color/dark_gray_text_colour" />
             </com.purplepath.purplepath.customview.CustomTextInputLayout>
 
-           <!-- <android.support.v7.widget.AppCompatImageView
+           <!-- <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -157,7 +157,7 @@
                 android:layout_marginRight="@dimen/margin_medium"
                 app:srcCompat="@drawable/ic_done_calender" />-->
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

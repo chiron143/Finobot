@@ -3,8 +3,8 @@ package com.purplepath.purplepath.desiproAllModules.goalaffordability.ui.DialogF
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;

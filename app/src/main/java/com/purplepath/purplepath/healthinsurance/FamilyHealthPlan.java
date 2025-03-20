@@ -3,7 +3,7 @@ package com.purplepath.purplepath.healthinsurance;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;

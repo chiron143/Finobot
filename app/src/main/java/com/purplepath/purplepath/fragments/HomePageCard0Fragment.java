@@ -2,9 +2,9 @@ package com.purplepath.purplepath.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -429,7 +429,7 @@ public class HomePageCard0Fragment extends BaseFragment implements View.OnClickL
 
         inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.yes_no_settext, null);
-        alertDialog = new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog = new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         final TextView textView = dialogView.findViewById(R.id.additional_yes);
         textView.setText("You have said that you have additional income / investment(s) / claim(s) to be considered in your income tax return calculation, in addition to what is reflected in your Form 16. This would come under the 299 plan. If you agree, please click “Yes” to proceed.");

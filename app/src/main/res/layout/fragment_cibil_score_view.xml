@@ -14,13 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/cibil_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cibil_score_img"/>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_root"
                 android:layout_below="@+id/cibil_image"
                 android:layout_width="match_parent"
@@ -71,12 +71,12 @@
                         android:layout_margin="@dimen/margin_medium"
                         android:text="A Credit Score or the Cibil Score is a three-digit numeric summary of your credit history. The score is derived using the credit history found in the Credit Information Report (CIR). A CIR is an individual’s credit payment history across loan types and credit institutions over a period of time. A CIR does not contain details of your savings, investments or fixed deposits.."/>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_root1"
                 android:layout_below="@+id/card_root"
                 android:layout_width="match_parent"
@@ -124,7 +124,7 @@
 
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 

@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white">
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,17 +22,17 @@
         app:tabMode="fixed"
         app:tabSelectedTextColor="@color/colorPrimary"
         app:tabTextColor="@android:color/darker_gray">
-    </android.support.design.widget.TabLayout>
+    </com.google.android.material.tabs.TabLayout>
 </RelativeLayout>
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/layout_tab"
         android:layout_above="@+id/bottom_bar_layout">
 
-    </android.support.v4.view.ViewPager>
-    <android.support.design.widget.FloatingActionButton
+    </androidx.viewpager.widget.ViewPager>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -33,7 +33,7 @@
         android:weightSum="2"
         android:layout_gravity="center"
         android:orientation="horizontal">
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/exp_education_list_delete_imgView"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -41,7 +41,7 @@
             app:srcCompat="@drawable/ic_delet_icon"
             android:layout_gravity="center" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/exp_education_list_edt_popup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             app:srcCompat="@drawable/ic_pop_up"/>
 
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/exp_education_list_add_imgView"
             android:layout_weight="1"
             android:layout_width="0dp"

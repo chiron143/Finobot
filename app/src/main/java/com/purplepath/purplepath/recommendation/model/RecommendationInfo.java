@@ -1,7 +1,7 @@
 package com.purplepath.purplepath.recommendation.model;
 
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
 
 /**
  * @author Praveen Kumar on 02/02/17.

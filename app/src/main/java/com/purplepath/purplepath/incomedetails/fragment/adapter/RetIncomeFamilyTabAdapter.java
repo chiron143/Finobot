@@ -1,8 +1,8 @@
 package com.purplepath.purplepath.incomedetails.fragment.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.purplepath.purplepath.famlydetail.model.AddFamilyDetailModel;
 import com.purplepath.purplepath.incomedetails.fragment.model.GetIncomeModel;

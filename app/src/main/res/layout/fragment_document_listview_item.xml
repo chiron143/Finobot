@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view1"
         android:background="@color/WhiteSmoke"
         android:elevation="@dimen/margin_small"
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/document_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
 
 
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/upload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin_large"/>
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                 app:srcCompat="@drawable/ic_delet_icon"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin_large"/>
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/share"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -170,5 +170,5 @@
 
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

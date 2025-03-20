@@ -5,7 +5,7 @@
     android:background="@color/WhiteSmoke"
     android:gravity="center"
     android:orientation="vertical" >
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/splash_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

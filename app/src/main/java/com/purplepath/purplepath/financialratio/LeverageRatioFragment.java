@@ -2,7 +2,7 @@ package com.purplepath.purplepath.financialratio;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +15,7 @@ import com.github.lzyzsd.circleprogress.DonutProgress;
 import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -34,9 +34,9 @@ public class LeverageRatioFragment extends BaseFragment implements View.OnClickL
         fragment.setArguments(args);
         return fragment;
     }
-    @Bind(R.id.donut_progress)
+    @BindView(R.id.donut_progress)
     DonutProgress saveProgress;
-    @Bind(R.id.ratioTitle)
+    @BindView(R.id.ratioTitle)
     TextView ratioTitleTxt;
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;
     @Override

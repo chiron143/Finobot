@@ -5,7 +5,7 @@
     tools:context="com.purplepath.purplepath.AppManagement.Quiz.Ui.QuizFragment">
 
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
             android:layout_above="@+id/bottom_bar_layout"
             android:layout_width="fill_parent"

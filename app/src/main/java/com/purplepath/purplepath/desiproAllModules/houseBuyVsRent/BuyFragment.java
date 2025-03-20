@@ -4,10 +4,10 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -40,7 +40,7 @@ import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -52,186 +52,186 @@ import retrofit2.Response;
  */
 public class BuyFragment extends BaseFragment implements AdapterView.OnItemSelectedListener, RadioGroup.OnCheckedChangeListener, View.OnClickListener {
 
-    @Bind(R.id.propertyPrice_calculatorImgView)
+    @BindView(R.id.propertyPrice_calculatorImgView)
     CustomCalenderImageView propertyPrice_calculatorImgView;
 
-    @Bind(R.id.section80C_calculaterImgView)
+    @BindView(R.id.section80C_calculaterImgView)
     CustomCalenderImageView section80C_calculaterImgView;
 
-    @Bind(R.id.section24c_calculaterImgView1)
+    @BindView(R.id.section24c_calculaterImgView1)
     CustomCalenderImageView section24c_calculaterImgView1;
 
-    @Bind(R.id.down_payement_calculaterImgView)
+    @BindView(R.id.down_payement_calculaterImgView)
     CustomCalenderImageView down_payement_calculaterImgView;
 
-    @Bind(R.id.loan_amount_calculaterImgView)
+    @BindView(R.id.loan_amount_calculaterImgView)
     CustomCalenderImageView loan_amount_calculaterImgView;
 
-    @Bind(R.id.propertyPrice_edt)
+    @BindView(R.id.propertyPrice_edt)
     CurrencyGhostView propertyPrice_edt;
 
-    @Bind(R.id.maintenanceYearly_lyt)
+    @BindView(R.id.maintenanceYearly_lyt)
     CurrencyGhostView maintenanceYearly_lyt;
 
-    @Bind(R.id.maintenanceMonthly_lyt)
+    @BindView(R.id.maintenanceMonthly_lyt)
     CurrencyGhostView maintenanceMonthly_lyt;
 
-    @Bind(R.id.utilitiesMonthly_lyt)
+    @BindView(R.id.utilitiesMonthly_lyt)
     CurrencyGhostView utilitiesMonthly_lyt;
 
-    @Bind(R.id.utilitiesAnnually_lyt)
+    @BindView(R.id.utilitiesAnnually_lyt)
     CurrencyGhostView utilitiesAnnually_lyt;
 
 
-    @Bind(R.id.insuranceMonthly_lyt)
+    @BindView(R.id.insuranceMonthly_lyt)
     CurrencyGhostView insuranceMonthly_lyt;
 
-    @Bind(R.id.insuranceAnnually_lyt)
+    @BindView(R.id.insuranceAnnually_lyt)
     CurrencyGhostView insuranceAnnually_lyt;
 
 
-    @Bind(R.id.down_payement_edt)
+    @BindView(R.id.down_payement_edt)
     CurrencyGhostView down_payement_edt;
 
-    @Bind(R.id.loan_amount_edt)
+    @BindView(R.id.loan_amount_edt)
     CurrencyGhostView loan_amount_edt;
 
-    @Bind(R.id.section80C_edt)
+    @BindView(R.id.section80C_edt)
     CurrencyGhostView section80C_edt;
 
-    @Bind(R.id.section24c_edt)
+    @BindView(R.id.section24c_edt)
     CurrencyGhostView section24c_edt;
 
-    @Bind(R.id.status_spnr)
+    @BindView(R.id.status_spnr)
     Spinner status_spnr;
 
-    @Bind(R.id.propertyUsage_spnr)
+    @BindView(R.id.propertyUsage_spnr)
     Spinner propertyUsage_spnr;
 
-    @Bind(R.id.yearsToPossesion_lyt)
+    @BindView(R.id.yearsToPossesion_lyt)
     TextInputLayout yearsToPossesion_lyt;
 
-    @Bind(R.id.loanRequired_rg)
+    @BindView(R.id.loanRequired_rg)
     RadioGroup loanRequired_rg;
 
-    @Bind(R.id.taxCredits_rg)
+    @BindView(R.id.taxCredits_rg)
     RadioGroup taxCredits_rg;
 
-    @Bind(R.id.taxCredits_yes_RadioBtn)
+    @BindView(R.id.taxCredits_yes_RadioBtn)
     RadioButton taxCredits_yes_RadioBtn;
 
-    @Bind(R.id.taxCredits_no_RadioBtn)
+    @BindView(R.id.taxCredits_no_RadioBtn)
     RadioButton taxCredits_no_RadioBtn;
 
-    @Bind(R.id.loanRequired_yes_RadioBtn)
+    @BindView(R.id.loanRequired_yes_RadioBtn)
     RadioButton loanRequired_yes_RadioBtn;
 
-    @Bind(R.id.loanRequired_no_RadioBtn)
+    @BindView(R.id.loanRequired_no_RadioBtn)
     RadioButton loanRequired_no_RadioBtn;
 
 
-    @Bind(R.id.loan_tenure_layout)
+    @BindView(R.id.loan_tenure_layout)
     TextInputLayout loan_tenure_layout;
 
-    @Bind(R.id.interest_rate_layout)
+    @BindView(R.id.interest_rate_layout)
     TextInputLayout interest_rate_layout;
 
 
-    @Bind(R.id.down_payement_lyt)
+    @BindView(R.id.down_payement_lyt)
     LinearLayout down_payement_lyt;
 
-    @Bind(R.id.loan_amount_lyt)
+    @BindView(R.id.loan_amount_lyt)
     LinearLayout loan_amount_lyt;
 
-    @Bind(R.id.mortgage_lyt)
+    @BindView(R.id.mortgage_lyt)
     LinearLayout mortgage_lyt;
 
-    @Bind(R.id.mortgage_tv)
+    @BindView(R.id.mortgage_tv)
     CustomTextView mortgage_tv;
 
-    @Bind(R.id.section80C_lyt)
+    @BindView(R.id.section80C_lyt)
     LinearLayout section80C_lyt;
 
-    @Bind(R.id.section24c_lyt)
+    @BindView(R.id.section24c_lyt)
     LinearLayout section24c_lyt;
 
-    @Bind(R.id.propertyUsage_tv)
+    @BindView(R.id.propertyUsage_tv)
     CustomTextView propertyUsage_tv;
 
-    @Bind(R.id.propertyAppreciation_calculatorimage)
+    @BindView(R.id.propertyAppreciation_calculatorimage)
     CustomCalenderImageView propertyAppreciation_calculatorimage;
 
 
-    @Bind(R.id.realEstateTaxes_calculatorimage)
+    @BindView(R.id.realEstateTaxes_calculatorimage)
     CustomCalenderImageView realEstateTaxes_calculatorimage;
 
-    @Bind(R.id.propertyAppreciation_rg)
+    @BindView(R.id.propertyAppreciation_rg)
     RadioGroup propertyAppreciation_rg;
 
-    @Bind(R.id.propertyAppreciation_rupeee_RadioBtn)
+    @BindView(R.id.propertyAppreciation_rupeee_RadioBtn)
     RadioButton propertyAppreciation_rupeee_RadioBtn;
 
-    @Bind(R.id.propertyAppreciation_percent_RadioBtn)
+    @BindView(R.id.propertyAppreciation_percent_RadioBtn)
     RadioButton propertyAppreciation_percent_RadioBtn;
 
-    @Bind(R.id.edt_propertyAppreciation)
+    @BindView(R.id.edt_propertyAppreciation)
     CurrencyGhostView edt_propertyAppreciation;
 
-    @Bind(R.id.propertyAppreciationPercent_layout)
+    @BindView(R.id.propertyAppreciationPercent_layout)
     TextInputLayout propertyAppreciationPercent_layout;
 
-    @Bind(R.id.propertyAppreciationRupee_layout)
+    @BindView(R.id.propertyAppreciationRupee_layout)
     TextInputLayout propertyAppreciationRupee_layout;
 
-    @Bind(R.id.propertyAppreciationPercent_edt)
+    @BindView(R.id.propertyAppreciationPercent_edt)
     PercentageEditText propertyAppreciationPercent_edt;
 
-    @Bind(R.id.realEstateTaxes_rg)
+    @BindView(R.id.realEstateTaxes_rg)
     RadioGroup realEstateTaxes_rg;
 
-    @Bind(R.id.realEstateTaxes_rupeee_RadioBtn)
+    @BindView(R.id.realEstateTaxes_rupeee_RadioBtn)
     RadioButton realEstateTaxes_rupeee_RadioBtn;
 
-    @Bind(R.id.realEstateTaxes_percent_RadioBtn)
+    @BindView(R.id.realEstateTaxes_percent_RadioBtn)
     RadioButton realEstateTaxes_percent_RadioBtn;
 
-    @Bind(R.id.edt_realEstateTaxes)
+    @BindView(R.id.edt_realEstateTaxes)
     CurrencyGhostView edt_realEstateTaxes;
 
-    @Bind(R.id.realEstateTaxesPercent_layout)
+    @BindView(R.id.realEstateTaxesPercent_layout)
     TextInputLayout realEstateTaxesPercent_layout;
 
-    @Bind(R.id.realEstateTaxesPercent_edt)
+    @BindView(R.id.realEstateTaxesPercent_edt)
     EditText realEstateTaxesPercent_edt;
 
-    @Bind(R.id.realEstateTaxesRupee_layout)
+    @BindView(R.id.realEstateTaxesRupee_layout)
     TextInputLayout realEstateTaxesRupee_layout;
 
-    @Bind(R.id.tax_credits)
+    @BindView(R.id.tax_credits)
     RelativeLayout tax_credits;
 
-    @Bind(R.id.mortgageeMonthly_lyt)
+    @BindView(R.id.mortgageeMonthly_lyt)
     CurrencyGhostView mortgageeMonthly_lyt;
 
-    @Bind(R.id.mortgageAnnually_lyt)
+    @BindView(R.id.mortgageAnnually_lyt)
     CurrencyGhostView mortgageAnnually_lyt;
 
-    @Bind(R.id.dont_know_label)
+    @BindView(R.id.dont_know_label)
     TextView dont_know_label;
 
-    @Bind(R.id.loan_tenure_edt_id)
+    @BindView(R.id.loan_tenure_edt_id)
     EditText loan_tenure_edt_id;
 
-    @Bind(R.id.interest_rate_id)
+    @BindView(R.id.interest_rate_id)
     PercentageEditText interest_rate_id;
 
-    @Bind(R.id.intrestforegone_layout)
+    @BindView(R.id.intrestforegone_layout)
     TextInputLayout intrestforegone_layout;
 
-    @Bind(R.id.intrestforegone_edt)
+    @BindView(R.id.intrestforegone_edt)
     EditText intrestforegone_edt;
 
-    @Bind(R.id.yearsToPossesion_edt)
+    @BindView(R.id.yearsToPossesion_edt)
     EditText yearsToPossesion_edt;
 
     public static final String PARENT_CLASS_SOURCE = "com.gp89developers.example.MainActivity";

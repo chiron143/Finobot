@@ -4,9 +4,9 @@ package com.purplepath.purplepath.networthanalysis;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -37,7 +37,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -48,96 +48,96 @@ import retrofit2.Response;
  */
 public class NetworthDetailsFragment extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.gold_value)
+    @BindView(R.id.gold_value)
     TextView gold_value;
 
-    @Bind(R.id.employeeBenifits_value)
+    @BindView(R.id.employeeBenifits_value)
     TextView EmployeeBenifits_value;
 
-    @Bind(R.id.equity_value)
+    @BindView(R.id.equity_value)
     TextView Equity_value;
 
-    @Bind(R.id.fixedIncome_value)
+    @BindView(R.id.fixedIncome_value)
     TextView FixedIncome_value;
 
-    @Bind(R.id.houseHoldAssets_value)
+    @BindView(R.id.houseHoldAssets_value)
     TextView HouseHoldAssets_value;
 
-    @Bind(R.id.liquidCash_value)
+    @BindView(R.id.liquidCash_value)
     TextView LiquidCash_value;
 
-    @Bind(R.id.realEstate_value)
+    @BindView(R.id.realEstate_value)
     TextView RealEstate_value;
 
-    @Bind(R.id.otherAsset_value)
+    @BindView(R.id.otherAsset_value)
     TextView otherAsset_value;
 
-    @Bind(R.id.creditCard_value)
+    @BindView(R.id.creditCard_value)
     TextView CreditCard_value;
 
-    @Bind(R.id.loanOffers_value)
+    @BindView(R.id.loanOffers_value)
     TextView LoanOffers_value;
 
-    @Bind(R.id.loan_value)
+    @BindView(R.id.loan_value)
     TextView Loan_value;
 
-    @Bind(R.id.refundableDeposit_value)
+    @BindView(R.id.refundableDeposit_value)
     TextView RefundableDeposit_value;
 
-    @Bind(R.id.unpaidBills_value)
+    @BindView(R.id.unpaidBills_value)
     TextView UnpaidBills_value;
 
-    @Bind(R.id.otherLiablities_value)
+    @BindView(R.id.otherLiablities_value)
     TextView OtherLiablities_value;
 
-    @Bind(R.id.dateText)
+    @BindView(R.id.dateText)
     TextView dateText;
 
-    @Bind(R.id.statusText)
+    @BindView(R.id.statusText)
     TextView statusText;
 
     //Relative Layout
 
-    @Bind(R.id.gold_layout)
+    @BindView(R.id.gold_layout)
     RelativeLayout gold_layout;
 
-    @Bind(R.id.employeeBenifits_layout)
+    @BindView(R.id.employeeBenifits_layout)
     RelativeLayout EmployeeBenifits_layout;
 
-    @Bind(R.id.equity_layout)
+    @BindView(R.id.equity_layout)
     RelativeLayout Equity_layout;
 
-    @Bind(R.id.fixedIncome_layout)
+    @BindView(R.id.fixedIncome_layout)
     RelativeLayout FixedIncome_layout;
 
-    @Bind(R.id.houseHoldAssets_layout)
+    @BindView(R.id.houseHoldAssets_layout)
     RelativeLayout HouseHoldAssets_layout;
 
-    @Bind(R.id.liquidCash_layout)
+    @BindView(R.id.liquidCash_layout)
     RelativeLayout LiquidCash_layout;
 
-    @Bind(R.id.realEstate_layout)
+    @BindView(R.id.realEstate_layout)
     RelativeLayout RealEstate_layout;
 
-    @Bind(R.id.otherAsset_layout)
+    @BindView(R.id.otherAsset_layout)
     RelativeLayout otherAsset_layout;
 
-    @Bind(R.id.creditCard_layout)
+    @BindView(R.id.creditCard_layout)
     RelativeLayout CreditCard_layout;
 
-    @Bind(R.id.loanOffers_layout)
+    @BindView(R.id.loanOffers_layout)
     RelativeLayout LoanOffers_layout;
 
-    @Bind(R.id.loan_layout)
+    @BindView(R.id.loan_layout)
     RelativeLayout Loan_layout;
 
-    @Bind(R.id.refundableDeposit_layout)
+    @BindView(R.id.refundableDeposit_layout)
     RelativeLayout RefundableDeposit_layout;
 
-    @Bind(R.id.unpaidBills_layout)
+    @BindView(R.id.unpaidBills_layout)
     RelativeLayout UnpaidBills_layout;
 
-    @Bind(R.id.otherLiablities_layout)
+    @BindView(R.id.otherLiablities_layout)
     RelativeLayout OtherLiablities_layout;
 
     NetworkAnalysisModel networkAnalysisModel;

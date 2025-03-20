@@ -30,7 +30,7 @@
         android:layout_gravity="center"
 
         android:layout_weight="1">
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/delete_row_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,13 +38,13 @@
             android:padding="@dimen/margin_small"
             app:srcCompat="@drawable/ic_delet_icon"/>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_pop_up"/>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/addviewbuttonId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

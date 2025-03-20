@@ -16,7 +16,7 @@
         android:layout_height="match_parent">
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         card_view:cardCornerRadius="4dp"
         android:elevation="3dp"
@@ -62,7 +62,7 @@
                 android:layout_margin="@dimen/margin_large"
                 android:layout_height="wrap_content">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/location_icon"
                     android:layout_below="@+id/txt_underline"
                     android:layout_width="wrap_content"
@@ -167,9 +167,9 @@
 
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_view1"
             android:layout_below="@+id/card_view"
             android:padding="@dimen/margin_large"
@@ -206,7 +206,7 @@
 
 
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/whatsapp_icon1"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="@dimen/margin_xlarge"
@@ -225,7 +225,7 @@
                     android:layout_marginRight="@dimen/margin_large"
                     android:background="@color/gray" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/location_icon1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                     android:background="@drawable/edittext_background_roundshape"
                     />
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
     </RelativeLayout>

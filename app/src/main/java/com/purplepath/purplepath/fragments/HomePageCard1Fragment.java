@@ -6,7 +6,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.finobot.finobot.R;
 import com.purplepath.purplepath.model.homeCardModel.HomeCardsModel;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -29,13 +29,13 @@ import butterknife.ButterKnife;
  */
 public class HomePageCard1Fragment extends BaseFragment {
 
-    @Bind(R.id.title_tv)
+    @BindView(R.id.title_tv)
      TextView title_tv;
 
-    @Bind(R.id.date)
+    @BindView(R.id.date)
     TextView date;
 
-    @Bind(R.id.textMessage)
+    @BindView(R.id.textMessage)
     TextView textMessage;
 
 

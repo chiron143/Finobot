@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:padding="@dimen/margin_large"
         android:elevation="@dimen/margin_small"
@@ -49,9 +49,9 @@
 
             </RelativeLayout>
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/liab_fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

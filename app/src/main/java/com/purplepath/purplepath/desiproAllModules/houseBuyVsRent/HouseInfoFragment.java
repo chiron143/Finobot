@@ -4,8 +4,8 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -28,7 +28,7 @@ import com.purplepath.purplepath.customview.PercentageEditText;
 import com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.interfaces.ActivityMethodsInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -36,31 +36,31 @@ import butterknife.ButterKnife;
  */
 public class HouseInfoFragment extends BaseFragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
-    @Bind(R.id.grossSalary_calculaterImgView)
+    @BindView(R.id.grossSalary_calculaterImgView)
     CustomCalenderImageView grossSalary_calculaterImgView;
 
-    @Bind(R.id.cityType_tv)
+    @BindView(R.id.cityType_tv)
     TextView cityType_tv;
 
-    @Bind(R.id.grossSalary_edt)
+    @BindView(R.id.grossSalary_edt)
     CurrencyGhostView grossSalary_edt;
 
-    @Bind(R.id.cityType_spnr)
+    @BindView(R.id.cityType_spnr)
     Spinner cityType_spnr;
 
-    @Bind(R.id.taxSlab_spnr)
+    @BindView(R.id.taxSlab_spnr)
     Spinner taxSlab_spnr;
 
-    @Bind(R.id.oppurtunityCost_layout)
+    @BindView(R.id.oppurtunityCost_layout)
     TextInputLayout oppurtunityCost_layout;
 
-    @Bind(R.id.oppurtunityCost_edt)
+    @BindView(R.id.oppurtunityCost_edt)
     PercentageEditText oppurtunityCost_edt;
 
-    @Bind(R.id.plannedOccupation_lyt)
+    @BindView(R.id.plannedOccupation_lyt)
     TextInputLayout plannedOccupation_lyt;
 
-    @Bind(R.id.plannedOccupation_edt)
+    @BindView(R.id.plannedOccupation_edt)
     NumberEditText plannedOccupation_edt;
 
     String[] taxSlabArray = new String[]{"30%", "20%", "10%"}, cityTypeArray = new String[]{"Metro", "Non-Metro"};

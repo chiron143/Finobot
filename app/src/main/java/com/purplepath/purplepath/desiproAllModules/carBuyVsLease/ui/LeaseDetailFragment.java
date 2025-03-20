@@ -3,8 +3,8 @@ package com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -31,7 +31,7 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -44,35 +44,35 @@ public class LeaseDetailFragment extends BaseFragment implements View.OnClickLis
     UpdateValueInFragmentInterface updateInterface;
     CalculateLeaseInterface mCalculateLeaseInterface;
 
-    @Bind(R.id.total_upfront_secqpay_edt_id)
+    @BindView(R.id.total_upfront_secqpay_edt_id)
     CurrencyGhostView total_upfront_secqpay_edt;
 
-//    @Bind(R.id.total_upfront_secqpay_cal_id)
+//    @BindView(R.id.total_upfront_secqpay_cal_id)
 //    CustomCalenderImageView total_upfront_secqpay_cal;
 
-    @Bind(R.id.monthlyLeasepayment_edt_id)
+    @BindView(R.id.monthlyLeasepayment_edt_id)
     CurrencyGhostView monthlyLeasepayment_edt;
 
-    @Bind(R.id.monthlyLeasepayment_cal_id)
+    @BindView(R.id.monthlyLeasepayment_cal_id)
     CustomCalenderImageView monthlyLeasepayment_cal;
 
 
-    @Bind(R.id.tax_edit_id)
+    @BindView(R.id.tax_edit_id)
     PercentageEditText tax_edit;
 
-    @Bind(R.id.lease_tax_edit_id)
+    @BindView(R.id.lease_tax_edit_id)
     PercentageEditText lease_tax_edit;
 
 
 
-    @Bind(R.id.leaseforexpense_edt_id)
+    @BindView(R.id.leaseforexpense_edt_id)
     CurrencyGhostView leaseforexpense_edt;
 
-    @Bind(R.id.text_calculate_lease_label)
+    @BindView(R.id.text_calculate_lease_label)
     TextView text_calculate_lease_label;
 
 
-    @Bind(R.id.leaseforexpense_cal_id)
+    @BindView(R.id.leaseforexpense_cal_id)
     CustomCalenderImageView leaseforexpense_cal;
 
     GhostViewTextWatchers total_upfront_secqpay_TW,monthlyLeasepayment_TW,leaseforexpense_TW;

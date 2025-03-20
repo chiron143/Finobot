@@ -16,7 +16,7 @@ import java.text.DecimalFormatSymbols;
  * Created by pravinr on 9/20/17.
  */
 
-public class DefaultCurrencyTextView extends android.support.v7.widget.AppCompatTextView {
+public class DefaultCurrencyTextView extends androidx.appcompat.widget.AppCompatTextView {
     String rawText;
 
     public DefaultCurrencyTextView(Context context) {

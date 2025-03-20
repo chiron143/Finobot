@@ -2,7 +2,7 @@ package com.purplepath.purplepath.customview;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.finobot.finobot.R;
 import com.purplepath.purplepath.apputiles.UtileKit;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,16 +22,16 @@ import butterknife.ButterKnife;
 
 public class CurrencyGhostViewTaxFiling extends RelativeLayout {
 
-    @Bind(R.id.curencyGhostEditTxt)
+    @BindView(R.id.curencyGhostEditTxt)
     CurrencyDefaultEdt editText;
 
-    @Bind(R.id.amountInWords)
+    @BindView(R.id.amountInWords)
     TextView amountInWords;
 
-    @Bind(R.id.currencyhintId)
+    @BindView(R.id.currencyhintId)
     CustomTextInputLayout currencyHintTxt;
 
-    @Bind(R.id.hintViewTxtId)
+    @BindView(R.id.hintViewTxtId)
     TextView hintViewTxt;
 
     public CurrencyGhostViewTaxFiling(Context context) {

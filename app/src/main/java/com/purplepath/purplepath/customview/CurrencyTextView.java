@@ -10,7 +10,7 @@ import com.finobot.finobot.R;
 /**
  * Created by Bert on 24-Aug-16.
  */
-public class CurrencyTextView extends android.support.v7.widget.AppCompatTextView {
+public class CurrencyTextView extends androidx.appcompat.widget.AppCompatTextView {
     String rawText;
 
     public CurrencyTextView(Context context) {

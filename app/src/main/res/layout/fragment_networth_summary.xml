@@ -19,7 +19,7 @@
             android:layout_marginBottom="@dimen/margin_xxlarge"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/card_view_heights"
                 android:layout_margin="@dimen/margin_medium"
@@ -57,10 +57,10 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/card_view_height"
                 android:layout_margin="@dimen/margin_medium"
@@ -99,9 +99,9 @@
                         />
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/card_view_height"
                 android:layout_margin="@dimen/margin_medium"
@@ -140,10 +140,10 @@
                         />
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/selected_calendar_layout_height"
                 android:layout_margin="@dimen/margin_medium"
@@ -234,7 +234,7 @@
                     </RadioGroup>
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>

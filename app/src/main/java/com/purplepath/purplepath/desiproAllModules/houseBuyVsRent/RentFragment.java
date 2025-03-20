@@ -4,9 +4,9 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -26,7 +26,7 @@ import com.purplepath.purplepath.customview.PercentageEditText;
 import com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.interfaces.ActivityMethodsInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -34,72 +34,72 @@ import butterknife.ButterKnife;
  */
 public class RentFragment extends BaseFragment implements RadioGroup.OnCheckedChangeListener, View.OnClickListener {
 
-    @Bind(R.id.rentMonthlyCalendar)
+    @BindView(R.id.rentMonthlyCalendar)
     CustomCalenderImageView rentMonthlyCalendar;
 
-    @Bind(R.id.rentAnnuallyCalendar)
+    @BindView(R.id.rentAnnuallyCalendar)
     CustomCalenderImageView rentAnnuallyCalendar;
 
-    @Bind(R.id.securityDeposit_calculaterImgView)
+    @BindView(R.id.securityDeposit_calculaterImgView)
     CustomCalenderImageView securityDeposit_calculaterImgView;
 
-    @Bind(R.id.rentalEscalation_calculatorimage)
+    @BindView(R.id.rentalEscalation_calculatorimage)
     CustomCalenderImageView rentalEscalation_calculatorimage;
 
-    @Bind(R.id.utilitiesCalendar)
+    @BindView(R.id.utilitiesCalendar)
     CustomCalenderImageView utilitiesCalendar;
 
-    @Bind(R.id.utilitiesAnnuallyCalendar)
+    @BindView(R.id.utilitiesAnnuallyCalendar)
     CustomCalenderImageView utilitiesAnnuallyCalendar;
 
-    @Bind(R.id.tenantsInsurance_calculaterImgView)
+    @BindView(R.id.tenantsInsurance_calculaterImgView)
     CustomCalenderImageView tenantsInsurance_calculaterImgView;
 
-     @Bind(R.id.rentMonthly_lyt)
+     @BindView(R.id.rentMonthly_lyt)
     CurrencyGhostView  rentMonthly_lyt;
 
-    @Bind(R.id.rentAnnually_lyt)
+    @BindView(R.id.rentAnnually_lyt)
     CurrencyGhostView rentAnnually_lyt;
 
-    @Bind(R.id.securityDeposit)
+    @BindView(R.id.securityDeposit)
     CurrencyGhostView securityDeposit;
 
-    @Bind(R.id.edt_rentalEscalation)
+    @BindView(R.id.edt_rentalEscalation)
     CurrencyGhostView edt_rentalEscalation;
 
-    @Bind(R.id.utilitiesMonthly_lyt)
+    @BindView(R.id.utilitiesMonthly_lyt)
     CurrencyGhostView utilitiesMonthly_lyt;
 
-    @Bind(R.id.utilitiesAnnually_lyt)
+    @BindView(R.id.utilitiesAnnually_lyt)
     CurrencyGhostView utilitiesAnnually_lyt;
 
-    @Bind(R.id.tenantsInsurance_edt)
+    @BindView(R.id.tenantsInsurance_edt)
     CurrencyGhostView tenantsInsurance_edt;
 
-    @Bind(R.id.rentalEscalation_rg)
+    @BindView(R.id.rentalEscalation_rg)
     RadioGroup rentalEscalation_rg;
 
-    @Bind(R.id.rentalEscalation_rupeee_RadioBtn)
+    @BindView(R.id.rentalEscalation_rupeee_RadioBtn)
     RadioButton rentalEscalation_rupeee_RadioBtn;
 
 
-    @Bind(R.id.rentalEscalation_percent_RadioBtn)
+    @BindView(R.id.rentalEscalation_percent_RadioBtn)
     RadioButton rentalEscalation_percent_RadioBtn;
 
-    @Bind(R.id.rentalEscalationPercent_layout)
+    @BindView(R.id.rentalEscalationPercent_layout)
     TextInputLayout rentalEscalationPercent_layout;
 
-    @Bind(R.id.rentalEscalationPercent_edt)
+    @BindView(R.id.rentalEscalationPercent_edt)
     PercentageEditText rentalEscalationPercent_edt;
 
 
-    @Bind(R.id.rentalEscalationRupee_layout)
+    @BindView(R.id.rentalEscalationRupee_layout)
     TextInputLayout rentalEscalationRupee_layout;
 
-    @Bind(R.id.intrestforegone_layout)
+    @BindView(R.id.intrestforegone_layout)
     TextInputLayout intrestforegone_layout;
 
-    @Bind(R.id.intrestforegone_edt)
+    @BindView(R.id.intrestforegone_edt)
     EditText intrestforegone_edt;
 
     public static final String PARENT_CLASS_SOURCE = "com.gp89developers.example.MainActivity";

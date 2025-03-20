@@ -3,12 +3,12 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,10 +40,10 @@ import retrofit2.Response;
  */
 
 public class HouseBuyVsRentActivity extends AppCompatActivity implements ActivityMethodsInterface, View.OnClickListener {
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;

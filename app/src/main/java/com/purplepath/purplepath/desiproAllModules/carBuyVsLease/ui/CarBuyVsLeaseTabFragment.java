@@ -3,11 +3,11 @@ package com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -42,17 +42,17 @@ public class CarBuyVsLeaseTabFragment extends BaseFragment implements View.OnCli
 
 
     public boolean isResultShown = false;
-    @Bind(R.id.viewPager_id)
+    @BindView(R.id.viewPager_id)
     ViewPager viewPager;
-    @Bind(R.id.tab_layout_id)
+    @BindView(R.id.tab_layout_id)
     TabLayout mTabLayout;
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
     RelativeLayout mleftRelativeLayout;
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
     RelativeLayout mcenterRelativeLayout;
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
     RelativeLayout mRightRelativeLayout;
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
     UpdateValueInFragmentInterface updateInterface;
     DeciproAdapter viewPagerAdapter;

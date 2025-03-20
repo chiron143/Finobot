@@ -4,7 +4,7 @@ package com.purplepath.purplepath.networthanalysis;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.text.SpannableStringBuilder;
 import android.text.style.RelativeSizeSpan;
 import android.view.LayoutInflater;
@@ -29,7 +29,7 @@ import com.purplepath.purplepath.networthanalysis.model.NetworkAnalysisModel;
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,22 +40,22 @@ import retrofit2.Response;
  */
 public class NetworthSummaryFragment extends BaseFragment implements View.OnClickListener {
 
-     @Bind(R.id.netWorthDateText)
+     @BindView(R.id.netWorthDateText)
     TextView netWorthDateText;
 
-     @Bind(R.id.netWorthValueText)
+     @BindView(R.id.netWorthValueText)
     TextView netWorthValueText;
 
-     @Bind(R.id.assetText)
+     @BindView(R.id.assetText)
     TextView assetText ;
 
-     @Bind(R.id.asssetValueText)
+     @BindView(R.id.asssetValueText)
     TextView asssetValueText;
 
-     @Bind(R.id.liabilityText)
+     @BindView(R.id.liabilityText)
     TextView liabilityText;
 
-     @Bind(R.id.liabilityValueText)
+     @BindView(R.id.liabilityValueText)
     TextView liabilityValueText;
 
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;

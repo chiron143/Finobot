@@ -7,11 +7,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.Space;
+import androidx.annotation.NonNull;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import android.widget.Space;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,7 +38,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -50,22 +50,22 @@ import retrofit2.Response;
 
 public class TaxPromptSummary extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.savingsTopText)
+    @BindView(R.id.savingsTopText)
     TextView savingsTopText;
 
-    @Bind(R.id.entitled_value)
+    @BindView(R.id.entitled_value)
     TextView entitled_value;
 
-    @Bind(R.id.availedTopText)
+    @BindView(R.id.availedTopText)
     TextView availedTopText;
 
-    @Bind(R.id.availed_value)
+    @BindView(R.id.availed_value)
     TextView availed_value;
 
-    @Bind(R.id.pendingTopText)
+    @BindView(R.id.pendingTopText)
     TextView pendingTopText;
 
-    @Bind(R.id.pending_value)
+    @BindView(R.id.pending_value)
     TextView pending_value;
 
     private TaxPromptNewModel taxPromptNewModel;

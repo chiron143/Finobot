@@ -4,12 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -41,7 +41,7 @@ import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 import com.purplepath.purplepath.taxprepaid.TaxPrepaidFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -64,10 +64,10 @@ public class PromptChatFragment1 extends BaseFragment implements View.OnClickLis
 
     private Context mContext;
 
-    @Bind(R.id.parentViewId)
+    @BindView(R.id.parentViewId)
     LinearLayout parentView;
 
-    @Bind(R.id.layout_yes_no_bottom_bar)
+    @BindView(R.id.layout_yes_no_bottom_bar)
     LinearLayout layout_yes_no_bottom_bar;
 
     GetPromptModel getPromptModel;

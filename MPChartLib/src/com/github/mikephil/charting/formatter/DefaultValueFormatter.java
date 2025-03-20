@@ -1,6 +1,7 @@
 
 package com.github.mikephil.charting.formatter;
 
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.utils.ViewPortHandler;
 
@@ -42,5 +43,10 @@ public class DefaultValueFormatter implements ValueFormatter {
         // avoid memory allocations here (for performance reasons)
 
         return mFormat.format(value);
+    }
+
+    @Override
+    public String getFormattedValue(float value, YAxis yAxis) {
+        return null;
     }
 }

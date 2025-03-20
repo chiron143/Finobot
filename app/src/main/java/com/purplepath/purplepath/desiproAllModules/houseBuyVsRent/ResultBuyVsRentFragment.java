@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -50,16 +50,16 @@ public class ResultBuyVsRentFragment extends BaseFragment {
     private BuyVsRentModel buyVsRentModel;
     private Bundle args;
 
-    @Bind(R.id.buyUsingFinanceValue)
+    @BindView(R.id.buyUsingFinanceValue)
     TextView buyUsingFinanceValue;
 
-    @Bind(R.id.buyUsingCash)
+    @BindView(R.id.buyUsingCash)
     TextView buyUsingCash;
 
-    @Bind(R.id.costOfRentingValue)
+    @BindView(R.id.costOfRentingValue)
     TextView costOfRentingValue;
 
-    @Bind(R.id.barChart)
+    @BindView(R.id.barChart)
     BarChart barChart;
 
     ArrayList<String> labels;

@@ -27,7 +27,7 @@
             android:layout_alignParentTop="true"
             android:layout_gravity="right">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/closebtnId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -304,7 +304,7 @@
                     android:layout_height="1dp"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="@dimen/margin_small" />
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/statedInterestRate_lyt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -321,7 +321,7 @@
                         android:inputType="number"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/colorPrimary" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>
 
 
@@ -350,7 +350,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textSize="@dimen/text_large" />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/img_thumb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -362,7 +362,7 @@
                     android:layout_marginTop="@dimen/margin_large"
                     >
 
-                </android.support.v7.widget.AppCompatImageView>
+                </androidx.appcompat.widget.AppCompatImageView>
             </RelativeLayout>
 
         </LinearLayout>

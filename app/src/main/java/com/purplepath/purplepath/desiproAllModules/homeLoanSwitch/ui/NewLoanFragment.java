@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -28,7 +28,7 @@ import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.interfaces.Upd
 import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.interfaces.UpdateValueInActivityInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -38,117 +38,117 @@ import butterknife.ButterKnife;
 
 public class NewLoanFragment extends BaseFragment implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
     //Edit text
-    @Bind(R.id.edt_out_standing_view_id)
+    @BindView(R.id.edt_out_standing_view_id)
     CurrencyGhostView edt_out_standing;
 
-    @Bind(R.id.edt_interest_view_id)
+    @BindView(R.id.edt_interest_view_id)
     PercentageEditText edt_interest;
 
-    @Bind(R.id.edt_balance_tenure_view_id)
+    @BindView(R.id.edt_balance_tenure_view_id)
     NumberEditText edt_balance_tenure;
 
-    @Bind(R.id.edt_emi_view_id)
+    @BindView(R.id.edt_emi_view_id)
     CurrencyGhostView edt_emi;
 
-    @Bind(R.id.edt_processingFee_view_id)
+    @BindView(R.id.edt_processingFee_view_id)
     CurrencyGhostView edt_processingFee;
 
-    @Bind(R.id.edt_legal_view_id)
+    @BindView(R.id.edt_legal_view_id)
     CurrencyGhostView edt_legal;
 
-    @Bind(R.id.edt_administrationFee_view_id)
+    @BindView(R.id.edt_administrationFee_view_id)
     CurrencyGhostView edt_administrationFee;
 
 
-    @Bind(R.id.edt_processingFeePercent_view_id)
+    @BindView(R.id.edt_processingFeePercent_view_id)
     PercentageEditText edt_processingFeePercent;
 
-    @Bind(R.id.edt_legalPercent_view_id)
+    @BindView(R.id.edt_legalPercent_view_id)
     PercentageEditText edt_legalPercent;
 
-    @Bind(R.id.edt_administrationFeePercent_view_id)
+    @BindView(R.id.edt_administrationFeePercent_view_id)
     PercentageEditText edt_administrationFeePercent;
 
-    @Bind(R.id.edt_insuranceFeeRupee_view_id)
+    @BindView(R.id.edt_insuranceFeeRupee_view_id)
     CurrencyGhostView insuranceFeeRupeeEdtView;
 
-    @Bind(R.id.edt_insuranceFee_view_id)
+    @BindView(R.id.edt_insuranceFee_view_id)
     PercentageEditText insuranceFeeEdtView;
 
     //Text Input layout
 
-    /*@Bind(R.id.edt_out_standing_layout)
+    /*@BindView(R.id.edt_out_standing_layout)
     TextInputLayout edt_out_standing_layout;*/
 
-    @Bind(R.id.edt_interest_layout)
+    @BindView(R.id.edt_interest_layout)
     TextInputLayout edt_interest_layout;
 
-    @Bind(R.id.edt_balance_tenure_layout)
+    @BindView(R.id.edt_balance_tenure_layout)
     TextInputLayout edt_balance_tenure_layout;
 
-   /* @Bind(R.id.edt_emi_layout)
+   /* @BindView(R.id.edt_emi_layout)
     TextInputLayout edt_emi_layout;*/
 
-    @Bind(R.id.edt_processingFee_layout)
+    @BindView(R.id.edt_processingFee_layout)
     TextInputLayout edt_processingFee_layout;
 
-    @Bind(R.id.edt_legal_layout)
+    @BindView(R.id.edt_legal_layout)
     TextInputLayout edt_legal_layout;
 
-    @Bind(R.id.edt_administration_fee_layout)
+    @BindView(R.id.edt_administration_fee_layout)
     TextInputLayout edt_administration_fee_layout;
 
-    @Bind(R.id.edt_processingFeePercent_layout)
+    @BindView(R.id.edt_processingFeePercent_layout)
     TextInputLayout edt_processingFeePercent_layout;
 
-    @Bind(R.id.edt_legalPercent_layout)
+    @BindView(R.id.edt_legalPercent_layout)
     TextInputLayout edt_legalPercent_layout;
 
-    @Bind(R.id.edt_administrationFeePercent_layout)
+    @BindView(R.id.edt_administrationFeePercent_layout)
     TextInputLayout edt_administrationFeePercent_layout;
 
-    @Bind(R.id.edt_insuranceFeeRupee_layout)
+    @BindView(R.id.edt_insuranceFeeRupee_layout)
     TextInputLayout edt_insuranceFeeRupee_layout;
 
-    @Bind(R.id.edt_insuranceFee_layout)
+    @BindView(R.id.edt_insuranceFee_layout)
     TextInputLayout edt_insuranceFee_layout;
 
-    @Bind(R.id.processingFee_rg)
+    @BindView(R.id.processingFee_rg)
     RadioGroup processingFeeRG;
 
-    @Bind(R.id.processingFee_percent_RadioBtn)
+    @BindView(R.id.processingFee_percent_RadioBtn)
     RadioButton processingFeePercent;
 
-    @Bind(R.id.processingFee_rupeee_RadioBtn)
+    @BindView(R.id.processingFee_rupeee_RadioBtn)
     RadioButton processingFeeRupee;
 
-    @Bind(R.id.administrationFee_rg_newLoan)
+    @BindView(R.id.administrationFee_rg_newLoan)
     RadioGroup admimistrationFeeRG;
 
-    @Bind(R.id.administrationFee_percent_RadioBtn_newLoan)
+    @BindView(R.id.administrationFee_percent_RadioBtn_newLoan)
     RadioButton admimistrationFeePercent;
 
-    @Bind(R.id.administrationFee_rupeee_RadioBtn_newLoan)
+    @BindView(R.id.administrationFee_rupeee_RadioBtn_newLoan)
     RadioButton admimistrationFeeRupee;
 
-    @Bind(R.id.legalFee_rg)
+    @BindView(R.id.legalFee_rg)
     RadioGroup legalFeeRG;
 
-    @Bind(R.id.legalFee_percent_RadioBtn)
+    @BindView(R.id.legalFee_percent_RadioBtn)
     RadioButton legalFeePercent;
 
-    @Bind(R.id.legalFee_rupeee_RadioBtn)
+    @BindView(R.id.legalFee_rupeee_RadioBtn)
     RadioButton legalFeeRupee;
 
 
-    @Bind(R.id.insuranceFee_rg)
+    @BindView(R.id.insuranceFee_rg)
     RadioGroup insuranceFee_rg;
 
-    @Bind(R.id.insuranceFee_rupee_RadioBtn)
+    @BindView(R.id.insuranceFee_rupee_RadioBtn)
     RadioButton insuranceFee_rupee_RadioBtn;
     //public static final int insuranceFee_rupeee_RadioBtnID=1007;
 
-    @Bind(R.id.insuranceFee_percent_RadioBtn)
+    @BindView(R.id.insuranceFee_percent_RadioBtn)
     RadioButton insuranceFee_percent_RadioBtn;
    // public static final int insuranceFee_percent_RadioBtnID=1008;
 
@@ -157,18 +157,18 @@ public class NewLoanFragment extends BaseFragment implements View.OnClickListene
     Context mContext;
 
 
-    @Bind(R.id.process_fee_calculatorimage)
+    @BindView(R.id.process_fee_calculatorimage)
     CustomCalenderImageView process_fee_calculatorimage;
-    @Bind(R.id.legal_calculatorimage)
+    @BindView(R.id.legal_calculatorimage)
     CustomCalenderImageView legal_calculatorimage;
-    @Bind(R.id.administrativefee_calculatorimage)
+    @BindView(R.id.administrativefee_calculatorimage)
     CustomCalenderImageView administrativefee_calculatorimage;
-    @Bind(R.id.insurancefee_calculatorimage)
+    @BindView(R.id.insurancefee_calculatorimage)
     CustomCalenderImageView insurancefee_calculatorimage;
 
-    @Bind(R.id.emi_more_calculaterImgView)
+    @BindView(R.id.emi_more_calculaterImgView)
     CustomCalenderImageView emi_more_calculaterImgView;
-    @Bind(R.id.edt_out_standing_calculaterImgView)
+    @BindView(R.id.edt_out_standing_calculaterImgView)
     CustomCalenderImageView edt_out_standing_calculaterImgView;
 
 

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/your_entitle_cardlayout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -40,7 +40,7 @@
                     style="?android:textAppearanceMedium"/>
 
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tax_plan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -57,9 +57,9 @@
             </LinearLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/tax_savingavalied_cardlayout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -85,7 +85,7 @@
                     style="?android:textAppearanceMedium"/>
 
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tax_clasification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,8 +100,8 @@
             </LinearLayout>
 
 
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/youhava_pendingamount_cardlayout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_view_height"
@@ -127,7 +127,7 @@
                     style="?android:textAppearanceMedium"/>
 
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tax_recommendation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -142,11 +142,11 @@
             </LinearLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

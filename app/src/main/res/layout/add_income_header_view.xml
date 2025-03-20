@@ -6,7 +6,7 @@
     android:layout_weight="2">
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:textColorHint="@color/app_text_color_gray"
         android:gravity="left|center_horizontal"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/lifeExptImgPopView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

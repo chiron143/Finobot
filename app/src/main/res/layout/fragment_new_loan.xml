@@ -10,7 +10,7 @@
         android:background="@color/bg_app"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -27,7 +27,7 @@
                     android:layout_margin="@dimen/margin_xlarge"
                     android:visibility="gone">
 
-                    <android.support.v7.widget.AppCompatTextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_large"
@@ -42,7 +42,7 @@
                         android:layout_height="1dp"
                         android:layout_centerInParent="true" />
 
-                    <android.support.v7.widget.AppCompatTextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/outstanding_bal_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2">
-                <!--<android.support.design.widget.TextInputLayout-->
+                <!--<com.google.android.material.textfield.TextInputLayout-->
                     <!--android:id="@+id/edt_out_standing_layout"-->
                     <!--android:layout_width="0dp"-->
                     <!--android:layout_height="wrap_content"-->
@@ -87,7 +87,7 @@
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                <!--</android.support.design.widget.TextInputLayout>-->
+                <!--</com.google.android.material.textfield.TextInputLayout>-->
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/edt_out_standing_calculaterImgView"
@@ -98,7 +98,7 @@
                         app:srcCompat="@drawable/ic_calculator_icon" />
                 </LinearLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edt_interest_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -119,9 +119,9 @@
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edt_balance_tenure_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             <!--    <RelativeLayout
                     android:layout_width="match_parent"
@@ -153,7 +153,7 @@
                     android:layout_marginRight="@dimen/margin_large"
                     android:layout_marginStart="@dimen/margin_large">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_emi_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -171,9 +171,9 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/emi_more_pop_id"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                     android:layout_marginRight="@dimen/margin_large"
                     android:layout_marginStart="@dimen/margin_large">
 
-                    <!--<android.support.design.widget.TextInputLayout-->
+                    <!--<com.google.android.material.textfield.TextInputLayout-->
                         <!--android:id="@+id/edt_emi_layout"-->
                         <!--android:layout_width="0dp"-->
                         <!--android:layout_height="wrap_content"-->
@@ -220,9 +220,9 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--</com.google.android.material.textfield.TextInputLayout>-->
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/emi_more_pop_id"
                         android:layout_width="0dp"
                         android:visibility="gone"
@@ -239,7 +239,7 @@
                         android:layout_weight="0.2" />
                 </LinearLayout>
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_xlarge"
@@ -291,7 +291,7 @@
                             android:textColor="@color/gray" />
                     </RadioGroup>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_processingFee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -312,9 +312,9 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_processingFeePercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -336,7 +336,7 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>-->
 
 
@@ -344,7 +344,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_processingFee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -366,7 +366,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/process_fee_calculatorimage"
@@ -377,7 +377,7 @@
                         android:padding="@dimen/margin_medium"
                         />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_processingFeePercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -398,7 +398,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RadioGroup
                         android:id="@+id/processingFee_rg"
@@ -490,7 +490,7 @@
                             android:textColor="@color/gray" />
                     </RadioGroup>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_legal_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -511,8 +511,8 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
-                    <android.support.design.widget.TextInputLayout
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_legalPercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -534,7 +534,7 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>-->
 
 
@@ -544,7 +544,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_legal_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -566,7 +566,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/legal_calculatorimage"
@@ -577,7 +577,7 @@
                         android:padding="@dimen/margin_medium"
                         />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_legalPercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -598,7 +598,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RadioGroup
                         android:id="@+id/legalFee_rg"
@@ -684,7 +684,7 @@
                             android:textColor="@color/gray" />
                     </RadioGroup>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_administration_fee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -705,9 +705,9 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_administrationFeePercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -729,7 +729,7 @@
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </RelativeLayout>-->
 
@@ -737,7 +737,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_administration_fee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -759,7 +759,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/administrativefee_calculatorimage"
@@ -770,7 +770,7 @@
                         android:padding="@dimen/margin_medium"
                         />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_administrationFeePercent_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -791,7 +791,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RadioGroup
                         android:id="@+id/administrationFee_rg_newLoan"
@@ -837,7 +837,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_insuranceFeeRupee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -859,9 +859,9 @@
                             android:maxLines="1"
                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_insuranceFee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -884,7 +884,7 @@
                             android:maxLines="1"
                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RadioGroup
                         android:id="@+id/insuranceFee_rg"
@@ -934,7 +934,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_insuranceFeeRupee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -956,7 +956,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.purplepath.purplepath.customview.CustomCalenderImageView
                         android:id="@+id/insurancefee_calculatorimage"
@@ -967,7 +967,7 @@
                         android:padding="@dimen/margin_medium"
                         />
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edt_insuranceFee_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -988,7 +988,7 @@
                             android:inputType="number"
                             android:maxLines="1"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RadioGroup
                         android:id="@+id/insuranceFee_rg"
@@ -1029,7 +1029,7 @@
                 </RelativeLayout>
 
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_xlarge"
@@ -1038,7 +1038,7 @@
                     android:textColor="@color/text_header_colour"
                     android:visibility="gone" />
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/option_emi_reduction"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1050,7 +1050,7 @@
                     android:textColor="@color/Peru"
                     android:visibility="gone" />
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/option_tenure_reduction"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1063,13 +1063,13 @@
                     android:textColor="@color/Peru"
                     android:visibility="gone" />
 
-                <android.support.v4.widget.Space
+                <android.widget.Space
                     android:layout_width="match_parent"
                     android:layout_height="25dp" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v4.widget.Space
+        <android.widget.Space
             android:layout_width="match_parent"
             android:layout_height="90dp" />
     </LinearLayout>

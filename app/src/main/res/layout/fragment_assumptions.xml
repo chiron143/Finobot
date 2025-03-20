@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/equity_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:padding="@dimen/margin_small"
                 app:srcCompat="@drawable/ic_pop_up" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_equity"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -46,14 +46,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/mfPopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_mf"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -86,14 +86,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/bonds_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_bonds"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -127,14 +127,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/liquidmf_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_liquid_mf"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -168,7 +168,7 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -176,7 +176,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/goldPopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -190,7 +190,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_gold"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -210,7 +210,7 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
 
@@ -218,7 +218,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/realestate_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_real_estate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -252,14 +252,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/bank_postoffice_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_Bank_Post_Office"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -292,14 +292,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ppfPopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -313,7 +313,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_ppf"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -332,14 +332,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/inflation_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -353,7 +353,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_Inflation"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -372,14 +372,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/Riskfree_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -393,7 +393,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_RiskFreeInstruments"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -412,14 +412,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/it_effective_PopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -433,7 +433,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_IncomeTaxRateEffective"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -452,14 +452,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/it_marginalPopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -473,7 +473,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_IncomeTaxRateMarginal"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -492,14 +492,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/servicePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -513,7 +513,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_ServiceTax"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -532,14 +532,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/incomePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -553,7 +553,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_IncomeRate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -572,14 +572,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/expensePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -593,7 +593,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_ExpenseRate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -612,14 +612,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/assetratePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -633,7 +633,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_AssetRate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -652,14 +652,14 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/liabratePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -673,7 +673,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_LiabRate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -692,7 +692,7 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -700,7 +700,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="?attr/actionBarSize">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/goalratePopView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -714,7 +714,7 @@
 
                 />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/il_GoalRate"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -733,7 +733,7 @@
                     android:maxLength="3"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/dark_gray_text_colour" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
 

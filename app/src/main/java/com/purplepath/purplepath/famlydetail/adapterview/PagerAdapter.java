@@ -1,9 +1,9 @@
 package com.purplepath.purplepath.famlydetail.adapterview;
 
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.purplepath.purplepath.famlydetail.addTabinterface.OnAddTabChange;
 import com.purplepath.purplepath.famlydetail.model.Family_details;

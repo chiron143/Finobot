@@ -14,7 +14,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/text_header_colour"/>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_expenses_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,9 +30,9 @@
             android:imeOptions="actionNext"
             android:maxLines="1" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/overall_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,9 +48,9 @@
             android:imeOptions="actionNext"
             android:maxLines="1" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/present_value_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,9 +65,9 @@
             android:imeOptions="actionNext"
             android:maxLines="1" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/real_saving_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,9 +82,9 @@
             android:imeOptions="actionNext"
             android:maxLines="1" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/recommendation_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:imeOptions="actionDone"
             android:maxLines="1" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/home_loan_switch_title"

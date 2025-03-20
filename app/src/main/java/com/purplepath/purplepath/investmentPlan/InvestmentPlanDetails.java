@@ -3,9 +3,9 @@ package com.purplepath.purplepath.investmentPlan;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,7 +26,7 @@ import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -36,28 +36,28 @@ import retrofit2.Response;
  * Author: Pratheep.S
  */
 public class InvestmentPlanDetails extends Fragment implements View.OnClickListener {
-    @Bind(R.id.comm_gold_tr)
+    @BindView(R.id.comm_gold_tr)
     TableRow comm_gold_tr;
 
-    @Bind(R.id.employeeBenifit_tr)
+    @BindView(R.id.employeeBenifit_tr)
     TableRow employeeBenifit_tr;
 
-    @Bind(R.id.equity_tr)
+    @BindView(R.id.equity_tr)
     TableRow equity_tr;
 
-    @Bind(R.id.fixedIncome_tr)
+    @BindView(R.id.fixedIncome_tr)
     TableRow fixedIncome_tr;
 
-    @Bind(R.id.house_asset)
+    @BindView(R.id.house_asset)
     TableRow house_asset;
 
-    @Bind(R.id.liquid)
+    @BindView(R.id.liquid)
     TableRow liquid;
 
-    @Bind(R.id.realEstate_tr)
+    @BindView(R.id.realEstate_tr)
     TableRow realEstate_tr;
 
-    @Bind(R.id.other_asset_tr)
+    @BindView(R.id.other_asset_tr)
     TableRow other_asset_tr;
 
     LinearLayout bottom_bar_layout;

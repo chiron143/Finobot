@@ -2,7 +2,7 @@ package com.purplepath.purplepath.instuctionScreen;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +14,7 @@ import com.finobot.finobot.R;
 import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -25,26 +25,26 @@ public class InstructionScreenThree extends BaseFragment {
 
 
 
-    @Bind(R.id. text_first)
+    @BindView(R.id. text_first)
     TextView text_first;
-    @Bind(R.id. text_second)
+    @BindView(R.id. text_second)
     TextView text_second;
-    @Bind(R.id. text_third)
+    @BindView(R.id. text_third)
     TextView text_third;
-    @Bind(R.id. text_four)
+    @BindView(R.id. text_four)
     TextView text_four;
-    @Bind(R.id. text_five)
+    @BindView(R.id. text_five)
     TextView text_five;
 
-    @Bind(R.id. layout_one)
+    @BindView(R.id. layout_one)
     LinearLayout layout_one;
-    @Bind(R.id. layout_second)
+    @BindView(R.id. layout_second)
     LinearLayout layout_second;
-    @Bind(R.id. layout_third)
+    @BindView(R.id. layout_third)
     LinearLayout layout_third;
-    @Bind(R.id. layout_four)
+    @BindView(R.id. layout_four)
     LinearLayout layout_four;
-    @Bind(R.id. layout_five)
+    @BindView(R.id. layout_five)
     LinearLayout layout_five;
 
 

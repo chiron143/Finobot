@@ -2,8 +2,8 @@ package com.purplepath.purplepath.instuctionScreen;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +17,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.fragments.PersonalDetailsFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,18 +28,18 @@ public class InstructionScreenFour extends BaseFragment {
 
 
 
-    @Bind(R.id. text_first)
+    @BindView(R.id. text_first)
     TextView text_first;
-    @Bind(R.id. text_second)
+    @BindView(R.id. text_second)
     TextView text_second;
 
 
-    @Bind(R.id. layout_one)
+    @BindView(R.id. layout_one)
     LinearLayout layout_one;
-    @Bind(R.id. layout_second)
+    @BindView(R.id. layout_second)
     LinearLayout layout_second;
 
-    @Bind(R.id. skib_fab)
+    @BindView(R.id. skib_fab)
     FloatingActionButton skib_fab;
 
 

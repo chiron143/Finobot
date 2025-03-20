@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -47,7 +47,7 @@ public class LevelSecondSelectionExpDialog extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(android.support.v4.app.DialogFragment.STYLE_NO_FRAME, R.style.MY_DIALOG);
+        setStyle(androidx.fragment.app.DialogFragment.STYLE_NO_FRAME, R.style.MY_DIALOG);
         if (getArguments() != null) {
 
             if (getArguments().containsKey(ARG_PARAM2)) {

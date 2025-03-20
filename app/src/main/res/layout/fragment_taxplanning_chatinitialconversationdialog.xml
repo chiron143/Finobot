@@ -32,14 +32,14 @@
                     android:layout_gravity="center_vertical"
                     android:text="Redo"/>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_xxlarge"
                     android:layout_marginTop="@dimen/margin_xxlarge"
                     android:src="@drawable/ic_up_hand_guide"/>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_xxlarge"
@@ -70,7 +70,7 @@
                 android:layout_gravity="end">
 
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/got_hand"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -101,7 +101,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"  >
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/framecardimageview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
                         android:text="No"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#343434" />
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -163,7 +163,7 @@
                     android:layout_gravity="center_vertical"
                     android:text="Edit your answer"/>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/right_cardview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
                         android:text="Yes"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#343434" />
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -256,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"

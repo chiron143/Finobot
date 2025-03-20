@@ -15,7 +15,7 @@
     android:orientation="vertical"
     >
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/total_payement_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,9 +33,9 @@
             android:hint="Total Payment"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/total_payement_assoc_charge_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,10 +53,10 @@
             android:hint="Total Payment with Associated charge"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/total_principal_payement_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,10 +74,10 @@
             android:focusable="false"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/total_interest_payement_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,9 +95,9 @@
             android:focusable="false"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/statedInterestRate_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -114,10 +114,10 @@
             android:focusable="false"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/effectiveInterestRate_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,10 +134,10 @@
             android:focusable="false"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/internalRateOfReturn_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,13 +156,13 @@
             android:focusable="false"
             android:textAppearance="?android:textAppearanceSmall" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/titleBottom_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
             android:text="Loan Comparison Rank"
             android:textAppearance="?android:textAppearanceMedium" />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/classification_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,21 +202,21 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/star1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/ic_star_icon" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/star2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/ic_star_icon" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/star3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

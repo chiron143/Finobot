@@ -2,27 +2,30 @@
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        mavenCentral()
+        //jcenter() // Add this line if not already present
+        maven { url "https://jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2' }
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:4.1.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-        classpath 'com.github.dcendents:android-maven-plugin:1.2'
-        classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
-        classpath 'com.google.gms:google-services:3.0.0'
-
+        classpath 'com.github.dcendents:android-maven-plugin:1.2' // Updated to latest version
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3' // Updated to latest version
+        classpath 'com.google.gms:google-services:4.3.10' // Updated to latest version
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        google()
+
+        mavenCentral()
         maven { url "https://jitpack.io" }
         maven { url 'https://dl.bintray.com/sj/maven/' }
         maven { url 'https://maven.google.com' }
-        mavenCentral()
-        google()
     }
 }
 
@@ -33,5 +36,5 @@ task clean(type: Delete) {
 ext {
     rxJavaVer = '1.1.6'
     rxAndroidVer = '1.2.1'
-    butterknifeVer = '7.0.1'
+    butterknifeVer = '10.2.3' // Updated to latest version
 }

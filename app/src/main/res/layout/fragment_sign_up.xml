@@ -45,7 +45,7 @@
                     android:layout_margin="@dimen/margin_medium"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/signupmobilenotilEditText"
                     style="@style/StyledTilPaddedEditTextLayout"
                     android:orientation="horizontal"
@@ -69,9 +69,9 @@
                         android:maxLength="10"
                         android:maxLines="1"
                          />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signupemailtilEditText"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -90,10 +90,10 @@
                     android:maxLength="200"
                     android:inputType="textEmailAddress"
                      />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signfullnametilEditText"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -112,9 +112,9 @@
                     android:maxLines="1"
                     android:maxLength="200"
                     android:inputType="textPersonName" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signuppasswordtilEditText"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -142,12 +142,12 @@
                     android:textColor="@color/dark_gray_text_colour"
                     app:passwordToggleEnabled="true" />
                 <!--  android:drawableLeft="@drawable/ic_password_icon"-->
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signupconfirmpasswordtilEditText"
                 style="@style/StyledTilPaddedEditTextLayout"
                 android:layout_width="match_parent"
@@ -172,7 +172,7 @@
                     android:drawableStart="@drawable/password_icons"
                     android:textColor="@color/dark_gray_text_colour"
                     app:passwordToggleEnabled="true" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 

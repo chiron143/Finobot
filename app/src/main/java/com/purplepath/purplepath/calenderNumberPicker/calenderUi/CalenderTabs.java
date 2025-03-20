@@ -3,10 +3,10 @@ package com.purplepath.purplepath.calenderNumberPicker.calenderUi;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +27,7 @@ import static com.purplepath.purplepath.apputiles.UtileKit.dialog;
  * Created by Suresh on 26/05/17.
  */
 
-public class CalenderTabs  extends android.support.v4.app.DialogFragment {
+public class CalenderTabs  extends androidx.fragment.app.DialogFragment {
     private final static String TAG = CalenderTabs.class.getCanonicalName();
     private TabLayout tabLayout;
     private ViewPager viewPager;

@@ -3,10 +3,10 @@ package com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.ui;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.DialogFragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -26,7 +26,7 @@ import com.purplepath.purplepath.customview.CalendarEditText;
 import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.interfaces.UpdateDateCallBackInterface;
 import com.purplepath.purplepath.myinterface.DatePickerCallBackInterface;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -34,45 +34,45 @@ import butterknife.ButterKnife;
  */
 
 public class EmiDialogFragment extends DialogFragment implements View.OnClickListener,DatePickerCallBackInterface {
-    @Bind(R.id.loanStartDate_edt)
+    @BindView(R.id.loanStartDate_edt)
     CalendarEditText loanStartDateEdt;
 
-    @Bind(R.id.firstEmiPaidDate_edt)
+    @BindView(R.id.firstEmiPaidDate_edt)
     CalendarEditText firstEmiPaidDateEdt;
 
-    @Bind(R.id.lastEmiPaidDate_edt)
+    @BindView(R.id.lastEmiPaidDate_edt)
     CalendarEditText lastEmiPaidDateEdt;
 
-    @Bind(R.id.nextEmiDueDate_edt)
+    @BindView(R.id.nextEmiDueDate_edt)
     CalendarEditText nextEmiDueDateEdt;
 
-    @Bind(R.id.finalEmiDate_edt)
+    @BindView(R.id.finalEmiDate_edt)
     CalendarEditText finalEmiDateEdt;
 
     //Text Input Layout
 
-    @Bind(R.id.loanStartDateInputLayout)
+    @BindView(R.id.loanStartDateInputLayout)
     TextInputLayout loanStartDate;
 
-    @Bind(R.id.firstEmiPaidDateInputLayout)
+    @BindView(R.id.firstEmiPaidDateInputLayout)
     TextInputLayout firstEmiPaidDate;
 
-    @Bind(R.id.lastEmiPaidDateInputLayout)
+    @BindView(R.id.lastEmiPaidDateInputLayout)
     TextInputLayout lastEmiPaidDate;
 
-    @Bind(R.id.nextEmiDueDateInputLayout)
+    @BindView(R.id.nextEmiDueDateInputLayout)
     TextInputLayout nextEmiDueDate;
 
-    @Bind(R.id.finalEmiInputLayout)
+    @BindView(R.id.finalEmiInputLayout)
     TextInputLayout finalEmiInputLayout;
 /*
-    @Bind(R.id.iv_done)
+    @BindView(R.id.iv_done)
     ImageView doneButton;*/
 
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closeButton;
 
     static UpdateDateCallBackInterface updateValInFragment;

@@ -5,7 +5,7 @@
     android:id="@+id/one"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context="com.purplepath.purplepath.AppManagement.FinoBotWebsite.FinobotFragment">
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:padding="@dimen/margin_large"
         android:paddingLeft="@dimen/margin_large"
@@ -92,7 +92,7 @@
 
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--<Button-->
         <!--android:id="@+id/btn_task"-->

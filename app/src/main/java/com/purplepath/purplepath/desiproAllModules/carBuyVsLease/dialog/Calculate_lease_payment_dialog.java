@@ -4,9 +4,9 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -30,7 +30,7 @@ import com.purplepath.purplepath.desiproAllModules.carBuyVsLease.models.Calculat
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -44,47 +44,47 @@ import retrofit2.Response;
 public class Calculate_lease_payment_dialog extends DialogFragment implements View.OnClickListener {
 
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closeButton;
 
-    @Bind(R.id.depreciation_calculaterImgView)
+    @BindView(R.id.depreciation_calculaterImgView)
     CustomCalenderImageView depreciation_calculaterImgView;
 
-    @Bind(R.id.residual_value_calculaterImgView)
+    @BindView(R.id.residual_value_calculaterImgView)
     CustomCalenderImageView residual_value_calculaterImgView;
 
-    @Bind(R.id.capitized_cost_calculaterImgView)
+    @BindView(R.id.capitized_cost_calculaterImgView)
     CustomCalenderImageView capitized_cost_calculaterImgView;
 
-    @Bind(R.id.capitized_cost_reduction_edt)
+    @BindView(R.id.capitized_cost_reduction_edt)
     CurrencyGhostView capitized_cost_reduction_edt;
 
-    @Bind(R.id.car_pur_price_edt)
+    @BindView(R.id.car_pur_price_edt)
     CurrencyGhostView car_pur_price_edt;
 
-    @Bind(R.id.car_pur_price_calculaterImgView)
+    @BindView(R.id.car_pur_price_calculaterImgView)
     CustomCalenderImageView car_pur_price_calculaterImgView;
 
 
-    @Bind(R.id.residual_value_edt)
+    @BindView(R.id.residual_value_edt)
     CurrencyGhostView residual_value_edt;
 
-    @Bind(R.id.depreciation_edt)
+    @BindView(R.id.depreciation_edt)
     CurrencyGhostView depreciation_edt;
 
-    @Bind(R.id.total_tenure_edt)
+    @BindView(R.id.total_tenure_edt)
     NumberEditText total_tenure_edt;
 
 
-        @Bind(R.id.et_interest_rate)
+        @BindView(R.id.et_interest_rate)
     PercentageEditText et_interest_rate;
 
-    @Bind(R.id.sale_tax_interest_rate)
+    @BindView(R.id.sale_tax_interest_rate)
     PercentageEditText sale_tax_interest_rate;
 
     CalculateLeaseInterface mCalculateLeaseInterface;
 
-    @Bind(R.id.fab_id)
+    @BindView(R.id.fab_id)
     FloatingActionButton leaseCalBtn;
 
     public static final String TITLE = "";

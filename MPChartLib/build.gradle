@@ -1,14 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
-
+apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '25.0.2'
-    // resourcePrefix 'mpcht'
+    compileSdkVersion 30
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
 
         sourceSets {
             main {
@@ -22,7 +21,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     lintOptions {
@@ -31,33 +30,35 @@ android {
 }
 
 repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+
+    //  jcenter()  // Add this if necessary
     maven {
-        url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
+        allowInsecureProtocol true
     }
 }
 
+//dependencies {
+//    compileOnly 'io.realm:realm-android:0.87.5'
+//    annotationProcessor 'io.realm:realm-android:0.87.5'
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+//}
+
 dependencies {
-    //compile fileTree(dir: 'libs', include: ['*.jar'])
-    //compile 'com.android.support:support-v4:19.+'
-    provided 'io.realm:realm-android:0.87.5' // "optional" dependency to realm-database API
-    annotationProcessor 'io.realm:realm-android:0.87.5'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'io.realm:realm-android-library:10.11.1'
 }
 
-android.libraryVariants.all { variant ->
-    def name = variant.buildType.name
-    def task = project.tasks.create "jar${name.capitalize()}", Jar
-    task.dependsOn variant.javaCompile
-    task.from variant.javaCompile.destinationDir
-    artifacts.add('archives', task);
-}
-
-task sourcesJar(type: Jar) {
+task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
 
 task javadoc(type: Javadoc) {
-    failOnError  false
+    failOnError false
     source = android.sourceSets.main.java.sourceFiles
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
@@ -67,7 +68,22 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            afterEvaluate {
+                from components.release
+            }
+            groupId = 'com.yourcompany'
+            artifactId = 'mpchartlib'
+            version = '1.0.0'
+
+            artifact sourceJar
+            artifact javadocJar
+        }
+    }
+}
 artifacts {
-    archives sourcesJar
+    archives sourceJar
     archives javadocJar
 }

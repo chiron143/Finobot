@@ -72,7 +72,7 @@
                 android:orientation="vertical">
             </LinearLayout>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_root"
                 android:layout_below="@+id/titleLayout"
                 android:layout_width="match_parent"
@@ -120,7 +120,7 @@
                         android:layout_margin="@dimen/margin_medium"
                         android:text="A Prosperity Score is a percentage score measuring your financial wellness considering all aspects of the financial elements. Each financial element is measured on an individual scale and combined to arrive at an overall percentage score. Higher the score in all elements interprets totalistic wellness."/>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 

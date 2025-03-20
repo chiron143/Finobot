@@ -14,7 +14,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/home_page_imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,8 +43,8 @@
                         android:layout_gravity="center"
                         app:donut_progress="30"/>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_root"
                 android:layout_below="@+id/home_page_imageView"
                 android:layout_width="match_parent"
@@ -96,11 +96,11 @@
                         android:layout_margin="@dimen/margin_medium"
                         android:text="Expense ratio is the measure of your recurring mandatory expenses against your total income." />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_root1"
                 android:layout_below="@+id/card_root"
                 android:layout_width="match_parent"
@@ -127,7 +127,7 @@
                         android:layout_margin="@dimen/margin_medium"
                         android:text="Lower the ratio, better the savings." />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 

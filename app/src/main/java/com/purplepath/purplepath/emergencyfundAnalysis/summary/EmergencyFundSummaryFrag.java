@@ -3,9 +3,9 @@ package com.purplepath.purplepath.emergencyfundAnalysis.summary;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,7 +31,7 @@ import com.purplepath.purplepath.recommendation.model.RecommendData;
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 import java.util.ArrayList;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -52,19 +52,19 @@ public class EmergencyFundSummaryFrag  extends BaseFragment implements View.OnCl
     private RecommendData recommendData;
 
 
-    @Bind(R.id.statusText)
+    @BindView(R.id.statusText)
     TextView statusText;
 
-    @Bind(R.id.no_of_month_value)
+    @BindView(R.id.no_of_month_value)
     TextView no_of_month_value;
 
-    @Bind(R.id.amt_required_value)
+    @BindView(R.id.amt_required_value)
     TextView amt_required_value;
 
-    @Bind(R.id.amt_accumulated_value)
+    @BindView(R.id.amt_accumulated_value)
     TextView amt_accumulated_value;
 
-    @Bind(R.id.difference_value)
+    @BindView(R.id.difference_value)
     TextView difference_value;
 
     private FloatingActionButton fab_id;
@@ -220,7 +220,7 @@ public class EmergencyFundSummaryFrag  extends BaseFragment implements View.OnCl
 
     private void addToActivity(Fragment fragment) {
         FragmentManager fm = getFragmentManager();
-        android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+        androidx.fragment.app.FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragment_container, fragment);
         ft.addToBackStack(null);
         ft.commitAllowingStateLoss();

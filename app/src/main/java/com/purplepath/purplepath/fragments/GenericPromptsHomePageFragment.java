@@ -2,7 +2,7 @@ package com.purplepath.purplepath.fragments;
 
 
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;

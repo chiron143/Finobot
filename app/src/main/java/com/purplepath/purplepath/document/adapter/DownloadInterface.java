@@ -1,6 +1,6 @@
 package com.purplepath.purplepath.document.adapter;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by pravinr on 8/24/17.

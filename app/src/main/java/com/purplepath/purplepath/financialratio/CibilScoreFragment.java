@@ -4,7 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +18,7 @@ import com.github.lzyzsd.circleprogress.DonutProgress;
 import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**

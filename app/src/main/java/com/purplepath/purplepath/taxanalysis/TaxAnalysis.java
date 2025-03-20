@@ -8,11 +8,13 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.Nullable;
+
+import com.github.mikephil.charting.formatter.ValueFormatter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -35,11 +37,8 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.CombinedData;
-import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.formatter.LargeValueFormatter;
-import com.github.mikephil.charting.formatter.YAxisValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.github.mikephil.charting.utils.ViewPortHandler;
 import com.purplepath.purplepath.apputiles.ChartValueFormatter;
 import com.purplepath.purplepath.apputiles.UtileKit;
 import com.purplepath.purplepath.assetsanalysis.fragment.AssetsAnalysisFragment;
@@ -567,27 +566,18 @@ public class TaxAnalysis extends BaseFragment implements View.OnClickListener {
     }
 
 
-    private class CustomFormatter implements com.github.mikephil.charting.formatter.ValueFormatter, YAxisValueFormatter {
+    private abstract class CustomFormatter implements ValueFormatter {
 
-        private DecimalFormat mFormat;
+        private final DecimalFormat mFormat;
 
         public CustomFormatter() {
             mFormat = new DecimalFormat("###");
         }
 
-        // data
         @Override
-        public String getFormattedValue(float value, Entry entry, int dataSetIndex, ViewPortHandler viewPortHandler) {
+        public String getFormattedValue(float value) {
             return mFormat.format(Math.abs(value));
         }
-
-        // YAxis
-        @Override
-        public String getFormattedValue(float value, YAxis yAxis) {
-            return mFormat.format(Math.abs(value));
-        }
-
-
     }
 
 }

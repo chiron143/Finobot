@@ -12,7 +12,7 @@
         <!--android:id="@+id/relative_announcement"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content">-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_root"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/details_image_logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                     />
                 <!--app:srcCompat="@drawable/income_detailes"
                 tools:src="@drawable/income_detailes"-->
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/today_cal_title_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:layout_height="1dp"
                 android:background="@color/AntiqueWhite" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:textColor="@android:color/background_dark"
                 android:text="No Announcements to show now" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                 android:textColor="@android:color/background_dark"
                 android:text="You have no Announcements " />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:visibility="invisible"
                 android:id="@+id/more_info_id"
                 android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
                 tools:ignore="ContentDescription,RtlHardcoded" />
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
     <!--</RelativeLayout>-->
 
 

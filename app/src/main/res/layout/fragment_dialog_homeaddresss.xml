@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/resNoInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -36,10 +36,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/resNameInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -58,8 +58,8 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/streetInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -79,10 +79,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/areaInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -102,9 +102,9 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/homeAddressInputLayout"
             android:layout_width="match_parent"
             android:visibility="gone"
@@ -124,10 +124,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/cityInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -148,10 +148,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/stateInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -171,7 +171,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:id="@+id/state_layout"
@@ -200,7 +200,7 @@
 
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/countryInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -220,7 +220,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="textCapSentences" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:id="@+id/scountry_layout"
@@ -247,7 +247,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/zipcodeInputLayout"
             android:layout_width="match_parent"
             style="@style/StyledTilPaddedEditTextLayout"
@@ -266,13 +266,13 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour"
                 android:inputType="number" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
     </ScrollView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/personal_address_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

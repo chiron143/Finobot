@@ -3,10 +3,10 @@ package com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -39,7 +39,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -48,10 +48,10 @@ import butterknife.ButterKnife;
 
 public class GraphCarBuyVsLeaseFragment extends BaseFragment implements View.OnClickListener{
 
-    @Bind(R.id.lineChart)
+    @BindView(R.id.lineChart)
     LineChart mChart;
 
-    @Bind(R.id.legendLayout)
+    @BindView(R.id.legendLayout)
     LinearLayout legendLayout;
 
     Bundle args;

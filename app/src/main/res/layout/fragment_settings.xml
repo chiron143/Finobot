@@ -57,7 +57,7 @@
         android:layout_marginTop="@dimen/margin_xlarge"
         android:layout_marginBottom="@dimen/margin_xlarge">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/iv_icon"
@@ -133,7 +133,7 @@
         android:layout_marginTop="@dimen/margin_xlarge"
         android:layout_marginBottom="@dimen/margin_xlarge">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/iv_vibration_icon"
@@ -209,7 +209,7 @@
         android:layout_marginTop="@dimen/margin_xlarge"
         android:layout_marginBottom="@dimen/margin_xlarge">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/iv_notification_icon"
@@ -285,7 +285,7 @@
         android:layout_marginTop="@dimen/margin_xlarge"
         android:layout_marginBottom="@dimen/margin_xlarge">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/iv_date_format_icon"

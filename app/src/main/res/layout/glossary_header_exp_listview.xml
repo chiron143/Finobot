@@ -40,7 +40,7 @@
         android:textColor="@color/blue_text_glossaries"
         android:textSize="@dimen/done_label_size" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/headerImgView"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/margin_small"

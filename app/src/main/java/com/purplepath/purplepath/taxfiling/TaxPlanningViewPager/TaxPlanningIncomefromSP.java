@@ -4,10 +4,10 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -48,7 +48,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Arrays;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -67,7 +67,7 @@ public class TaxPlanningIncomefromSP extends BaseFragment implements View.OnClic
 
 
 
-    @Bind(R.id.parentViewId)
+    @BindView(R.id.parentViewId)
     LinearLayout parentView;
 
     int positon;
@@ -76,46 +76,46 @@ public class TaxPlanningIncomefromSP extends BaseFragment implements View.OnClic
 
     String corres_table = "";
 
-    @Bind(R.id.layout_yes_no_bottom_bar)
+    @BindView(R.id.layout_yes_no_bottom_bar)
     LinearLayout layout_yes_no_bottom_bar;
 
     ArrayList<String> spinner_array = new ArrayList<String>();
     //character edittext
-    @Bind(R.id.layout_character_edittext)
+    @BindView(R.id.layout_character_edittext)
     LinearLayout layout_character_edittext;
 
-    @Bind(R.id.character_edittext_img)
+    @BindView(R.id.character_edittext_img)
     FloatingActionButton character_edittext_img;
     //percentage edittext
-    @Bind(R.id.layout_percentage_edittext)
+    @BindView(R.id.layout_percentage_edittext)
     LinearLayout layout_percentage_edittext;
 
-    @Bind(R.id.percentage_edittext_img)
+    @BindView(R.id.percentage_edittext_img)
     FloatingActionButton percentage_edittext_img;
     //number edittext
-    @Bind(R.id.layout_number_edittext)
+    @BindView(R.id.layout_number_edittext)
     LinearLayout layout_number_edittext;
 
 
-    @Bind(R.id.number_edittext_img)
+    @BindView(R.id.number_edittext_img)
     FloatingActionButton number_edittext_img;
     //currencyDef edittext
-    @Bind(R.id.layout_currencydefault_edittext)
+    @BindView(R.id.layout_currencydefault_edittext)
     LinearLayout layout_currencydefault_edittext;
 
-    @Bind(R.id.percentage_edittext)
+    @BindView(R.id.percentage_edittext)
     PercentageEditText percentage_edittext;
 
-    @Bind(R.id.number_edittext)
+    @BindView(R.id.number_edittext)
     NumberEditText number_edittext;
 
-    @Bind(R.id.currencydefault_edittext)
+    @BindView(R.id.currencydefault_edittext)
     CurrencyGhostView currencydefault_edittext;
 
-    @Bind(R.id.character_edittext)
+    @BindView(R.id.character_edittext)
     CharacterEditText character_edittext;
 
-    @Bind(R.id.currencydefault_edittext_img)
+    @BindView(R.id.currencydefault_edittext_img)
     FloatingActionButton currencydefault_edittext_img;
 
     CalenderTabs mcalenderTabDialog;
@@ -782,7 +782,7 @@ public class TaxPlanningIncomefromSP extends BaseFragment implements View.OnClic
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialogs,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(message);

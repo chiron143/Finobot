@@ -56,7 +56,7 @@
         android:layout_height="wrap_content" />
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/goalTimeframe"
         style="@style/StyledTilPaddedEditTextLayout"
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:drawablePadding="@dimen/margin_xlarge"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/dark_gray_text_colour" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
         <LinearLayout
@@ -84,7 +84,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-        <!--<android.support.design.widget.TextInputLayout-->
+        <!--<com.google.android.material.textfield.TextInputLayout-->
             <!--android:id="@+id/goalcurrentcost"-->
             <!--style="@style/StyledTilPaddedEditTextLayout"-->
             <!--android:layout_width="match_parent"-->
@@ -104,7 +104,7 @@
                 android:drawablePadding="@dimen/margin_xlarge"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        <!--</android.support.design.widget.TextInputLayout>-->
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
 
             <com.purplepath.purplepath.customview.CustomCalenderImageView
                 android:id="@+id/goalcurrentcostrupee_calculaterImgView"
@@ -116,7 +116,7 @@
 
         </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/goalExpectedincrease"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -136,14 +136,14 @@
                 android:maxLength="3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
-        <!--<android.support.design.widget.TextInputLayout-->
+        <!--<com.google.android.material.textfield.TextInputLayout-->
             <!--android:id="@+id/goalanuualsavings"-->
             <!--style="@style/StyledTilPaddedEditTextLayout"-->
             <!--android:layout_width="match_parent"-->
@@ -163,7 +163,7 @@
                 android:drawablePadding="@dimen/margin_xlarge"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-       <!-- </android.support.design.widget.TextInputLayout>-->
+       <!-- </com.google.android.material.textfield.TextInputLayout>-->
 
         <com.purplepath.purplepath.customview.CustomCalenderImageView
             android:id="@+id/goalcurrentsavingsEdit_calculaterImgView"
@@ -180,7 +180,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
-        <!--<android.support.design.widget.TextInputLayout
+        <!--<com.google.android.material.textfield.TextInputLayout
             android:id="@+id/goalcurrentsavings"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -200,7 +200,7 @@
                 android:drawablePadding="@dimen/margin_xlarge"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        <!--</android.support.design.widget.TextInputLayout>-->
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
 
         <com.purplepath.purplepath.customview.CustomCalenderImageView
             android:id="@+id/goalanuualsavingsEdit_calculaterImgView"
@@ -214,7 +214,7 @@
 
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/goalExpectedreturn"
             style="@style/StyledTilPaddedEditTextLayout"
             android:layout_width="match_parent"
@@ -234,7 +234,7 @@
                 android:maxLength="3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/dark_gray_text_colour" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
     </LinearLayout>
@@ -243,7 +243,7 @@
 
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/goalaff_fab_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

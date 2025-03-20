@@ -6,7 +6,7 @@ package com.purplepath.purplepath.assets.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +48,7 @@ public class PhysicalAssetsListAdapter extends ArrayAdapter<GetAssetUserData> {
     private ArrayList<AssetCategoriesLevelOne> assetCategoriesLevelOneListData = new ArrayList<AssetCategoriesLevelOne>();
     LayoutInflater inflater;
     View dialogView;
-    android.support.v7.app.AlertDialog alertDialog;
+    androidx.appcompat.app.AlertDialog alertDialog;
     Boolean isSignUp = false;
     ArrayList<String> formArray = new ArrayList<String>();
     FirstTimeDoneInterface firstTimeDoneInterface;
@@ -165,7 +165,7 @@ public class PhysicalAssetsListAdapter extends ArrayAdapter<GetAssetUserData> {
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialog,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(HomePageActivity.stringMessageError);

@@ -2,7 +2,7 @@ package com.purplepath.purplepath.customview;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.finobot.finobot.R;
 import com.purplepath.purplepath.apputiles.UtileKit;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -20,13 +20,13 @@ import butterknife.ButterKnife;
 
 public class CurrencyGroupView extends RelativeLayout {
 
-    @Bind(R.id.curencyEditTxt)
+    @BindView(R.id.curencyEditTxt)
     CurrencyEditText editText;
 
-    @Bind(R.id.amountInWords)
+    @BindView(R.id.amountInWords)
     TextView amountInWords;
 
-    @Bind(R.id.currencyhintId)
+    @BindView(R.id.currencyhintId)
     CustomTextInputLayout currencyHintTxt;
 
     public CurrencyGroupView(Context context) {

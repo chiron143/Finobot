@@ -7,12 +7,12 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -177,7 +177,7 @@ public class GuideViewFragment extends BaseFragment implements View.OnClickListe
     private void passalertButtonDialogYesNo(String message, final Context context) {
         inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.alert_message_layout, null);
-        alertDialog = new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog = new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
        // dialogView.findViewById(R.id.no).setVisibility(View.GONE);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);

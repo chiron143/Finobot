@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -73,7 +73,7 @@
                     android:inputType="numberDecimal"
                     />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/saleryTotalinfoViewId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/basicsaleryinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/bonussaleryinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/incentivesaleryinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -318,7 +318,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/commissionsaleryinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -376,7 +376,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/medicalreimbursementinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -435,7 +435,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/voluntaryinfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -511,7 +511,7 @@
                                     android:background="@drawable/edt_txt_bg_rectangle"
                                     android:inputType="numberDecimal" />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/allowanceinfoId"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -563,7 +563,7 @@
 
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/allwancedeletebtnId0"
 
                                     android:layout_width="wrap_content"
@@ -573,7 +573,7 @@
                                     android:layout_margin="@dimen/margin_small"
 
                                     />
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/allwanceinfoId0"
                                     android:layout_width="wrap_content"
                                     android:layout_margin="@dimen/margin_small"
@@ -581,7 +581,7 @@
                                     android:layout_gravity="center"
                                       app:srcCompat="@drawable/ic_pop_up"
                                     />
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/allwanceAddbtnId0"
                                     android:layout_width="wrap_content"
                                     android:layout_margin="@dimen/margin_small"
@@ -661,7 +661,7 @@
                                     android:background="@drawable/edt_txt_bg_rectangle"
                                     android:inputType="numberDecimal" />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/employerBenefitsTotalInfoId"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -714,7 +714,7 @@
                                     android:weightSum="2"
                                     android:layout_gravity="center"
                                     android:orientation="horizontal">
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/employerBenefitsdeletebtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -724,7 +724,7 @@
 
                                         />
 
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/employerBenefitsAddbtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -802,7 +802,7 @@
                                     android:background="@drawable/edt_txt_bg_rectangle"
                                     android:inputType="numberDecimal" />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/perquisitesTotalInfoId"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -853,7 +853,7 @@
                                     android:weightSum="2"
                                     android:layout_gravity="center"
                                     android:orientation="horizontal">
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/perquisitesdeletebtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -863,7 +863,7 @@
 
                                         />
 
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/perquisitesAddbtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -939,7 +939,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/incomFromPropertyTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -1006,7 +1006,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/rentalIncome1InfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1063,7 +1063,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/rentalIncome2InfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1134,7 +1134,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/incomFromBusinessTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -1201,7 +1201,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/businessIncome1InfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1258,7 +1258,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/businessIncome2InfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1328,7 +1328,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/capitalGainTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -1397,7 +1397,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/shortTermCapitalGainsInfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1455,7 +1455,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/longTermCapitalGainsInfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1527,7 +1527,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/incomefromOtherTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -1594,7 +1594,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/salIncomeotherSourcesInfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1659,7 +1659,7 @@
                                     android:background="@drawable/edt_txt_bg_rectangle"
                                     android:inputType="numberDecimal" />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/retailIncomeTotalInfoId"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -1712,7 +1712,7 @@
                                     android:weightSum="2"
                                     android:layout_gravity="center"
                                     android:orientation="horizontal">
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/rentalIncomeedeletebtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -1722,7 +1722,7 @@
 
                                         />
 
-                                     <android.support.v7.widget.AppCompatImageView
+                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/rentalIncomeeAddbtnId0"
                                         android:layout_weight="1"
                                         android:layout_width="0dp"
@@ -1792,7 +1792,7 @@
                                 android:background="@drawable/edt_txt_bg_rectangle"
                                 android:inputType="numberDecimal" />
 
-                             <android.support.v7.widget.AppCompatImageView
+                             <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/agricultureIncomeTotalInfoId"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -1848,7 +1848,7 @@
                                 android:weightSum="2"
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/agricultureIncomedeletebtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -1858,7 +1858,7 @@
 
                                     />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/agricultureIncomeAddbtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -1926,7 +1926,7 @@
                                 android:background="@drawable/edt_txt_bg_rectangle"
                                 android:inputType="numberDecimal" />
 
-                             <android.support.v7.widget.AppCompatImageView
+                             <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/interestsIncomeTotalInfoId"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -1979,7 +1979,7 @@
                                 android:weightSum="2"
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/interestsIncomedeletebtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -1989,7 +1989,7 @@
 
                                     />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/interestsIncomeAddbtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -2049,7 +2049,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/dividendsotherSourcesInfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -2106,7 +2106,7 @@
                             android:background="@drawable/edt_txt_bg_rectangle"
                             android:inputType="numberDecimal" />
 
-                         <android.support.v7.widget.AppCompatImageView
+                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/giftsInfoId"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -2171,7 +2171,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/annuityPensionTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -2224,7 +2224,7 @@
                                 android:weightSum="2"
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/annuityPensiondeletebtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -2234,7 +2234,7 @@
 
                                     />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/annuityPensionAddbtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -2303,7 +2303,7 @@
                         android:background="@drawable/edt_txt_bg_rectangle"
                         android:inputType="numberDecimal" />
 
-                     <android.support.v7.widget.AppCompatImageView
+                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/cashFlowReceiptsTotalInfoId"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -2355,7 +2355,7 @@
                                 android:weightSum="2"
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/cashFlowReceiptsdeletebtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -2365,7 +2365,7 @@
 
                                     />
 
-                                 <android.support.v7.widget.AppCompatImageView
+                                 <androidx.appcompat.widget.AppCompatImageView
                                     android:id="@+id/cashFlowReceiptsAddbtnId0"
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -2384,7 +2384,7 @@
 
 </LinearLayout>
 </ScrollView>
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/incomefabId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -2393,5 +2393,5 @@
         android:scaleType="fitXY"
           app:srcCompat="@drawable/ic_next_btn"
         android:visibility="visible" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

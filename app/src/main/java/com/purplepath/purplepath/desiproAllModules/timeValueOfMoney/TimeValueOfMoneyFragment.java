@@ -4,8 +4,8 @@ package com.purplepath.purplepath.desiproAllModules.timeValueOfMoney;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -42,7 +42,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -56,88 +56,88 @@ import static com.purplepath.purplepath.apputiles.UtileKit.validateObjectValues;
 
 public class TimeValueOfMoneyFragment extends BaseFragment implements RadioGroup.OnCheckedChangeListener, View.OnClickListener {
     private final static String TAG = TimeValueOfMoneyFragment.class.getCanonicalName();
-    @Bind(R.id.tenure_lyt)
+    @BindView(R.id.tenure_lyt)
     TextInputLayout tenure_lyt;
 
-    @Bind(R.id.rate_lyt)
+    @BindView(R.id.rate_lyt)
     TextInputLayout rate_lyt;
 
-//    @Bind(R.id.present_value_lyt)
+//    @BindView(R.id.present_value_lyt)
 //    TextInputLayout present_value_lyt ;
 
-    @Bind(R.id.future_value_lyt)
+    @BindView(R.id.future_value_lyt)
     TextInputLayout future_value_lyt;
 
-    @Bind(R.id.payement_lyt)
+    @BindView(R.id.payement_lyt)
     TextInputLayout payement_lyt;
 
-    @Bind(R.id.tenure_spinner)
+    @BindView(R.id.tenure_spinner)
     Spinner tenure_spinner;
 
-    @Bind(R.id.paymentType_spinner)
+    @BindView(R.id.paymentType_spinner)
     Spinner paymentType_spinner;
 
-    @Bind(R.id.compoundingPeriod_spinner)
+    @BindView(R.id.compoundingPeriod_spinner)
     Spinner compoundingPeriod_spinner;
 
-    @Bind(R.id.payementPeriod_spinner)
+    @BindView(R.id.payementPeriod_spinner)
     Spinner payementPeriod_spinner;
 
-    @Bind(R.id.presenValue_rg)
+    @BindView(R.id.presenValue_rg)
     RadioGroup presenValue_rg;
 
-    @Bind(R.id.presenValue_plus_RadioBtn)
+    @BindView(R.id.presenValue_plus_RadioBtn)
     RadioButton presenValue_plus_RadioBtn;
 
-    @Bind(R.id.presenValue_minus_RadioBtn)
+    @BindView(R.id.presenValue_minus_RadioBtn)
     RadioButton presenValue_minus_RadioBtn;
 
-    @Bind(R.id.futureValue_rg)
+    @BindView(R.id.futureValue_rg)
     RadioGroup futureValue_rg;
 
-    @Bind(R.id.futureValue_plus_RadioBtn)
+    @BindView(R.id.futureValue_plus_RadioBtn)
     RadioButton futureValue_plus_RadioBtn;
 
-    @Bind(R.id.futureValue_minus_RadioBtn)
+    @BindView(R.id.futureValue_minus_RadioBtn)
     RadioButton futureValue_minus_RadioBtn;
 
-    @Bind(R.id.payment_rg)
+    @BindView(R.id.payment_rg)
     RadioGroup payment_rg;
 
-    @Bind(R.id.payment_plus_RadioBtn)
+    @BindView(R.id.payment_plus_RadioBtn)
     RadioButton payment_plus_RadioBtn;
 
-    @Bind(R.id.payment_minus_RadioBtn)
+    @BindView(R.id.payment_minus_RadioBtn)
     RadioButton payment_minus_RadioBtn;
 
-    @Bind(R.id.tenure_btn)
+    @BindView(R.id.tenure_btn)
     TextView tenure_btn;
 
-    @Bind(R.id.rate_btn)
+    @BindView(R.id.rate_btn)
     TextView rate_btn;
 
-    @Bind(R.id.presentValue_btn)
+    @BindView(R.id.presentValue_btn)
     TextView presentValue_btn;
 
-    @Bind(R.id.futureValue_btn)
+    @BindView(R.id.futureValue_btn)
     TextView futureValue_btn;
 
-    @Bind(R.id.payment_btn)
+    @BindView(R.id.payment_btn)
     TextView payment_btn;
 
-    @Bind(R.id.tenure_edt)
+    @BindView(R.id.tenure_edt)
     EditText tenure_edt;
 
-    @Bind(R.id.rate_edt)
+    @BindView(R.id.rate_edt)
     PercentageEditText rate_edt;
 
-    @Bind(R.id.present_value_edt)
+    @BindView(R.id.present_value_edt)
     CurrencyBlackGhostview present_value_edt;
 
-    @Bind(R.id.future_value_edt)
+    @BindView(R.id.future_value_edt)
     CurrencyBlackGhostview future_value_edt;
 
-    @Bind(R.id.payement_edt)
+    @BindView(R.id.payement_edt)
     CurrencyBlackGhostview payement_edt;
 
     private String[] tenure_spinner_array = {"Year(s)", "Half Year(s)", "Quarter(s)", "Month(s)", "Week(s)", "Day(s)"}, paymentType_spinner_array = {"Period Ending", "Period Beginning"},

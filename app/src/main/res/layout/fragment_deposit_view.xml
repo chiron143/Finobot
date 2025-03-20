@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
    >
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/margin_xlarge"
         android:layout_marginLeft="@dimen/margin_xlarge"
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content" />
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tenure_lyt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,10 +162,10 @@
                     android:inputType="number"
                     android:textAppearance="?android:textAppearanceSmall"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/rateOfInterest_lyt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -183,9 +183,9 @@
                     android:maxLength="3"
                     android:textAppearance="?android:textAppearanceSmall"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/compoundingView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
 
 
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_medium"
@@ -220,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="gone">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/entrychargeFeeRupee_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -242,7 +242,7 @@
                         android:inputType="number"
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall"/>
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.purplepath.purplepath.customview.CustomCalenderImageView
                     android:id="@+id/entrycharge_calculatorimage"
@@ -253,7 +253,7 @@
                     android:padding="@dimen/margin_medium"
                     />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/entrychargePercent_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
                         android:inputType="number"
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -323,7 +323,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="gone">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/exitcharge_rupeee_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -344,7 +344,7 @@
                         android:inputType="number"
                         android:maxLines="1"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.purplepath.purplepath.customview.CustomCalenderImageView
                     android:id="@+id/exitcharge_calculatorimage"
@@ -355,7 +355,7 @@
                     android:padding="@dimen/margin_medium"
                     />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/exitcharge_percent_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -378,7 +378,7 @@
                         android:maxLines="1"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
                     android:id="@+id/exitcharge_rg"
@@ -429,7 +429,7 @@
                 android:visibility="gone"
                >
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/peneltychargeFeeRupee_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -451,7 +451,7 @@
                         android:maxLines="1"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
                 <com.purplepath.purplepath.customview.CustomCalenderImageView
                     android:id="@+id/peneltycharge_fee_calculatorimage"
                     android:layout_toRightOf="@+id/peneltychargeFeeRupee_layout"
@@ -460,7 +460,7 @@
                     android:layout_marginTop="@dimen/margin_xlarge"
                     android:padding="@dimen/margin_medium"/>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/peneltychargeFee_percent_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -483,7 +483,7 @@
                         android:maxLines="1"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
                     android:id="@+id/peneltychargeFee_rg"
@@ -530,6 +530,6 @@
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </ScrollView>

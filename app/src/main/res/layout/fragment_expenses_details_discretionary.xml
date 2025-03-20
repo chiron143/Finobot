@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -68,7 +68,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_food_disc_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_eatingout_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_gifts_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_healthcare_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -335,7 +335,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_holidayvacation_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -402,7 +402,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_parentssupport_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -469,7 +469,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_petcare_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -535,7 +535,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_purchases_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -619,7 +619,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_shelter_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -703,7 +703,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_skilldevelopment_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -786,7 +786,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_tax_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -873,7 +873,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_transportation_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -925,7 +925,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_commute_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -995,7 +995,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_parking_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1046,7 +1046,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_petrol_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1097,7 +1097,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_travel_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1168,7 +1168,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_vechile_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1237,7 +1237,7 @@
                         android:padding="@dimen/margin_medium"
                         android:layout_weight="0.75" />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_utility_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1325,7 +1325,7 @@
                         android:layout_weight="0.75"
                         />
 
-                    <android.support.v7.widget.AppCompatImageView 
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/exp_other_edt_popup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1341,7 +1341,7 @@
     </LinearLayout>
 </ScrollView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/discretionary_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -1351,4 +1351,4 @@
          app:srcCompat= "@drawable/ic_next_btn"
         android:visibility="gone" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

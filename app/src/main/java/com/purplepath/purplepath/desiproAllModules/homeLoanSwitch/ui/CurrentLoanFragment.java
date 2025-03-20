@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -30,7 +30,7 @@ import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.interfaces.Upd
 import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.interfaces.UpdateValueInActivityInterface;
 import com.purplepath.purplepath.fragments.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.finobot.finobot.R.string.off;
@@ -43,162 +43,162 @@ import static com.finobot.finobot.R.string.off;
 public class CurrentLoanFragment extends BaseFragment implements View.OnClickListener, UpdateDateCallBackInterface, RadioGroup.OnCheckedChangeListener {
 
 
-    @Bind(R.id.payment_calculatorimage)
+    @BindView(R.id.payment_calculatorimage)
     CustomCalenderImageView mpayment_calculatorimage;
 
-    @Bind(R.id.foreclosure_calculatorimage)
+    @BindView(R.id.foreclosure_calculatorimage)
     CustomCalenderImageView mforeclosure_calculatorimage;
 
-    @Bind(R.id.administration_fee_calculatorimage)
+    @BindView(R.id.administration_fee_calculatorimage)
     CustomCalenderImageView madministration_fee_calculatorimage;
 
-    @Bind(R.id.edt_out_standing_calculaterImgView)
+    @BindView(R.id.edt_out_standing_calculaterImgView)
     CustomCalenderImageView medt_out_standing_calculaterImgView;
 
-    @Bind(R.id.emi_more_calculaterImgView)
+    @BindView(R.id.emi_more_calculaterImgView)
     CustomCalenderImageView memi_more_calculaterImgView;
 
 
- /*   @Bind(R.id.percentage_payment_calculatorimage)
+ /*   @BindView(R.id.percentage_payment_calculatorimage)
     CustomCalenderImageView percentage_payment_calculatorimage;
-    @Bind(R.id.percentage_foreclosure_calculatorimage)
+    @BindView(R.id.percentage_foreclosure_calculatorimage)
     CustomCalenderImageView percentage_foreclosure_calculatorimage;
-    @Bind(R.id.percentage_administration_fee_calculatorimage)
+    @BindView(R.id.percentage_administration_fee_calculatorimage)
     CustomCalenderImageView percentage_administration_fee_calculatorimage;*/
 
 
     //Init clickable TextView
-    @Bind(R.id.outstanding_bal_label)
+    @BindView(R.id.outstanding_bal_label)
     TextView outstandingTxtView;
 
 //    //Init TextInputLayout
-      /*@Bind(R.id.edt_out_standing_layout)
+      /*@BindView(R.id.edt_out_standing_layout)
       TextInputLayout edtOutStandingLayout;*/
 
-    @Bind(R.id.edt_interest_layout)
+    @BindView(R.id.edt_interest_layout)
     TextInputLayout edtInterestLayout;
 
-    @Bind(R.id.edt_total_tenure_layout)
+    @BindView(R.id.edt_total_tenure_layout)
     TextInputLayout edt_total_tenure_layout;
 
-    @Bind(R.id.edt_balance_tenure_layout)
+    @BindView(R.id.edt_balance_tenure_layout)
     TextInputLayout edtBalTenureLayout;
 
-    /*@Bind(R.id.edt_emi_layout)
+    /*@BindView(R.id.edt_emi_layout)
     TextInputLayout edtEmiLayout;*/
 
-    @Bind(R.id.edt_prepayment_layout)
+    @BindView(R.id.edt_prepayment_layout)
     TextInputLayout edtPrepaymentLayout;
 
-    @Bind(R.id.edt_prepaymentRupee_layout)
+    @BindView(R.id.edt_prepaymentRupee_layout)
     TextInputLayout edtPrepaymentRupeeLayout;
 
-    @Bind(R.id.edt_foreclosure_layout)
+    @BindView(R.id.edt_foreclosure_layout)
     TextInputLayout edtForeclosureLayout;
 
-    @Bind(R.id.edt_administrationFee_layout)
+    @BindView(R.id.edt_administrationFee_layout)
     TextInputLayout edt_administrationFee_layout;
 
-    @Bind(R.id.edt_insuranceFee_layout)
+    @BindView(R.id.edt_insuranceFee_layout)
     TextInputLayout edt_insuranceFee_layout;
 
-    @Bind(R.id.edt_foreclosureRupee_layout)
+    @BindView(R.id.edt_foreclosureRupee_layout)
     TextInputLayout edtForeclosureRupeeLayout;
 
-    @Bind(R.id.edt_administrationFeeRupee_layout)
+    @BindView(R.id.edt_administrationFeeRupee_layout)
     TextInputLayout edt_administrationFeeRupee_layout;
 
-    @Bind(R.id.edt_insuranceFeeRupee_layout)
+    @BindView(R.id.edt_insuranceFeeRupee_layout)
     TextInputLayout edt_insuranceFeeRupee_layout;
 
     // Init Edit text
-    @Bind(R.id.edt_out_standing_view_id)
+    @BindView(R.id.edt_out_standing_view_id)
     CurrencyGhostView outstandingEdtView;
 
-    @Bind(R.id.edt_interest_view_id)
+    @BindView(R.id.edt_interest_view_id)
     PercentageEditText interestEdtView;
 
-    @Bind(R.id.edt_total_tenure_view_id)
+    @BindView(R.id.edt_total_tenure_view_id)
     NumberEditText total_tenure_view_id;
 
-    @Bind(R.id.edt_balance_tenure_view_id)
+    @BindView(R.id.edt_balance_tenure_view_id)
     NumberEditText tenureEdtView;
 
-    @Bind(R.id.edt_emi_view_id)
+    @BindView(R.id.edt_emi_view_id)
     CurrencyGhostView emiEdtView;
 
-    @Bind(R.id.edt_prepayment_view_id)
+    @BindView(R.id.edt_prepayment_view_id)
     PercentageEditText prepaymentEdtView;
 
-    @Bind(R.id.edt_foreclosure_view_id)
+    @BindView(R.id.edt_foreclosure_view_id)
     PercentageEditText foreClosureEdtView;
 
-    @Bind(R.id.edt_insuranceFee_view_id)
+    @BindView(R.id.edt_insuranceFee_view_id)
     EditText insuranceFeeEdtView;
 
-    @Bind(R.id.edt_administrationFee_view_id)
+    @BindView(R.id.edt_administrationFee_view_id)
     PercentageEditText administrationFeeEdtView;
 
-    @Bind(R.id.edt_prepaymentRupee_view_id)
+    @BindView(R.id.edt_prepaymentRupee_view_id)
     CurrencyGhostView prepaymentRupeeEdtView;
 
-    @Bind(R.id.edt_foreclosureRupee_view_id)
+    @BindView(R.id.edt_foreclosureRupee_view_id)
     CurrencyGhostView foreClosureRupeeEdtView;
 
-    @Bind(R.id.edt_insuranceFeeRupee_view_id)
+    @BindView(R.id.edt_insuranceFeeRupee_view_id)
     EditText insuranceFeeRupeeEdtView;
 
-    @Bind(R.id.edt_administrationFeeRupee_view_id)
+    @BindView(R.id.edt_administrationFeeRupee_view_id)
     CurrencyGhostView administrationFeeRupeeEdtView;
 
 
     //Init ImageView
-    @Bind(R.id.emi_more_pop_id)
+    @BindView(R.id.emi_more_pop_id)
     ImageView emiMorepopView;
 
     //Radio Groups & Radio button
-    @Bind(R.id.prepayement_rg)
+    @BindView(R.id.prepayement_rg)
     RadioGroup prepayement_rg;
 
-    @Bind(R.id.prepayement_rupeee_RadioBtn)
+    @BindView(R.id.prepayement_rupeee_RadioBtn)
     RadioButton prepayement_rupeee_RadioBtn;
     private static final int prepayement_rupeee_RadioBtnID = 1001;
 
 
-    @Bind(R.id.prepayement_percent_RadioBtn)
+    @BindView(R.id.prepayement_percent_RadioBtn)
     RadioButton prepayement_percent_RadioBtn;
     public static final int prepayement_percent_RadioBtnID = 1002;
 
-    @Bind(R.id.foreclosure_rg)
+    @BindView(R.id.foreclosure_rg)
     RadioGroup foreclosure_rg;
 
-    @Bind(R.id.foreclosure_rupee_RadioBtn)
+    @BindView(R.id.foreclosure_rupee_RadioBtn)
     RadioButton foreclosure_rupee_RadioBtn;
     public static final int foreclosuer_rupeee_RadioBtnID = 1003;
 
-    @Bind(R.id.foreclosure_percent_RadioBtn)
+    @BindView(R.id.foreclosure_percent_RadioBtn)
     RadioButton foreclosure_percent_RadioBtn;
     public static final int foreclosuer_percent_RadioBtnID = 1004;
 
-    @Bind(R.id.administrationFee_rg)
+    @BindView(R.id.administrationFee_rg)
     RadioGroup administrationFee_rg;
 
-    @Bind(R.id.administrationFee_rupee_RadioBtn)
+    @BindView(R.id.administrationFee_rupee_RadioBtn)
     RadioButton administrationFee_rupee_RadioBtn;
     public static final int administrationFee_rupeee_RadioBtnID = 1005;
 
-    @Bind(R.id.administrationFee_percent_RadioBtn)
+    @BindView(R.id.administrationFee_percent_RadioBtn)
     RadioButton administrationFee_percent_RadioBtn;
     public static final int administrationFee_percent_RadioBtnID = 1006;
 
-    @Bind(R.id.insuranceFee_rg)
+    @BindView(R.id.insuranceFee_rg)
     RadioGroup insuranceFee_rg;
 
-    @Bind(R.id.insuranceFee_rupee_RadioBtn)
+    @BindView(R.id.insuranceFee_rupee_RadioBtn)
     RadioButton insuranceFee_rupee_RadioBtn;
     public static final int insuranceFee_rupeee_RadioBtnID = 1007;
 
-    @Bind(R.id.insuranceFee_percent_RadioBtn)
+    @BindView(R.id.insuranceFee_percent_RadioBtn)
     RadioButton insuranceFee_percent_RadioBtn;
     public static final int insuranceFee_percent_RadioBtnID = 1008;
 

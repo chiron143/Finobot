@@ -6,10 +6,10 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -51,7 +51,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Arrays;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -69,7 +69,7 @@ public class TaxFilingInitialConversation extends BaseFragment implements View.O
 
     TaxPromptModel taxPromptModel;
 
-    @Bind(R.id.parentViewId)
+    @BindView(R.id.parentViewId)
     LinearLayout parentView;
 
     int positon;
@@ -78,18 +78,18 @@ public class TaxFilingInitialConversation extends BaseFragment implements View.O
 
     String corres_table = "";
 
-    @Bind(R.id.layout_yes_no_bottom_bar)
+    @BindView(R.id.layout_yes_no_bottom_bar)
     LinearLayout layout_yes_no_bottom_bar;
 
 
     //number edittext
-    @Bind(R.id.layout_number_edittext)
+    @BindView(R.id.layout_number_edittext)
     LinearLayout layout_number_edittext;
 
-    @Bind(R.id.number_edittext_img)
+    @BindView(R.id.number_edittext_img)
     FloatingActionButton number_edittext_img;
 
-    @Bind(R.id.number_edittext)
+    @BindView(R.id.number_edittext)
     NumberEditText number_edittext;
 
     private Context mContext;
@@ -677,7 +677,7 @@ public class TaxFilingInitialConversation extends BaseFragment implements View.O
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialogs,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText(message);
@@ -1071,7 +1071,7 @@ public class TaxFilingInitialConversation extends BaseFragment implements View.O
 
         inflater= LayoutInflater.from(mContext);
         dialogView=inflater.inflate(R.layout.yes_no_reset,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(mContext).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(mContext).create();
         alertDialog.setView(dialogView);
         final TextView txt_heading=dialogView.findViewById(R.id.txt_heading);
         final TextView textView=dialogView.findViewById(R.id.additional_yes);

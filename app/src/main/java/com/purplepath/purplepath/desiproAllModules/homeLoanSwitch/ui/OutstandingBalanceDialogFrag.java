@@ -4,8 +4,8 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,7 +28,7 @@ import com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.models.Outstan
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,33 +43,33 @@ import static com.purplepath.purplepath.incomedetails.IncomeDynamicDetail.PARENT
 
 public class OutstandingBalanceDialogFrag extends DialogFragment implements View.OnClickListener{
 
-    @Bind(R.id.textview_calculate)
+    @BindView(R.id.textview_calculate)
     TextView calculateBtn;
 
-    @Bind(R.id.loan_amount_edt)
+    @BindView(R.id.loan_amount_edt)
     CurrencyGhostView loan_amount_edt;
 
-    @Bind(R.id.et_interest_rate)
+    @BindView(R.id.et_interest_rate)
     PercentageEditText et_interest_rate;
 
-    @Bind(R.id.total_tenure_edt)
+    @BindView(R.id.total_tenure_edt)
     NumberEditText total_tenure_edt;
 
-    @Bind(R.id.emi_amount_edt)
+    @BindView(R.id.emi_amount_edt)
     CurrencyGhostView emi_amount_edt;
 
-    @Bind(R.id.tenure_completed_edt)
+    @BindView(R.id.tenure_completed_edt)
     NumberEditText tenure_completed_edt;
 
-    @Bind(R.id.tv_balanceAmount)
+    @BindView(R.id.tv_balanceAmount)
     TextView tv_balanceAmount;
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closeButton;
 
-    @Bind(R.id.loan_amount_edt_calculaterImgView)
+    @BindView(R.id.loan_amount_edt_calculaterImgView)
     CustomCalenderImageView loan_amount_edt_calculaterImgView;
-    @Bind(R.id.emi_amount_edt_calculaterImgView)
+    @BindView(R.id.emi_amount_edt_calculaterImgView)
     CustomCalenderImageView emi_amount_edt_calculaterImgView;
 
 

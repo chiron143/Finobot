@@ -28,7 +28,7 @@ import com.purplepath.purplepath.liabilities.LiabilitiesTabViewFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 import com.purplepath.purplepath.retrofitservice.ServiceGenerator;
 import com.purplepath.purplepath.retrofitservice.WebServiceCalls;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -49,10 +49,10 @@ public class PromptChatFragment extends BaseFragment implements View.OnClickList
 
         private Context mContext;
 
-        @Bind(R.id.parentViewId)
+        @BindView(R.id.parentViewId)
         LinearLayout parentView;
 
-        @Bind(R.id.layout_yes_no_bottom_bar)
+        @BindView(R.id.layout_yes_no_bottom_bar)
         LinearLayout layout_yes_no_bottom_bar;
 
         GetPromptModel getPromptModel;

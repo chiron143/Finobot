@@ -3,8 +3,8 @@ package com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -28,7 +28,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -39,35 +39,35 @@ public class CarDetailFragment extends BaseFragment implements RadioGroup.OnChec
 
     public static final String PARENT_CLASS_SOURCE = "com.gp89developers.example.MainActivity";
     public static final String TITLE = "";
-    @Bind(R.id.loanReq_yes_RadioBtn)
+    @BindView(R.id.loanReq_yes_RadioBtn)
     RadioButton laonReqYesBtn;
-    @Bind(R.id.loanReq_no_RadioBtn)
+    @BindView(R.id.loanReq_no_RadioBtn)
     RadioButton laonReqNoBtn;
-    @Bind(R.id.loanReq_RadioRg)
+    @BindView(R.id.loanReq_RadioRg)
     RadioGroup loanReq_RadioGroup;
-    @Bind(R.id.loanViewLayoutId)
+    @BindView(R.id.loanViewLayoutId)
     LinearLayout loanViewLayoutId;
     Context mContext;
     UpdateValueInFragmentInterface updateInterface;
-    @Bind(R.id.downpayment_edt_id)
+    @BindView(R.id.downpayment_edt_id)
     CurrencyGhostView downpayment_edt;
-    @Bind(R.id.downpayment_edt_cal_id)
+    @BindView(R.id.downpayment_edt_cal_id)
     CustomCalenderImageView downpayment_edt_cal;
-    @Bind(R.id.loanamount_edt_id)
+    @BindView(R.id.loanamount_edt_id)
     CurrencyGhostView loanamount_edt;
-    @Bind(R.id.loanamount_edt_cal_id)
+    @BindView(R.id.loanamount_edt_cal_id)
     CustomCalenderImageView loanamount_edt_cal;
-    @Bind(R.id.loan_tenure_id)
+    @BindView(R.id.loan_tenure_id)
     NumberEditText loan_tenure_edit;
-    @Bind(R.id.loan_interest_id)
+    @BindView(R.id.loan_interest_id)
     PercentageEditText loan_interest_edit;
-    @Bind(R.id.car_purchase_price_edt_id)
+    @BindView(R.id.car_purchase_price_edt_id)
     CurrencyGhostView car_purchase_price_edt;
-    @Bind(R.id.car_purchase_price_cal_id)
+    @BindView(R.id.car_purchase_price_cal_id)
     CustomCalenderImageView car_purchase_price_cal;
-    @Bind(R.id.eset_car_value_at_end_id)
+    @BindView(R.id.eset_car_value_at_end_id)
     CurrencyGhostView eset_car_value_at_end;
-    @Bind(R.id.eset_car_value_at_end_cal_id)
+    @BindView(R.id.eset_car_value_at_end_cal_id)
     CustomCalenderImageView eset_car_value_at_end_cal;
     View nameEditview;
 //    ArrayList<String> carLoanmanditoryField = new ArrayList<String>() {{

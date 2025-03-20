@@ -3,7 +3,7 @@ package com.purplepath.purplepath.desiproAllModules.homeLoanSwitch.ui;
 import android.app.DialogFragment;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +19,7 @@ import com.purplepath.purplepath.fragments.BaseFragment;
 
 import java.util.Locale;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,37 +28,37 @@ import butterknife.ButterKnife;
 
 public class RecomendationDialogFragment extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.tv_amountSaved)
+    @BindView(R.id.tv_amountSaved)
     TextView tv_amountSaved;
 
-    @Bind(R.id.amountSavedInEmi_edt)
+    @BindView(R.id.amountSavedInEmi_edt)
     com.blackcat.currencyedittext.CurrencyEditText amountSavedInEmi;
 
-    @Bind(R.id.tv_additionalExpense_edt)
+    @BindView(R.id.tv_additionalExpense_edt)
     com.blackcat.currencyedittext.CurrencyEditText additionalExpense;
 
-    @Bind(R.id.presentValueSavings_edt)
+    @BindView(R.id.presentValueSavings_edt)
     com.blackcat.currencyedittext.CurrencyEditText presentValueSavings;
 
-    @Bind(R.id.overallSavings_edt)
+    @BindView(R.id.overallSavings_edt)
     com.blackcat.currencyedittext.CurrencyEditText overallSavings;
 
-    @Bind(R.id.realSavings_edt)
+    @BindView(R.id.realSavings_edt)
     com.blackcat.currencyedittext.CurrencyEditText realSavings;
 
-    @Bind(R.id.realSavingsPercent_edt)
+    @BindView(R.id.realSavingsPercent_edt)
     EditText realSavingsPercent;
 
-    @Bind(R.id.amountSavedInTenure_edt)
+    @BindView(R.id.amountSavedInTenure_edt)
     EditText amountSavedInTenure_edt;
 
-    @Bind(R.id.closebtnId)
+    @BindView(R.id.closebtnId)
     ImageView closeButton;
 
-    @Bind(R.id.textview_recomended)
+    @BindView(R.id.textview_recomended)
     TextView textview_recomended;
 
-    @Bind(R.id.img_thumb)
+    @BindView(R.id.img_thumb)
     ImageView img_thumb;
 
     Locale indianlocal = new Locale("en", "IN");

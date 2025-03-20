@@ -3,7 +3,7 @@ package com.purplepath.purplepath.desiproAllModules.loanEligibility.view;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;

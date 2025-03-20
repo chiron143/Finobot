@@ -3,12 +3,12 @@ package com.purplepath.purplepath.desiproAllModules.loanComparison;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,10 +44,10 @@ import static com.purplepath.purplepath.apputiles.UtileKit.getStringwithoutCurre
 public class LoanComparisonActivity extends BaseFragment implements View.OnClickListener, LoanComparisonInterface {
 
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;
-    //  @Bind(R.id.loanComparisonViewPager)
+    //  @BindView(R.id.loanComparisonViewPager)
     ViewPager loanComparisonViewPager;
 
-    //  @Bind(R.id.loanComparisonTabLayout)
+    //  @BindView(R.id.loanComparisonTabLayout)
     TabLayout loanComparisonTabLayout;
 
     private FloatingActionButton loanComparison_fab;

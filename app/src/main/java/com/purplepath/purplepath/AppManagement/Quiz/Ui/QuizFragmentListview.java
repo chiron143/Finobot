@@ -3,8 +3,9 @@ package com.purplepath.purplepath.AppManagement.Quiz.Ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,7 +102,7 @@ public class QuizFragmentListview  extends BaseFragment implements View.OnClickL
         Log.i("Document grid fragment"," validatestring  " + titlestring);
         typeofTopic = titlestring;
         // Strat next Fragment
-        android.support.v4.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         QuizFragment fragment = QuizFragment.newInstance(titlestring, isshowdialog);
         fragmentTransaction.replace(R.id.fragment_container, fragment);

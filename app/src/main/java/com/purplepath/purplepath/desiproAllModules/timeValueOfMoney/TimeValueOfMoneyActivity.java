@@ -3,11 +3,11 @@ package com.purplepath.purplepath.desiproAllModules.timeValueOfMoney;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +20,7 @@ import com.purplepath.purplepath.apputiles.CrashExceptionHandler;
 import com.purplepath.purplepath.fragments.BaseFragment;
 import com.purplepath.purplepath.myinterface.OnActivityBackPressedListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /*
@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 
 public class TimeValueOfMoneyActivity extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;

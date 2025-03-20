@@ -1,6 +1,6 @@
 package com.purplepath.purplepath.desiproAllModules.houseBuyVsRent.interfaces;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by Pratheep.S on 12-09-2017.

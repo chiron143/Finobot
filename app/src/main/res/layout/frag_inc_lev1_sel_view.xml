@@ -9,7 +9,7 @@
         android:layout_height="?android:attr/actionBarSize"
         android:background="@color/colorPrimary"
         >
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/backButtonId"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -33,7 +33,7 @@
             android:layout_centerInParent="true"
             android:text="Income Details"
             android:textColor="@color/white"/>
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/doneButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="false">
@@ -76,7 +76,7 @@
             android:layout_alignParentBottom="true"
             layout="@layout/fragment_bottom_tool_bar"/>
         </RelativeLayout>
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/incomedetails_tick_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,5 +89,5 @@
             android:scaleType="fitXY"
             android:visibility="visible"
             app:srcCompat="@drawable/ic_done_menu" />
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

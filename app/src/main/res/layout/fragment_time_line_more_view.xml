@@ -63,7 +63,7 @@
                 android:layout_gravity="center"
                 android:visibility="visible">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/goalleft2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:visibility="visible">
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/goalleftmorebtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:textColor="@color/wallet_link_text_light"
                     android:visibility="visible"
                     />
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/goalleft1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
                 android:orientation="horizontal"
                 android:visibility="visible">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/goalright1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -245,7 +245,7 @@
                     android:adjustViewBounds="true"
                     android:visibility="visible"
                     />
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/goalrightmorebtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

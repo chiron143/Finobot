@@ -3,13 +3,13 @@ package com.purplepath.purplepath.desiproAllModules.depositcomparison;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatTextView;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -44,10 +44,10 @@ import retrofit2.Response;
 public class DepositComparisonActivity  extends AppCompatActivity implements View.OnClickListener, LoanComparisonInterface {
 
     private RelativeLayout mleftRelativeLayout, mcenterRelativeLayout, mRightRelativeLayout;
-    //  @Bind(R.id.loanComparisonViewPager)
+    //  @BindView(R.id.loanComparisonViewPager)
     ViewPager depositComparisonViewPager;
 
-    //  @Bind(R.id.depositComparisonTabLayout)
+    //  @BindView(R.id.depositComparisonTabLayout)
     TabLayout depositComparisonTabLayout;
 
     private FloatingActionButton depositComparison_fab;

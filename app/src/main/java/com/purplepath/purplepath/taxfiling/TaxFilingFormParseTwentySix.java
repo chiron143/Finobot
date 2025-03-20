@@ -2,10 +2,10 @@ package com.purplepath.purplepath.taxfiling;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -337,7 +337,7 @@ public class TaxFilingFormParseTwentySix extends BaseFragment implements View.On
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_dialogs,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         TextView stringErrorMessage = dialogView.findViewById(R.id.textViewDilog);
         stringErrorMessage.setText("Unable to edit Yes/No question. Do you want to redo from this question?");
@@ -377,7 +377,7 @@ public class TaxFilingFormParseTwentySix extends BaseFragment implements View.On
 
         inflater= LayoutInflater.from(context);
         dialogView=inflater.inflate(R.layout.yes_no_characteredit,null);
-        alertDialog=new android.support.v7.app.AlertDialog.Builder(context).create();
+        alertDialog=new androidx.appcompat.app.AlertDialog.Builder(context).create();
         alertDialog.setView(dialogView);
         final CharacterEditText characterEditText=dialogView.findViewById(R.id.dialog_character_edittext);
         characterEditText.setText(password_temp);

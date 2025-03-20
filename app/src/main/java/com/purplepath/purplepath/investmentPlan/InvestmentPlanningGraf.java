@@ -4,7 +4,7 @@ package com.purplepath.purplepath.investmentPlan;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.Gravity;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -51,13 +51,13 @@ import butterknife.ButterKnife;
  */
 public class InvestmentPlanningGraf extends BaseFragment implements View.OnClickListener {
 
-    @Bind(R.id.lineChart)
+    @BindView(R.id.lineChart)
     LineChart mChart;
 
-    @Bind(R.id.noChartData)
+    @BindView(R.id.noChartData)
     TextView noChartData_txt;
 
-    @Bind(R.id.legendLayout1)
+    @BindView(R.id.legendLayout1)
     LinearLayout legendLayout1;
 
     Context mContext;

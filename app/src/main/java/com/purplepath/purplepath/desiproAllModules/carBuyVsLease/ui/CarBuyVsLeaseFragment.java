@@ -3,9 +3,9 @@ package com.purplepath.purplepath.desiproAllModules.carBuyVsLease.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -43,31 +43,31 @@ import butterknife.ButterKnife;
 
 public class CarBuyVsLeaseFragment extends BaseFragment implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton mdoneFloatingBtn;
 
-    @Bind(R.id.relative_left_arrow)
+    @BindView(R.id.relative_left_arrow)
      RelativeLayout mleftRelativeLayout;
 
-    @Bind(R.id.relative_center_home)
+    @BindView(R.id.relative_center_home)
      RelativeLayout mcenterRelativeLayout;
 
-    @Bind(R.id.relative_right_arrow)
+    @BindView(R.id.relative_right_arrow)
      RelativeLayout mRightRelativeLayout;
 
-    @Bind(R.id.opertunitycostId)
+    @BindView(R.id.opertunitycostId)
     PercentageEditText oppurtunityCost_edt;
 
-    @Bind(R.id.plannedoccupation_Edt_id)
+    @BindView(R.id.plannedoccupation_Edt_id)
     NumberEditText plannedoccupation_Edt;
 
-    @Bind(R.id.mainRepairEditId)
+    @BindView(R.id.mainRepairEditId)
     CurrencyGhostView mainRepairEditId;
 
-    @Bind(R.id.fualReapirExpEditId)
+    @BindView(R.id.fualReapirExpEditId)
     CurrencyGhostView fualReapirExpEdit;
 
-    @Bind(R.id.insuranceEditId)
+    @BindView(R.id.insuranceEditId)
     CurrencyGhostView insuranceEdit;
 
 
@@ -79,13 +79,13 @@ public class CarBuyVsLeaseFragment extends BaseFragment implements View.OnClickL
     GenericTextWatcher Opportunity_Edit_TW, plannedOccupation_TW;
 
 
-    @Bind(R.id.opertunitycostLayId)
+    @BindView(R.id.opertunitycostLayId)
     TextInputLayout opertunitycostLayId;
 
-    @Bind(R.id.cityType_spnr)
+    @BindView(R.id.cityType_spnr)
     Spinner cityType_spnr;
 
-    @Bind(R.id.taxSlab_spnr)
+    @BindView(R.id.taxSlab_spnr)
     Spinner taxSlab_spnr;
 
     Context mContext;
